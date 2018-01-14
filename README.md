@@ -12,9 +12,9 @@ The code is located in the "Code" folder and documentation is located in the "Do
 
 # Contributors
 
-Natalie Jones
-Connor Kurschat
-Dimas Moosa
-Michael Polec
-Colin Schroeder
+Natalie Jones,
+Connor Kurschat,
+Dimas Moosa,
+Michael Polec,
+Colin Schroeder,
 Dillon Smedley
