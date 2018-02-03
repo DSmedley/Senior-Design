@@ -44,13 +44,16 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
+                        <li class="{{Request::is('/') ? 'active' : ''}}"><a href="{{ route('welcome') }}">Home</a></li>
+                        <li class="{{Request::is('analyze') ? 'active' : ''}}"><a href="{{ route('analyze') }}">Analyze</a></li>
+                        <li class="{{Request::is('about') ? 'active' : ''}}"><a href="{{ route('about') }}">About</a></li>
                         @guest
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                                    <img title="profile image" class="img-circle" style="width:32px; height:32px;" src='/uploads/avatars/{{ Auth::user()->avatar }}'>
+                                    <img title="profile image" class="img-circle" style="width:20px; height:20px;" src='/uploads/avatars/{{ Auth::user()->avatar }}'>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -89,5 +92,36 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/Chart.js') }}"></script>
+    <script type="text/javascript">
+        new Chart(document.getElementById("pie-chart"), {
+        type: 'doughnut',
+        data: {
+            labels: ["Neutral", "Positive", "Negative"],
+            display: false,
+            datasets: [{
+                label: "Population (millions)",
+                backgroundColor: ["#3e95cd","#3cba9f","#c45850"],
+                data: [33,33,34]
+            }]
+        },
+        options: {
+            title: {
+                display: false,
+                text: 'Predicted world population (millions) in 2050'
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                callbacks: {
+                    label: function(tooltipItem) {
+                    return tooltipItem.yLabel;
+                    }
+                }
+            }
+        }
+    });
+    </script>
 </body>
 </html>

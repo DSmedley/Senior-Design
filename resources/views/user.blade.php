@@ -24,14 +24,17 @@
                 <div class="panel-heading" contenteditable="false">Saved analyses</div>
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <!--<img alt="300x200" src="">-->
-                                <div class="caption">
-                                    <h3>Twitter Username</h3>
+                        @foreach($analyses as $analysis)
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <!--<img alt="300x200" src="">-->
+                                    <div class="caption">
+                                        <canvas id="pie-chart" width="50" height="50"></canvas>
+                                        <h3><a href="{{ route('analysis.view', array('id' => $analysis->id)) }}">{{$analysis->name}}</a></h3>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
                     </div>      
                 </div> 
             </div>
@@ -39,3 +42,4 @@
     </div>
 </div>
 @endsection
+

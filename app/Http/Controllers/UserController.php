@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Hash;
 use Auth;
 use Image;
+use App\Link;
+use App\Analyses;
 
 class UserController extends Controller
 {
@@ -26,7 +28,20 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('user');
+        $user = Auth::user();
+        //$links = Link::where('user_id', 1);
+        
+        $links = Link::all();
+        
+        $count = 0;
+        foreach($links as $l){
+            $analyses[$count] = Analyses::find($l->analysis_id);
+            $count += 1;
+        }
+        
+        //$analyses = Analyses::find($links[]->analysis_id);
+        
+        return view('user')->with('analyses', $analyses);
     }
     
     public function edit(){

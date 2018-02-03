@@ -15,6 +15,10 @@ Route::get('/', 'PagesController@getHome')->name('welcome');
 Route::get('/about', 'PagesController@getAbout')->name('about');
 Route::get('/contact', 'PagesController@getContact')->name('contact');
 
+Route::get('/analyze', 'AnalysesController@index')->name('analyze');
+Route::post('/analysis/{id}', 'AnalysesController@analyze')->name('analysis');
+Route::get('/analysis/{id}', 'AnalysesController@getAnalysis')->name('analysis.view');
+
 Route::get('/messages', 'MessagesController@getMessages')->name('messages');
 
 Route::post('/contact/submit', 'MessagesController@submit');

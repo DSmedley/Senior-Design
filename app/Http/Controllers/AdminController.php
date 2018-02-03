@@ -46,7 +46,7 @@ class AdminController extends Controller
         //Get user data from specified user
         //Else return error
         if ($id){
-            $user = User::where('id', '=', $id)->first();
+            $user = User::where('id', $id)->first();
         }
 
         //Return to user edit page
