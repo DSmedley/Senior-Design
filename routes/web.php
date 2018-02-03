@@ -16,6 +16,7 @@ Route::get('/about', 'PagesController@getAbout')->name('about');
 Route::get('/contact', 'PagesController@getContact')->name('contact');
 
 Route::get('/analyze', 'AnalysesController@index')->name('analyze');
+Route::post('/analyze', 'AnalysesController@analyze')->name('analysis');
 Route::post('/analysis/{id}', 'AnalysesController@analyze')->name('analysis');
 Route::get('/analysis/{id}', 'AnalysesController@getAnalysis')->name('analysis.view');
 

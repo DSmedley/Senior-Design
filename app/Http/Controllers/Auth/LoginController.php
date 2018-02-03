@@ -56,6 +56,7 @@ class LoginController extends Controller
             // Make sure the user is not banned
             if (!$user->blocked && $this->attemptLogin($request)) {
                 // Send the normal successful login response
+                $user->touch();
                 return $this->sendLoginResponse($request);
             } else {
                 // Increment the failed login attempts and redirect back to the

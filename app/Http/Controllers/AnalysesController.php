@@ -10,7 +10,19 @@ use App\Link;
 class AnalysesController extends Controller
 {
     public function index(){
-        return view('analyze');
+        return view('analysis');
+    }
+    
+    public function getAnalysis($id = null)
+    {
+        //Get data from specified analysis
+        //Else return error
+        if ($id){
+            $analysis = Analyses::where('id', $id)->first();
+        }
+
+        //Return to analysis page
+        return view('analysis')->with('analysis', $analysis);
     }
     
     public function analyze(Request $request){
@@ -36,13 +48,16 @@ class AnalysesController extends Controller
         
         $results = json_decode($results, true);
         
+        $profile_image = str_replace("/", "", $results['0']['profile_image_url']);
+        $profile_image = str_replace("normal", "400x400", $results['0']['profile_image_url']);
+        
         //create a new analysis
         $analysis = new Analyses;
         $analysis->twitter_id = $results['0']['id'];
         $analysis->name = $results['0']['name'];
         $analysis->screen_name = $results['0']['screen_name'];
         $analysis->location = $results['0']['location'];
-        $analysis->url = $results['0']['url'];
+        $analysis->url = $profile_image;
         $analysis->description = $results['0']['description'];
         $analysis->tweets = $results['0']['statuses_count'];
         $analysis->following = $results['0']['friends_count'];
@@ -63,7 +78,7 @@ class AnalysesController extends Controller
         
         //return twitter user details
         $result = Analyses::where('id', '=', $analysis->id)->first();
-        return view('analyze')->with('analysis', $result);
+        return view('analysis')->with('analysis', $result);
         
     }
     

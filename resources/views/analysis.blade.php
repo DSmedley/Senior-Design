@@ -4,91 +4,49 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <!--Analyze Twitter User-->
-            <div class="panel panel-default">
-                <div class="panel-heading">Analyze New Twitter User</div>
-                <div class="panel-body">
-                    @if (session('Error'))
-                        <div class="alert alert-danger">
-                            {{ session('Error') }}
-                        </div>
-                    @endif
-                    @if (session('Success'))
-                        <div class="alert alert-success">
-                            {{ session('Success') }}
-                        </div>
-                    @endif
-                    <form class="form-horizontal" method="POST" action="{{ route('analyze') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <div class="col-sm-4">
-                                <div class="input-group">
-                                    <span class="input-group-addon" id="sizing-addon2">@</span>
-                                    <input id="name" name="name" type="text" class="form-control" placeholder="Enter Twitter Screen Name" aria-describedby="sizing-addon2" required>
-                                </div>
-
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <button type="submit" name="analyze" class="btn btn-primary">
-                                    Analyze
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!--End Analyze Twitter User-->
+            @component('components.analyze')
+            @endcomponent
         </div>
     </div>
 </div>
 @if(isset($analysis))
-<div class="row">
-    <div class="col-lg-12">
-        <table class="table table-striped table-bordered table-hover">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Twitter ID</th>
-                    <th>Name</th>
-                    <th>Screen Name</th>
-                    <th>Location</th>
-                    <th>URL</th>
-                    <th>Description</th>
-                    <th>Tweets</th>
-                    <th>Following</th>
-                    <th>Followers</th>
-                    <th>Likes</th>
-                    <th>Created</th>
-                    <th>Updated</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>{{$analysis->id}}</td>
-                    <td>{{$analysis->twitter_id}}</td>
-                    <td>{{$analysis->name}}</td>
-                    <td>{{$analysis->screen_name}}</td>
-                    <td>{{$analysis->location}}</td>
-                    <td>{{$analysis->url}}</td>
-                    <td>{{$analysis->description}}</td>
-                    <td>{{$analysis->tweets}}</td>
-                    <td>{{$analysis->following}}</td>
-                    <td>{{$analysis->followers}}</td>
-                    <td>{{$analysis->likes}}</td>
-                    <td>{{$analysis->created_at}}</td>
-                    <td>{{$analysis->updated_at}}</td>
-                </tr>
-            </tbody>
-        </table>
+<div class="container target">
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>{{ $analysis->name }}</h1>
+            <h3>{{ "@".$analysis->screen_name }}</h3>
+            <br>
+        </div>
+        <div class="col-sm-2">
+            <img title="Profile Image" class="img-circle img-responsive" src='{{ $analysis->url }}'>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-3">
+            <!--left col-->
+            <ul class="list-group">
+                <li class="list-group-item text-muted" contenteditable="false">Analysis</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $analysis->twitter_id }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> {{ $analysis->location }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $analysis->tweets }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $analysis->following }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $analysis->followers }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $analysis->likes }}</li>
+            </ul>
+        </div>
+        <!--/col-3-->
+        <div class="col-sm-9" style="" contenteditable="false">
+            <div class="panel panel-default">
+                <div class="panel-heading">Description</div>
+                <div class="panel-body">{{ $analysis->description }}</div>
+            </div>
+            <div class="panel panel-default target">
+                <div class="panel-heading" contenteditable="false">Results</div>
+                <div class="panel-body">    
+                </div> 
+            </div>
+        </div>
     </div>
 </div>
 @endif
