@@ -22,8 +22,9 @@ Route::get('/analysis/{id}', 'AnalysesController@getAnalysis')->name('analysis.v
 
 Route::get('/analysis/save/{id}', 'UserController@linkAnalysis')->name('analysis.save');
 
-Route::get('/messages', 'MessagesController@getMessages')->name('messages');
 
+
+Route::get('/messages', 'MessagesController@getMessages')->name('messages');
 Route::post('/contact/submit', 'MessagesController@submit');
 
 Auth::routes();
@@ -48,6 +49,11 @@ Route::prefix('admin')->group(function(){
     Route::get('/users/ban/{id}', 'AdminController@banUser')->name('admin.user.ban');
     Route::get('/users/unban/{id}', 'AdminController@unbanUser')->name('admin.user.unban');
 
+});
+
+//API resources
+Route::prefix('api')->group(function(){
+    Route::get('/analysis/{id}', 'AnalysesController@analyzeAPI');
 });
 
 

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Analyses;
 use App\Link;
+use App\Http\Resources\PersonalitiesResource;
 
 class AnalysesController extends Controller
 {
@@ -26,7 +27,11 @@ class AnalysesController extends Controller
     }
     
     public function analyze(Request $request){
-        $analysis = $this->getData($request);
+        $this->validate($request, [
+            'name' => 'required'
+        ]);
+        
+        $analysis = $this->getData($request->get('name'));
         
         if (Auth::check()){
             //link analysis to account
@@ -37,18 +42,17 @@ class AnalysesController extends Controller
             $link->save();
         }
         
-        
-        //return twitter user details
-        $result = Analyses::where('id', '=', $analysis->id)->first();
-        return view('analysis')->with('analysis', $result);
+        return view('analysis')->with('analysis', $analysis);
         
     }
     
-    public function getData(Request $request){
-        $this->validate($request, [
-            'name' => 'required'
-        ]);
-                
+    public function analyzeAPI($request = null){
+        $analysis = $this->getData($request);
+        
+        return new PersonalitiesResource($analysis);   
+    }
+    
+    public function getData($screen_name = null){
         /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
         $settings = array(
             'oauth_access_token' => "419236098-ybBLRsLig8sSd5LttZ6voxm9Gv3I8yul3JlvzGuD",
@@ -58,7 +62,7 @@ class AnalysesController extends Controller
         );
 
         $url = 'https://api.twitter.com/1.1/users/lookup.json';
-        $getfield = '?screen_name='.$request->get('name');
+        $getfield = '?screen_name='.$screen_name;
         $requestMethod = 'GET';
         $twitter = new TwitterController($settings);
         $results = $twitter->setGetfield($getfield)
@@ -85,7 +89,10 @@ class AnalysesController extends Controller
         //Save the analysis into the database
         $analysis->save();
         
-        return $analysis;
+        //return twitter user details
+        $result = Analyses::where('id', '=', $analysis->id)->first();
+        
+        return $result;
     }
     
 }
