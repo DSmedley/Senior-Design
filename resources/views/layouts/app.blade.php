@@ -93,28 +93,6 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/Chart.js') }}"></script>
-    <script type="text/javascript">
-        new Chart(document.getElementById("pie-chart"), {
-        type: 'doughnut',
-        data: {
-            labels: ["Neutral", "Positive", "Negative"],
-            display: false,
-            datasets: [{
-                label: "Population (millions)",
-                backgroundColor: ["#3e95cd","#3cba9f","#c45850"],
-                data: [33,33,34]
-            }]
-        },
-        options: {
-            title: {
-                display: false,
-                text: 'Predicted world population (millions) in 2050'
-            },
-            legend: {
-                display: false
-            }
-        }
-    });
-    </script>
+    <script src="{{ asset('js/ProfileCharts.js') }}"></script>
 </body>
 </html>
