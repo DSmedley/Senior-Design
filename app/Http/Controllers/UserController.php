@@ -29,17 +29,15 @@ class UserController extends Controller
     public function index()
     {
         $user = Auth::user();
-        //$links = Link::where('user_id', 1);
+        $links = Link::where('user_id', $user->id)->orderBy('id', 'desc')->get();
         
-        $links = Link::all();
+        //$links = Link::all();
         
         $count = 0;
         foreach($links as $l){
             $analyses[$count] = Analyses::find($l->analysis_id);
             $count += 1;
         }
-        
-        //$analyses = Analyses::find($links[]->analysis_id);
         
         return view('user')->with('analyses', $analyses);
     }
@@ -50,6 +48,31 @@ class UserController extends Controller
     
     public function inbox(){
         return view('user.inbox');
+    }
+    
+    public function linkAnalysis($id = null){
+        if($id){
+            //get user id
+            $user = Auth::user();
+
+            $where = ['user_id' => $user->id, 'analysis_id' => $id];
+            $user_favorites = Link::where($where)->first();
+
+            if (is_null($user_favorites)) {
+                $link = new Link;
+                $link->user_id = $user->id;
+                $link->analysis_id = $id;
+
+                //Save the analysis into the database
+                $link->save();
+
+                return redirect()->route('analyze')->with("success","Anaysis saved to your account!");  
+            } else {
+                return redirect()->route('analyze')->with("error","This analysis is already saved to your account!"); 
+            } 
+        }else{
+            return redirect()->route('analyze')->with("error","An error has occured!"); 
+        }
     }
     
     public function updateProfile(Request $request){

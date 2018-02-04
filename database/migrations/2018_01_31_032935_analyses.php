@@ -19,7 +19,7 @@ class Analyses extends Migration
             $table->string('name');
             $table->string('screen_name');
             $table->string('location');
-            $table->string('url');
+            $table->string('profile_image');
             $table->mediumText('description');
             $table->integer('tweets');
             $table->integer('following');

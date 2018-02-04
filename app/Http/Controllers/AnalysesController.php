@@ -57,7 +57,7 @@ class AnalysesController extends Controller
         $analysis->name = $results['0']['name'];
         $analysis->screen_name = $results['0']['screen_name'];
         $analysis->location = $results['0']['location'];
-        $analysis->url = $profile_image;
+        $analysis->profile_image = $profile_image;
         $analysis->description = $results['0']['description'];
         $analysis->tweets = $results['0']['statuses_count'];
         $analysis->following = $results['0']['friends_count'];
