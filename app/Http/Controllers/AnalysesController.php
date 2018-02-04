@@ -26,6 +26,25 @@ class AnalysesController extends Controller
     }
     
     public function analyze(Request $request){
+        $analysis = $this->getData($request);
+        
+        if (Auth::check()){
+            //link analysis to account
+            $link = new Link;
+            $link->user_id = Auth::user()->id;
+            $link->analysis_id = $analysis->id;
+            //save link
+            $link->save();
+        }
+        
+        
+        //return twitter user details
+        $result = Analyses::where('id', '=', $analysis->id)->first();
+        return view('analysis')->with('analysis', $result);
+        
+    }
+    
+    public function getData(Request $request){
         $this->validate($request, [
             'name' => 'required'
         ]);
@@ -66,20 +85,7 @@ class AnalysesController extends Controller
         //Save the analysis into the database
         $analysis->save();
         
-        if (Auth::check()){
-            //link analysis to account
-            $link = new Link;
-            $link->user_id = Auth::user()->id;
-            $link->analysis_id = $analysis->id;
-            //save link
-            $link->save();
-        }
-        
-        
-        //return twitter user details
-        $result = Analyses::where('id', '=', $analysis->id)->first();
-        return view('analysis')->with('analysis', $result);
-        
+        return $analysis;
     }
     
 }

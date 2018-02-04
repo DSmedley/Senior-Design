@@ -93,6 +93,6 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/Chart.js') }}"></script>
-    <script src="{{ asset('js/ProfileCharts.js') }}"></script>
+    @yield('javascript')
 </body>
 </html>

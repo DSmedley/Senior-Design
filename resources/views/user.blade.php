@@ -23,38 +23,49 @@
             <div class="panel panel-default target">
                 <div class="panel-heading" contenteditable="false">Saved analyses</div>
                 <div class="panel-body">
-                    <div class="row">
-                        @php
-                            $count = 0
-                        @endphp
-                        @foreach($analyses as $analysis)
-                            <div class="col-md-4">
-                                <div class="thumbnail">
-                                    <!--<img alt="300x200" src="">-->
-                                    <div class="caption">
-                                        <canvas id="pie-chart" width="50" height="50"></canvas>
-                                        <h3><a href="{{ route('analysis.view', array('id' => $analysis->id)) }}">{{$analysis->name}}</a></h3>
-                                        <h3>{{ date_format($analysis->created_at, 'd/m/Y H:i:s') }}</h3>
+                    @php
+                        $count = 0;
+                        $charts = array();
+                    @endphp
+                    @if(isset($analyses))
+                        <div class="row">
+                            @foreach($analyses as $analysis)
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                        <!--<img alt="300x200" src="">-->
+                                        <div class="caption">
+                                            <canvas id="{{ "Chart".$count }}" width="50" height="50"></canvas>
+                                            <h3><a href="{{ route('analysis.view', array('id' => $analysis->id)) }}">{{$analysis->name}}</a></h3>
+                                            <h3>{{ date_format($analysis->created_at, 'd/m/Y H:i:s') }}</h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            @if($count == 2)
-                                </div>
-                                <div class="row">
                                 @php
-                                    $count = 0
+                                    $charts[] = array(33, 33, 34);
+                                    $count  += 1;
                                 @endphp
-                            @else
-                                @php
-                                    $count += 1
-                                @endphp
-                            @endif
-                        @endforeach
-                    </div>      
+                                @if($count % 3 == 0)
+                                    </div>
+                                    <div class="row">
+                                @endif
+                            @endforeach
+                        </div> 
+                    @else
+                        You have no saved Analyses!
+                    @endif
                 </div> 
             </div>
         </div>
     </div>
 </div>
 @endsection
-
+@section('javascript')
+    <script src="{{ asset('js/ProfileCharts.js') }}"></script>
+    <script type="text/javascript">
+        var charts = {{ json_encode($charts) }}
+        
+        for (var i = 0; i < charts.length; i++) {
+		  chart("Chart"+i, charts[i]);
+        }
+	</script>
+@endsection

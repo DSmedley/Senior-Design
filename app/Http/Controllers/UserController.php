@@ -31,7 +31,7 @@ class UserController extends Controller
         $user = Auth::user();
         $links = Link::where('user_id', $user->id)->orderBy('id', 'desc')->get();
         
-        //$links = Link::all();
+        $analyses = NULL;
         
         $count = 0;
         foreach($links as $l){
