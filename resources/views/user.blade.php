@@ -18,7 +18,13 @@
         <div class="col-sm-9" style="" contenteditable="false">
             <div class="panel panel-default">
                 <div class="panel-heading">{{ Auth::user()->name }}'s Bio</div>
-                <div class="panel-body">{{ Auth::user()->bio }}</div>
+                <div class="panel-body">
+                    @if(isset(Auth::user()->bio))
+                    {{ Auth::user()->bio }}
+                    @else
+                        Bio is empty
+                    @endif
+                </div>
             </div>
             <div class="panel panel-default target">
                 <div class="panel-heading" contenteditable="false">Saved analyses</div>
@@ -27,7 +33,8 @@
                         $count = 0;
                         $charts = array();
                     @endphp
-                    @if(isset($analyses))
+                    @if(isset($analyses['0']['name']))
+                        {{ $analyses->links() }}
                         <div class="row">
                             @foreach($analyses as $analysis)
                                 <div class="col-md-4">
@@ -50,6 +57,7 @@
                                 @endif
                             @endforeach
                         </div> 
+                        {{ $analyses->links() }}
                     @else
                         You have no saved Analyses!
                     @endif

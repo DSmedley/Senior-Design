@@ -2,14 +2,14 @@
 <div class="panel panel-default">
     <div class="panel-heading">Analyze New Twitter User</div>
     <div class="panel-body">
-        @if (session('Error'))
+        @if (session('twitterError'))
             <div class="alert alert-danger">
-                {{ session('Error') }}
+                {{ session('twitterError') }}
             </div>
         @endif
-        @if (session('Success'))
+        @if (session('twitterSuccess'))
             <div class="alert alert-success">
-                {{ session('Success') }}
+                {{ session('twitterSuccess') }}
             </div>
         @endif
         <form class="form-horizontal" method="POST" action="{{ route('analyze') }}">

@@ -15,16 +15,16 @@ class Analyses extends Migration
     {
         Schema::create('analyses', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('twitter_id');
+            $table->bigInteger('twitter_id');
             $table->string('name');
             $table->string('screen_name');
             $table->string('location');
             $table->string('profile_image');
             $table->mediumText('description');
-            $table->integer('tweets');
-            $table->integer('following');
-            $table->integer('followers');
-            $table->integer('likes');
+            $table->bigInteger('tweets');
+            $table->bigInteger('following');
+            $table->bigInteger('followers');
+            $table->bigInteger('likes');
             $table->timestamps();
         });
     }

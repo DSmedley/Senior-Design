@@ -33,6 +33,10 @@ class AnalysesController extends Controller
         
         $analysis = $this->getData($request->get('name'));
         
+        if(isset($analysis['errors'])){
+            return redirect()->route('analyze')->with('twitterError', $analysis['errors']['0']['message']);
+        }
+        
         if (Auth::check()){
             //link analysis to account
             $link = new Link;
@@ -48,6 +52,10 @@ class AnalysesController extends Controller
     
     public function analyzeAPI($request = null){
         $analysis = $this->getData($request);
+        
+        if(isset($analysis['errors'])){
+            return $analysis;
+        }
         
         return new PersonalitiesResource($analysis);   
     }
@@ -70,6 +78,10 @@ class AnalysesController extends Controller
                      ->performRequest(); 
         
         $results = json_decode($results, true);
+        
+        if(isset($results['errors'])){
+            return $results;
+        }
         
         $profile_image = str_replace("/", "", $results['0']['profile_image_url']);
         $profile_image = str_replace("normal", "400x400", $results['0']['profile_image_url']);

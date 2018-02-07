@@ -29,15 +29,12 @@ class UserController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $links = Link::where('user_id', $user->id)->orderBy('id', 'desc')->get();
         
-        $analyses = NULL;
-        
-        $count = 0;
-        foreach($links as $l){
-            $analyses[$count] = Analyses::find($l->analysis_id);
-            $count += 1;
-        }
+        $analyses = Link::join('analyses', 'analyses.id', '=', 'links.analysis_id')
+                    ->where('links.user_id', $user->id)
+                    ->select('analyses.id', 'analyses.name', 'analyses.created_at')
+                    ->orderBy('links.id', 'desc')
+                    ->paginate(9);
         
         return view('user')->with('analyses', $analyses);
     }
@@ -122,17 +119,23 @@ class UserController extends Controller
             if($request->hasFile('avatar')){
                 //Upload avatar
                 $avatar = $request->file('avatar');
-                $filename = time() . '.' . $avatar->getClientOriginalExtension();
-                Image::make($avatar)->resize(300, 300)->save( public_path('/uploads/avatars/' . $filename) );
+                $type = strtolower($avatar->getClientOriginalExtension());
+                if($type == 'jpeg' || $type == 'png' || $type == 'gif' || $type == 'jpg'){
+                    $filename = time() . '.' . $avatar->getClientOriginalExtension();
+                    Image::make($avatar)->resize(300, 300)->save( public_path('/uploads/avatars/' . $filename) );
 
-                //Change Avatar
-                $user = Auth::user();
-                $user->avatar = $filename;
-                $user->save();
+                    //Change Avatar
+                    $user = Auth::user();
+                    $user->avatar = $filename;
+                    $user->save();
+
+                    return redirect()->route('user.edit')->with("avatarSuccess","Avatar changed successfully!"); 
+                }else{
+                    return redirect()->route('user.edit')->with("avatarError","Unsupported file type!");
+                }
                 
-                return redirect()->route('user.edit')->with("avatarSuccess","Avatar changed successfully!");
             }else{
-                return redirect()->route('user.edit')->with("avatarError","Avatar change failed!");
+                return redirect()->route('user.edit')->with("avatarError","You must select an avatar file!");
             }
             
         }
