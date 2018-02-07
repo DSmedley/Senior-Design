@@ -60,7 +60,7 @@
         <div class="col-sm-9" style="" contenteditable="false">
             <div class="panel panel-default">
                 <div class="panel-heading">Description</div>
-                <div class="panel-body">{{ $analysis->description }}
+                <div class="panel-body">
                     @php
                         if($analysis->description != ''){
                             echo $analysis->description;
