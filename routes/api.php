@@ -18,3 +18,8 @@ Route::get('/analysis/{id}', 'AnalysesController@analyzeAPI');
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::namespace('api')->group(function () {
+    Route::post('/login', 'APIUserController@login');
+    Route::post('/details', 'APIUserController@details')->middleware('auth:api');
+});
