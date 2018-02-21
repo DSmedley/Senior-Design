@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Routing\Router;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +17,5 @@ Route::namespace('api')->group(function () {
     Route::post('/login', 'APIUserController@login');
     Route::post('/analysis', 'APIUserController@analyze');
     Route::get('/user', 'APIUserController@details')->middleware('auth:api');
+    Route::post('/register', 'APIUserController@register');
 });
