@@ -13,9 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/analysis/{id}', 'AnalysesController@analyzeAPI');
-
 Route::namespace('api')->group(function () {
     Route::post('/login', 'APIUserController@login');
+    Route::post('/analysis', 'APIUserController@analyze');
     Route::get('/user', 'APIUserController@details')->middleware('auth:api');
 });
