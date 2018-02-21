@@ -9,6 +9,7 @@ use Response;
 use App\Http\Resources\PersonalitiesResource;
 use App\Http\Controllers\AnalysesController;
 
+
     class APIUserController extends Controller{
         public function __construct(){
             $this->content = array();
@@ -27,6 +28,28 @@ use App\Http\Controllers\AnalysesController;
 
         public function details(){
             return response()->json(Auth::user());
+        }
+        
+        public function register(Request $request){
+            $this->validate($request, [
+
+				'name' => 'required',
+				'email' => 'required|email|unique:users,email',
+				'password' => 'required|string|min:6|confirmed'
+                
+		]);
+
+		$user = User::create([
+
+				'name' => request('name'),
+				'email' => request('email'),
+				'password' => bcrypt(request('password'))
+			]);
+
+                $this->content['token'] =  $user->createToken('Personality Scanner Personal Access Client')->accessToken;
+                $status = 200; 
+            
+            return response()->json($this->content, $status); 
         }
 
         public function analyze(Request $request){
