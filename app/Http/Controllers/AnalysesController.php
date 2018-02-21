@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Analyses;
 use App\Link;
-use App\Http\Resources\PersonalitiesResource;
 
 class AnalysesController extends Controller
 {
@@ -38,26 +37,20 @@ class AnalysesController extends Controller
         }
         
         if (Auth::check()){
-            //link analysis to account
-            $link = new Link;
-            $link->user_id = Auth::user()->id;
-            $link->analysis_id = $analysis->id;
-            //save link
-            $link->save();
+            $this->linkAnalysis(Auth::user()->id, $analysis->id);
         }
         
         return view('analysis')->with('analysis', $analysis);
         
     }
     
-    public function analyzeAPI($request = null){
-        $analysis = $this->getData($request);
-        
-        if(isset($analysis['errors'])){
-            return $analysis;
-        }
-        
-        return new PersonalitiesResource($analysis);   
+    public function linkAnalysis($userID = null, $analysisID = null){
+        //link analysis to account
+        $link = new Link;
+        $link->user_id = $userID;
+        $link->analysis_id = $analysisID;
+        //save link
+        $link->save();
     }
     
     public function getData($screen_name = null){

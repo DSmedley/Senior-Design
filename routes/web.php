@@ -51,9 +51,4 @@ Route::prefix('admin')->group(function(){
 
 });
 
-//API resources
-Route::prefix('api')->group(function(){
-    Route::get('/analysis/{id}', 'AnalysesController@analyzeAPI');
-});
-
 
