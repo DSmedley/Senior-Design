@@ -25,6 +25,16 @@ class Analyses extends Migration
             $table->bigInteger('following');
             $table->bigInteger('followers');
             $table->bigInteger('likes');
+            $table->integer('positive');
+            $table->integer('negative');
+            $table->integer('anger');
+            $table->integer('anticipation');
+            $table->integer('disgust');
+            $table->integer('fear');
+            $table->integer('joy');
+            $table->integer('sadness');
+            $table->integer('surprise');
+            $table->integer('trust');
             $table->timestamps();
         });
     }
