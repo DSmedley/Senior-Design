@@ -11,6 +11,8 @@
 <div class="container">
     @component('components.analyze')
     @endcomponent
+    @component('components.pythonTest')
+    @endcomponent
     <div class="row">
         <div class="col-lg-12">
             <div class="panel panel-default">

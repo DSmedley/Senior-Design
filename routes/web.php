@@ -22,7 +22,7 @@ Route::get('/analysis/{id}', 'AnalysesController@getAnalysis')->name('analysis.v
 
 Route::get('/analysis/save/{id}', 'UserController@linkAnalysis')->name('analysis.save');
 
-
+Route::post('/python', 'PythonController@python')->name('python');
 
 Route::get('/messages', 'MessagesController@getMessages')->name('messages');
 Route::post('/contact/submit', 'MessagesController@submit');
