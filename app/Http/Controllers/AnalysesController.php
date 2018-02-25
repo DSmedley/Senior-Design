@@ -79,6 +79,23 @@ class AnalysesController extends Controller
         $profile_image = str_replace("/", "", $results['0']['profile_image_url']);
         $profile_image = str_replace("normal", "400x400", $results['0']['profile_image_url']);
         
+        $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+        $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=20';
+        $requestMethod = 'GET';
+        $twitter = new TwitterController($settings);
+        $tweetResults = $twitter->setGetfield($getfield)
+                     ->buildOauth($url, $requestMethod)
+                     ->performRequest();
+        
+        $tweetResults = json_decode($tweetResults, true);
+        
+        for($x=0; $x<sizeof($tweetResults); $x++) {
+            $tweet = $tweetResults[$x]['full_text'];
+            $tweet = preg_replace("/[^ \w]+/",'',$tweet);
+            $tweets = new PythonController();
+            $tester = $tweets->python($tweet);
+        }
+        
         //create a new analysis
         $analysis = new Analyses;
         $analysis->twitter_id = $results['0']['id'];
@@ -91,6 +108,17 @@ class AnalysesController extends Controller
         $analysis->following = $results['0']['friends_count'];
         $analysis->followers = $results['0']['followers_count'];
         $analysis->likes = $results['0']['favourites_count'];
+        $analysis->positive = '1';
+        $analysis->negative = '1';
+        $analysis->anger = '1';
+        $analysis->anticipation = '1';
+        $analysis->disgust = '1';
+        $analysis->fear = '1';
+        $analysis->joy = '1';
+        $analysis->sadness = '1';
+        $analysis->surprise = '1';
+        $analysis->trust = '1';
+        
         //Save the analysis into the database
         $analysis->save();
         
