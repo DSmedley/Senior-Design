@@ -80,7 +80,7 @@ class AnalysesController extends Controller
         $profile_image = str_replace("normal", "400x400", $results['0']['profile_image_url']);
         
         $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-        $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=20';
+        $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=50';
         $requestMethod = 'GET';
         $twitter = new TwitterController($settings);
         $tweetResults = $twitter->setGetfield($getfield)
