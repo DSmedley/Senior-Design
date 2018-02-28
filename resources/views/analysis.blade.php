@@ -72,11 +72,34 @@
             </div>
             <div class="panel panel-default target">
                 <div class="panel-heading" contenteditable="false">Results</div>
-                <div class="panel-body">    
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4 align-self-center" off>
+                            <canvas id="positivity" width="50" height="50"></canvas>
+                        </div>
+                        <div class="col-md-8" off>
+                            <canvas id="emotions" width="50" height="50"></canvas>
+                        </div>
+                    </div>
+                    @php
+                        $positivity[] = array($analysis->neutral, $analysis->positive, $analysis->negative);
+                        $emotions[] = array($analysis->anger, $analysis->anticipation, $analysis->disgust, $analysis->fear, $analysis->joy, $analysis->sadness, $analysis->surprise, $analysis->trust);
+                    @endphp
                 </div> 
             </div>
         </div>
     </div>
 </div>
 @endif
+@endsection
+@section('javascript')
+    <script src="{{ asset('js/ReportCharts.js') }}"></script>
+    <script type="text/javascript">
+        @if (isset($positivity))
+            var positivity = {{ json_encode($positivity) }}
+            var emotions = {{ json_encode($emotions) }}
+            chart("positivity", positivity[0]);
+            bar("emotions", emotions[0]);
+        @endif
+	</script>
 @endsection

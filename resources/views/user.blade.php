@@ -48,7 +48,7 @@
                                     </div>
                                 </div>
                                 @php
-                                    $charts[] = array(33, 33, 34);
+                                    $charts[] = array($analysis->neutral, $analysis->positive, $analysis->negative);
                                     $count  += 1;
                                 @endphp
                                 @if($count % 3 == 0)
@@ -68,12 +68,12 @@
 </div>
 @endsection
 @section('javascript')
-    <script src="{{ asset('js/ProfileCharts.js') }}"></script>
+    <script src="{{ asset('js/ReportCharts.js') }}"></script>
     <script type="text/javascript">
         var charts = {{ json_encode($charts) }}
         
         for (var i = 0; i < charts.length; i++) {
-		  chart("Chart"+i, charts[i]);
+		  preview("Chart"+i, charts[i]);
         }
 	</script>
 @endsection

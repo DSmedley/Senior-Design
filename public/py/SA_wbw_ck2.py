@@ -1,4 +1,4 @@
-
+#!/usr/bin/python
 # coding: utf-8
 
 # In[8]:
@@ -6,12 +6,15 @@
 
 import re
 import nltk
+import sys
+import json
 from sklearn.feature_extraction.text import CountVectorizer
 
 
 # In[9]:
 
-
+with open('somefile.txt', 'a') as the_file:
+    the_file.write('Hello0000\n')
 #  FILE MANAGEMENT CELL
 
 #THE CSV DATASET THAT WILL BE ANALYZED 
@@ -22,7 +25,7 @@ TWEET_FILE_CSV = 'text_emotion_ck.csv'
 #'text_emotion_ck.csv'  #CHANGED THE NAME OF IT AFTER ALTERING IT TO FIT THE 
 #'clean_tweets2.csv'   --THE AIRLINE ONE
 
-print("NODE COMPLETE")
+#print("NODE COMPLETE")
 
 
 # In[28]:
@@ -79,8 +82,8 @@ for i, row in df.iterrows():
     sl_total_wordlist.append(word) #LETS JUST ASSUME AT LEAST ONE SENTIMENT IS NOT 0 (THOUGH THAT ISNT ALWAYS TRUE. OH WELL)
     
 
-print("SIZE OF SENTIMENT LISTS: ", len(sl_ang), len(sl_ant), len(sl_disg), len(sl_fear), len(sl_joy), len(sl_sad), len(sl_surp), len(sl_trust))
-print("TOTAL LIST LENGTH", len(sl_total_wordlist))
+#print("SIZE OF SENTIMENT LISTS: ", len(sl_ang), len(sl_ant), len(sl_disg), len(sl_fear), len(sl_joy), len(sl_sad), len(sl_surp), len(sl_trust))
+#print("TOTAL LIST LENGTH", len(sl_total_wordlist))
 
 
 
@@ -92,11 +95,15 @@ total_pv_results = {'neutral': 0, 'positive': 0, 'negative': 0}
 tweet_dict = {'sample tweet': 'sentiment'}
 tweet_pv_values = {'sample tweet': 'neutral'} #BASICALLY A DUPLICATE DICTIONARY(TABLE) BUT IT HOLDS POSITIVITY VALUE (PV) INSTEAD  --TODO- THIS COULD BE DONE BETTER
 
-
-df = pd.read_csv(TWEET_FILE_CSV)
-for i, row in df.iterrows():
-    index = df.index[i]
-    tweet, sentiment = row
+x=sys.argv[1]
+x = x.replace("'", '"') 
+data=json.loads(x)
+#df = pd.read_csv(TWEET_FILE_CSV)
+#for i, row in df.iterrows():
+for item in data:
+    tweet = item['text']
+    #index = df.index[i]
+    #tweet, sentiment = row
     tweet_dict[tweet] = 0; #STORE THE TWEET CONTENT AS THE KEY
     tweet_pv_values[tweet] = 0; #ONE FOR THIS TABLE TOO!
     #A TEMPORARY TABLE TO KEEP TRACK OF THE EMOTION OF EACH TWEET. 
@@ -105,7 +112,7 @@ for i, row in df.iterrows():
     temp_pv = 0 #PV WILL BE STORED DIFFERENTLY THAN OTHER SENTIMENTS, AS A SINGLE NUMBER (0 = NUETRAL, >1 = POSITIVE, <1= NEGATIVE)
     highest_sent = 'nada'    #THESE TWO VARIABLES WILL BE USED TO DETERMINE WHICH SENTIMENT IS IN THE LEAD
     highest_sent_value = 0
-    print(tweet)
+    #print(tweet)
     
     #TO KEEP THINGS RUNNING FAST, LETS CREATE A LIST OF WORDS FROM THE TWEET THAT WE KNOW ARE ACTUALLY IN THE SENTIMENT DICTIONARY
     #THAT WAY, WE CAN CYCLE THROUGH THAT LIST INSTEAD OF SENDING EVERY INDIVIDUAL WORD THROUGH ALL 8 TABLES
@@ -121,28 +128,28 @@ for i, row in df.iterrows():
         
         if word in sl_ang:
             temp_sentiments['anger'] += 1
-            print("   anger -", i)
+            #print("   anger -", i)
         if word in sl_ant:
             temp_sentiments['anticipation'] += 1
-            print("   anticipation -", i)
+            #print("   anticipation -", i)
         if word in sl_disg:
             temp_sentiments['disgust'] += 1
-            print("   disgust -", i)
+            #print("   disgust -", i)
         if word in sl_fear:
             temp_sentiments['fear'] += 1
-            print("   fear -", i)
+            #print("   fear -", i)
         if word in sl_joy:
             temp_sentiments['joy'] += 1
-            print("   joy -", i)
+            #print("   joy -", i)
         if word in sl_sad:
             temp_sentiments['sadness'] += 1
-            print("   sadness -", i)
+            #print("   sadness -", i)
         if word in sl_surp:
             temp_sentiments['surprise'] += 1
-            print("   surprise -", i)
+            #print("   surprise -", i)
         if word in sl_trust:
             temp_sentiments['trust'] += 1
-            print("   trust -", i)
+            #print("   trust -", i)
         #PV WILL BE STORED DIFFERENTLY THAN THE REST
         if word in sl_positive:
             temp_pv += 1
@@ -194,7 +201,7 @@ for i, row in df.iterrows():
 #     print("PV ", k, i)
     
 
-print("NODE COMPLETE")
+#print("NODE COMPLETE")
 
 
 # In[26]:
@@ -220,12 +227,10 @@ print("NODE COMPLETE")
 for k, v in total_pv_results.items():
     total_beefoo_results[k] = v
     
-import json
-json.dumps(total_beefoo_results)
-
+print(json.dumps(total_beefoo_results))
 
 # In[ ]:
 
 
-print("----INITIALIZATION COMPLETE---")
+#print("----INITIALIZATION COMPLETE---")
 

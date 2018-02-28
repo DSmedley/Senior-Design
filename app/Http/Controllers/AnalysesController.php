@@ -80,7 +80,7 @@ class AnalysesController extends Controller
         $profile_image = str_replace("normal", "400x400", $results['0']['profile_image_url']);
         
         $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-        $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=50';
+        $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=200';
         $requestMethod = 'GET';
         $twitter = new TwitterController($settings);
         $tweetResults = $twitter->setGetfield($getfield)
@@ -92,9 +92,17 @@ class AnalysesController extends Controller
         for($x=0; $x<sizeof($tweetResults); $x++) {
             $tweet = $tweetResults[$x]['full_text'];
             $tweet = preg_replace("/[^ \w]+/",'',$tweet);
-            $tweets = new PythonController();
-            $tester = $tweets->python($tweet);
+            $tweetsArray[$x]['text'] = $tweet;
         }
+
+        $time_end = microtime(true);
+        $file = $screen_name.'-'.$time_end.'.json';
+        $fp = fopen('py/temp/'.$file, 'w');
+        fwrite($fp, json_encode($tweetsArray));
+        fclose($fp);
+        
+        $tweets = new PythonController();
+        $emotions = json_decode($tweets->python($file));
         
         //create a new analysis
         $analysis = new Analyses;
@@ -108,16 +116,18 @@ class AnalysesController extends Controller
         $analysis->following = $results['0']['friends_count'];
         $analysis->followers = $results['0']['followers_count'];
         $analysis->likes = $results['0']['favourites_count'];
-        $analysis->positive = '1';
-        $analysis->negative = '1';
-        $analysis->anger = '1';
-        $analysis->anticipation = '1';
-        $analysis->disgust = '1';
-        $analysis->fear = '1';
-        $analysis->joy = '1';
-        $analysis->sadness = '1';
-        $analysis->surprise = '1';
-        $analysis->trust = '1';
+        $analysis->positive = $emotions->positive;
+        $analysis->negative = $emotions->negative;
+        $analysis->neutral = $emotions->neutral;
+        $analysis->anger = $emotions->anger;
+        $analysis->anticipation = $emotions->anticipation;
+        $analysis->disgust = $emotions->disgust;
+        $analysis->fear = $emotions->fear;
+        $analysis->joy = $emotions->joy;
+        $analysis->sadness = $emotions->sadness;
+        $analysis->surprise = $emotions->surprise;
+        $analysis->trust = $emotions->trust;
+        $analysis->none = $emotions->nada;
         
         //Save the analysis into the database
         $analysis->save();

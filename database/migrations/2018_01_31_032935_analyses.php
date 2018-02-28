@@ -27,6 +27,7 @@ class Analyses extends Migration
             $table->bigInteger('likes');
             $table->integer('positive');
             $table->integer('negative');
+            $table->integer('neutral');
             $table->integer('anger');
             $table->integer('anticipation');
             $table->integer('disgust');
@@ -35,6 +36,7 @@ class Analyses extends Migration
             $table->integer('sadness');
             $table->integer('surprise');
             $table->integer('trust');
+            $table->integer('none');
             $table->timestamps();
         });
     }
