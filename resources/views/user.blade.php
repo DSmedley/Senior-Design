@@ -10,8 +10,8 @@
             <ul class="list-group">
                 <li class="list-group-item text-muted" contenteditable="false">Profile</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Email</strong></span> {{ Auth::user()->email }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Joined</strong></span> {{ date_format(Auth::user()->created_at, 'd/m/Y H:i:s') }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Last Active</strong></span> {{ date_format(Auth::user()->updated_at, 'd/m/Y H:i:s') }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Joined</strong></span> {{ date_format(Auth::user()->created_at, 'm/d/Y') }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Last Active</strong></span> {{ date_format(Auth::user()->updated_at, 'm/d/Y') }}</li>
             </ul>
         </div>
         <!--/col-3-->
