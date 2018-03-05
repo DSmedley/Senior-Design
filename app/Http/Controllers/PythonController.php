@@ -11,8 +11,8 @@ class PythonController extends Controller
 {
     public function python($text){
 
-        $path = config('scanner.py_scripts_folder');
-        $process = new Process("C:/ProgramData/Anaconda3/python {$path}python_sentiment.py \"{$text}\"");
+        $path = config('scanner.py_path');
+        $process = new Process("{$path}python py/python_sentiment.py \"{$text}\"");
         $process->run();
         
         
