@@ -20,7 +20,7 @@
                                 {{ session('passwordSuccess') }}
                             </div>
                         @endif
-                    <form class="form-horizontal" method="POST" action="{{ route('user.edit') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('user.edit') }}" id="changePassword">
                         {{ csrf_field() }}
  
                         <div class="form-group{{ $errors->has('current-password') ? ' has-error' : '' }}">
@@ -55,7 +55,7 @@
  
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-3">
-                                <button type="submit" name="changePassword" class="btn btn-primary">
+                                <button type="button" id="changePasswordButton" class="btn btn-primary">
                                     Change Password
                                 </button>
                             </div>

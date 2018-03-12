@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use Hash;
 use Auth;
 use Image;
 use App\Link;
 use App\Analyses;
+
 
 class UserController extends Controller
 {
@@ -75,7 +77,7 @@ class UserController extends Controller
     public function updateProfile(Request $request){
         //Handle the user profile edits
             
-        if($request->has('changePassword')){
+        if($request->has('new-password')){
             //Handle user passwword change
             if (!(Hash::check($request->get('current-password'), Auth::user()->password))) {
                 // The passwords matches
@@ -96,8 +98,9 @@ class UserController extends Controller
             $user = Auth::user();
             $user->password = bcrypt($request->get('new-password'));
             $user->save();
-            
+                  
             return redirect()->route('user.edit')->with("passwordSuccess","Password changed successfully!");
+            
         }
             
         if($request->has('changeEmail')){
@@ -171,3 +174,6 @@ class UserController extends Controller
         
     }
 }
+
+
+
