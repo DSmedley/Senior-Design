@@ -121,7 +121,7 @@
                             {{ session('emailSuccess') }}
                         </div>
                     @endif
-                    <form class="form-horizontal" method="POST" action="{{ route('user.edit') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('user.edit') }}" id="changeEmail">
                         {{ csrf_field() }}
  
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -144,7 +144,7 @@
  
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-3">
-                                <button type="submit" name="changeEmail" class="btn btn-primary">
+                                <button type="button" id="changeEmailButton" class="btn btn-primary">
                                     Change Email
                                 </button>
                             </div>

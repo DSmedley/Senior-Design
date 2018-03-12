@@ -103,7 +103,7 @@ class UserController extends Controller
             
         }
             
-        if($request->has('changeEmail')){
+        if($request->has('email')){
             //Handle user email change
             $validatedData = $request->validate([
                 'email' => 'required|email|max:255|unique:users|confirmed',
