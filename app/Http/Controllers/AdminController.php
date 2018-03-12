@@ -80,7 +80,7 @@ class AdminController extends Controller
     public function updateUser(Request $request, $id = null){
         //Handle the user profile edits
             
-        if($request->has('changePassword')){
+        if($request->has('new-password')){
             //Handle user passwword change
 
             $validatedData = $request->validate([
@@ -93,7 +93,7 @@ class AdminController extends Controller
             return redirect()->route('admin.user.edit', array('id' => $id))->with("passwordSuccess","Password changed successfully!");
         }
             
-        if($request->has('changeEmail')){
+        if($request->has('email')){
             //Handle user email change
             $validatedData = $request->validate([
                 'email' => 'required|email|max:255|unique:users|confirmed',

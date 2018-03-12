@@ -23,8 +23,6 @@ swal({
 });
 });
 
-
-
 //SweetAlerts - Change User Email
 $(document).on('click', '[id^=changeEmailButton]', function (e) {
   e.preventDefault();
@@ -49,3 +47,29 @@ swal({
   }
 });
 });
+
+
+/*//SweetAlerts - Ban User
+$(document).on('click', '[id^=banUserButton]', function (e) {
+  e.preventDefault();
+  var data = $(this).serialize();
+swal({
+  title: "Are you sure?",
+  text: "Do you want to Ban User?",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+      swal("Poof! User has been Banned!", {
+      //icon: "success",
+    });
+      $('#changeEmail').submit();
+      
+  
+  } else {
+    swal("User is not Banned.");
+  }
+});
+});*/

@@ -231,3 +231,6 @@
     </div>
 </div>
 @endsection
+@section('javascript')
+    <script src="{{ asset('js/alerts.js')}}"></script>
+@endsection
