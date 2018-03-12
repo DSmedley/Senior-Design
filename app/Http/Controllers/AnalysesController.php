@@ -25,6 +25,39 @@ class AnalysesController extends Controller
         return view('analysis')->with('analysis', $analysis);
     }
     
+    public function compare($first = null, $second = null, $third = null, $fourth = null)
+    {
+        //Get data from specified analysis
+        //Else return error
+        $analysis1 = null;
+        $analysis2 = null;
+        $analysis3 = null;
+        $analysis4 = null;
+        
+        if ($first){
+            $analysis1 = Analyses::where('id', $first)->first();
+        }
+        if ($second){
+            $analysis2 = Analyses::where('id', $second)->first();
+        }
+        if ($third){
+            $analysis3 = Analyses::where('id', $third)->first();
+        }
+        if ($fourth){
+            $analysis4 = Analyses::where('id', $fourth)->first();
+        }
+
+        $data = array(
+           'first'   => $analysis1,
+           'second'  => $analysis2,
+           'third'   => $analysis3,
+           'fourth'  => $analysis4,
+        );
+        
+        //Return to analysis page
+        return view('compare')->with($data);
+    }
+    
     public function analyze(Request $request){
         $this->validate($request, [
             'name' => 'required'
