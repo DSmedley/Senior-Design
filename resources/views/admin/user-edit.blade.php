@@ -269,7 +269,7 @@
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-3">
                                 @if($user->is_admin)
-                                <button type="submit" name="removeAdmin" class="btn btn-primary">
+                                <button type="submit" id="removeAdminButton" name="removeAdmin" class="btn btn-primary">
                                     Remove Admin
                                 </button>
                                 @else

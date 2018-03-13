@@ -48,28 +48,64 @@ swal({
 });
 });
 
-
-/*//SweetAlerts - Ban User
-$(document).on('click', '[id^=banUserButton]', function (e) {
+//SweetAlerts - Ban User
+$("#banUserButton").click( function (e) {
   e.preventDefault();
   var data = $(this).serialize();
+  var link= $(this).closest("a").attr("href");
 swal({
   title: "Are you sure?",
   text: "Do you want to Ban User?",
   icon: "warning",
   buttons: true,
   dangerMode: true,
-})
+}) 
 .then((willDelete) => {
-  if (willDelete) {
+    if (willDelete) {
       swal("Poof! User has been Banned!", {
       //icon: "success",
     });
-      $('#changeEmail').submit();
+      $.ajax({
+            url: link,
+            type: "get",
+            success: function(result){window.location.reload()}
+         });
       
   
   } else {
     swal("User is not Banned.");
   }
 });
-});*/
+});
+
+
+//SweetAlerts - Unban User
+$("#unbanUserButton").click( function (e) {
+  e.preventDefault();
+  var data = $(this).serialize();
+  var link= $(this).closest("a").attr("href");
+swal({
+  title: "Are you sure?",
+  text: "Do you want to Unban User?",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+}) 
+.then((willDelete) => {
+    if (willDelete) {
+      swal("Poof! User has been Unbanned!", {
+      //icon: "success",
+    });
+      $.ajax({
+            url: link,
+            type: "get",
+            success: function(result){window.location.reload()}
+         });
+      
+  
+  } else {
+    swal("User is still Banned.");
+  }
+});
+});
+
