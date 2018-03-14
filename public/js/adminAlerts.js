@@ -49,7 +49,7 @@ swal({
 });
 
 //SweetAlerts - Ban User
-$("#banUserButton").click( function (e) {
+$(document).on('click', '[id^=banUserButton]', function (e) {
   e.preventDefault();
   var data = $(this).serialize();
   var link= $(this).closest("a").attr("href");
@@ -80,7 +80,7 @@ swal({
 
 
 //SweetAlerts - Unban User
-$("#unbanUserButton").click( function (e) {
+$(document).on('click', '[id^=unbanUserButton]', function (e) {
   e.preventDefault();
   var data = $(this).serialize();
   var link= $(this).closest("a").attr("href");
