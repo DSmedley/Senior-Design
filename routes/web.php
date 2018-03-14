@@ -19,7 +19,9 @@ Route::get('/analyze', 'AnalysesController@index')->name('analyze');
 Route::post('/analyze', 'AnalysesController@analyze')->name('analysis');
 Route::post('/analysis/{id}', 'AnalysesController@analyze')->name('analysis');
 Route::get('/analysis/{id}', 'AnalysesController@getAnalysis')->name('analysis.view');
+Route::get('/analysis/cashtag/{id}', 'AnalysesController@getAnalysisCashtag')->name('analysis.view.cashtag');
 Route::get('/analysis/save/{id}', 'UserController@linkAnalysis')->name('analysis.save');
+Route::get('/analysis/cashtag/save/{id}', 'UserController@linkAnalysisCashtag')->name('analysis.save.cashtag');
 Route::get('/compare/{first}/{second}/{third?}/{fourth?}', 'AnalysesController@compare')->name('compare.view');
 
 Route::get('/messages', 'MessagesController@getMessages')->name('messages');

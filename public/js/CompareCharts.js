@@ -10,6 +10,7 @@ function positive(name, names, data) {
             data: [data[i], data[i+1], data[i+2]]
         });
     }
+    console.log(dataset);
         var myChart = new Chart(document.getElementById(name), {
         type: 'bar',
         data: {
