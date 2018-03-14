@@ -59,8 +59,7 @@ use App\Http\Controllers\AnalysesController;
 
             if(isset($result['errors'])){
                 $this->content['error'] = $result['errors'][0]['message'];
-                $this->content['status'] = intval($result['errors'][0]['code']);
-                return response()->json($this->content, 404);  
+                return response()->json($this->content, 422);  
             }
             
             $report = new PersonalitiesResource($result); 
