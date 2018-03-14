@@ -11,15 +11,35 @@
 <div class="container">
     @component('components.analyze')
     @endcomponent
-<!--    <div class="row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">Welcome</div>
-                <div class="panel-body">
-                    
-                </div>
+</div>
+    
+<div class="container">    
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                @if(isset($recents))
+                    @foreach($recents as $recent)
+                        <div class="col-sm-4 col-md-2">
+                            <a href="{{ route('analysis.view', array('id' => $recent->id)) }}" class="portfolio-box">
+                                <img src="{{ $recent->profile_image }}" class="img-responsive" alt="">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            {{"@".$recent->screen_name}}
+                                        </div>
+                                        <div class="project-name">
+                                            {{$recent->name}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                @else
+                    There are no recent analyses!
+                @endif
             </div>
         </div>
-    </div>-->
+    </section>
 </div>
 @endsection
