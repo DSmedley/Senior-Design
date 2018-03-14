@@ -30,7 +30,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ route('welcome') }}">
-                        <span><img title="{{ config('app.name', 'Laravel') }}" style="width:32px; height:32px;" src='/scanner.png'></span>
+                        <span><img title="{{ config('app.name', 'Laravel') }}" style="width:32px; height:32px;" src='/scanner.gif'></span>
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>

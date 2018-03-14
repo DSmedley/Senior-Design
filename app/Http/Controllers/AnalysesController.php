@@ -88,7 +88,7 @@ class AnalysesController extends Controller
 
             return view('analysis')->with('analysis', $analysis);
         }else if($request->get('cashtag') != null){
-            $analysis = $this->getCashtagData($request->get('cashtag'));
+            /*$analysis = $this->getCashtagData($request->get('cashtag'));
         
             if(isset($analysis['errors'])){
                 return redirect()->route('analyze')->with('twitterError', $analysis['errors']['0']['message']);
@@ -98,7 +98,8 @@ class AnalysesController extends Controller
                 $this->linkAnalysis(Auth::user()->id, $analysis->id);
             }
             
-            return view('cashtag')->with('analysis', $analysis);
+            return view('cashtag')->with('analysis', $analysis);*/
+            return view('cashtag');
         }
         
         
@@ -136,7 +137,7 @@ class AnalysesController extends Controller
         }
 
         $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-        $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=50';
+        $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=200';
         $requestMethod = 'GET';
         $twitter = new TwitterController($settings);
         $tweetResults = $twitter->setGetfield($getfield)

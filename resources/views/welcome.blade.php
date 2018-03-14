@@ -11,16 +11,15 @@
 <div class="container">
     @component('components.analyze')
     @endcomponent
-    <div class="row">
+<!--    <div class="row">
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">Welcome</div>
                 <div class="panel-body">
-                    @component('components.who')
-                    @endcomponent
+                    
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 </div>
 @endsection

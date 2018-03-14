@@ -4,7 +4,7 @@
 # In[2]:
 
 
-get_ipython().system('/usr/bin/python ')
+#get_ipython().system('/usr/bin/python ')
 
 #THIS IS THE MAIN, AND FINAL, CALCULATOR TO TOTAL UP ALL SENTIMENTS AND RETURN THE FINAL RESULTS
 

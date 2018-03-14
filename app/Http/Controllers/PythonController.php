@@ -12,7 +12,7 @@ class PythonController extends Controller
     public function python($text){
 
         $path = config('scanner.py_path');
-        $process = new Process("{$path}python py/python_sentiment.py \"{$text}\"");
+        $process = new Process("{$path}python py/sentiment_calculator_ck.py \"{$text}\"");
         $process->run();
         
         
