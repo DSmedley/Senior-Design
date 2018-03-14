@@ -35,9 +35,9 @@
                             <td>
                                 <a href="{{ route('admin.user.edit', array('id' => $user->id)) }}"> <button type="button" class="btn btn-danger"><i class="fas fa-pencil-alt"></i> Edit</button></a>
                                 @if($user->blocked)
-                                    <a href="{{ route('admin.user.unban', array('id' => $user->id)) }}"> <button type="button" class="btn btn-success"><i class="fas fa-unlock"></i> Unban</button></a>
+                                    <a href="{{ route('admin.user.unban', array('id' => $user->id)) }}"> <button type="button" id="unbanUserButton" class="btn btn-success"><i class="fas fa-unlock"></i> Unban</button></a>
                                 @else
-                                    <a href="{{ route('admin.user.ban', array('id' => $user->id)) }}"> <button type="button" class="btn btn-danger"><i class="fas fa-lock"></i> Ban</button></a>
+                                    <a href="{{ route('admin.user.ban', array('id' => $user->id)) }}"> <button type="button" id="banUserButton" class="btn btn-danger"><i class="fas fa-lock"></i> Ban</button></a>
                                 @endif
                             </td>
                         </tr>
@@ -48,4 +48,7 @@
     </div>
 </div>
 
+@endsection
+@section('javascript')
+    <script src="{{ asset('js/adminAlerts.js')}}"></script>
 @endsection

@@ -16,7 +16,7 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="wrapper">
+    <div id="app">
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="adjust-nav">
                 <div class="navbar-header">
@@ -61,5 +61,8 @@
             </div>
         </div>
     </div>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/sweetalert.js') }}"></script>
+    @yield('javascript')
 </body>
 </html>

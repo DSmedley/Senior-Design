@@ -136,7 +136,7 @@ class AnalysesController extends Controller
         }
 
         $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-        $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=200';
+        $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=50';
         $requestMethod = 'GET';
         $twitter = new TwitterController($settings);
         $tweetResults = $twitter->setGetfield($getfield)
