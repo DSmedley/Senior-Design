@@ -1,20 +1,101 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="jumbotron text-center">
-    <div class="container">
-        <h1>Personality Scanner</h1>
-        <p class="lead">Welcome to Personality Scanner where you can deteremine anyones personality based on their twitter account!</p>
+<div class="intro-header">
+    <div class="intro-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>{{ config('app.name', 'Laravel') }}</h1>
+                        <h3>Twitter Analytics</h3>
+                        <hr class="intro-divider">
+                        <form class="form-horizontal" method="POST" action="{{ route('analyze') }}">
+                            {{ csrf_field() }}
+                            <div class="row">
+                                <div class="col-sm-5 col-sm-offset-3">
+                                    <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                                        <div class="input-group">
+                                            <span class="input-group-addon" id="sizing-addon2">@</span>
+                                            <input id="name" name="name" type="text" class="form-control" placeholder="Enter Twitter Screen Name" aria-describedby="sizing-addon2">
+                                        </div>
+
+                                        @if ($errors->has('name'))
+                                            <span class="help-block">
+                                                <strong>{{ $errors->first('name') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="col-sm-1">
+                                    <div class="form-group">
+                                        <button type="submit" name="analyze" class="btn btn-default">
+                                            Analyze
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-<div class="container">
-    @component('components.analyze')
-    @endcomponent
-</div>
     
-<div class="container">    
+<div class="container"> 
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">What we do</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fas fa-info fa-4x text-primary sr-icons"></i>
+                        <h3>Information</h3>
+                        <p class="text-muted">The info section shows the publicly available information about a requested Twitter profile. We'll also show you the user's join date and timezone among other things.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fas fa-chart-bar fa-4x text-primary sr-icons"></i>
+                        <h3>Statistics</h3>
+                        <p class="text-muted">These are the numbers. Followers, friends, lists and most importantly the followers to following ratio - something you should definitely watch out for before following anybody.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fas fa-comments fa-4x text-primary sr-icons"></i>
+                        <h3>Topics</h3>
+                        <p class="text-muted">This section is divided into three sub-sections - topics, hashtags and mentions. Each one is based on the user's latest tweets. Hover your mouse over the items to see their usage.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fas fa-retweet fa-4x text-primary sr-icons"></i>
+                        <h3>Inside Tweets</h3>
+                        <p class="text-muted">We take you through the user's latest tweets and their contents in an easy to understand and short table. Tweets, retweets, tags, replies, mentions, links, media and more. A great way to spot spammers and automated accounts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section class="no-padding" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Recently Analyzed</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 @if(isset($recents))
@@ -42,4 +123,25 @@
         </div>
     </section>
 </div>
+
+<div class="banner">
+    <div class="intro-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Contribute to {{ config('app.name', 'Laravel') }}</h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://github.com/DSmedley/Senior-Design" class="btn btn-default btn-lg"><i class="fab fa-github-square"></i> <span class="network-name">Github</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+</div>
+<!-- /.banner -->
 @endsection

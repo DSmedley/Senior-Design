@@ -14,6 +14,30 @@ use App\Http\Controllers\AnalysesController;
         public function __construct(){
             $this->content = array();
         }
+        
+        public function logoutApi(Request $request){ 
+            if ($request->has('Authorization') || $request->header('Authorization') ) {
+                $user = Auth::guard('api')->user();
+                $user->token()->revoke();
+
+                $json = [
+                    'success' => true,
+                    'code' => 200,
+                    'message' => 'You are Logged out.',
+                ];
+                return response()->json($json, '200');
+            }else{
+                $json = [
+                    'success' => false,
+                    'code' => 422,
+                    'message' => 'Error.',
+                ];
+                return response()->json($json, '422');
+            }
+            
+            
+        }
+        
         public function login(){
             if(Auth::attempt(['email' => request('email'), 'password' => request('password')])){
                 $user = Auth::user();

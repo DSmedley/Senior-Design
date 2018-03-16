@@ -18,4 +18,5 @@ Route::namespace('api')->group(function () {
     Route::post('/analysis', 'APIUserController@analyze');
     Route::get('/user', 'APIUserController@details')->middleware('auth:api');
     Route::post('/register', 'APIUserController@register');
+     Route::post('/logout','APIUserController@logoutApi');
 });

@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Analyses;
 use App\Link;
+use App\Hashtag;
+use App\Mention;
+use App\Hour;
+use DateTime;
 
 class AnalysesController extends Controller
 {
@@ -20,9 +24,20 @@ class AnalysesController extends Controller
         if ($id){
             $analysis = Analyses::where('id', $id)->first();
         }
+        
+        $mentions = Mention::where('analysis_id', $analysis->id)->get();
+        $hashtags = Hashtag::where('analysis_id', $analysis->id)->get();
+        $hours = Hour::where('analysis_id', $analysis->id)->orderBy('hour')->get();
+
+        $data = array(
+           'analysis'   => $analysis,
+           'mentions'   => $mentions,
+           'hashtags'   => $hashtags,
+           'hours'      => $hours,
+        );
 
         //Return to analysis page
-        return view('analysis')->with('analysis', $analysis);
+        return view('analysis')->with($data);
     }
     
     public function getAnalysisCashtag($id = null)
@@ -85,8 +100,19 @@ class AnalysesController extends Controller
             if (Auth::check()){
                 $this->linkAnalysis(Auth::user()->id, $analysis->id);
             }
+            
+            $mentions = Mention::where('analysis_id', $analysis->id)->get();
+            $hashtags = Hashtag::where('analysis_id', $analysis->id)->get();
+            $hours = Hour::where('analysis_id', $analysis->id)->get();
+            
+            $data = array(
+               'analysis'   => $analysis,
+               'mentions'   => $mentions,
+               'hashtags'   => $hashtags,
+               'hours'      => $hours,
+            );
 
-            return view('analysis')->with('analysis', $analysis);
+            return view('analysis')->with($data);
         }else if($request->get('cashtag') != null){
             /*$analysis = $this->getCashtagData($request->get('cashtag'));
         
@@ -203,7 +229,9 @@ class AnalysesController extends Controller
             'consumer_key' => "4OvrblQjDT4rHklRfrDJURQsH",
             'consumer_secret' => "XtGT33U06TvJ4l4VdHYRb4BINo9P3ebc6XsJsgcxNJWEZtCFJk"
         );
-
+        
+        
+        /**GET USER DETAILS**/
         $url = 'https://api.twitter.com/1.1/users/lookup.json';
         $getfield = '?screen_name='.$screen_name;
         $requestMethod = 'GET';
@@ -218,11 +246,13 @@ class AnalysesController extends Controller
             return $results;
         }
         
+        /**CHECK IF USER ACCOUNT IS PRIVATE**/
         if(!$results['0']['protected']){
 
             $profile_image = str_replace("/", "", $results['0']['profile_image_url']);
             $profile_image = str_replace("normal", "400x400", $results['0']['profile_image_url']);
-
+            
+            /**GET USER TWEETS**/
             $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
             $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=200';
             $requestMethod = 'GET';
@@ -232,12 +262,40 @@ class AnalysesController extends Controller
                          ->performRequest();
 
             $tweetResults = json_decode($tweetResults, true);
+            
+            $mentionCount = array();
+            $hashtagCount = array();
+            $timeCount = array();
 
             for($x=0; $x<sizeof($tweetResults); $x++) {
                 $tweet = $tweetResults[$x]['full_text'];
                 $tweet = preg_replace("/[^ \w]+/",'',$tweet);
                 $tweetsArray[$x]['text'] = $tweet;
+                
+                /**GET MOST USED HASHTAGS AND MENTIONS**/
+                $entities = $tweetResults[$x]['entities']['user_mentions'];
+                for($y=0; $y<sizeof($entities); $y++) {
+                    $mentions = $entities[$y]['screen_name'];
+                    array_push($mentionCount, $mentions);
+                }
+                $hashtags = $tweetResults[$x]['entities']['hashtags'];
+                for($y=0; $y<sizeof($hashtags); $y++) {
+                    $hashtag = $hashtags[$y]['text'];
+                    array_push($hashtagCount, $hashtag);
+                }
+                
+                $format = 'D M j G:i:s T Y';
+                $time = DateTime::createFromFormat($format, $tweetResults[$x]['created_at']);
+                array_push($timeCount, $time->format('H'));
             }
+            
+            $mentionResult = array_count_values($mentionCount);
+            arsort($mentionResult);
+            
+            $hashtagResult = array_count_values($hashtagCount);
+            arsort($hashtagResult);
+            
+            $timeResult = array_count_values($timeCount);
 
             $time_end = microtime(true);
             $file = $screen_name.'-'.$time_end.'.json';
@@ -275,6 +333,55 @@ class AnalysesController extends Controller
 
             //Save the analysis into the database
             $analysis->save();
+            
+            $limit = 1;
+            foreach($mentionResult as $word => $count){
+                $url = 'https://api.twitter.com/1.1/users/lookup.json';
+                $getfield = '?screen_name='.$word;
+                $requestMethod = 'GET';
+                $twitter = new TwitterController($settings);
+                $mentionsImage = $twitter->setGetfield($getfield)
+                             ->buildOauth($url, $requestMethod)
+                             ->performRequest(); 
+                $mentionsImage = json_decode($mentionsImage, true);
+                if(!isset($mentionsImage['errors'])){
+                    $profile_image = str_replace("/", "", $mentionsImage['0']['profile_image_url']);
+                    $profile_image = str_replace("normal", "400x400", $mentionsImage['0']['profile_image_url']);
+
+                    //create a new mention
+                    $mentionTable = new Mention;
+                    $mentionTable->analysis_id = $analysis->id;
+                    $mentionTable->screen_name = $word;
+                    $mentionTable->occurs = $count;
+                    $mentionTable->profile_image = $profile_image;
+
+                    //Save the mention into the database
+                    $mentionTable->save();
+                    if ($limit++ == 18) break;
+                }
+            }
+
+            foreach($hashtagResult as $word => $count){
+                //create a new hashtag
+                $hashtagTable = new Hashtag;
+                $hashtagTable->analysis_id = $analysis->id;
+                $hashtagTable->hashtag = $word;
+                $hashtagTable->occurs = $count;
+
+                //Save the hashtag into the database
+                $hashtagTable->save();
+            }
+            
+            foreach($timeResult as $number => $count){
+                //create a new hashtag
+                $timeTable = new Hour;
+                $timeTable->analysis_id = $analysis->id;
+                $timeTable->hour = $number;
+                $timeTable->occurs = $count;
+
+                //Save the hashtag into the database
+                $timeTable->save();
+            }
 
             //return twitter user details
             $result = Analyses::where('id', '=', $analysis->id)->first();

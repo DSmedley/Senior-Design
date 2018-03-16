@@ -1,6 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="banner">
+    <div class="intro-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Analysis</h2>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+</div>
+<!-- /.banner -->
+<br/>
 <div class="container">
     @if (session('error'))
         <div class="alert alert-danger">
@@ -82,13 +96,68 @@
                         </div>
                     </div>
                     @php
-                        $positivity[] = array($analysis->neutral, $analysis->positive, $analysis->negative);
-                        $emotions[] = array($analysis->anger, $analysis->anticipation, $analysis->disgust, $analysis->fear, $analysis->joy, $analysis->sadness, $analysis->surprise, $analysis->trust);
+                        $positivity = array($analysis->neutral, $analysis->positive, $analysis->negative);
+                        $emotions = array($analysis->anger, $analysis->anticipation, $analysis->disgust, $analysis->fear, $analysis->joy, $analysis->sadness, $analysis->surprise, $analysis->trust);
                     @endphp
                 </div> 
             </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Topics</div>
+                <div class="panel-body">
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Most used Hashtags</div>
+                <div class="panel-body">
+                    @if(isset($hashtags))
+                        @foreach($hashtags as $hashtag)
+                            <a href="http://twitter.com/#!/search/%23{{$hashtag->hashtag}}" target="_blank">{{ '#'.$hashtag->hashtag.' ' }}</a>
+                        @endforeach
+                    @endif
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Twitter User Mentions</div>
+                <div class="panel-body">
+                    <div class="container-fluid">
+                        <div class="row no-gutter popup-gallery">
+                            @if(isset($mentions))
+                                @foreach($mentions as $mention)
+                                    <div class="col-sm-4 col-md-2">
+                                        <a href="{{ route('analysis', array('id' => $mention->screen_name)) }}" class="portfolio-box">
+                                            <img src="{{ $mention->profile_image }}" class="img-responsive" alt="">
+                                            <div class="portfolio-box-caption">
+                                                <div class="portfolio-box-caption-content">
+                                                    <div class="project-category text-faded">
+                                                        {{"@".$mention->screen_name}}
+                                                    </div>
+                                                    <div class="project-name">
+                                                        {{$mention->occurs}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                @endforeach
+                            @else
+                                {{ $analysis->name }} did not mention anyone!
+                            @endif
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Active Hours</div>
+                <div class="panel-body">
+                    @if(isset($hours))
+                        @foreach($hours as $hour)
+                            Hour: {{ $hour->hour }} Count: {{ $hour->occurs }} <br/>
+                        @endforeach
+                    @endif
+                </div>
+            </div>
         </div>
-    </div>
+    </div>  
 </div>
 @endif
 @endsection
@@ -98,8 +167,8 @@
         @if (isset($positivity))
             var positivity = {{ json_encode($positivity) }}
             var emotions = {{ json_encode($emotions) }}
-            chart("positivity", positivity[0]);
-            bar("emotions", emotions[0]);
+            chart("positivity", positivity);
+            bar("emotions", emotions);
         @endif
 	</script>
 @endsection

@@ -1,6 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="banner">
+    <div class="intro-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Edit Profile</h2>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+</div>
+<!-- /.banner -->
+<br/>
 <div class="container target">
     @component('components.userHeader')
     @endcomponent

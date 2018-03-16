@@ -17,12 +17,12 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-default navbar-fixed-top topnav">
             <div class="container">
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed navbar-fixed-top" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
                         <span class="sr-only">Toggle Navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -45,12 +45,12 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
-                        <li class="{{Request::is('/') ? 'active' : ''}}"><a href="{{ route('welcome') }}">Home</a></li>
-                        <li class="{{Request::is('analyze') ? 'active' : ''}}"><a href="{{ route('analyze') }}">Analyze</a></li>
-                        <li class="{{Request::is('about') ? 'active' : ''}}"><a href="{{ route('about') }}">About</a></li>
+                        <li class="{{Request::is('/') ? 'active' : ''}}"><a href="{{ route('welcome') }}"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="{{Request::is('analyze') ? 'active' : ''}}"><a href="{{ route('analyze') }}"><i class="fas fa-chart-pie"></i> Analyze</a></li>
+                        <li class="{{Request::is('about') ? 'active' : ''}}"><a href="{{ route('about') }}"><i class="fas fa-info"></i> About</a></li>
                         @guest
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
+                            <li><a href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                            <li><a href="{{ route('register') }}"><i class="fas fa-user-plus"></i> Register</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
@@ -89,6 +89,30 @@
         </nav>
 
         @yield('content')
+        
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="{{ route('welcome') }}">Home</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="{{ route('about') }}">About</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="{{ route('admin.login') }}">Admin</a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted small">Copyright &copy; Personality Scanner 2018. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!-- Scripts -->
