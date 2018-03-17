@@ -20,6 +20,10 @@ class Analyses extends Migration
             $table->string('screen_name');
             $table->string('location');
             $table->string('profile_image');
+            $table->boolean('verified');
+            $table->string('joined');
+            $table->string('time_zone');
+            $table->string('url');
             $table->mediumText('description');
             $table->bigInteger('tweets');
             $table->bigInteger('following');

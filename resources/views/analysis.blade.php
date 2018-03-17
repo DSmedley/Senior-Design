@@ -37,7 +37,12 @@
 <div class="container target">
     <div class="row">
         <div class="col-sm-10">
-            <h1>{{ $analysis->name }}</h1>
+            <h1>
+                {{ $analysis->name }}
+                @if($analysis->verified)
+                    <i class="fas fa-check-circle"></i>
+                @endif
+            </h1>
             <h3>{{ "@".$analysis->screen_name }}</h3>
             @guest
                 <a href="{{ route('analysis.save', array('id' => $analysis->id)) }}"><button type="button" class="btn btn-success"><i class="fas fa-save"> Login to save</i></button></a>
@@ -68,6 +73,9 @@
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $analysis->following }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $analysis->followers }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $analysis->likes }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> {{ $analysis->joined }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span> {{ $analysis->time_zone }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">URL</strong></span> {{ $analysis->url }}</li>
             </ul>
         </div>
         <!--/col-3-->
@@ -111,8 +119,10 @@
                 <div class="panel-body">
                     @if(isset($hashtags))
                         @foreach($hashtags as $hashtag)
-                            <a href="http://twitter.com/#!/search/%23{{$hashtag->hashtag}}" target="_blank">{{ '#'.$hashtag->hashtag.' ' }}</a>
+                            <a href="http://twitter.com/#!/search/%23{{$hashtag->hashtag}}" target="_blank" data-toggle="tooltip" title="Used {{$hashtag->occurs}} times">{{ '#'.$hashtag->hashtag.' ' }}</a>
                         @endforeach
+                    @else
+                        {{ $analysis->name }} did not use any hashtags!
                     @endif
                 </div>
             </div>
@@ -149,11 +159,19 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Active Hours</div>
                 <div class="panel-body">
+                    @php
+                        $time = array();
+                        $occurs = array();
+                    @endphp
                     @if(isset($hours))
                         @foreach($hours as $hour)
-                            Hour: {{ $hour->hour }} Count: {{ $hour->occurs }} <br/>
+                            @php
+                                array_push($time, $hour->hour);
+                                array_push($occurs, $hour->occurs);
+                            @endphp
                         @endforeach
                     @endif
+                    <canvas id="active" width="50" height="50"></canvas>
                 </div>
             </div>
         </div>
@@ -162,13 +180,21 @@
 @endif
 @endsection
 @section('javascript')
+    <script type="text/javascript">    
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     <script src="{{ asset('js/ReportCharts.js') }}"></script>
     <script type="text/javascript">
         @if (isset($positivity))
             var positivity = {{ json_encode($positivity) }}
             var emotions = {{ json_encode($emotions) }}
+            var time = {{ json_encode($time) }}
+            var occurs = {{ json_encode($occurs) }}
             chart("positivity", positivity);
             bar("emotions", emotions);
+            activeHours("active", time, occurs);
         @endif
 	</script>
 @endsection

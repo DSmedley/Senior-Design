@@ -27,7 +27,7 @@ class AnalysesController extends Controller
         
         $mentions = Mention::where('analysis_id', $analysis->id)->get();
         $hashtags = Hashtag::where('analysis_id', $analysis->id)->get();
-        $hours = Hour::where('analysis_id', $analysis->id)->orderBy('hour')->get();
+        $hours = Hour::select('hour', 'occurs')->where('analysis_id', $analysis->id)->orderBy('hour')->get();
 
         $data = array(
            'analysis'   => $analysis,
@@ -103,7 +103,7 @@ class AnalysesController extends Controller
             
             $mentions = Mention::where('analysis_id', $analysis->id)->get();
             $hashtags = Hashtag::where('analysis_id', $analysis->id)->get();
-            $hours = Hour::where('analysis_id', $analysis->id)->get();
+            $hours = Hour::select('hour', 'occurs')->where('analysis_id', $analysis->id)->orderBy('hour')->get();
             
             $data = array(
                'analysis'   => $analysis,
@@ -194,6 +194,10 @@ class AnalysesController extends Controller
         $analysis->screen_name = $results['0']['screen_name'];
         $analysis->location = $results['0']['location'];
         $analysis->profile_image = $profile_image;
+        $analysis->verified = $results['0']['verified'];
+        $analysis->joined = $results['0']['created_at'];
+        $analysis->time_zone = $results['0']['time_zone'];
+        $analysis->url = $results['0']['url'];
         $analysis->description = $results['0']['description'];
         $analysis->tweets = $results['0']['statuses_count'];
         $analysis->following = $results['0']['friends_count'];
@@ -313,6 +317,10 @@ class AnalysesController extends Controller
             $analysis->screen_name = $results['0']['screen_name'];
             $analysis->location = $results['0']['location'];
             $analysis->profile_image = $profile_image;
+            $analysis->verified = $results['0']['verified'];
+            $analysis->joined = $results['0']['created_at'];
+            $analysis->time_zone = $results['0']['time_zone'];
+            $analysis->url = $results['0']['url'];
             $analysis->description = $results['0']['description'];
             $analysis->tweets = $results['0']['statuses_count'];
             $analysis->following = $results['0']['friends_count'];

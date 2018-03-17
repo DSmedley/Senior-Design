@@ -11,7 +11,7 @@ class PagesController extends Controller
     public function getHome(){
         $recents = Analyses::select()
                 ->groupby('screen_name')
-                ->orderby('created_at')
+                ->orderby('created_at','desc')
                 ->limit('18')
                 ->get();
         
