@@ -40,7 +40,7 @@
             <h1>
                 {{ $analysis->name }}
                 @if($analysis->verified)
-                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-check-circle verified"></i>
                 @endif
             </h1>
             <h3>{{ "@".$analysis->screen_name }}</h3>
@@ -75,7 +75,7 @@
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $analysis->likes }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> {{ $analysis->joined }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span> {{ $analysis->time_zone }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">URL</strong></span> {{ $analysis->url }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">URL</strong></span><a href="{{ $analysis->url }}" target="_blank">{{ $analysis->url }}</a></li>
             </ul>
         </div>
         <!--/col-3-->
@@ -110,8 +110,26 @@
                 </div> 
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">Topics</div>
+                <div class="panel-heading">How They Tweet</div>
                 <div class="panel-body">
+                    Replies	- {{ $analysis->replies }} / {{ $analysis->total }} <br />
+                    Tweets with @mentions - {{ $analysis->mentions }} / {{ $analysis->total }} <br />
+                    Tweets with #hashtags - {{ $analysis->hashtags }} / {{ $analysis->total }} <br />
+                    Retweets - {{ $analysis->retweets }} / {{ $analysis->total }} <br />
+                    Tweets with links - {{ $analysis->links }} / {{ $analysis->total }} <br />
+                    Tweets with media - {{ $analysis->media }} / {{ $analysis->total }} <br />
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">URLs Linked</div>
+                <div class="panel-body">
+                    @if(isset($urls))
+                        @foreach($urls as $url)
+                            <a href="{{$url->url}}" target="_blank" data-toggle="tooltip" title="Used {{$url->occurs}} times">{{ ' '.$url->url.' ' }}</a>
+                        @endforeach
+                    @else
+                        {{ $analysis->name }} did not link any URLs!
+                    @endif
                 </div>
             </div>
             <div class="panel panel-default">

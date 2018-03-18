@@ -9,6 +9,7 @@ use App\Link;
 use App\Hashtag;
 use App\Mention;
 use App\Hour;
+use App\Url;
 use DateTime;
 
 class AnalysesController extends Controller
@@ -25,16 +26,22 @@ class AnalysesController extends Controller
             $analysis = Analyses::where('id', $id)->first();
         }
         
-        $mentions = Mention::where('analysis_id', $analysis->id)->get();
-        $hashtags = Hashtag::where('analysis_id', $analysis->id)->get();
-        $hours = Hour::select('hour', 'occurs')->where('analysis_id', $analysis->id)->orderBy('hour')->get();
+        $data = null;
+        
+        if(isset($analysis->id)){
+            $mentions = Mention::where('analysis_id', $analysis->id)->get();
+            $hashtags = Hashtag::where('analysis_id', $analysis->id)->get();
+            $hours = Hour::select('hour', 'occurs')->where('analysis_id', $analysis->id)->orderBy('hour')->get();
+            $urls = Url::where('analysis_id', $analysis->id)->get();
 
-        $data = array(
-           'analysis'   => $analysis,
-           'mentions'   => $mentions,
-           'hashtags'   => $hashtags,
-           'hours'      => $hours,
-        );
+            $data = array(
+               'analysis'   => $analysis,
+               'mentions'   => $mentions,
+               'hashtags'   => $hashtags,
+               'hours'      => $hours,
+               'urls'      => $urls,
+            );
+        }
 
         //Return to analysis page
         return view('analysis')->with($data);
@@ -104,12 +111,14 @@ class AnalysesController extends Controller
             $mentions = Mention::where('analysis_id', $analysis->id)->get();
             $hashtags = Hashtag::where('analysis_id', $analysis->id)->get();
             $hours = Hour::select('hour', 'occurs')->where('analysis_id', $analysis->id)->orderBy('hour')->get();
+            $urls = Url::where('analysis_id', $analysis->id)->get();
             
             $data = array(
                'analysis'   => $analysis,
                'mentions'   => $mentions,
                'hashtags'   => $hashtags,
                'hours'      => $hours,
+               'urls'      => $urls,
             );
 
             return view('analysis')->with($data);
@@ -270,6 +279,14 @@ class AnalysesController extends Controller
             $mentionCount = array();
             $hashtagCount = array();
             $timeCount = array();
+            $linkCount = array();
+            
+            $hashtagAmount = 0;
+            $mentionAmount = 0;
+            $replyAmount = 0;
+            $retweetAmount = 0;
+            $linkAmount = 0;
+            $mediaAmount = 0;
 
             for($x=0; $x<sizeof($tweetResults); $x++) {
                 $tweet = $tweetResults[$x]['full_text'];
@@ -278,14 +295,42 @@ class AnalysesController extends Controller
                 
                 /**GET MOST USED HASHTAGS AND MENTIONS**/
                 $entities = $tweetResults[$x]['entities']['user_mentions'];
-                for($y=0; $y<sizeof($entities); $y++) {
-                    $mentions = $entities[$y]['screen_name'];
-                    array_push($mentionCount, $mentions);
+                if(sizeof($entities) > 0){
+                    $mentionAmount++;
+                    for($y=0; $y<sizeof($entities); $y++) {
+                        $mentions = $entities[$y]['screen_name'];
+                        array_push($mentionCount, $mentions);
+                    }
                 }
+                
                 $hashtags = $tweetResults[$x]['entities']['hashtags'];
-                for($y=0; $y<sizeof($hashtags); $y++) {
-                    $hashtag = $hashtags[$y]['text'];
-                    array_push($hashtagCount, $hashtag);
+                if(sizeof($hashtags) > 0){
+                    $hashtagAmount++;
+                        for($y=0; $y<sizeof($hashtags); $y++) {
+                        $hashtag = $hashtags[$y]['text'];
+                        array_push($hashtagCount, $hashtag);
+                    }
+                }
+                
+                $links = $tweetResults[$x]['entities']['urls'];
+                if(sizeof($links) > 0){
+                    $linkAmount++;
+                        for($y=0; $y<sizeof($links); $y++) {
+                        $link = $links[$y]['url'];
+                        array_push($linkCount, $link);
+                    }
+                }
+                
+                if(isset($tweetResults[$x]['entities']['media'])){
+                    $mediaAmount++;
+                }
+                
+                if(isset($tweetResults[$x]['in_reply_to_status_id'])){
+                    $replyAmount++;
+                }
+                
+                if(isset($tweetResults[$x]['retweeted_status'])){
+                    $retweetAmount++;
                 }
                 
                 $format = 'D M j G:i:s T Y';
@@ -298,6 +343,9 @@ class AnalysesController extends Controller
             
             $hashtagResult = array_count_values($hashtagCount);
             arsort($hashtagResult);
+            
+            $linkResult = array_count_values($linkCount);
+            arsort($linkResult);
             
             $timeResult = array_count_values($timeCount);
 
@@ -325,7 +373,14 @@ class AnalysesController extends Controller
             $analysis->tweets = $results['0']['statuses_count'];
             $analysis->following = $results['0']['friends_count'];
             $analysis->followers = $results['0']['followers_count'];
-            $analysis->likes = $results['0']['favourites_count'];
+            $analysis->likes = $results['0']['favourites_count'];           
+            $analysis->total = sizeof($tweetResults);
+            $analysis->replies = $replyAmount;
+            $analysis->mentions = $mentionAmount;
+            $analysis->hashtags = $hashtagAmount;
+            $analysis->retweets = $retweetAmount;
+            $analysis->links = $linkAmount;
+            $analysis->media = $mediaAmount;
             $analysis->positive = $emotions->positive;
             $analysis->negative = $emotions->negative;
             $analysis->neutral = $emotions->neutral;
@@ -378,6 +433,17 @@ class AnalysesController extends Controller
 
                 //Save the hashtag into the database
                 $hashtagTable->save();
+            }
+            
+            foreach($linkResult as $url => $count){
+                //create a new hashtag
+                $linkTable = new Url;
+                $linkTable->analysis_id = $analysis->id;
+                $linkTable->url = $url;
+                $linkTable->occurs = $count;
+
+                //Save the hashtag into the database
+                $linkTable->save();
             }
             
             foreach($timeResult as $number => $count){

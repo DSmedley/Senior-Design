@@ -29,6 +29,13 @@ class Analyses extends Migration
             $table->bigInteger('following');
             $table->bigInteger('followers');
             $table->bigInteger('likes');
+            $table->integer('total');
+            $table->integer('replies');
+            $table->integer('mentions');
+            $table->integer('hashtags');
+            $table->integer('retweets');
+            $table->integer('links');
+            $table->integer('media');
             $table->integer('positive');
             $table->integer('negative');
             $table->integer('neutral');

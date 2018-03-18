@@ -146,6 +146,10 @@ hr.light {
     padding: 2px;
 }
 
+.verified {
+    color: #1da1f2;
+}
+
 /*FOOTER*/
 .banner {
     margin-top: 20px;
