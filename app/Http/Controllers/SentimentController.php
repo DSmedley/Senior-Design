@@ -11,7 +11,7 @@ class SentimentController extends Controller
 {
     public function getEmotions($input_tweets){
 
-        $input_tweets = json_decode($input_tweets);
+        $input_tweets = json_decode($input_tweets, true);
         
         
 		
@@ -25,7 +25,7 @@ class SentimentController extends Controller
 		// 'datasets/NRC-Emotion-Lexicon-v0.92-ck.csv'
 
 		// $SAMPLE_TWEETS = 'C:\Users\Connor\Documents\Github\phpml\datasets\text_emotion_ck.csv';
-		$DEBUG = true; //FOR NOW.
+		$DEBUG = false; //FOR NOW.
 
 
 		//THE LIST OF TWEETS WE WILL BE EXAMINING
@@ -200,19 +200,24 @@ class SentimentController extends Controller
 		$sent_tie_count = 0;
 
 
+       // error_log(var_dump($SAMPLE_TWEETS));
 
 
 
 
-		$SAMPLE_TWEETS = array_map('str_getcsv', file($SAMPLE_TWEETS));
+		//$SAMPLE_TWEETS = array_map('str_getcsv', file($SAMPLE_TWEETS));
 		foreach ($SAMPLE_TWEETS as $item) {
 			#THE METHODS OF PULLING THE DATA FROM THE TABLES IS A LOT DIFFERENT. THIS MIGHT NEED TO BE CHANGED LATER
 			#print(item)
-			if ($DEBUG == true){
+			/*if ($DEBUG == true){
 				$tweet = $item[0];
 			} else {
 				$tweet = $item["text"];
-			}
+			}*/
+            
+            //error_log(var_dump($item));
+            
+            $tweet = $item["text"];
 			$tweet_dict[$tweet] = "hi";
 			$tweet_pv_values[$tweet] = 0;
 		#     $temp_sentiments = {"fear": 0, "anger": 0, "anticipation": 0, "trust": 0, "surprise": 0, "sadness": 0, "disgust": 0, "joy": 0} 
@@ -418,7 +423,7 @@ class SentimentController extends Controller
 		
         
         
-        return $output;
+        return json_encode($total_beefoo_results);
     }
     
 }

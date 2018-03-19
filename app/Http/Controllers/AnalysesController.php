@@ -187,14 +187,17 @@ class AnalysesController extends Controller
             $tweetsArray[$x]['text'] = $tweet;
         }
 
-        $time_end = microtime(true);
+        /*$time_end = microtime(true);
         $file = $screen_name.'-'.$time_end.'.json';
         $fp = fopen('py/temp/'.$file, 'w');
         fwrite($fp, json_encode($tweetsArray));
-        fclose($fp);
+        fclose($fp);*/
 
-        $tweets = new PythonController();
-        $emotions = json_decode($tweets->python($file));
+        /*$tweets = new PythonController();
+        $emotions = json_decode($tweets->python($file));*/
+        
+        $tweets = new SentimentController();
+        $emotions = json_decode($tweets->getEmotions(json_encode($tweetsArray)));
 
         //create a new analysis
         $analysis = new Analyses;
@@ -349,14 +352,17 @@ class AnalysesController extends Controller
             
             $timeResult = array_count_values($timeCount);
 
-            $time_end = microtime(true);
+            /*$time_end = microtime(true);
             $file = $screen_name.'-'.$time_end.'.json';
             $fp = fopen('py/temp/'.$file, 'w');
             fwrite($fp, json_encode($tweetsArray));
             fclose($fp);
 
             $tweets = new PythonController();
-            $emotions = json_decode($tweets->python($file));
+            $emotions = json_decode($tweets->python($file));*/
+            
+            $tweets = new SentimentController();
+            $emotions = json_decode($tweets->getEmotions(json_encode($tweetsArray)));
 
             //create a new analysis
             $analysis = new Analyses;
