@@ -55,9 +55,10 @@
                                     <div class="thumbnail">
                                         <!--<img alt="300x200" src="">-->
                                         <div class="caption">
-                                            <canvas id="{{ "Chart".$count }}" width="50" height="50"></canvas>
+                                            <img src="{{ $analysis->profile_image }}" class="img-responsive" alt="{{$analysis->name}}">
+                                            <!--<canvas id="{{ "Chart".$count }}" width="50" height="50"></canvas>-->
                                             <h3><a href="{{ route('analysis.view', array('id' => $analysis->id)) }}">{{$analysis->name}}</a></h3>
-                                            <h3>{{ date_format($analysis->created_at, 'd/m/Y H:i:s') }}</h3>
+                                            <h4>{{ date_format($analysis->created_at, 'F j, Y, g:i a') }}</h4>
                                         </div>
                                     </div>
                                 </div>

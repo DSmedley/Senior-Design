@@ -34,7 +34,7 @@ class UserController extends Controller
         
         $analyses = Link::join('analyses', 'analyses.id', '=', 'links.analysis_id')
                     ->where('links.user_id', $user->id)
-                    ->select('analyses.id', 'analyses.name', 'analyses.created_at', 'analyses.neutral', 'analyses.positive', 'analyses.negative')
+                    ->select('analyses.id', 'analyses.name', 'analyses.created_at', 'analyses.neutral', 'analyses.positive', 'analyses.negative', 'analyses.screen_name', 'analyses.profile_image')
                     ->orderBy('links.id', 'desc')
                     ->paginate(9);
         

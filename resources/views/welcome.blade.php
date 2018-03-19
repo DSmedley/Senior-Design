@@ -102,7 +102,7 @@
                     @foreach($recents as $recent)
                         <div class="col-sm-4 col-md-2">
                             <a href="{{ route('analysis.view', array('id' => $recent->id)) }}" class="portfolio-box">
-                                <img src="{{ $recent->profile_image }}" class="img-responsive" alt="">
+                                <img src="{{ $recent->profile_image }}" class="img-responsive" alt="{{'@'.$recent->screen_name}}">
                                 <div class="portfolio-box-caption">
                                     <div class="portfolio-box-caption-content">
                                         <div class="project-category text-faded">
