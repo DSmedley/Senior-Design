@@ -147,7 +147,7 @@
                 <div class="panel-body">
                     @if(isset($urls))
                         @foreach($urls as $url)
-                            <a href="{{$url->url}}" target="_blank" data-toggle="tooltip" title="Used {{$url->occurs}} times">{{ ' '.$url->url.' ' }}</a>
+                            <a href="{{$url->url}}" target="_blank" data-toggle="tooltip" title="Used {{$url->occurs}} times">{{ ' '.$url->url.' ' }}</a> &bull;
                         @endforeach
                     @else
                         {{ $analysis->name }} did not link any URLs!
@@ -159,7 +159,7 @@
                 <div class="panel-body">
                     @if(isset($hashtags))
                         @foreach($hashtags as $hashtag)
-                            <a href="http://twitter.com/#!/search/%23{{$hashtag->hashtag}}" target="_blank" data-toggle="tooltip" title="Used {{$hashtag->occurs}} times">{{ '#'.$hashtag->hashtag.' ' }}</a>
+                            <a href="http://twitter.com/#!/search/%23{{$hashtag->hashtag}}" target="_blank" data-toggle="tooltip" title="Used {{$hashtag->occurs}} times">{{ '#'.$hashtag->hashtag.' ' }}</a> &bull;
                         @endforeach
                     @else
                         {{ $analysis->name }} did not use any hashtags!
