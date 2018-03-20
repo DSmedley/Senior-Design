@@ -36,6 +36,10 @@ class Analyses extends Migration
             $table->integer('retweets');
             $table->integer('links');
             $table->integer('media');
+            $table->integer('retweet_count');
+            $table->integer('retweet_total');
+            $table->integer('favorite_count');
+            $table->integer('favorite_total');
             $table->integer('positive');
             $table->integer('negative');
             $table->integer('neutral');

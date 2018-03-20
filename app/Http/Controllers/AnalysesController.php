@@ -290,6 +290,10 @@ class AnalysesController extends Controller
             $retweetAmount = 0;
             $linkAmount = 0;
             $mediaAmount = 0;
+            $favorite_count = 0;
+            $favorite_total = 0;
+            $retweet_count = 0;
+            $retweet_total = 0;
 
             for($x=0; $x<sizeof($tweetResults); $x++) {
                 $tweet = $tweetResults[$x]['full_text'];
@@ -334,6 +338,16 @@ class AnalysesController extends Controller
                 
                 if(isset($tweetResults[$x]['retweeted_status'])){
                     $retweetAmount++;
+                }
+                
+                if($tweetResults[$x]['retweet_count'] > 0){
+                    $retweet_count++;
+                    $retweet_total += $tweetResults[$x]['retweet_count'];
+                }
+
+                if($tweetResults[$x]['favorite_count'] > 0){
+                    $favorite_count++;
+                    $favorite_total += $tweetResults[$x]['favorite_count'];
                 }
                 
                 $format = 'D M j G:i:s T Y';
@@ -387,6 +401,10 @@ class AnalysesController extends Controller
             $analysis->retweets = $retweetAmount;
             $analysis->links = $linkAmount;
             $analysis->media = $mediaAmount;
+            $analysis->retweet_count = $retweet_count;
+            $analysis->retweet_total = $retweet_total;
+            $analysis->favorite_count = $favorite_count;
+            $analysis->favorite_total = $favorite_total;
             $analysis->positive = $emotions->positive;
             $analysis->negative = $emotions->negative;
             $analysis->neutral = $emotions->neutral;
