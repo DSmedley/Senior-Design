@@ -10,8 +10,7 @@ function positive(name, names, data) {
             data: [data[i], data[i+1], data[i+2]]
         });
     }
-    console.log(dataset);
-        var myChart = new Chart(document.getElementById(name), {
+    var myChart = new Chart(document.getElementById(name), {
         type: 'bar',
         data: {
             labels: ["Neutral", "Positive", "Negative"],
@@ -41,7 +40,7 @@ function compare(name, names, labels, data) {
             data: [data[i], data[i+1]]
         });
     }
-        var myChart = new Chart(document.getElementById(name), {
+    var myChart = new Chart(document.getElementById(name), {
         type: 'bar',
         data: {
             labels: labels,
@@ -67,7 +66,7 @@ function compare(name, names, labels, data) {
 }
 
 function bar(name, data) {            
-        var myChart = new Chart(document.getElementById(name), {
+    var myChart = new Chart(document.getElementById(name), {
         type: 'bar',
         data: {
             labels: ["Anger", "Anticipation", "Disgust", "Fear", "Joy", "Sadness", "Surprise", "Trust"],

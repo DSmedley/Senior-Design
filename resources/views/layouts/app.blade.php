@@ -14,6 +14,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/creative.css') }}" rel="stylesheet">
     <link href="{{ asset('css/fontawesome-all.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/jquery.circliful.css') }}" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="app">
@@ -125,6 +126,7 @@
       gtag('config', 'UA-69914420-2');
     </script>
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/jquery.circliful.js') }}"></script>
     <script src="{{ asset('js/Chart.js') }}"></script>
     <script src="{{ asset('js/sweetalert.js') }}"></script>
     @yield('javascript')

@@ -111,13 +111,35 @@
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">How They Tweet</div>
-                <div class="panel-body">
-                    Replies	- {{ $analysis->replies }} / {{ $analysis->total }} <br />
-                    Tweets with @mentions - {{ $analysis->mentions }} / {{ $analysis->total }} <br />
-                    Tweets with #hashtags - {{ $analysis->hashtags }} / {{ $analysis->total }} <br />
-                    Retweets - {{ $analysis->retweets }} / {{ $analysis->total }} <br />
-                    Tweets with links - {{ $analysis->links }} / {{ $analysis->total }} <br />
-                    Tweets with media - {{ $analysis->media }} / {{ $analysis->total }} <br />
+                <div class="panel-body" id="analytics">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="percentage" id="replies" data-toggle="tooltip" title="Percent of tweets that were replies out of {{ $analysis->total }}" manual="true"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" id="mentions" data-toggle="tooltip" title="Percent of tweets that had @mentions out of {{ $analysis->total }}"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" id="hashtags" data-toggle="tooltip" title="Percent of tweets that have hashtags out of {{ $analysis->total }}"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" id="retweets" data-toggle="tooltip" title="Percent of tweets that were retweets out of {{ $analysis->total }}"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="percentage" id="links" data-toggle="tooltip" title="Percent of tweets that contain links out of {{ $analysis->total }}"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" id="media" data-toggle="tooltip" title="Percent of tweets that contains media out of {{ $analysis->total }}"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" class="retweeted" id="retweeted" data-toggle="tooltip" title="Percent of tweets retweeted by others out of {{ $analysis->total }} with {{ number_format($analysis->retweet_total) }} total retweets."></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" id="favorited" data-toggle="tooltip" title="Percent of tweets favorited by others out of {{ $analysis->total }} with {{ number_format($analysis->favorite_total) }} total favorites."></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="panel panel-default">
@@ -125,7 +147,7 @@
                 <div class="panel-body">
                     @if(isset($urls))
                         @foreach($urls as $url)
-                            <a href="{{$url->url}}" target="_blank" data-toggle="tooltip" title="Used {{$url->occurs}} times">{{ ' '.$url->url.' ' }}</a>
+                            <a href="{{$url->url}}" target="_blank" data-toggle="tooltip" title="Used {{$url->occurs}} times">{{ ' '.$url->url.' ' }}</a> &bull;
                         @endforeach
                     @else
                         {{ $analysis->name }} did not link any URLs!
@@ -137,7 +159,7 @@
                 <div class="panel-body">
                     @if(isset($hashtags))
                         @foreach($hashtags as $hashtag)
-                            <a href="http://twitter.com/#!/search/%23{{$hashtag->hashtag}}" target="_blank" data-toggle="tooltip" title="Used {{$hashtag->occurs}} times">{{ '#'.$hashtag->hashtag.' ' }}</a>
+                            <a href="http://twitter.com/#!/search/%23{{$hashtag->hashtag}}" target="_blank" data-toggle="tooltip" title="Used {{$hashtag->occurs}} times">{{ '#'.$hashtag->hashtag.' ' }}</a> &bull;
                         @endforeach
                     @else
                         {{ $analysis->name }} did not use any hashtags!
@@ -204,15 +226,33 @@
         });
     </script>
     <script src="{{ asset('js/ReportCharts.js') }}"></script>
+    <script src="{{ asset('js/analytics.js') }}"></script>
     <script type="text/javascript">
         @if (isset($positivity))
             var positivity = {{ json_encode($positivity) }}
             var emotions = {{ json_encode($emotions) }}
             var time = {{ json_encode($time) }}
             var occurs = {{ json_encode($occurs) }}
+            var replies = {{ ($analysis->replies/$analysis->total)*100 }}
+            var mentions = {{ ($analysis->mentions/$analysis->total)*100 }}
+            var hashtags = {{ ($analysis->hashtags/$analysis->total)*100 }}
+            var retweets = {{ ($analysis->retweets/$analysis->total)*100 }}
+            var links = {{ ($analysis->links/$analysis->total)*100 }}
+            var media = {{ ($analysis->media/$analysis->total)*100 }}
+            var retweeted = {{ ($analysis->retweet_count/$analysis->total)*100 }}
+            var favorited = {{ ($analysis->favorite_count/$analysis->total)*100 }}
+            
             chart("positivity", positivity);
             bar("emotions", emotions);
             activeHours("active", time, occurs);
+            percentage("replies", "Replies", replies, false);
+            percentage("mentions", "@Mentions", mentions, false);
+            percentage("hashtags", "Hashtags", hashtags, false);
+            percentage("retweets", "Retweets", retweets, false);
+            percentage("links", "Includes Links", links, false);
+            percentage("media", "Includes Media", media, false);
+            percentage("retweeted", "Retweeted", retweeted, false);
+            percentage("favorited", "Favorited", favorited, false);
         @endif
 	</script>
 @endsection
