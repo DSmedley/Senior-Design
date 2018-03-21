@@ -15,6 +15,7 @@
 </div>
 <!-- /.banner -->
 <br/>
+@if(!isset($analysis))
 <div class="container">
     @if (session('error'))
         <div class="alert alert-danger">
@@ -33,10 +34,11 @@
         </div>
     </div>
 </div>
-@if(isset($analysis))
+@else
 <div class="container target">
     <div class="row">
         <div class="col-sm-10">
+            <div class="sharethis-inline-share-buttons"></div>
             <h1>
                 {{ $analysis->name }}
                 @if($analysis->verified)
@@ -44,9 +46,6 @@
                 @endif
             </h1>
             <h3>{{ "@".$analysis->screen_name }}</h3>
-            @guest
-                <a href="{{ route('analysis.save', array('id' => $analysis->id)) }}"><button type="button" class="btn btn-success"><i class="fas fa-save"> Login to save</i></button></a>
-            @endguest
             <br>
         </div>
         <div class="col-sm-2">
@@ -58,7 +57,7 @@
         <div class="col-sm-3">
             <!--left col-->
             <ul class="list-group">
-                <li class="list-group-item text-muted" contenteditable="false">Analysis</li>
+                <li class="list-group-item text-muted" contenteditable="false">Details</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $analysis->twitter_id }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
                     @php
@@ -77,6 +76,9 @@
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span> {{ $analysis->time_zone }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">URL</strong></span><a href="{{ $analysis->url }}" target="_blank">{{ $analysis->url }}</a></li>
             </ul>
+            @guest
+                <a href="{{ route('analysis.save', array('id' => $analysis->id)) }}"><button type="button" class="btn btn-success"><i class="fas fa-save"> Login to save</i></button></a>
+            @endguest
         </div>
         <!--/col-3-->
         <div class="col-sm-9" style="" contenteditable="false">
@@ -93,7 +95,7 @@
                 </div>
             </div>
             <div class="panel panel-default target">
-                <div class="panel-heading" contenteditable="false">Results</div>
+                <div class="panel-heading" contenteditable="false">Sentiment</div>
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-4 align-self-center" off>
@@ -110,7 +112,7 @@
                 </div> 
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">How They Tweet</div>
+                <div class="panel-heading">Inside Their Tweets</div>
                 <div class="panel-body" id="analytics">
                     <div class="row">
                         <div class="col-sm-3">
@@ -174,7 +176,11 @@
                             @if(isset($mentions))
                                 @foreach($mentions as $mention)
                                     <div class="col-sm-4 col-md-2">
-                                        <a href="{{ route('analysis', array('id' => $mention->screen_name)) }}" class="portfolio-box">
+                                        <a href="{{ route('analysis.name', array('name' => $mention->screen_name)) }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('analysis-form-{{ $mention->screen_name }}').submit();" class="portfolio-box">
+
+                                        
                                             <img src="{{ $mention->profile_image }}" class="img-responsive" alt="">
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
@@ -187,6 +193,10 @@
                                                 </div>
                                             </div>
                                         </a>
+                                        <form id="analysis-form-{{ $mention->screen_name }}" action="{{ route('analyze') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                            <input id="name" name="name" type="text" value="{{ $mention->screen_name }}">
+                                        </form>
                                     </div>
                                 @endforeach
                             @else

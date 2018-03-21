@@ -47,7 +47,23 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         <li class="{{Request::is('/') ? 'active' : ''}}"><a href="{{ route('welcome') }}"><i class="fas fa-home"></i> Home</a></li>
-                        <li class="{{Request::is('analyze') ? 'active' : ''}}"><a href="{{ route('analyze') }}"><i class="fas fa-chart-pie"></i> Analyze</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><i class="fas fa-chart-pie"></i> Analyze <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{{ route('analyze') }}"><i class="fas fa-user-circle"> Twitter User </i></a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('analyze') }}"><i class="fas fa-hashtag"> Hashtag </i></a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('analyze') }}"><i class="fas fa-dollar-sign"> Cashtag </i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="{{Request::is('analyze') ? 'active' : ''}}"><a href="{{ route('compare') }}"><i class="fas fa-users"></i> Compare</a></li>
                         <li class="{{Request::is('about') ? 'active' : ''}}"><a href="{{ route('about') }}"><i class="fas fa-info"></i> About</a></li>
                         @guest
                             <li><a href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
@@ -129,6 +145,7 @@
     <script src="{{ asset('js/jquery.circliful.js') }}"></script>
     <script src="{{ asset('js/Chart.js') }}"></script>
     <script src="{{ asset('js/sweetalert.js') }}"></script>
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ab19ecbb338830013655046&product=inline-share-buttons' async='async'></script>
     @yield('javascript')
 </body>
 </html>

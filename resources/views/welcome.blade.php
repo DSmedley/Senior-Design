@@ -58,29 +58,29 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fas fa-info fa-4x text-primary sr-icons"></i>
-                        <h3>Information</h3>
-                        <p class="text-muted">The info section shows the publicly available information about a requested Twitter profile. We'll also show you the user's join date and timezone among other things.</p>
+                        <h3>User Details</h3>
+                        <p class="text-muted">The user details section include general information about the user being analyized like tweets, location and join date.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fas fa-chart-bar fa-4x text-primary sr-icons"></i>
-                        <h3>Statistics</h3>
-                        <p class="text-muted">These are the numbers. Followers, friends, lists and most importantly the followers to following ratio - something you should definitely watch out for before following anybody.</p>
+                        <h3>Sentiment</h3>
+                        <p class="text-muted">The sentiment section displays the users overall positivty as well as a more indepth analysis of eight emotions and how many times the user displays those emotions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fas fa-chart-pie fa-4x text-primary sr-icons"></i>
+                        <h3>Inside Their Tweets</h3>
+                        <p class="text-muted">This section displays statistics about how the user tweets and interacts with their followers and the people that they follow such as retweets, mentions and hashtags.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fas fa-comments fa-4x text-primary sr-icons"></i>
-                        <h3>Topics</h3>
-                        <p class="text-muted">This section is divided into three sub-sections - topics, hashtags and mentions. Each one is based on the user's latest tweets. Hover your mouse over the items to see their usage.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fas fa-retweet fa-4x text-primary sr-icons"></i>
-                        <h3>Inside Tweets</h3>
-                        <p class="text-muted">We take you through the user's latest tweets and their contents in an easy to understand and short table. Tweets, retweets, tags, replies, mentions, links, media and more. A great way to spot spammers and automated accounts.</p>
+                        <h3>Active Hours</h3>
+                        <p class="text-muted">In the active hours section we compile all of the users tweets that we pull into hours of the day to help determine the times that they are the most active on twitter.</p>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                 @if(isset($recents))
                     @foreach($recents as $recent)
                         <div class="col-sm-4 col-md-2">
-                            <a href="{{ route('analysis.view', array('id' => $recent->id)) }}" class="portfolio-box">
+                            <a href="{{ route('analysis.view', array('id' => $recent->id, 'name' => $recent->screen_name)) }}" class="portfolio-box">
                                 <img src="{{ $recent->profile_image }}" class="img-responsive" alt="{{'@'.$recent->screen_name}}">
                                 <div class="portfolio-box-caption">
                                     <div class="portfolio-box-caption-content">

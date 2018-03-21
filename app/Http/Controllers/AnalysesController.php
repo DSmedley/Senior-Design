@@ -18,7 +18,7 @@ class AnalysesController extends Controller
         return view('analysis');
     }
     
-    public function getAnalysis($id = null)
+    public function getAnalysis($id = null, $name = null)
     {
         //Get data from specified analysis
         //Else return error
@@ -59,39 +59,6 @@ class AnalysesController extends Controller
         return view('cashtag')->with('analysis', $analysis);
     }
     
-    public function compare($first = null, $second = null, $third = null, $fourth = null)
-    {
-        //Get data from specified analysis
-        //Else return error
-        $analysis1 = null;
-        $analysis2 = null;
-        $analysis3 = null;
-        $analysis4 = null;
-        
-        if ($first){
-            $analysis1 = Analyses::where('id', $first)->first();
-        }
-        if ($second){
-            $analysis2 = Analyses::where('id', $second)->first();
-        }
-        if ($third){
-            $analysis3 = Analyses::where('id', $third)->first();
-        }
-        if ($fourth){
-            $analysis4 = Analyses::where('id', $fourth)->first();
-        }
-
-        $data = array(
-           'first'   => $analysis1,
-           'second'  => $analysis2,
-           'third'   => $analysis3,
-           'fourth'  => $analysis4,
-        );
-        
-        //Return to analysis page
-        return view('compare')->with($data);
-    }
-    
     public function analyze(Request $request){
         $this->validate($request, [
             'name' => 'required_without_all:cashtag',
@@ -108,20 +75,12 @@ class AnalysesController extends Controller
                 $this->linkAnalysis(Auth::user()->id, $analysis->id);
             }
             
-            $mentions = Mention::where('analysis_id', $analysis->id)->get();
-            $hashtags = Hashtag::where('analysis_id', $analysis->id)->get();
-            $hours = Hour::select('hour', 'occurs')->where('analysis_id', $analysis->id)->orderBy('hour')->get();
-            $urls = Url::where('analysis_id', $analysis->id)->get();
-            
             $data = array(
-               'analysis'   => $analysis,
-               'mentions'   => $mentions,
-               'hashtags'   => $hashtags,
-               'hours'      => $hours,
-               'urls'      => $urls,
+                'id' => $analysis->id,
+                'name' => $analysis->screen_name,
             );
 
-            return view('analysis')->with($data);
+            return redirect()->route('analysis.view', $data);
         }else if($request->get('cashtag') != null){
             /*$analysis = $this->getCashtagData($request->get('cashtag'));
         
@@ -366,14 +325,6 @@ class AnalysesController extends Controller
             
             $timeResult = array_count_values($timeCount);
 
-            /*$time_end = microtime(true);
-            $file = $screen_name.'-'.$time_end.'.json';
-            $fp = fopen('py/temp/'.$file, 'w');
-            fwrite($fp, json_encode($tweetsArray));
-            fclose($fp);
-
-            $tweets = new PythonController();
-            $emotions = json_decode($tweets->python($file));*/
             
             $tweets = new SentimentController();
             $emotions = json_decode($tweets->getEmotions(json_encode($tweetsArray)));

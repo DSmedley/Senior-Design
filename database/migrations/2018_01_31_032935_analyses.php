@@ -18,13 +18,13 @@ class Analyses extends Migration
             $table->bigInteger('twitter_id');
             $table->string('name');
             $table->string('screen_name');
-            $table->string('location');
+            $table->string('location')->nullable();
             $table->string('profile_image');
             $table->boolean('verified');
             $table->string('joined');
-            $table->string('time_zone');
-            $table->string('url');
-            $table->mediumText('description');
+            $table->string('time_zone')->nullable();
+            $table->string('url')->nullable();
+            $table->mediumText('description')->nullable();
             $table->bigInteger('tweets');
             $table->bigInteger('following');
             $table->bigInteger('followers');

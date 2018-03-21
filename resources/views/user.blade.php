@@ -57,7 +57,7 @@
                                         <div class="caption">
                                             <img src="{{ $analysis->profile_image }}" class="img-responsive" alt="{{$analysis->name}}">
                                             <!--<canvas id="{{ "Chart".$count }}" width="50" height="50"></canvas>-->
-                                            <h3><a href="{{ route('analysis.view', array('id' => $analysis->id)) }}">{{$analysis->name}}</a></h3>
+                                            <h3><a href="{{ route('analysis.view', array('id' => $analysis->id, 'name' => $analysis->screen_name)) }}">{{$analysis->name}}</a></h3>
                                             <h4>{{ date_format($analysis->created_at, 'F j, Y, g:i a') }}</h4>
                                         </div>
                                     </div>

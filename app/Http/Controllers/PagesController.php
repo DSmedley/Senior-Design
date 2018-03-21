@@ -20,7 +20,15 @@ class PagesController extends Controller
         //$recents = DB::select( DB::raw("select * from Analyses join (select screen_name, max(created_at) as created_at from Analyses group by screen_name, created_at)") );
         //select screen_name, max(created_at) as created_at from Analyses group by screen_name, created_at
         
-        $recents = DB::select( DB::raw("select * from Analyses join (select screen_name, max(created_at) as created_at from Analyses group by screen_name) Latest on Latest.created_at = Analyses.created_at ORDER BY Analyses.id DESC") );
+        $recents = DB::select( DB::raw("select * from analyses join (select screen_name, max(created_at) as created_at from analyses group by screen_name) latest on latest.created_at = analyses.created_at ORDER BY analyses.id DESC") );
+        
+        /*$recents = Analyses::select()
+        ->join('Analyses as Latest', function($join) {
+            $join->on('Latest.created_at', '=', 'Analyses.created_at');
+        })
+        ->orderBy('Analyses.created_at','desc')
+        ->limit('18')
+        ->get();*/
         
         return view('welcome')->with('recents', $recents);
     }

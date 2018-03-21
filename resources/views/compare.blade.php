@@ -15,6 +15,26 @@
 </div>
 <!-- /.banner -->
 <br/>
+@if(!isset($first))
+<div class="container">
+    @if (session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
+    @if (session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+    <div class="row">
+        <div class="col-lg-12">
+            @component('components.compare-form')
+            @endcomponent
+        </div>
+    </div>
+</div>
+@else
 <div class="container">
     @if (session('error'))
         <div class="alert alert-danger">
@@ -188,6 +208,7 @@
         </div>
     </div>
 </div>
+@endif
 @endsection
 @section('javascript')
     <script src="{{ asset('js/CompareCharts.js') }}"></script>
