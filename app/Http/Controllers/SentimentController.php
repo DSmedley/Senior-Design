@@ -302,7 +302,7 @@ class SentimentController extends Controller
 			
 			
 			#EVERYTHING AFTER THIS POINT IS A WIP AND WILL NOT BE USED IN THE NEXT DEMO. I AM SETTING IT TO $DEBUG MODE ONLY
-			if ($DEBUG == true){
+			if ($DEBUG == false){  //3-21-18 --SWITCHING TO NONDEBUG FOR LIVE USE
 			
 				#EACH SENTIMENT HAS IT'S OWN "MOST EMOTIONAL TWEET" 
 				// for key, val in $temp_sentiments.items():
@@ -410,10 +410,52 @@ class SentimentController extends Controller
 				$total_beefoo_results[$key] = $value;
 			}
 			
+			
+			//3-21-18 ADDING MOST EMOTIONAL TWEETS TO THE RETURN JSON
+			//--DECLARE EACH AS NADA FOR NOW  --ACTUALLY, THE CURRENT METHOD DOESN'T EVEN REQUIRE THESE YET. BUT THIS IS MINIMAL, AND WONT SLOW ANYTHING DOWN
+			$top_ang = "nada"; 
+			$top_ant = "nada"; 
+			$top_disg = "nada"; 
+			$top_fear = "nada"; 
+			$top_joy = "nada"; 
+			$top_sad = "nada"; 
+			$top_surp = "nada"; 
+			$top_trust = "nada"; 
+			
+			foreach ($most_emot_tweet_dict_tweet as $key => $value) {
+				// echo ("$key  $most_emot_tweet_dict_score[$key]  $value \n");
+				
+				if ($key == "joy") {
+					$top_joy = $value; //THIS IS AN EDITIED VERSION WHERE THE VARIABLE IS NOT AN ARRAY
+					$total_beefoo_results["top_joy"] = $value;
+				} elseif ($key == "sadness") {
+					$top_sad = $value;
+					$total_beefoo_results["top_sad"] = $value;
+				} elseif ($key == "anger") {
+					$top_ang = $value;
+					$total_beefoo_results["top_ang"] = $value;
+				} elseif ($key == "fear") {
+					$top_fear = $value;
+					$total_beefoo_results["top_fear"] = $value;
+				} elseif ($key == "anticipation") {
+					$top_ant = $value;
+					$total_beefoo_results["top_ant"] = $value;
+				} elseif ($key == "surprise") {
+					$top_surp = $value;
+					$total_beefoo_results["top_surp"] = $value;
+				} elseif ($key == "disgust") {
+					$top_disg = $value;
+					$total_beefoo_results["top_disg"] = $value;
+				} elseif ($key == "trust") {
+					$top_trust = $value;
+					$total_beefoo_results["top_trust"] = $value;
+				}
+			}
+					
 			//OKAY. NOW RETURN THE RESULTS IN A JSON FILE
 			json_encode($total_beefoo_results);
-			
-		}
+				
+			}
 		
 		
 		
