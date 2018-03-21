@@ -9,7 +9,7 @@ use DB;
 class PagesController extends Controller
 {
     public function getHome(){
-        $recents = DB::select( DB::raw("select * from analyses join (select screen_name, max(created_at) as created_at from analyses group by screen_name) latest on latest.created_at = analyses.created_at ORDER BY analyses.id DESC LIMIT 18") );
+        $recents = DB::select( DB::raw("select * from analyses join (select screen_name, max(created_at) as created_at from analyses group by screen_name) latest on latest.created_at = analyses.created_at AND latest.screen_name = analyses.screen_name ORDER BY analyses.id DESC LIMIT 18") );
         
         return view('welcome')->with('recents', $recents);
     }
