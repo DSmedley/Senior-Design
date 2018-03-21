@@ -15,7 +15,7 @@
         <form class="form-horizontal" method="POST" action="{{ route('compare') }}">
             {{ csrf_field() }}
 
-            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+            <div class="form-group{{ $errors->has('name1') ? ' has-error' : '' }}">
                 <div class="col-sm-4">
                     <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">@</span>
@@ -24,13 +24,13 @@
 
                     @if ($errors->has('name'))
                         <span class="help-block">
-                            <strong>{{ $errors->first('name') }}</strong>
+                            <strong>{{ $errors->first('name'1) }}</strong>
                         </span>
                     @endif
                 </div>
             </div>
             
-            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+            <div class="form-group{{ $errors->has('name2') ? ' has-error' : '' }}">
                 <div class="col-sm-4">
                     <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">@</span>
@@ -39,13 +39,13 @@
 
                     @if ($errors->has('name'))
                         <span class="help-block">
-                            <strong>{{ $errors->first('name') }}</strong>
+                            <strong>{{ $errors->first('name2') }}</strong>
                         </span>
                     @endif
                 </div>
             </div>
             
-            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+            <div class="form-group{{ $errors->has('name3') ? ' has-error' : '' }}">
                 <div class="col-sm-4">
                     <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">@</span>
@@ -54,13 +54,13 @@
 
                     @if ($errors->has('name'))
                         <span class="help-block">
-                            <strong>{{ $errors->first('name') }}</strong>
+                            <strong>{{ $errors->first('name3') }}</strong>
                         </span>
                     @endif
                 </div>
             </div>
             
-            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+            <div class="form-group{{ $errors->has('name4') ? ' has-error' : '' }}">
                 <div class="col-sm-4">
                     <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">@</span>
@@ -69,7 +69,7 @@
 
                     @if ($errors->has('name'))
                         <span class="help-block">
-                            <strong>{{ $errors->first('name') }}</strong>
+                            <strong>{{ $errors->first('name4') }}</strong>
                         </span>
                     @endif
                 </div>

@@ -238,6 +238,11 @@
     <script src="{{ asset('js/ReportCharts.js') }}"></script>
     <script src="{{ asset('js/analytics.js') }}"></script>
     <script type="text/javascript">
+        // With JQuery
+        $("#amount").slider();
+        $("#amount").on("slide", function(slideEvt) {
+            $("#amountSliderVal").text(slideEvt.value);
+        });
         @if (isset($positivity))
             var positivity = {{ json_encode($positivity) }}
             var emotions = {{ json_encode($emotions) }}

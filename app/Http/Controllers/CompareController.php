@@ -19,7 +19,7 @@ class CompareController extends Controller
     }
     
     public function compare(Request $request){
-        $this->validate($request, [
+        $validatedData = $request->validate([
             'name1' => 'required',
             'name2' => 'required',
         ]);

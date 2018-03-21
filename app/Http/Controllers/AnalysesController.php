@@ -47,56 +47,32 @@ class AnalysesController extends Controller
         return view('analysis')->with($data);
     }
     
-    public function getAnalysisCashtag($id = null)
-    {
-        //Get data from specified analysis
-        //Else return error
-        if ($id){
-            $analysis = Analyses::where('id', $id)->first();
-        }
-
-        //Return to analysis page
-        return view('cashtag')->with('analysis', $analysis);
-    }
-    
     public function analyze(Request $request){
         $this->validate($request, [
-            'name' => 'required_without_all:cashtag',
-            'cashtag' => 'required_without_all:name',
+            'name' => 'required',
         ]);
-        if($request->get('name') != null){
-            $analysis = $this->getData($request->get('name'));
-        
-            if(isset($analysis['errors'])){
-                return redirect()->route('analyze')->with('twitterError', $analysis['errors']['0']['message']);
-            }
 
-            if (Auth::check()){
-                $this->linkAnalysis(Auth::user()->id, $analysis->id);
-            }
-            
-            $data = array(
-                'id' => $analysis->id,
-                'name' => $analysis->screen_name,
-            );
-
-            return redirect()->route('analysis.view', $data);
-        }else if($request->get('cashtag') != null){
-            /*$analysis = $this->getCashtagData($request->get('cashtag'));
-        
-            if(isset($analysis['errors'])){
-                return redirect()->route('analyze')->with('twitterError', $analysis['errors']['0']['message']);
-            }
-
-            if (Auth::check()){
-                $this->linkAnalysis(Auth::user()->id, $analysis->id);
-            }
-            
-            return view('cashtag')->with('analysis', $analysis);*/
-            return view('cashtag');
+        $amount = 200;
+        if(!empty($request->get('amount'))){
+            $amount =$request->get('amount');
         }
         
-        
+        $analysis = $this->getData($request->get('name'), $amount);
+
+        if(isset($analysis['errors'])){
+            return redirect()->route('analyze')->with('twitterError', $analysis['errors']['0']['message']);
+        }
+
+        if (Auth::check()){
+            $this->linkAnalysis(Auth::user()->id, $analysis->id);
+        }
+
+        $data = array(
+            'id' => $analysis->id,
+            'name' => $analysis->screen_name,
+        );
+
+        return redirect()->route('analysis.view', $data); 
     }
     
     public function linkAnalysis($userID = null, $analysisID = null){
@@ -108,95 +84,7 @@ class AnalysesController extends Controller
         $link->save();
     }
     
-    public function linkAnalysisCashtag($userID = null, $analysisID = null){
-        //link analysis to account
-        $link = new Link;
-        $link->user_id = $userID;
-        $link->analysis_id = $analysisID;
-        //save link
-        $link->save();
-    }
-    
-    public function getCashtagData($screen_name = null){
-        /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
-        $settings = array(
-            'oauth_access_token' => "419236098-ybBLRsLig8sSd5LttZ6voxm9Gv3I8yul3JlvzGuD",
-            'oauth_access_token_secret' => "7ADQVV1qNy8cLQ7WO64F5FlF4UieOJh8WcevN8swx1Thd",
-            'consumer_key' => "4OvrblQjDT4rHklRfrDJURQsH",
-            'consumer_secret' => "XtGT33U06TvJ4l4VdHYRb4BINo9P3ebc6XsJsgcxNJWEZtCFJk"
-        );
-        
-        if(isset($results['errors'])){
-            return $results;
-        }
-
-        $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-        $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=200';
-        $requestMethod = 'GET';
-        $twitter = new TwitterController($settings);
-        $tweetResults = $twitter->setGetfield($getfield)
-                     ->buildOauth($url, $requestMethod)
-                     ->performRequest();
-
-        $tweetResults = json_decode($tweetResults, true);
-
-        for($x=0; $x<sizeof($tweetResults); $x++) {
-            $tweet = $tweetResults[$x]['full_text'];
-            $tweet = preg_replace("/[^ \w]+/",'',$tweet);
-            $tweetsArray[$x]['text'] = $tweet;
-        }
-
-        /*$time_end = microtime(true);
-        $file = $screen_name.'-'.$time_end.'.json';
-        $fp = fopen('py/temp/'.$file, 'w');
-        fwrite($fp, json_encode($tweetsArray));
-        fclose($fp);*/
-
-        /*$tweets = new PythonController();
-        $emotions = json_decode($tweets->python($file));*/
-        
-        $tweets = new SentimentController();
-        $emotions = json_decode($tweets->getEmotions(json_encode($tweetsArray)));
-
-        //create a new analysis
-        $analysis = new Analyses;
-        $analysis->twitter_id = $results['0']['id'];
-        $analysis->name = $results['0']['name'];
-        $analysis->screen_name = $results['0']['screen_name'];
-        $analysis->location = $results['0']['location'];
-        $analysis->profile_image = $profile_image;
-        $analysis->verified = $results['0']['verified'];
-        $analysis->joined = $results['0']['created_at'];
-        $analysis->time_zone = $results['0']['time_zone'];
-        $analysis->url = $results['0']['url'];
-        $analysis->description = $results['0']['description'];
-        $analysis->tweets = $results['0']['statuses_count'];
-        $analysis->following = $results['0']['friends_count'];
-        $analysis->followers = $results['0']['followers_count'];
-        $analysis->likes = $results['0']['favourites_count'];
-        $analysis->positive = $emotions->positive;
-        $analysis->negative = $emotions->negative;
-        $analysis->neutral = $emotions->neutral;
-        $analysis->anger = $emotions->anger;
-        $analysis->anticipation = $emotions->anticipation;
-        $analysis->disgust = $emotions->disgust;
-        $analysis->fear = $emotions->fear;
-        $analysis->joy = $emotions->joy;
-        $analysis->sadness = $emotions->sadness;
-        $analysis->surprise = $emotions->surprise;
-        $analysis->trust = $emotions->trust;
-        $analysis->none = $emotions->nada;
-
-        //Save the analysis into the database
-        $analysis->save();
-
-        //return twitter user details
-        $result = Analyses::where('id', '=', $analysis->id)->first();
-        
-        return $result;
-    }
-    
-    public function getData($screen_name = null){
+    public function getData($screen_name = null, $amount = 100){
         /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
         $settings = array(
             'oauth_access_token' => "419236098-ybBLRsLig8sSd5LttZ6voxm9Gv3I8yul3JlvzGuD",
@@ -229,7 +117,7 @@ class AnalysesController extends Controller
             
             /**GET USER TWEETS**/
             $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-            $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=200';
+            $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count='.$amount;
             $requestMethod = 'GET';
             $twitter = new TwitterController($settings);
             $tweetResults = $twitter->setGetfield($getfield)
@@ -399,6 +287,7 @@ class AnalysesController extends Controller
                 }
             }
 
+            $limit = 1;
             foreach($hashtagResult as $word => $count){
                 //create a new hashtag
                 $hashtagTable = new Hashtag;
@@ -408,8 +297,10 @@ class AnalysesController extends Controller
 
                 //Save the hashtag into the database
                 $hashtagTable->save();
+                if ($limit++ == 15) break;
             }
             
+            $limit = 1;
             foreach($linkResult as $url => $count){
                 //create a new hashtag
                 $linkTable = new Url;
@@ -419,6 +310,7 @@ class AnalysesController extends Controller
 
                 //Save the hashtag into the database
                 $linkTable->save();
+                if ($limit++ == 15) break;
             }
             
             foreach($timeResult as $number => $count){

@@ -15,6 +15,7 @@
     <link href="{{ asset('css/creative.css') }}" rel="stylesheet">
     <link href="{{ asset('css/fontawesome-all.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery.circliful.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/bootstrap-slider.css') }}" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="app">
@@ -63,7 +64,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="{{Request::is('analyze') ? 'active' : ''}}"><a href="{{ route('compare') }}"><i class="fas fa-users"></i> Compare</a></li>
+                        <li class="{{Request::is('compare') ? 'active' : ''}}"><a href="{{ route('compare') }}"><i class="fas fa-users"></i> Compare</a></li>
                         <li class="{{Request::is('about') ? 'active' : ''}}"><a href="{{ route('about') }}"><i class="fas fa-info"></i> About</a></li>
                         @guest
                             <li><a href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
@@ -145,6 +146,7 @@
     <script src="{{ asset('js/jquery.circliful.js') }}"></script>
     <script src="{{ asset('js/Chart.js') }}"></script>
     <script src="{{ asset('js/sweetalert.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-slider.js') }}"></script>
     <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ab19ecbb338830013655046&product=inline-share-buttons' async='async'></script>
     @yield('javascript')
 </body>

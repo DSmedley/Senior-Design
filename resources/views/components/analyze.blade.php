@@ -29,27 +29,21 @@
                     @endif
                 </div>
             </div>
-            
-            <div class="form-group">
-                <div class="col-sm-4">
-                    <label>---- OR ----</label>
-                </div>
-            </div>
-            
-            <div class="form-group{{ $errors->has('cashtag') ? ' has-error' : '' }}">
+            <div class="form-group{{ $errors->has('amount') ? ' has-error' : '' }}">
                 <div class="col-sm-4">
                     <div class="input-group">
-                        <span class="input-group-addon" id="sizing-addon2">$</span>
-                        <input id="cashtag" name="cashtag" type="text" class="form-control" placeholder="Enter Cashtag" aria-describedby="sizing-addon2">
+                        <input id="amount" name="amount" type="text" data-slider-min="50" data-slider-max="200" data-slider-step="10" data-slider-value="100"/>
                     </div>
 
                     @if ($errors->has('name'))
                         <span class="help-block">
-                            <strong>{{ $errors->first('cashtag') }}</strong>
+                            <strong>{{ $errors->first('amount') }}</strong>
                         </span>
                     @endif
                 </div>
             </div>
+            
+            <span id="ex6CurrentSliderValLabel">Tweet Amount: <span id="amountSliderVal">100</span></span>
 
             <div class="form-group">
                 <div class="col-md-12">
