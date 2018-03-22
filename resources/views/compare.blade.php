@@ -50,19 +50,19 @@
 <div class="container target">
     <div class="row">
         <div class="col-md-2">
-            <img title="Profile Image" class="img-circle img-responsive" src='{{ $first['analysis']->profile_image }}'>
+            <img title="{{ $first['analysis']->name }}" class="img-circle img-responsive" src='{{ $first['analysis']->profile_image }}'>
         </div>
         <div class="col-md-2">
-            <img title="Profile Image" class="img-circle img-responsive" src='{{ $second['analysis']->profile_image }}'>
+            <img title="{{ $second['analysis']->name }}" class="img-circle img-responsive" src='{{ $second['analysis']->profile_image }}'>
         </div>
         @if(isset($third))
             <div class="col-md-2">
-                <img title="Profile Image" class="img-circle img-responsive" src='{{ $third['analysis']->profile_image }}'>
+                <img title="{{ $third['analysis']->name }}" class="img-circle img-responsive" src='{{ $third['analysis']->profile_image }}'>
             </div>
         @endif
         @if(isset($fourth))
             <div class="col-md-2">
-                <img title="Profile Image" class="img-circle img-responsive" src='{{ $fourth['analysis']->profile_image }}'>
+                <img title="{{ $fourth['analysis']->name }}" class="img-circle img-responsive" src='{{ $fourth['analysis']->profile_image }}'>
             </div>
         @endif
     </div>
@@ -191,6 +191,14 @@
                         $compare2 = array($first['analysis']->disgust, $first['analysis']->fear, $second['analysis']->disgust, $second['analysis']->fear);
                         $compare3 = array($first['analysis']->joy, $first['analysis']->sadness, $second['analysis']->joy, $second['analysis']->sadness);
                         $compare4 = array($first['analysis']->surprise, $first['analysis']->trust, $second['analysis']->surprise, $second['analysis']->trust);
+                        $replies = array(($first['analysis']->replies/$first['analysis']->total)*100, ($second['analysis']->replies/$second['analysis']->total)*100);
+                        $mentions = array(($first['analysis']->mentions/$first['analysis']->total)*100, ($second['analysis']->mentions/$second['analysis']->total)*100);
+                        $hashtags = array(($first['analysis']->hashtags/$first['analysis']->total)*100, ($second['analysis']->hashtags/$second['analysis']->total)*100 );
+                        $retweets = array(($first['analysis']->retweets/$first['analysis']->total)*100, ($second['analysis']->retweets/$second['analysis']->total)*100);
+                        $links = array(($first['analysis']->links/$first['analysis']->total)*100, ($second['analysis']->links/$second['analysis']->total)*100);
+                        $media = array(($first['analysis']->media/$first['analysis']->total)*100, ($second['analysis']->media/$second['analysis']->total)*100);
+                        $retweeted = array(($first['analysis']->retweet_count/$first['analysis']->total)*100, ($second['analysis']->retweet_count/$second['analysis']->total)*100);
+                        $favorited = array(($first['analysis']->favorite_count/$first['analysis']->total)*100, ($second['analysis']->favorite_count/$second['analysis']->total)*100);
                         if(isset($third)){
                             array_push($positivity, $third['analysis']->neutral, $third['analysis']->positive, $third['analysis']->negative);
                             array_push($compareNames, $third['analysis']->name);
@@ -198,6 +206,14 @@
                             array_push($compare2, $third['analysis']->disgust, $third['analysis']->fear);
                             array_push($compare3, $third['analysis']->joy, $third['analysis']->sadness);
                             array_push($compare4, $third['analysis']->surprise, $third['analysis']->trust);
+                            array_push($replies, ($third['analysis']->replies/$third['analysis']->total)*100);
+                            array_push($mentions, ($third['analysis']->mentions/$third['analysis']->total)*100);
+                            array_push($hashtags, ($third['analysis']->hashtags/$third['analysis']->total)*100 );
+                            array_push($retweets, ($third['analysis']->retweets/$third['analysis']->total)*100);
+                            array_push($links, ($third['analysis']->links/$third['analysis']->total)*100);
+                            array_push($media, ($third['analysis']->media/$third['analysis']->total)*100);
+                            array_push($retweeted, ($third['analysis']->retweet_count/$third['analysis']->total)*100);
+                            array_push($favorited, ($third['analysis']->favorite_count/$third['analysis']->total)*100);
                         }
                         if(isset($fourth)){
                             array_push($positivity, $fourth['analysis']->neutral, $fourth['analysis']->positive, $fourth['analysis']->negative);
@@ -206,6 +222,14 @@
                             array_push($compare2, $fourth['analysis']->disgust, $fourth['analysis']->fear);
                             array_push($compare3, $fourth['analysis']->joy, $fourth['analysis']->sadness);
                             array_push($compare4, $fourth['analysis']->surprise, $fourth['analysis']->trust);
+                            array_push($replies, ($fourth['analysis']->replies/$fourth['analysis']->total)*100);
+                            array_push($mentions, ($fourth['analysis']->mentions/$fourth['analysis']->total)*100);
+                            array_push($hashtags, ($fourth['analysis']->hashtags/$fourth['analysis']->total)*100 );
+                            array_push($retweets, ($fourth['analysis']->retweets/$fourth['analysis']->total)*100);
+                            array_push($links, ($fourth['analysis']->links/$fourth['analysis']->total)*100);
+                            array_push($media, ($fourth['analysis']->media/$fourth['analysis']->total)*100);
+                            array_push($retweeted, ($fourth['analysis']->retweet_count/$fourth['analysis']->total)*100);
+                            array_push($favorited, ($fourth['analysis']->favorite_count/$fourth['analysis']->total)*100);
                         }
                     @endphp
                 </div> 
@@ -214,30 +238,34 @@
                 <div class="panel-heading">Inside Their Tweets</div>
                 <div class="panel-body" id="analytics">
                     <div class="row">
-                        <div class="col-sm-3">
-                            <div class="percentage" id="replies" data-toggle="tooltip" title="Percent of tweets that were replies." manual="true"></div>
+                        <div class="col-sm-6">
+                            <div class="percentage" id="replies" data-toggle="tooltip" title="Percent of tweets that were replies."></div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6">
                             <div class="percentage" id="mentions" data-toggle="tooltip" title="Percent of tweets that had @mentions."></div>
                         </div>
-                        <div class="col-sm-3">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
                             <div class="percentage" id="hashtags" data-toggle="tooltip" title="Percent of tweets that have hashtags."></div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6">
                             <div class="percentage" id="retweets" data-toggle="tooltip" title="Percent of tweets that were retweets."></div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-6">
                             <div class="percentage" id="links" data-toggle="tooltip" title="Percent of tweets that contain links."></div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6">
                             <div class="percentage" id="media" data-toggle="tooltip" title="Percent of tweets that contains media."></div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="percentage" class="retweeted" id="retweeted" data-toggle="tooltip" title="Percent of tweets retweeted by others."></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="percentage" id="retweeted" data-toggle="tooltip" title="Percent of tweets retweeted by others."></div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6">
                             <div class="percentage" id="favorited" data-toggle="tooltip" title="Percent of tweets favorited by others."></div>
                         </div>
                     </div>
@@ -329,14 +357,14 @@
             var com2 = {{ json_encode($compare2) }}
             var com3 = {{ json_encode($compare3) }}
             var com4 = {{ json_encode($compare3) }}
-            var replies = {{ ($first['analysis']->replies/$first['analysis']->total)*100 }}
-            var mentions = {{ ($first['analysis']->mentions/$first['analysis']->total)*100 }}
-            var hashtags = {{ ($first['analysis']->hashtags/$first['analysis']->total)*100 }}
-            var retweets = {{ ($first['analysis']->retweets/$first['analysis']->total)*100 }}
-            var links = {{ ($first['analysis']->links/$first['analysis']->total)*100 }}
-            var media = {{ ($first['analysis']->media/$first['analysis']->total)*100 }}
-            var retweeted = {{ ($first['analysis']->retweet_count/$first['analysis']->total)*100 }}
-            var favorited = {{ ($first['analysis']->favorite_count/$first['analysis']->total)*100 }}
+            var replies = {{ json_encode($replies) }}
+            var mentions = {{ json_encode($mentions) }}
+            var hashtags = {{ json_encode($hashtags) }}
+            var retweets = {{ json_encode($retweets) }}
+            var links = {{ json_encode($links) }}
+            var media = {{ json_encode($media) }}
+            var retweeted = {{ json_encode($retweeted) }}
+            var favorited = {{ json_encode($favorited) }}
             var time = {{ json_encode($time) }}
             var occurs = {{ json_encode($occurs) }}
             
@@ -345,14 +373,14 @@
             compare("compare2", comNames, ['Disgust', 'Fear'], com2);
             compare("compare3", comNames, ['Joy', 'Sadness'], com3);
             compare("compare4", comNames, ['Surprise', 'Trust'], com4);
-            percentage("replies", "Replies", replies, false);
-            percentage("mentions", "@Mentions", mentions, false);
-            percentage("hashtags", "Hashtags", hashtags, false);
-            percentage("retweets", "Retweets", retweets, false);
-            percentage("links", "Includes Links", links, false);
-            percentage("media", "Includes Media", media, false);
-            percentage("retweeted", "Retweeted", retweeted, false);
-            percentage("favorited", "Favorited", favorited, false);
+            percentage("replies", comNames, "Replies", replies, false);
+            percentage("mentions", comNames, "@Mentions", mentions, false);
+            percentage("hashtags", comNames, "Hashtags", hashtags, false);
+            percentage("retweets", comNames, "Retweets", retweets, false);
+            percentage("links", comNames, "Includes Links", links, false);
+            percentage("media", comNames, "Includes Media", media, false);
+            percentage("retweeted", comNames, "Retweeted", retweeted, false);
+            percentage("favorited", comNames, "Favorited", favorited, false);
             activeHours("active", comNames, time, occurs);
         @endif
 	</script>

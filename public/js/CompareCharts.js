@@ -1,7 +1,8 @@
+var colors = ['rgba(4, 40, 239, 0.6)', 'rgba(33, 224, 52, 0.6)', 'rgba(204, 0, 0, 0.6)', 'rgba(163, 0, 204, 0.6)'];
+var borders = ['rgba(4, 40, 239, 1)', 'rgba(33, 224, 52, 1)', 'rgba(204, 0, 0, 1)', 'rgba(163, 0, 204, 1)'];
+
 function positive(name, names, data) { 
     var dataset = [];
-    var colors = ['rgba(0, 99, 132, 0.6)', 'rgba(60, 99, 132, 0.6)', 'rgba(120, 99, 132, 0.6)', 'rgba(180, 99, 132, 0.6)'];
-    var borders = ['rgba(0, 99, 132, 1)', 'rgba(60, 99, 132, 1)', 'rgba(120, 99, 132, 1)', 'rgba(180, 99, 132, 1)'];
     for (i = 0, j = 0; i < data.length; i+=3, j++) { 
         dataset.push({
             label: names[j],
@@ -30,8 +31,6 @@ function positive(name, names, data) {
 
 function compare(name, names, labels, data) {       
     var dataset = [];
-    var colors = ['rgba(0, 99, 132, 0.6)', 'rgba(60, 99, 132, 0.6)', 'rgba(120, 99, 132, 0.6)', 'rgba(180, 99, 132, 0.6)'];
-    var borders = ['rgba(0, 99, 132, 1)', 'rgba(60, 99, 132, 1)', 'rgba(120, 99, 132, 1)', 'rgba(180, 99, 132, 1)'];
     for (i = 0, j = 0; i < data.length; i+=2, j++) { 
         dataset.push({
             label: names[j],
@@ -65,22 +64,24 @@ function compare(name, names, labels, data) {
     return myChart;
 }
 
-function percentage(name, text, percent, sign) { 
-    
+function percentage(name, names, text, percent, sign) { 
     var chart = document.getElementById(name);
-    
+    var dataset = [];
+    for (k = 0; k < names.length; k++) {
+        dataset.push({
+            'percent': percent[k], 
+            'color': colors[k], 
+            'title': names[k] 
+        });
+    }
+
 	$(chart).circliful({
         animationStep: 15,
-        foregroundBorderWidth: 5,
-        backgroundBorderWidth: 15,
+        foregroundBorderWidth: 7,
+        backgroundBorderWidth: 7,
         text: text,
         multiPercentage: 1,
-        percentages: [
-            {'percent': 10, 'color': '#3180B8', 'title': 'Gryffindor' },
-            {'percent': 30, 'color': '#4ADBEA', 'title': 'Ravenclaw' },
-            {'percent': 50, 'color': '#49EBA8', 'title': 'Hufflepuff' },
-            {'percent': 70, 'color': '#FFCA35', 'title': 'Slytherin' }
-        ],
+        percentages: dataset,
         multiPercentageLegend: 1,
         noPercentageSign: sign
     });
@@ -89,9 +90,7 @@ function percentage(name, text, percent, sign) {
 function activeHours(name, names, times, occurs) {
     var data = new Array();
     var dataset = [];
-    var colors = ['rgba(0, 99, 132, 0.6)', 'rgba(60, 99, 132, 0.6)', 'rgba(120, 99, 132, 0.6)', 'rgba(180, 99, 132, 0.6)'];
-    var borders = ['rgba(0, 99, 132, 1)', 'rgba(60, 99, 132, 1)', 'rgba(120, 99, 132, 1)', 'rgba(180, 99, 132, 1)'];
-    console.log(times);
+
     for (k = 0; k < times.length; k++) {
         data[k] = new Array();
         for (i = 0, j = 0; i < times[k].length; i++, j++) { 
@@ -135,7 +134,10 @@ function activeHours(name, names, times, occurs) {
                 text: 'Tweets Per Hour (UTC Military Time)'
             },
             legend: {
-                display: false
+                display: true
+            },
+            tooltips: {
+                mode: 'index'
             }
         }
     });
