@@ -16,7 +16,6 @@
 <!-- /.banner -->
 <br/>
 @if(!isset($first))
-<?php var_dump($first) ?>
 <div class="container">
     @if (session('error'))
         <div class="alert alert-danger">
