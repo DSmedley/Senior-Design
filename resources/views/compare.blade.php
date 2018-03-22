@@ -253,6 +253,10 @@
                         $occurs1 = array();
                         $time2 = array();
                         $occurs2 = array();
+                        $time3 = array();
+                        $occurs3 = array();
+                        $time4 = array();
+                        $occurs4 = array();
                     @endphp
                     @if(isset($first['hours']))
                         @foreach($first['hours'] as $hour)
@@ -276,6 +280,30 @@
                         @php
                             array_push($time, $time2);
                             array_push($occurs, $occurs2);
+                        @endphp
+                    @endif
+                    @if(isset($third['hours']))
+                        @foreach($third['hours'] as $hour)
+                            @php
+                                array_push($time3, $hour->hour);
+                                array_push($occurs3, $hour->occurs);
+                            @endphp
+                        @endforeach
+                        @php
+                            array_push($time, $time3);
+                            array_push($occurs, $occurs3);
+                        @endphp
+                    @endif
+                    @if(isset($fourth['hours']))
+                        @foreach($fourth['hours'] as $hour)
+                            @php
+                                array_push($time4, $hour->hour);
+                                array_push($occurs4, $hour->occurs);
+                            @endphp
+                        @endforeach
+                        @php
+                            array_push($time, $time4);
+                            array_push($occurs, $occurs4);
                         @endphp
                     @endif
                     <canvas id="active" width="50" height="400"></canvas>
@@ -325,7 +353,7 @@
             percentage("media", "Includes Media", media, false);
             percentage("retweeted", "Retweeted", retweeted, false);
             percentage("favorited", "Favorited", favorited, false);
-            activeHours("active", time, occurs);
+            activeHours("active", comNames, time, occurs);
         @endif
 	</script>
 @endsection

@@ -86,46 +86,36 @@ function percentage(name, text, percent, sign) {
     });
 }
 
-function activeHours(name, times, occurs) {
-    var data0 = [];
-    var data1 = [];
+function activeHours(name, names, times, occurs) {
+    var data = new Array();
+    var dataset = [];
+    var colors = ['rgba(0, 99, 132, 0.6)', 'rgba(60, 99, 132, 0.6)', 'rgba(120, 99, 132, 0.6)', 'rgba(180, 99, 132, 0.6)'];
+    var borders = ['rgba(0, 99, 132, 1)', 'rgba(60, 99, 132, 1)', 'rgba(120, 99, 132, 1)', 'rgba(180, 99, 132, 1)'];
+    console.log(times);
     for (k = 0; k < times.length; k++) {
-        for (i = 0, j = 0; i < times[k].length; i++) { 
+        data[k] = new Array();
+        for (i = 0, j = 0; i < times[k].length; i++, j++) { 
             if(times[k][i] == j){
-                if(k == 0){
-                    data0.push(occurs[k][i]);
-                }else if(k == 1){
-                    data1.push(occurs[k][i]);
-                }
-                j++
+                data[k].push(occurs[k][i]);
             }else{
-                if(k == 0){
-                    data0.push(0);
-                }else if(k == 1){
-                    data1.push(0);
-                }
-                j++;
+                data[k].push(0);
                 i--;
             }
-
         }
+        dataset.push({
+            type: 'bar',
+            label: names[k],
+            backgroundColor: colors[k],
+            borderColor: borders[k],
+            data: data[k]
+        });
     }
     var myChart = new Chart(document.getElementById(name), {
         type: 'bar',
         data: {
             labels: ["12am", "1am", "2am", "3am", "4am", "5am", "6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm", "9pm", "10pm", "11pm"],
             display: true,
-            datasets: [{
-                type: 'bar',
-                label: 'Dataset 1',
-                backgroundColor: "red",
-                data: data0,
-            }, {
-                type: 'bar',
-                label: 'Dataset 3',
-                backgroundColor: "blue",
-                data: data1
-            }]
+            datasets: dataset
         },
         options: {
             scales: {
