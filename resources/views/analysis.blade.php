@@ -221,7 +221,7 @@
                             @endphp
                         @endforeach
                     @endif
-                    <canvas id="active" width="50" height="50"></canvas>
+                    <canvas id="active" width="50" height="400"></canvas>
                 </div>
             </div>
         </div>
@@ -236,7 +236,6 @@
         });
     </script>
     <script src="{{ asset('js/ReportCharts.js') }}"></script>
-    <script src="{{ asset('js/analytics.js') }}"></script>
     <script type="text/javascript">
         // With JQuery
         $("#amount").slider();

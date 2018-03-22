@@ -19,16 +19,11 @@ Route::get('/analyze', 'AnalysesController@index')->name('analyze');
 Route::post('/analyze', 'AnalysesController@analyze')->name('analysis');
 Route::post('/analyze/{name}', 'AnalysesController@analyze')->name('analysis.name');
 Route::get('/analysis/{id}/{name}', 'AnalysesController@getAnalysis')->name('analysis.view');
-Route::get('/cashtag/{id}', 'AnalysesController@getAnalysisCashtag')->name('analysis.view.cashtag');
 Route::get('/analysis/save/{id}', 'UserController@linkAnalysis')->name('analysis.save');
-Route::get('/analysis/cashtag/save/{id}', 'UserController@linkAnalysisCashtag')->name('analysis.save.cashtag');
 
 Route::get('/compare', 'CompareController@index')->name('compare');
 Route::post('/compare', 'CompareController@compare')->name('compare');
 Route::get('/compare/{first}/{second}/{third?}/{fourth?}', 'CompareController@getCompare')->name('compare.view');
-
-Route::get('/messages', 'MessagesController@getMessages')->name('messages');
-Route::post('/contact/submit', 'MessagesController@submit');
 
 Auth::routes();
 

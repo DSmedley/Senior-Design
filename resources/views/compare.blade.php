@@ -16,6 +16,7 @@
 <!-- /.banner -->
 <br/>
 @if(!isset($first))
+<?php var_dump($first) ?>
 <div class="container">
     @if (session('error'))
         <div class="alert alert-danger">
@@ -50,19 +51,19 @@
 <div class="container target">
     <div class="row">
         <div class="col-md-2">
-            <img title="Profile Image" class="img-circle img-responsive" src='{{ $first->profile_image }}'>
+            <img title="Profile Image" class="img-circle img-responsive" src='{{ $first['analysis']->profile_image }}'>
         </div>
         <div class="col-md-2">
-            <img title="Profile Image" class="img-circle img-responsive" src='{{ $second->profile_image }}'>
+            <img title="Profile Image" class="img-circle img-responsive" src='{{ $second['analysis']->profile_image }}'>
         </div>
         @if(isset($third))
             <div class="col-md-2">
-                <img title="Profile Image" class="img-circle img-responsive" src='{{ $third->profile_image }}'>
+                <img title="Profile Image" class="img-circle img-responsive" src='{{ $third['analysis']->profile_image }}'>
             </div>
         @endif
         @if(isset($fourth))
             <div class="col-md-2">
-                <img title="Profile Image" class="img-circle img-responsive" src='{{ $fourth->profile_image }}'>
+                <img title="Profile Image" class="img-circle img-responsive" src='{{ $fourth['analysis']->profile_image }}'>
             </div>
         @endif
     </div>
@@ -72,81 +73,81 @@
             <!--left col-->
             <div class="row">  
                 <ul class="list-group">
-                    <li class="list-group-item text-muted" contenteditable="false">{{ $first->name }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $first->twitter_id }}</li>
+                    <li class="list-group-item text-muted" contenteditable="false">{{ $first['analysis']->name }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $first['analysis']->twitter_id }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
                         @php
-                            if($first->location != ''){
-                                echo $first->location;
+                            if($first['analysis']->location != ''){
+                                echo $first['analysis']->location;
                             }else{
                                 echo "Unknown";
                             }
                         @endphp
                     </li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $first->tweets }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $first->following }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $first->followers }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $first->likes }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $first['analysis']->tweets }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $first['analysis']->following }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $first['analysis']->followers }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $first['analysis']->likes }}</li>
                 </ul>
             </div>
             <div class="row">  
                 <ul class="list-group">
-                    <li class="list-group-item text-muted" contenteditable="false">{{ $second->name }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $second->twitter_id }}</li>
+                    <li class="list-group-item text-muted" contenteditable="false">{{ $second['analysis']->name }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $second['analysis']->twitter_id }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
                         @php
-                            if($second->location != ''){
-                                echo $second->location;
+                            if($second['analysis']->location != ''){
+                                echo $second['analysis']->location;
                             }else{
                                 echo "Unknown";
                             }
                         @endphp
                     </li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $second->tweets }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $second->following }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $second->followers }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $second->likes }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $second['analysis']->tweets }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $second['analysis']->following }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $second['analysis']->followers }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $second['analysis']->likes }}</li>
                 </ul>
             </div>
             @if(isset($third))
                 <div class="row">  
                     <ul class="list-group">
-                        <li class="list-group-item text-muted" contenteditable="false">{{ $third->name }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $third->twitter_id }}</li>
+                        <li class="list-group-item text-muted" contenteditable="false">{{ $third['analysis']->name }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $third['analysis']->twitter_id }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
                             @php
-                                if($third->location != ''){
-                                    echo $third->location;
+                                if($third['analysis']->location != ''){
+                                    echo $third['analysis']->location;
                                 }else{
                                     echo "Unknown";
                                 }
                             @endphp
                         </li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $third->tweets }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $third->following }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $third->followers }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $third->likes }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $third['analysis']->tweets }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $third['analysis']->following }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $third['analysis']->followers }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $third['analysis']->likes }}</li>
                     </ul>
                 </div>
             @endif
             @if(isset($fourth))
                 <div class="row">  
                     <ul class="list-group">
-                        <li class="list-group-item text-muted" contenteditable="false">{{ $fourth->name }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $fourth->twitter_id }}</li>
+                        <li class="list-group-item text-muted" contenteditable="false">{{ $fourth['analysis']->name }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $fourth['analysis']->twitter_id }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
                             @php
-                                if($fourth->location != ''){
-                                    echo $fourth->location;
+                                if($fourth['analysis']->location != ''){
+                                    echo $fourth['analysis']->location;
                                 }else{
                                     echo "Unknown";
                                 }
                             @endphp
                         </li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $fourth->tweets }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $fourth->following }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $fourth->followers }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $fourth->likes }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $fourth['analysis']->tweets }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $fourth['analysis']->following }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $fourth['analysis']->followers }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $fourth['analysis']->likes }}</li>
                     </ul>
                 </div>
             @endif
@@ -154,7 +155,7 @@
         <!--/col-3-->
         <div class="col-sm-9" style="" contenteditable="false">
             <div class="panel panel-default target">
-                <div class="panel-heading" contenteditable="false">Results</div>
+                <div class="panel-heading" contenteditable="false">Overall Positivity</div>
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-2">
@@ -163,6 +164,11 @@
                             <canvas id="positivity" width="50" height="50"></canvas>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="panel panel-default target">
+                <div class="panel-heading" contenteditable="false">Individual Emotions</div>
+                <div class="panel-body">
                     <div class="row">
                         <div class="col-md-6 align-self-center">
                             <canvas id="compare1" width="50" height="50"></canvas>
@@ -180,30 +186,101 @@
                         </div>
                     </div>
                     @php
-                        $positivity = array($first->neutral, $first->positive, $first->negative, $second->neutral, $second->positive, $second->negative);
-                        $compareNames = array($first->name, $second->name);
-                        $compare1 = array($first->anger, $first->anticipation, $second->anger, $second->anticipation);
-                        $compare2 = array($first->disgust, $first->fear, $second->disgust, $second->fear);
-                        $compare3 = array($first->joy, $first->sadness, $second->joy, $second->sadness);
-                        $compare4 = array($first->surprise, $first->trust, $second->surprise, $second->trust);
+                        $positivity = array($first['analysis']->neutral, $first['analysis']->positive, $first['analysis']->negative, $second['analysis']->neutral, $second['analysis']->positive, $second['analysis']->negative);
+                        $compareNames = array($first['analysis']->name, $second['analysis']->name);
+                        $compare1 = array($first['analysis']->anger, $first['analysis']->anticipation, $second['analysis']->anger, $second['analysis']->anticipation);
+                        $compare2 = array($first['analysis']->disgust, $first['analysis']->fear, $second['analysis']->disgust, $second['analysis']->fear);
+                        $compare3 = array($first['analysis']->joy, $first['analysis']->sadness, $second['analysis']->joy, $second['analysis']->sadness);
+                        $compare4 = array($first['analysis']->surprise, $first['analysis']->trust, $second['analysis']->surprise, $second['analysis']->trust);
                         if(isset($third)){
-                            array_push($positivity, $third->neutral, $third->positive, $third->negative);
-                            array_push($compareNames, $third->name);
-                            array_push($compare1, $third->anger, $third->anticipation);
-                            array_push($compare2, $third->disgust, $third->fear);
-                            array_push($compare3, $third->joy, $third->sadness);
-                            array_push($compare4, $third->surprise, $third->trust);
+                            array_push($positivity, $third['analysis']->neutral, $third['analysis']->positive, $third['analysis']->negative);
+                            array_push($compareNames, $third['analysis']->name);
+                            array_push($compare1, $third['analysis']->anger, $third['analysis']->anticipation);
+                            array_push($compare2, $third['analysis']->disgust, $third['analysis']->fear);
+                            array_push($compare3, $third['analysis']->joy, $third['analysis']->sadness);
+                            array_push($compare4, $third['analysis']->surprise, $third['analysis']->trust);
                         }
                         if(isset($fourth)){
-                            array_push($positivity, $fourth->neutral, $fourth->positive, $fourth->negative);
-                            array_push($compareNames, $fourth->name);
-                            array_push($compare1, $fourth->anger, $fourth->anticipation);
-                            array_push($compare2, $fourth->disgust, $fourth->fear);
-                            array_push($compare3, $fourth->joy, $fourth->sadness);
-                            array_push($compare4, $fourth->surprise, $fourth->trust);
+                            array_push($positivity, $fourth['analysis']->neutral, $fourth['analysis']->positive, $fourth['analysis']->negative);
+                            array_push($compareNames, $fourth['analysis']->name);
+                            array_push($compare1, $fourth['analysis']->anger, $fourth['analysis']->anticipation);
+                            array_push($compare2, $fourth['analysis']->disgust, $fourth['analysis']->fear);
+                            array_push($compare3, $fourth['analysis']->joy, $fourth['analysis']->sadness);
+                            array_push($compare4, $fourth['analysis']->surprise, $fourth['analysis']->trust);
                         }
                     @endphp
                 </div> 
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Inside Their Tweets</div>
+                <div class="panel-body" id="analytics">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="percentage" id="replies" data-toggle="tooltip" title="Percent of tweets that were replies." manual="true"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" id="mentions" data-toggle="tooltip" title="Percent of tweets that had @mentions."></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" id="hashtags" data-toggle="tooltip" title="Percent of tweets that have hashtags."></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" id="retweets" data-toggle="tooltip" title="Percent of tweets that were retweets."></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="percentage" id="links" data-toggle="tooltip" title="Percent of tweets that contain links."></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" id="media" data-toggle="tooltip" title="Percent of tweets that contains media."></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" class="retweeted" id="retweeted" data-toggle="tooltip" title="Percent of tweets retweeted by others."></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="percentage" id="favorited" data-toggle="tooltip" title="Percent of tweets favorited by others."></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Active Hours</div>
+                <div class="panel-body">
+                    @php
+                        $time = array();
+                        $occurs = array();
+                        $time1 = array();
+                        $occurs1 = array();
+                        $time2 = array();
+                        $occurs2 = array();
+                    @endphp
+                    @if(isset($first['hours']))
+                        @foreach($first['hours'] as $hour)
+                            @php
+                                array_push($time1, $hour->hour);
+                                array_push($occurs1, $hour->occurs);
+                            @endphp
+                        @endforeach
+                        @php
+                            array_push($time, $time1);
+                            array_push($occurs, $occurs1);
+                        @endphp
+                    @endif
+                    @if(isset($second['hours']))
+                        @foreach($second['hours'] as $hour)
+                            @php
+                                array_push($time2, $hour->hour);
+                                array_push($occurs2, $hour->occurs);
+                            @endphp
+                        @endforeach
+                        @php
+                            array_push($time, $time2);
+                            array_push($occurs, $occurs2);
+                        @endphp
+                    @endif
+                    <canvas id="active" width="50" height="400"></canvas>
+                </div>
             </div>
         </div>
     </div>
@@ -211,6 +288,11 @@
 @endif
 @endsection
 @section('javascript')
+    <script type="text/javascript">    
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     <script src="{{ asset('js/CompareCharts.js') }}"></script>
     <script type="text/javascript">
         @if (isset($positivity))
@@ -220,11 +302,31 @@
             var com2 = {{ json_encode($compare2) }}
             var com3 = {{ json_encode($compare3) }}
             var com4 = {{ json_encode($compare3) }}
+            var replies = {{ ($first['analysis']->replies/$first['analysis']->total)*100 }}
+            var mentions = {{ ($first['analysis']->mentions/$first['analysis']->total)*100 }}
+            var hashtags = {{ ($first['analysis']->hashtags/$first['analysis']->total)*100 }}
+            var retweets = {{ ($first['analysis']->retweets/$first['analysis']->total)*100 }}
+            var links = {{ ($first['analysis']->links/$first['analysis']->total)*100 }}
+            var media = {{ ($first['analysis']->media/$first['analysis']->total)*100 }}
+            var retweeted = {{ ($first['analysis']->retweet_count/$first['analysis']->total)*100 }}
+            var favorited = {{ ($first['analysis']->favorite_count/$first['analysis']->total)*100 }}
+            var time = {{ json_encode($time) }}
+            var occurs = {{ json_encode($occurs) }}
+            
             positive("positivity", comNames, positivity);
             compare("compare1", comNames, ['Anger', 'Anticiaption'], com1);
             compare("compare2", comNames, ['Disgust', 'Fear'], com2);
             compare("compare3", comNames, ['Joy', 'Sadness'], com3);
             compare("compare4", comNames, ['Surprise', 'Trust'], com4);
+            percentage("replies", "Replies", replies, false);
+            percentage("mentions", "@Mentions", mentions, false);
+            percentage("hashtags", "Hashtags", hashtags, false);
+            percentage("retweets", "Retweets", retweets, false);
+            percentage("links", "Includes Links", links, false);
+            percentage("media", "Includes Media", media, false);
+            percentage("retweeted", "Retweeted", retweeted, false);
+            percentage("favorited", "Favorited", favorited, false);
+            activeHours("active", time, occurs);
         @endif
 	</script>
 @endsection

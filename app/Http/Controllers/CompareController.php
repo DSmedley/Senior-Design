@@ -51,29 +51,69 @@ class CompareController extends Controller
     {
         //Get data from specified analysis
         //Else return error
-        $analysis1 = null;
-        $analysis2 = null;
-        $analysis3 = null;
-        $analysis4 = null;
+        $firstData = null;
+        $secondData = null;
+        $thirdData = null;
+        $fourthData = null;
         
         if ($first){
             $analysis1 = Analyses::where('id', $first)->first();
+            $hashtags = Hashtag::where('analysis_id', $analysis1->id)->get();
+            $hours = Hour::select('hour', 'occurs')->where('analysis_id', $analysis1->id)->orderBy('hour')->get();
+            $urls = Url::where('analysis_id', $analysis1->id)->get();
+            
+            $firstData = array(
+               'analysis'   => $analysis1,
+               'hashtags'  => $hashtags,
+               'hours'   => $hours,
+               'urls'  => $urls,
+            );
         }
         if ($second){
             $analysis2 = Analyses::where('id', $second)->first();
+            $hashtags = Hashtag::where('analysis_id', $analysis2->id)->get();
+            $hours = Hour::select('hour', 'occurs')->where('analysis_id', $analysis2->id)->orderBy('hour')->get();
+            $urls = Url::where('analysis_id', $analysis2->id)->get();
+            
+            $secondData = array(
+               'analysis'   => $analysis2,
+               'hashtags'  => $hashtags,
+               'hours'   => $hours,
+               'urls'  => $urls,
+            );
         }
         if ($third){
             $analysis3 = Analyses::where('id', $third)->first();
+            $hashtags = Hashtag::where('analysis_id', $analysis2->id)->get();
+            $hours = Hour::select('hour', 'occurs')->where('analysis_id', $analysis2->id)->orderBy('hour')->get();
+            $urls = Url::where('analysis_id', $analysis2->id)->get();
+            
+            $thirdData = array(
+               'analysis'   => $analysis3,
+               'hashtags'  => $hashtags,
+               'hours'   => $hours,
+               'urls'  => $urls,
+            );
         }
         if ($fourth){
             $analysis4 = Analyses::where('id', $fourth)->first();
+            $hashtags = Hashtag::where('analysis_id', $analysis2->id)->get();
+            $hours = Hour::select('hour', 'occurs')->where('analysis_id', $analysis2->id)->orderBy('hour')->get();
+            $urls = Url::where('analysis_id', $analysis2->id)->get();
+            
+            $fourthData = array(
+               'analysis'   => $analysis4,
+               'hashtags'  => $hashtags,
+               'hours'   => $hours,
+               'urls'  => $urls,
+            );
         }
 
         $data = array(
-           'first'   => $analysis1,
-           'second'  => $analysis2,
-           'third'   => $analysis3,
-           'fourth'  => $analysis4,
+           'first'   => $firstData,
+           'second'  => $secondData,
+           'third'   => $thirdData,
+           'fourth'  => $fourthData,
         );
         
         //Return to analysis page
