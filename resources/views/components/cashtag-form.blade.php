@@ -19,7 +19,7 @@
                         {{ session('twitterSuccess') }}
                     </div>
                 @endif
-                <form class="form-horizontal" method="POST" action="{{ route('analyze') }}">
+                <form class="form-horizontal" method="POST" action="{{ route('cashtag') }}">
                     {{ csrf_field() }}
                     
                     

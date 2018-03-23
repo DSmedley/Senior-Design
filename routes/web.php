@@ -22,8 +22,10 @@ Route::get('/analysis/{id}/{name}', 'AnalysesController@getAnalysis')->name('ana
 Route::get('/analysis/save/{id}', 'UserController@linkAnalysis')->name('analysis.save');
 
 Route::get('/cashtag', 'CashtagController@index')->name('cashtag');
+Route::post('/cashtag', 'CashtagController@index')->name('cashtag');
 
 Route::get('/hashtag', 'HashtagController@index')->name('hashtag');
+Route::post('/hashtag', 'HashtagController@index')->name('hashtag');
 
 Route::get('/compare', 'CompareController@index')->name('compare');
 Route::post('/compare', 'CompareController@compare')->name('compare');
