@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Cashtag Analysis</h2>
+                    <h2>Hashtag Analysis</h2>
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
     @endif
     <div class="row">
         <div class="col-lg-12">
-            @component('components.cashtag-form')
+            @component('components.hashtag-form')
             @endcomponent
         </div>
     </div>

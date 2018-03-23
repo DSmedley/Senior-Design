@@ -5,6 +5,12 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\User;
+use App\Analyses;
+use App\Link;
+use App\Hashtag;
+use App\Mention;
+use App\Hour;
+use App\Url;
 use Response;
 use App\Http\Resources\PersonalitiesResource;
 use App\Http\Controllers\AnalysesController;
@@ -86,6 +92,18 @@ use App\Http\Controllers\AnalysesController;
                 return response()->json($this->content, 422);  
             }
             
+            $mentions = Mention::where('analysis_id', $result->id)->get();
+            $hashtags = Hashtag::where('analysis_id', $result->id)->get();
+            $hours = Hour::select('hour', 'occurs')->where('analysis_id', $result->id)->orderBy('hour')->get();
+            $urls = Url::where('analysis_id', $result->id)->get();
+
+            $data = array(
+               'analysis'   => $result,
+               'mentions'   => $mentions,
+               'hashtags'   => $hashtags,
+               'hours'      => $hours,
+               'urls'      => $urls,
+            );
             $report = new PersonalitiesResource($result); 
             $status = 200;
             
@@ -94,6 +112,6 @@ use App\Http\Controllers\AnalysesController;
                 $analysis->linkAnalysis($user->id, $report['id']);
             }
 
-            return response()->json($report, $status);
+            return response()->json($data, $status);
         }
  }

@@ -50,19 +50,27 @@
 <div class="container target">
     <div class="row">
         <div class="col-md-2">
-            <img title="{{ $first['analysis']->name }}" class="img-circle img-responsive" src='{{ $first['analysis']->profile_image }}'>
+            <a href="{{ route('analysis.view', array('id' => $first['analysis']->id, 'name' => $first['analysis']->screen_name)) }}" target="_blank">
+                <img title="{{ $first['analysis']->name }}" class="img-circle img-responsive" src="{{ $first['analysis']->profile_image }}"> 
+            </a>
         </div>
         <div class="col-md-2">
-            <img title="{{ $second['analysis']->name }}" class="img-circle img-responsive" src='{{ $second['analysis']->profile_image }}'>
+            <a href="{{ route('analysis.view', array('id' => $second['analysis']->id, 'name' => $second['analysis']->screen_name)) }}" target="_blank">
+                <img title="{{ $second['analysis']->name }}" class="img-circle img-responsive" src="{{ $second['analysis']->profile_image }}">
+            </a>
         </div>
         @if(isset($third))
             <div class="col-md-2">
-                <img title="{{ $third['analysis']->name }}" class="img-circle img-responsive" src='{{ $third['analysis']->profile_image }}'>
+                <a href="{{ route('analysis.view', array('id' => $third['analysis']->id, 'name' => $third['analysis']->screen_name)) }}" target="_blank">
+                    <img title="{{ $third['analysis']->name }}" class="img-circle img-responsive" src="{{ $third['analysis']->profile_image }}">
+                </a>
             </div>
         @endif
         @if(isset($fourth))
             <div class="col-md-2">
-                <img title="{{ $fourth['analysis']->name }}" class="img-circle img-responsive" src='{{ $fourth['analysis']->profile_image }}'>
+                <a href="{{ route('analysis.view', array('id' => $fourth['analysis']->id, 'name' => $fourth['analysis']->screen_name)) }}" target="_blank">
+                    <img title="{{ $fourth['analysis']->name }}" class="img-circle img-responsive" src="{{ $fourth['analysis']->profile_image }}">
+                </a>
             </div>
         @endif
     </div>
@@ -236,7 +244,7 @@
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">Inside Their Tweets</div>
-                <div class="panel-body" id="analytics">
+                <div class="panel-body" id="analyticsCompare">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="percentage" id="replies" data-toggle="tooltip" title="Percent of tweets that were replies."></div>

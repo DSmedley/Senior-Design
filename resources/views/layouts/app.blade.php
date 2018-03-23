@@ -57,10 +57,10 @@
                                     <a href="{{ route('analyze') }}"><i class="fas fa-user-circle"> Twitter User </i></a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('analyze') }}"><i class="fas fa-hashtag"> Hashtag </i></a>
+                                    <a href="{{ route('hashtag') }}"><i class="fas fa-hashtag"> Hashtag </i></a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('analyze') }}"><i class="fas fa-dollar-sign"> Cashtag </i></a>
+                                    <a href="{{ route('cashtag') }}"><i class="fas fa-dollar-sign"> Cashtag </i></a>
                                 </li>
                             </ul>
                         </li>

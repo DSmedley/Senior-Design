@@ -1,10 +1,10 @@
 <!--Analyze Twitter User-->
 <div class="panel panel-default">
-    <div class="panel-heading">New Analysis</div>
+    <div class="panel-heading">Analyze Hashtag</div>
     <div class="panel-body">
         <div class="row">
             <div class="col-md-12">
-                Enter friends, competitors, employee candidates or industry leaders. We will gather the given user details and latest tweets, analyze them and put them into simple and easy to read charts. 
+                Enter a hashtag about a topic of interest. We will gather the given hashtag details and the tweets related to it, analyze them and put the results into simple and easy to read charts. 
             </div>
         </div>
         <div class="row">
@@ -43,7 +43,7 @@
                     <div class="col-sm-4" style="margin-right:15px;">
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <div class="input-group">
-                                <span class="input-group-addon" id="sizing-addon2">@</span>
+                                <span class="input-group-addon" id="sizing-addon2">#</span>
                                 <input id="name" name="name" type="text" class="form-control" placeholder="Enter Twitter Screen Name" aria-describedby="sizing-addon2">
                             </div>
 

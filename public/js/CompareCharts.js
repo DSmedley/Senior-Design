@@ -69,7 +69,7 @@ function percentage(name, names, text, percent, sign) {
     var dataset = [];
     for (k = 0; k < names.length; k++) {
         dataset.push({
-            'percent': percent[k], 
+            'percent': Math.round(percent[k]), 
             'color': colors[k], 
             'title': names[k] 
         });
