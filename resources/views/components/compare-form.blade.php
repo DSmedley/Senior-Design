@@ -84,7 +84,7 @@
 
                     <div class="col-md-2">
                         <div class="form-group">    
-                            <button type="submit" name="analyze" class="btn btn-primary">
+                            <button type="submit" id="analyzeButton" data-loading-text="Loading..." name="analyze" class="btn btn-primary">
                                 Compare
                             </button>
                         </div>

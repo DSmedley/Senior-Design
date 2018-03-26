@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="col-sm-1">
                                     <div class="form-group">
-                                        <button type="submit" name="analyze" class="btn btn-default">
+                                        <button type="submit" id="analyzeButton" data-loading-text="Loading..." name="analyze" class="btn btn-default">
                                             Analyze
                                         </button>
                                     </div>

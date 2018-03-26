@@ -7,7 +7,7 @@ use Illuminate\Console\Command;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 
-class SentimentController extends Controller
+class DEBUGSentContr extends Controller
 {
     public function getEmotions($input_tweets){
 

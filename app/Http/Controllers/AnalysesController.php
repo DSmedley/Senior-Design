@@ -144,7 +144,7 @@ class AnalysesController extends Controller
 
             for($x=0; $x<sizeof($tweetResults); $x++) {
                 $tweet = $tweetResults[$x]['full_text'];
-                $tweet = preg_replace("/[^ \w]+/",'',$tweet);
+                //$tweet = preg_replace("/[^ \w]+/",'',$tweet);
                 $tweetsArray[$x]['text'] = $tweet;
                 
                 /**GET MOST USED HASHTAGS AND MENTIONS**/
@@ -215,6 +215,8 @@ class AnalysesController extends Controller
 
             
             $tweets = new SentimentController();
+            $testing = new DEBUGSentContr();
+            $testing2 = json_decode($testing->getEmotions(json_encode($tweetsArray)));
             $emotions = json_decode($tweets->getEmotions(json_encode($tweetsArray)));
 
             //create a new analysis
@@ -283,7 +285,7 @@ class AnalysesController extends Controller
 
                     //Save the mention into the database
                     $mentionTable->save();
-                    if ($limit++ == 18) break;
+                    if ($limit++ == 6) break;
                 }
             }
 
