@@ -521,7 +521,7 @@ class SentimentController extends Controller
 		
         
         
-        // return json_encode($total_beefoo_results);
+        return json_encode($total_beefoo_results);
     }
     
 }
