@@ -22,24 +22,6 @@
                 <form class="form-horizontal" method="POST" action="{{ route('hashtag') }}">
                     {{ csrf_field() }}
                     
-                    
-                    
-                    <div class="col-sm-12">
-                        <div class="form-group{{ $errors->has('amount') ? ' has-error' : '' }}">
-                            <div class="input-group">
-                                <input id="amount" name="amount" type="text" data-slider-min="50" data-slider-max="200" data-slider-step="10" data-slider-value="100"/>
-                            </div>
-                            
-                            <span id="ex6CurrentSliderValLabel">Tweet Amount: <span id="amountSliderVal">100</span></span>
-                            
-                            @if ($errors->has('name'))
-                                <span class="help-block">
-                                    <strong>{{ $errors->first('amount') }}</strong>
-                                </span>
-                            @endif
-                        </div>
-                    </div>
-                    
                     <div class="col-sm-4" style="margin-right:15px;">
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <div class="input-group">

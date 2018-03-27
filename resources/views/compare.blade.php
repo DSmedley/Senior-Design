@@ -83,18 +83,28 @@
                     <li class="list-group-item text-muted" contenteditable="false">{{ $first['analysis']->name }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $first['analysis']->twitter_id }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
-                        @php
-                            if($first['analysis']->location != ''){
-                                echo $first['analysis']->location;
-                            }else{
-                                echo "Unknown";
-                            }
-                        @endphp
+                        @if($first['analysis']->location != null)
+                            {{$first['analysis']->location}}
+                        @else
+                            Unknown
+                        @endif
                     </li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $first['analysis']->tweets }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $first['analysis']->following }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $first['analysis']->followers }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $first['analysis']->likes }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
+                        @php $d = new DateTime($first['analysis']->joined);
+                            echo $d->format('D M j Y'); 
+                        @endphp
+                    </li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span>
+                        @if($first['analysis']->time_zone != null)
+                            {{$first['analysis']->time_zone}}
+                        @else
+                            Unknown
+                        @endif
+                    </li>
                 </ul>
             </div>
             <div class="row">  
@@ -102,18 +112,28 @@
                     <li class="list-group-item text-muted" contenteditable="false">{{ $second['analysis']->name }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $second['analysis']->twitter_id }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
-                        @php
-                            if($second['analysis']->location != ''){
-                                echo $second['analysis']->location;
-                            }else{
-                                echo "Unknown";
-                            }
-                        @endphp
+                        @if($second['analysis']->location != null)
+                            {{$second['analysis']->location}}
+                        @else
+                            Unknown
+                        @endif
                     </li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $second['analysis']->tweets }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $second['analysis']->following }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $second['analysis']->followers }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $second['analysis']->likes }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
+                        @php $d = new DateTime($second['analysis']->joined);
+                            echo $d->format('D M j Y'); 
+                        @endphp
+                    </li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span>
+                        @if($second['analysis']->time_zone != null)
+                            {{$second['analysis']->time_zone}}
+                        @else
+                            Unknown
+                        @endif
+                    </li>
                 </ul>
             </div>
             @if(isset($third))
@@ -122,18 +142,28 @@
                         <li class="list-group-item text-muted" contenteditable="false">{{ $third['analysis']->name }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $third['analysis']->twitter_id }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
-                            @php
-                                if($third['analysis']->location != ''){
-                                    echo $third['analysis']->location;
-                                }else{
-                                    echo "Unknown";
-                                }
-                            @endphp
+                            @if($third['analysis']->location != null)
+                                {{$third['analysis']->location}}
+                            @else
+                                Unknown
+                            @endif
                         </li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $third['analysis']->tweets }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $third['analysis']->following }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $third['analysis']->followers }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $third['analysis']->likes }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
+                            @php $d = new DateTime($third['analysis']->joined);
+                                echo $d->format('D M j Y'); 
+                            @endphp
+                        </li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span>
+                            @if($third['analysis']->time_zone != null)
+                                {{$third['analysis']->time_zone}}
+                            @else
+                                Unknown
+                            @endif
+                        </li>
                     </ul>
                 </div>
             @endif
@@ -143,18 +173,28 @@
                         <li class="list-group-item text-muted" contenteditable="false">{{ $fourth['analysis']->name }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $fourth['analysis']->twitter_id }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
-                            @php
-                                if($fourth['analysis']->location != ''){
-                                    echo $fourth['analysis']->location;
-                                }else{
-                                    echo "Unknown";
-                                }
-                            @endphp
+                            @if($fourth['analysis']->location != null)
+                                {{$fourth['analysis']->location}}
+                            @else
+                                Unknown
+                            @endif
                         </li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $fourth['analysis']->tweets }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $fourth['analysis']->following }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $fourth['analysis']->followers }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $fourth['analysis']->likes }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
+                            @php $d = new DateTime($fourth['analysis']->joined);
+                                echo $d->format('D M j Y'); 
+                            @endphp
+                        </li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span>
+                            @if($fourth['analysis']->time_zone != null)
+                                {{$fourth['analysis']->time_zone}}
+                            @else
+                                Unknown
+                            @endif
+                        </li>
                     </ul>
                 </div>
             @endif

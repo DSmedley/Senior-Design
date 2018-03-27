@@ -60,21 +60,35 @@
                 <li class="list-group-item text-muted" contenteditable="false">Details</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $analysis->twitter_id }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
-                    @php
-                        if($analysis->location != ''){
-                            echo $analysis->location;
-                        }else{
-                            echo "Unknown";
-                        }
-                    @endphp
+                    @if($analysis->location != null)
+                        {{$analysis->location}}
+                    @else
+                        Unknown
+                    @endif
                 </li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $analysis->tweets }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $analysis->following }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $analysis->followers }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $analysis->likes }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> {{ $analysis->joined }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span> {{ $analysis->time_zone }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">URL</strong></span><a href="{{ $analysis->url }}" target="_blank">{{ $analysis->url }}</a></li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
+                    @php $d = new DateTime($analysis->joined);
+                        echo $d->format('D M j Y'); 
+                    @endphp
+                </li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span>
+                    @if($analysis->time_zone != null)
+                        {{$analysis->time_zone}}
+                    @else
+                        Unknown
+                    @endif
+                </li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">URL</strong></span>
+                    @if($analysis->url != null)
+                        <a href="{{ $analysis->url }}" target="_blank">{{ $analysis->url }}</a>
+                    @else
+                        No URL
+                    @endif
+                </li>
             </ul>
             @guest
                 <a href="{{ route('analysis.save', array('id' => $analysis->id)) }}"><button type="button" class="btn btn-success"><i class="fas fa-save"> Login to save</i></button></a>
@@ -85,13 +99,11 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Description</div>
                 <div class="panel-body">
-                    @php
-                        if($analysis->description != ''){
-                            echo $analysis->description;
-                        }else{
-                            echo "No description.";
-                        }
-                    @endphp
+                    @if($analysis->description != null)
+                        {{$analysis->description}}
+                    @else
+                        No Description.
+                    @endif
                 </div>
             </div>
             <div class="panel panel-default target">
@@ -237,11 +249,6 @@
     </script>
     <script src="{{ asset('js/ReportCharts.js') }}"></script>
     <script type="text/javascript">
-        // With JQuery
-        $("#amount").slider();
-        $("#amount").on("slide", function(slideEvt) {
-            $("#amountSliderVal").text(slideEvt.value);
-        });
         @if (isset($positivity))
             var positivity = {{ json_encode($positivity) }}
             var emotions = {{ json_encode($emotions) }}

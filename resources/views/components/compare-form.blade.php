@@ -26,7 +26,7 @@
                         <div class="form-group{{ $errors->has('name1') ? ' has-error' : '' }}">
                             <div class="input-group">
                                 <span class="input-group-addon" id="sizing-addon2">@</span>
-                                <input id="name1" name="name1" type="text" class="form-control" placeholder="Enter Twitter Screen Name" aria-describedby="sizing-addon2">
+                                <input id="name1" name="name1" type="text" class="form-control" placeholder="Twitter Name" aria-describedby="sizing-addon2">
                             </div>
 
                             @if ($errors->has('name'))
@@ -41,7 +41,7 @@
                         <div class="form-group{{ $errors->has('name2') ? ' has-error' : '' }}">    
                             <div class="input-group">
                                 <span class="input-group-addon" id="sizing-addon2">@</span>
-                                <input id="name2" name="name2" type="text" class="form-control" placeholder="Enter Twitter Screen Name" aria-describedby="sizing-addon2">
+                                <input id="name2" name="name2" type="text" class="form-control" placeholder="Twitter Name" aria-describedby="sizing-addon2">
                             </div>
 
                             @if ($errors->has('name'))
@@ -56,7 +56,7 @@
                         <div class="form-group{{ $errors->has('name3') ? ' has-error' : '' }}">    
                             <div class="input-group">
                                 <span class="input-group-addon" id="sizing-addon2">@</span>
-                                <input id="name3" name="name3" type="text" class="form-control" placeholder="Enter Twitter Screen Name" aria-describedby="sizing-addon2">
+                                <input id="name3" name="name3" type="text" class="form-control" placeholder="Twitter Name" aria-describedby="sizing-addon2">
                             </div>
 
                             @if ($errors->has('name'))
@@ -71,7 +71,7 @@
                         <div class="form-group{{ $errors->has('name4') ? ' has-error' : '' }}">
                             <div class="input-group">
                                 <span class="input-group-addon" id="sizing-addon2">@</span>
-                                <input id="name4" name="name4" type="text" class="form-control" placeholder="Enter Twitter Screen Name" aria-describedby="sizing-addon2">
+                                <input id="name4" name="name4" type="text" class="form-control" placeholder="Twitter Name" aria-describedby="sizing-addon2">
                             </div>
 
                             @if ($errors->has('name'))

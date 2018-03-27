@@ -1,1583 +1,1007 @@
-RUNNING NEW SCANDP -- So much Fake News. Never been more voluminous or more inaccurate. But through it all, our country is doing great! 
-DP -- The economy is looking really good. It has been many years that we have seen these kind of numbers. The underlying strength of companies has perhaps never been better. 
-DP     TRUST -- economy 
+RUNNING NEW SCANDP -- Thank you @StateDept for hosting the International #WomenofCourage ceremony that both recognizes and celebrates the strength and leadership of women around the globe. https://t.co/nyIOsQQXbK 
+DP     JOY -- ceremony 
+DP     SURPRISE -- ceremony 
+DP     TRUST -- strength 
 
-DP     JOY -- kind 
-DP     TRUST -- kind 
+DP -- A big thank you to Celia and her big sister Natalie from Clarksburg, MD for traveling to the @WhiteHouse to visit!  I had a wonderful time watching you bake cookies! #ChocolateChipCookies https://t.co/UrervLPusm 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     ANTICIPATION -- time 
+DP -- Looking forward to today's  @StateDept’s International #WomenofCourage award ceremony, which both recognizes &amp; honors the strength &amp; bravery of women around the globe. 
+DP     ANTICIPATION -- award 
+DP     JOY -- award 
+DP     SURPRISE -- award 
+DP     TRUST -- award 
 
 DP     TRUST -- strength 
 
-DP -- .@HowieCarrShow just wrote a book which everyone is talking about. He was a great help. He is a veteran journalist who had a great influence in NH and beyond. He calls it the most amazing political campaign of modern times. The book is called, “What Really Happened.” Enjoy! #MAGA https://t.co/jYhjpoJKHe 
-DP     TRUST -- veteran 
+DP -- Greetings from @WhiteHouse https://t.co/mjuHFqglYz 
+DP -- Snow day ❄️ @WhiteHouse https://t.co/D5JquT9qiv 
+DP -- RT @politico: “In my role as First Lady, I receive many letters from children who have been bullied or feel threatened on social media,” Me… 
+DP -- It was a very productive meeting on cyber safety &amp; how to teach our children to be responsible digital citizens. Thank you @amazon @Facebook
+@FOSI @Google @m_Beckerman @Microsoft  @Twitter &amp; @snap for coming to the @WhiteHouse today &amp; sharing your valuable insight and expertise. https://t.co/YY2srrbYhP 
+DP     JOY -- teach 
+DP     SURPRISE -- teach 
+DP     TRUST -- teach 
 
-DP     ANTICIPATION -- calls 
-DP     TRUST -- calls 
+DP     TRUST -- responsible 
 
-DP -- “President Donald J. Trump Proclaims March 25, 2018, as Greek Independence Day: A National Day of Celebration of Greek and American Democracy” https://t.co/GwSJ2UK2xD https://t.co/GltMwxINA2 
-DP     SURPRISE -- trump 
-DP     ANTICIPATION -- independence 
-DP     JOY -- independence 
-DP     SURPRISE -- independence 
-DP     TRUST -- independence 
+DP     ANTICIPATION -- coming 
+DP -- Great day in New Hampshire visiting w 1st responders at @ManchesterFD. Honored to give remarks &amp; intro @potus at Manchester Community College as we continue to fight this country's opioid crisis. https://t.co/3WDZcjJfZM 
+DP     ANTICIPATION -- continue 
+DP     TRUST -- continue 
 
+DP     ANGER -- fight 
+DP     FEAR -- fight 
+DP -- Happy #StPatricksDay https://t.co/JmxqyQPl3y 
+DP     JOY -- happy 
+DP     TRUST -- happy 
+
+DP -- Thank you Prime Minister Leo Varadkar for joining us in our traditional #StPatricksDay celebration at the @WhiteHouse today. May this year bring you and the people of Ireland the best of good luck! https://t.co/N1E9Fp1KN4 
 DP     ANTICIPATION -- celebration 
 DP     JOY -- celebration 
 DP     SURPRISE -- celebration 
 DP     TRUST -- celebration 
 
-DP -- Happy National #MedalOfHonorDay to our HEROES. We love you! https://t.co/6euI31R4Gz 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP     JOY -- love 
-DP -- ....lawyer or law firm will take months to get up to speed (if for no other reason than they can bill more), which is unfair to our great country - and I am very happy with my existing team. Besides, there was NO COLLUSION with Russia, except by Crooked Hillary and the Dems! 
-DP     TRUST -- law 
-
-DP     ANGER -- unfair 
-DP     DISGUST -- unfair 
-DP     SAD -- unfair 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP     ANGER -- collusion 
-DP     DISGUST -- collusion 
-DP     FEAR -- collusion 
-DP     SAD -- collusion 
-DP -- Many lawyers and top law firms want to represent me in the Russia case...don’t believe the Fake News narrative that it is hard to find a lawyer who wants to take this on. Fame &amp; fortune will NEVER be turned down by a lawyer, though some are conflicted. Problem is that a new...... 
-DP     ANTICIPATION -- top 
-DP     TRUST -- top 
-
-DP     TRUST -- law 
-
-DP     ANGER -- lawyer 
-DP     DISGUST -- lawyer 
-DP     FEAR -- lawyer 
-DP     ANTICIPATION -- fortune 
-DP     JOY -- fortune 
-DP     SURPRISE -- fortune 
-DP     TRUST -- fortune 
-
-DP     FEAR -- problem 
-DP     SAD -- problem 
-DP -- Much can be done with the $1.6 Billion given to building and fixing the border wall. It is just a down payment. Work will start immediately. The rest of the money will come - and remember DACA, the Democrats abandoned you (but we will not)! 
-DP     ANTICIPATION -- start 
-DP     ANGER -- money 
-DP     ANTICIPATION -- money 
-DP     JOY -- money 
-DP     SURPRISE -- money 
-DP     TRUST -- money 
-
-DP     ANGER -- abandoned 
-DP     FEAR -- abandoned 
-DP     SAD -- abandoned 
-DP -- Because of the $700 &amp; $716 Billion Dollars gotten to rebuild our Military, many jobs are created and our Military is again rich. Building a great Border Wall, with drugs (poison) and enemy combatants pouring into our Country, is all about National Defense. Build WALL through M! 
-DP     FEAR -- military 
-DP     ANGER -- enemy 
-DP     DISGUST -- enemy 
-DP     FEAR -- enemy 
-DP -- France honors a great hero. Officer died after bravely swapping places with hostage in ISIS related terror attack. So much bravery around the world constantly fighting radical Islamic terrorism. Even stronger measures needed, especially at borders! 
-DP     TRUST -- officer 
-
-DP     ANGER -- hostage 
-DP     FEAR -- hostage 
-DP     TRUST -- related 
-
-DP     FEAR -- terror 
-DP     TRUST -- constantly 
-
-DP     ANGER -- fighting 
-DP -- Our thoughts and prayers are with the victims of the horrible attack in France yesterday, and we grieve the nation’s loss. We also condemn the violent actions of the attacker and anyone who would provide him support. We are with you @EmmanuelMacron! 
-DP     ANGER -- horrible 
-DP     DISGUST -- horrible 
-DP     FEAR -- horrible 
-DP     ANGER -- attack 
-DP     FEAR -- attack 
-DP     FEAR -- grieve 
-DP     SAD -- grieve 
-DP     ANGER -- condemn 
-DP     ANGER -- violent 
-DP     DISGUST -- violent 
-DP     FEAR -- violent 
-DP     SURPRISE -- violent 
-DP     TRUST -- provide 
-
-DP -- As a matter of National Security I've signed the Omnibus Spending Bill. I say to Congress: I will NEVER sign another bill like this again. To prevent this omnibus situation from ever happening again, I'm calling on Congress to give me a line-item veto for all govt spending bills! https://t.co/kYwMk5AE5k 
-DP     FEAR -- prevent 
-DP     DISGUST -- congress 
-DP     TRUST -- congress 
-
-DP     ANGER -- veto 
-DP -- Obama Administration legalized bump stocks. BAD IDEA. As I promised, today the Department of Justice will issue the rule banning BUMP STOCKS with a mandated comment period. We will BAN all devices that turn legal weapons into illegal machine guns. 
-DP     ANGER -- legalized 
-DP     FEAR -- legalized 
-DP     JOY -- legalized 
-DP     TRUST -- legalized 
-
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP     TRUST -- justice 
-
-DP     FEAR -- rule 
-DP     TRUST -- rule 
-
-DP     TRUST -- legal 
-
-DP     ANGER -- illegal 
-DP     DISGUST -- illegal 
-DP     FEAR -- illegal 
-DP     SAD -- illegal 
-DP     TRUST -- machine 
-
-DP -- News conference at the White House concerning the Omnibus Spending Bill.  1:00 P.M. 
-DP     ANTICIPATION -- white 
-DP     JOY -- white 
-DP     TRUST -- white 
-
-DP -- I am considering a VETO of the Omnibus Spending Bill based on the fact that the 800,000 plus DACA recipients have been totally abandoned by the Democrats (not even mentioned in Bill) and the BORDER WALL, which is desperately needed for our National Defense, is not fully funded. 
-DP     ANGER -- veto 
-DP     TRUST -- fact 
-
-DP     ANGER -- abandoned 
-DP     FEAR -- abandoned 
-DP     SAD -- abandoned 
-DP     TRUST -- fully 
-
-DP -- DACA was abandoned by the Democrats. Very unfair to them! Would have been tied to desperately needed Wall. 
-DP     ANGER -- abandoned 
-DP     FEAR -- abandoned 
-DP     SAD -- abandoned 
-DP     ANGER -- unfair 
-DP     DISGUST -- unfair 
-DP     SAD -- unfair 
-DP -- House Intelligence Committee votes to release final report. FINDINGS: (1) No evidence provided of Collusion between Trump Campaign &amp; Russia. (2)  The Obama Administrations Post election response was insufficient. (3) Clapper provided inconsistent testimony on media contacts. 
-DP     FEAR -- intelligence 
-DP     JOY -- intelligence 
-DP     TRUST -- intelligence 
-
-DP     TRUST -- committee 
-
-DP     ANGER -- collusion 
-DP     DISGUST -- collusion 
-DP     FEAR -- collusion 
-DP     SAD -- collusion 
-DP     SURPRISE -- trump 
-DP     TRUST -- testimony 
-
-DP -- I am pleased to announce that, effective 4/9/18, @AmbJohnBolton will be my new National Security Advisor. I am very thankful for the service of General H.R. McMaster who has done an outstanding job &amp; will always remain my friend. There will be an official contact handover on 4/9. 
-DP     JOY -- pleased 
-DP     TRUST -- effective 
-
-DP     JOY -- thankful 
-DP     TRUST -- general 
-
-DP     JOY -- outstanding 
-DP     TRUST -- official 
-
-DP -- My honor Charlie - thank you! #MAGA https://t.co/ZbXFxNVMLP 
-DP     TRUST -- honor 
-
-DP -- As a candidate, I pledged that if elected I would use every lawful tool to combat unfair trade, protect American workers, and defend our national security.  Today, we took another critical step to fulfill that commitment. https://t.co/7NBI0Dibmx https://t.co/nmzqos3BUA 
-DP     TRUST -- lawful 
-
-DP     ANGER -- combat 
-DP     FEAR -- combat 
-DP     ANGER -- unfair 
-DP     DISGUST -- unfair 
-DP     SAD -- unfair 
-DP     FEAR -- defend 
-DP     JOY -- fulfill 
-DP -- RT @FLOTUS: Greetings from @WhiteHouse https://t.co/mjuHFqglYz 
-DP -- Remember when they were saying, during the campaign, that Donald Trump is giving great speeches and drawing big crowds, but he is spending much less money and not using social media as well as Crooked Hillary’s large and highly sophisticated staff. Well, not saying that anymore! 
-DP     SURPRISE -- trump 
-DP     ANGER -- money 
-DP     ANTICIPATION -- money 
-DP     JOY -- money 
-DP     SURPRISE -- money 
-DP     TRUST -- money 
-
-DP -- Crazy Joe Biden is trying to act like a tough guy. Actually, he is weak, both mentally and physically, and yet he threatens me, for the second time, with physical assault. He doesn’t know me, but he would go down fast and hard, crying all the way. Don’t threaten people Joe! 
-DP     ANGER -- crazy 
-DP     FEAR -- crazy 
-DP     SAD -- crazy 
-DP     SAD -- tough 
-DP     SAD -- crying 
-DP     ANGER -- threaten 
-DP     ANTICIPATION -- threaten 
-DP     FEAR -- threaten 
-DP -- Democrats refused to take care of DACA. Would have been so easy, but they just didn’t care. I had to fight for Military and start of Wall. 
-DP     SAD -- refused 
-DP     ANGER -- fight 
-DP     FEAR -- fight 
-DP     FEAR -- military 
-DP     ANTICIPATION -- start 
-DP -- Got $1.6 Billion to start Wall on Southern Border, rest will be forthcoming. Most importantly, got $700 Billion to rebuild our Military, $716 Billion next year...most ever. Had to waste money on Dem giveaways in order to take care of military pay increase and new equipment. 
-DP     ANTICIPATION -- start 
-DP     DISGUST -- waste 
-DP     ANGER -- money 
-DP     ANTICIPATION -- money 
-DP     JOY -- money 
-DP     SURPRISE -- money 
-DP     TRUST -- money 
-
-DP     FEAR -- military 
-DP     ANTICIPATION -- pay 
-DP     JOY -- pay 
-DP     TRUST -- pay 
-
-DP -- .....They can help solve problems with North Korea, Syria, Ukraine, ISIS, Iran and even the coming Arms Race. Bush tried to get along, but didn’t have the “smarts.” Obama and Clinton tried, but didn’t have the energy or chemistry (remember RESET). PEACE THROUGH STRENGTH! 
-DP     ANTICIPATION -- coming 
-DP     ANTICIPATION -- peace 
-DP     JOY -- peace 
-DP     TRUST -- peace 
-
-DP -- I called President Putin of Russia to congratulate him on his election victory (in past, Obama called him also). The Fake News Media is crazed because they wanted me to excoriate him. They are wrong! Getting along with Russia (and others) is a good thing, not a bad thing....... 
-DP     TRUST -- president 
-
-DP     ANTICIPATION -- victory 
-DP     JOY -- victory 
-DP     TRUST -- victory 
-
-DP     ANGER -- crazed 
-DP     FEAR -- crazed 
 DP     ANTICIPATION -- good 
 DP     JOY -- good 
 DP     SURPRISE -- good 
 DP     TRUST -- good 
 
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP -- “Special Council is told to find crimes, whether a crime exists or not. I was opposed to the selection of Mueller to be Special Council. I am still opposed to it. I think President Trump was right when he said there never should have been a Special Council appointed because..... 
-DP     ANTICIPATION -- council 
-DP     TRUST -- council 
-
-DP     ANGER -- crime 
-DP     ANGER -- opposed 
-DP     FEAR -- opposed 
-DP     JOY -- special 
-DP     ANGER -- opposed 
-DP     FEAR -- opposed 
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP     JOY -- special 
-DP     ANTICIPATION -- council 
-DP     TRUST -- council 
-
-DP -- ...there was no probable cause for believing that there was any crime, collusion or otherwise, or obstruction of justice!”  So stated by Harvard Law Professor Alan Dershowitz. 
-DP     TRUST -- believing 
-
-DP     ANGER -- collusion 
-DP     DISGUST -- collusion 
-DP     FEAR -- collusion 
-DP     SAD -- collusion 
-DP     TRUST -- law 
-
-DP     TRUST -- professor 
-
-DP -- Department of Justice should have urged the Supreme Court to at least hear the Drivers License case on illegal immigrants in Arizona. I agree with @LouDobbs. Should have sought review. 
-DP     TRUST -- justice 
-
-DP     ANGER -- court 
-DP     ANTICIPATION -- court 
-DP     FEAR -- court 
-DP     FEAR -- case 
-DP     SAD -- case 
-DP     ANGER -- illegal 
-DP     DISGUST -- illegal 
-DP     FEAR -- illegal 
-DP     SAD -- illegal 
-DP -- AUSTIN BOMBING SUSPECT IS DEAD. Great job by law enforcement and all concerned! 
-DP     FEAR -- suspect 
-DP     TRUST -- law 
-
-DP -- Our Nation was founded by farmers. Our independence was won by farmers. And our continent was tamed by farmers. Our farmers always lead the way -- we are PROUD of them, and we are DELIVERING for them! #NationalAgricultureDay 
-DP     TRUST -- nation 
-
-DP     ANTICIPATION -- independence 
-DP     JOY -- independence 
-DP     SURPRISE -- independence 
-DP     TRUST -- independence 
-
-DP     ANTICIPATION -- proud 
-DP     JOY -- proud 
-DP     TRUST -- proud 
-
-DP -- The Democrats do not want to help DACA. Would be so easy to make a deal! 
-DP -- RT @WhiteHouse: The opioid crisis has created stories of despair of shock, but also stories of recovery &amp; hope. President Trump is asking e… 
-DP     ANGER -- despair 
-DP     DISGUST -- despair 
-DP     FEAR -- despair 
-DP     SAD -- despair 
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP -- A total WITCH HUNT with massive conflicts of interest! 
-DP     ANGER -- witch 
-DP     DISGUST -- witch 
-DP     FEAR -- witch 
-DP -- .@seanhannity on @foxandfriends now! Great! 8:18 A.M. 
-DP -- Why does the Mueller team have 13 hardened Democrats, some big Crooked Hillary supporters, and Zero Republicans? Another Dem recently added...does anyone think this is fair? And yet, there is NO COLLUSION! 
-DP     TRUST -- team 
-
-DP     ANGER -- hardened 
-DP     DISGUST -- hardened 
-DP     FEAR -- hardened 
-DP -- Spent very little time with Andrew McCabe, but he never took notes when he was with me. I don’t believe he made memos except to help his own agenda, probably at a later date. Same with lying James Comey. Can we call them Fake Memos? 
-DP     ANTICIPATION -- time 
-DP     ANGER -- lying 
-DP     DISGUST -- lying 
-DP -- Wow, watch Comey lie under oath to Senator G when asked “have you ever been an anonymous source...or known someone else to be an anonymous source...?” He said strongly “never, no.” He lied as shown clearly on @foxandfriends. 
-DP     ANTICIPATION -- watch 
-DP     FEAR -- watch 
-DP     ANGER -- lie 
-DP     DISGUST -- lie 
-DP     SAD -- lie 
-DP     TRUST -- oath 
-
-DP -- The Mueller probe should never have been started in that there was no collusion and there was no crime. It was based on fraudulent activities and a Fake Dossier paid for by Crooked Hillary and the DNC, and improperly used in FISA COURT for surveillance of my campaign. WITCH HUNT! 
-DP     ANGER -- collusion 
-DP     DISGUST -- collusion 
-DP     FEAR -- collusion 
-DP     SAD -- collusion 
-DP     ANGER -- fraudulent 
-DP     DISGUST -- fraudulent 
-DP     ANGER -- court 
-DP     ANTICIPATION -- court 
-DP     FEAR -- court 
-DP     FEAR -- surveillance 
-DP     ANGER -- witch 
-DP     DISGUST -- witch 
-DP     FEAR -- witch 
-DP -- The Fake News is beside themselves that McCabe was caught, called out and fired. How many hundreds of thousands of dollars was given to wife’s campaign by Crooked H friend, Terry M, who was also under investigation? How many lies? How many leaks? Comey knew it all, and much more! 
-DP -- As the House Intelligence Committee has concluded, there was no collusion between Russia and the Trump Campaign. As many are now finding out, however, there was tremendous leaking, lying and corruption at the highest levels of the FBI, Justice &amp; State. #DrainTheSwamp 
-DP     FEAR -- intelligence 
-DP     JOY -- intelligence 
-DP     TRUST -- intelligence 
-
-DP     TRUST -- committee 
-
-DP     ANGER -- collusion 
-DP     DISGUST -- collusion 
-DP     FEAR -- collusion 
-DP     SAD -- collusion 
-DP     SURPRISE -- trump 
-DP     ANGER -- lying 
-DP     DISGUST -- lying 
-DP     DISGUST -- corruption 
-DP     ANTICIPATION -- highest 
-DP     FEAR -- highest 
-DP     JOY -- highest 
-DP     SURPRISE -- highest 
-DP     TRUST -- justice 
-
-DP -- Happy #StPatricksDay https://t.co/4vVsW2smhB 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP -- Andrew McCabe FIRED, a great day for the hard working men and women of the FBI - A great day for Democracy. Sanctimonious James Comey was his boss and made McCabe look like a choirboy. He knew all about the lies and corruption going on at the highest levels of the FBI! 
-DP     DISGUST -- corruption 
-DP     ANTICIPATION -- highest 
-DP     FEAR -- highest 
-DP     JOY -- highest 
-DP     SURPRISE -- highest 
-DP -- “U.S. Consumer Confidence Hits 14-Year High” https://t.co/tXJsSRoM64 
-DP     FEAR -- confidence 
-DP     JOY -- confidence 
-DP     TRUST -- confidence 
-
-DP -- It would be great for the Republican Party of Nevada, and it’s unity if good guy Danny Tarkanian would run for Congress and Dean Heller, who is doing a really good job, could run for Senate unopposed! 
-DP     TRUST -- unity 
-
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP     DISGUST -- congress 
-DP     TRUST -- congress 
-
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP     TRUST -- senate 
-
-DP -- Our thoughts and prayers go out to the families and loved ones of the brave troops lost in the helicopter crash on the Iraq-Syria border yesterday. Their sacrifice in service to our country will never be forgotten. 
-DP     SAD -- lost 
-DP     FEAR -- crash 
-DP     SAD -- crash 
-DP     SURPRISE -- crash 
-DP -- “President Donald J. Trump Delivers Remarks at the Shamrock☘️Bowl Presentation by Prime Minister Varadkar in the East Room of the White House” 🇺🇸🇮🇪 https://t.co/ZbogpAE09g 
-DP     SURPRISE -- trump 
-DP     ANTICIPATION -- white 
-DP     JOY -- white 
-DP     TRUST -- white 
-
-DP -- Continuing to monitor the heartbreaking bridge collapse at FIU - so tragic. Many brave First Responders rushed in to save lives. Thank you for your courage. Praying this evening for all who are affected. 
-DP     DISGUST -- collapse 
-DP     FEAR -- collapse 
-DP     SAD -- collapse 
-DP     JOY -- save 
-DP     TRUST -- save 
-
-DP -- It was my honor to welcome Prime Minister Leo Varadkar of Ireland to the @WhiteHouse! https://t.co/ZT3WnIZR2L 
-DP     TRUST -- honor 
-
-DP -- RT @WhiteHouse: Yesterday, five @Cabinet Secretaries testified on the Hill on the need to rebuild our Nation's crumbling infrastructure. Pr… 
-DP     SAD -- crumbling 
-DP -- We do have a Trade Deficit with Canada, as we do with almost all countries (some of them massive). P.M. Justin Trudeau of Canada, a very good guy, doesn’t like saying that Canada has a Surplus vs. the U.S.(negotiating), but they do...they almost all do...and that’s how I know! 
-DP     TRUST -- trade 
-
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP -- Larry Kudlow will be my Chief Economic Advisor as Director of the National Economic Council. Our Country will have many years of Great Economic &amp; Financial Success, with low taxes, unparalleled innovation, fair trade and an ever expanding labor force leading the way! #MAGA 
-DP     TRUST -- director 
-
-DP     TRUST -- trade 
-
-DP     ANTICIPATION -- labor 
-DP     JOY -- labor 
-DP     SURPRISE -- labor 
-DP     TRUST -- labor 
-
-DP     ANGER -- force 
-DP     FEAR -- force 
-DP     TRUST -- leading 
-
-DP -- Please join me with your thoughts and prayers for both aviators, their families and our incredible @USNavy. https://t.co/60bHhrp8Y1 
-DP -- It was wonderful to be back in Missouri where our push for historic TAX CUTS all began. Six months ago I promised that we would cut taxes to bring Main Street roaring back - and that is exactly what is happening! https://t.co/4kPofEii3i 
-DP     JOY -- wonderful 
-DP     SURPRISE -- wonderful 
-DP     TRUST -- wonderful 
-
-DP     SAD -- tax 
-DP -- Together, we are MAKING AMERICA GREAT AGAIN! https://t.co/CUutL5SZxQ 
-DP -- Today the House took major steps toward securing our schools by passing the STOP School Violence Act. We must put the safety of America's children FIRST by improving training and by giving schools and law enforcement better tools. A tragedy like Parkland can't happen ever again! 
-DP     TRUST -- school 
-
-DP     ANGER -- violence 
-DP     FEAR -- violence 
-DP     SAD -- violence 
-DP     TRUST -- law 
-
+DP -- Heartened to see children affected by tragedy using their voices to try and create change. Wonderful to meet and speak with Stoneman Douglas High School student @KyleKashuv today at the @WhiteHouse. His message of unity inspires us all! #MSDStrong https://t.co/N5ZqdGruwT 
 DP     FEAR -- tragedy 
 DP     SAD -- tragedy 
-DP     ANTICIPATION -- happen 
-DP -- Thank you for hosting! #MAGA https://t.co/9pHH60DVlX 
-DP -- We cannot keep a blind eye to the rampant unfair trade practices against our Country! 
-DP     ANGER -- unfair 
-DP     DISGUST -- unfair 
-DP     SAD -- unfair 
-DP     TRUST -- trade 
-
-DP -- Five of our incredible @Cabinet Secretaries are testifying on the Hill this morning on the need to rebuild our Nation’s crumbling infrastructure. We need to build FAST &amp; we need to build for our FUTURE. Thank you @SenateCommerce for hosting this hearing! #InfrastructureInAmerica 
-DP     SAD -- crumbling 
-DP -- Perhaps at no time in history have the business fundamentals of U.S. companies been better than they are today! 
-DP     ANTICIPATION -- time 
-DP -- Hundreds of good people, including very important Ambassadors and Judges, are being blocked and/or slow walked by the Democrats in the Senate. Many important positions in Government are unfilled because of this obstruction. Worst in U.S. history! 
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP     TRUST -- important 
-
-DP     TRUST -- important 
-
-DP     FEAR -- government 
-DP -- All across this nation, we pray for our country and we THANK GOD for our United States Marines! Thank you. God Bless You. And God Bless America! https://t.co/vKXBd0CGH1 
-DP     ANTICIPATION -- pray 
-DP     FEAR -- pray 
-DP     JOY -- pray 
-DP     SURPRISE -- pray 
-DP     TRUST -- pray 
-
-DP     ANTICIPATION -- god 
-DP     FEAR -- god 
-DP     JOY -- god 
-DP     TRUST -- god 
-
-DP     TRUST -- united 
-
-DP     ANTICIPATION -- god 
-DP     FEAR -- god 
-DP     JOY -- god 
-DP     TRUST -- god 
-
-DP     ANTICIPATION -- bless 
-DP     JOY -- bless 
-DP     TRUST -- bless 
-
-DP     ANTICIPATION -- god 
-DP     FEAR -- god 
-DP     JOY -- god 
-DP     TRUST -- god 
-
-DP     ANTICIPATION -- bless 
-DP     JOY -- bless 
-DP     TRUST -- bless 
-
-DP -- It was my great honor to deliver a message at the Marine Corps Air Station Miramar to our GREAT U.S. Military, straight from the heart of the American People: We support you, we thank you, we love you - and we will always have your back! https://t.co/oCt1nH3DON 
-DP     TRUST -- honor 
-
-DP     TRUST -- marine 
-
-DP     JOY -- love 
-DP -- If we don’t have a wall system, we’re not going to have a country. Congress must fund the BORDER WALL &amp; prohibit grants to sanctuary jurisdictions that threaten the security of our country &amp; the people of our country. We must enforce our laws &amp; protect our people! #BuildTheWall https://t.co/NGqNueukvj 
-DP     DISGUST -- congress 
-DP     TRUST -- congress 
-
-DP     ANTICIPATION -- sanctuary 
-DP     JOY -- sanctuary 
-DP     TRUST -- sanctuary 
-
-DP     ANGER -- threaten 
-DP     ANTICIPATION -- threaten 
-DP     FEAR -- threaten 
-DP     ANGER -- enforce 
-DP     FEAR -- enforce 
-DP -- California’s sanctuary policies are illegal and unconstitutional and put the safety and security of our entire nation at risk. Thousands of dangerous &amp; violent criminal aliens are released as a result of sanctuary policies, set free to prey on innocent Americans. THIS MUST STOP! 
-DP     ANTICIPATION -- sanctuary 
-DP     JOY -- sanctuary 
-DP     TRUST -- sanctuary 
-
-DP     ANGER -- illegal 
-DP     DISGUST -- illegal 
-DP     FEAR -- illegal 
-DP     SAD -- illegal 
-DP     TRUST -- nation 
-
-DP     FEAR -- dangerous 
-DP     ANGER -- violent 
-DP     DISGUST -- violent 
-DP     FEAR -- violent 
-DP     SURPRISE -- violent 
-DP     ANGER -- criminal 
-DP     DISGUST -- criminal 
-DP     FEAR -- criminal 
-DP     ANTICIPATION -- result 
-DP     ANTICIPATION -- sanctuary 
-DP     JOY -- sanctuary 
-DP     TRUST -- sanctuary 
-
-DP     FEAR -- prey 
-DP     TRUST -- innocent 
-
-DP -- “According to the Center for Immigration Studies, the $18 billion wall will pay for itself by curbing the importation of crime, drugs and illegal immigrants who tend to go on the federal dole...” https://t.co/NdLC6jZwWE 
-DP     TRUST -- center 
-
-DP     ANTICIPATION -- pay 
-DP     JOY -- pay 
-DP     TRUST -- pay 
-
-DP     ANGER -- illegal 
-DP     DISGUST -- illegal 
-DP     FEAR -- illegal 
-DP     SAD -- illegal 
-DP -- Heading to see the BORDER WALL prototypes in California! https://t.co/fU6Ukc271l 
-DP -- Mike Pompeo, Director of the CIA, will become our new Secretary of State. He will do a fantastic job! Thank you to Rex Tillerson for his service! Gina Haspel will become the new Director of the CIA, and the first woman so chosen. Congratulations to all! 
-DP     TRUST -- director 
-
-DP     TRUST -- director 
-
-DP -- The Economy is raging, at an all time high, and is set to get even better. Jobs and wages up. Vote for Rick Saccone and keep it going! 
-DP     TRUST -- economy 
-
-DP     ANTICIPATION -- time 
-DP     JOY -- wages 
-DP     ANGER -- vote 
-DP     ANTICIPATION -- vote 
-DP     JOY -- vote 
-DP     SAD -- vote 
-DP     SURPRISE -- vote 
-DP     TRUST -- vote 
-
-DP -- THE HOUSE INTELLIGENCE COMMITTEE HAS, AFTER A 14 MONTH LONG IN-DEPTH INVESTIGATION, FOUND NO EVIDENCE OF COLLUSION OR COORDINATION BETWEEN THE TRUMP CAMPAIGN AND RUSSIA TO INFLUENCE THE 2016 PRESIDENTIAL ELECTION. 
-DP     FEAR -- intelligence 
-DP     JOY -- intelligence 
-DP     TRUST -- intelligence 
-
-DP     TRUST -- committee 
-
-DP     ANTICIPATION -- long 
-DP     JOY -- found 
-DP     TRUST -- found 
-
-DP     ANGER -- collusion 
-DP     DISGUST -- collusion 
-DP     FEAR -- collusion 
-DP     SAD -- collusion 
-DP     SURPRISE -- trump 
-DP -- It was my great honor to welcome the 2017 World Series Champion Houston @Astros to the @WhiteHouse! #HoustonStrong https://t.co/IO6B42jixA 
-DP     TRUST -- honor 
-
-DP     TRUST -- series 
-
-DP     ANTICIPATION -- champion 
-DP     JOY -- champion 
-DP     TRUST -- champion 
-
-DP -- The Pittsburgh Post Gazette just endorsed Rick Saccone for Congress. He will be much better for steel and business. Very strong on experience and what our Country needs. Lamb will always vote for Pelosi and Dems....Will raise taxes, weak on Crime and Border. 
-DP     TRUST -- gazette 
-
-DP     JOY -- lamb 
-DP     TRUST -- lamb 
-
-DP     ANGER -- vote 
-DP     ANTICIPATION -- vote 
-DP     JOY -- vote 
-DP     SAD -- vote 
-DP     SURPRISE -- vote 
-DP     TRUST -- vote 
-
-DP     ANGER -- crime 
-DP -- If schools are mandated to be gun free zones, violence and danger are given an open invitation to enter. Almost all school shootings are in gun free zones. Cowards will only go where there is no deterrent! 
-DP     ANGER -- gun 
-DP     FEAR -- gun 
-DP     ANGER -- violence 
-DP     FEAR -- violence 
-DP     SAD -- violence 
-DP     FEAR -- danger 
-DP     SAD -- danger 
-DP     ANTICIPATION -- invitation 
-DP     TRUST -- school 
-
-DP     ANGER -- gun 
-DP     FEAR -- gun 
-DP -- ....On 18 to 21 Age Limits, watching court cases and rulings before acting. States are making this decision. Things are moving rapidly on this, but not much political support (to put it mildly). 
-DP     ANGER -- court 
-DP     ANTICIPATION -- court 
-DP     FEAR -- court 
-DP -- Very strong improvement and strengthening of background checks will be fully backed by White House. Legislation moving forward. Bump Stocks will soon be out. Highly trained expert teachers will be allowed to conceal carry, subject to State Law. Armed guards OK, deterrent!....... 
-DP     JOY -- improvement 
-DP     TRUST -- improvement 
-
-DP     JOY -- strengthening 
-DP     TRUST -- strengthening 
-
-DP     TRUST -- fully 
-
-DP     ANTICIPATION -- white 
-DP     JOY -- white 
-DP     TRUST -- white 
-
-DP     TRUST -- expert 
-
-DP     SAD -- conceal 
-DP     ANGER -- armed 
-DP     FEAR -- armed 
-DP -- Secretary of Commerce Wilbur Ross will be speaking with representatives of the European Union about eliminating the large Tariffs and Barriers they use against the U.S.A. Not fair to our farmers and manufacturers. 
-DP     TRUST -- commerce 
-
-DP -- Rasmussen and others have my approval ratings at around 50%, which is higher than Obama, and yet the political pundits love saying my approval ratings are “somewhat low.” They know they are lying when they say it. Turn off the show - FAKE NEWS! 
-DP     JOY -- love 
-DP     ANGER -- lying 
-DP     DISGUST -- lying 
-DP     TRUST -- show 
-
-DP -- The Democrats continue to Obstruct the confirmation of hundreds of good and talented people who are needed to run our government...A record in U.S. history. State Department, Ambassadors and many others are being slow walked. Senate must approve NOW! 
-DP     ANTICIPATION -- continue 
-DP     TRUST -- continue 
-
-DP     ANGER -- obstruct 
-DP     FEAR -- obstruct 
-DP     TRUST -- confirmation 
-
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP     TRUST -- senate 
-
-DP     JOY -- approve 
-DP     TRUST -- approve 
-
-DP -- The Republicans are 5-0 in recent Congressional races, a point which the Fake News Media continuously fails to mention. I backed and campaigned for all of the winners. They give me credit for one. Hopefully, Rick Saccone will be another big win on Tuesday. 
-DP     TRUST -- credit 
-
-DP -- ...have shown conclusively that there was no Collusion with Russia..just excuse for losing. The only Collusion was that done by the DNC, the Democrats and Crooked Hillary. The writer of the story, Maggie Haberman, a Hillary flunky, knows nothing about me and is not given access. 
-DP     ANGER -- collusion 
-DP     DISGUST -- collusion 
-DP     FEAR -- collusion 
-DP     SAD -- collusion 
-DP     ANGER -- collusion 
-DP     DISGUST -- collusion 
-DP     FEAR -- collusion 
-DP     SAD -- collusion 
-DP -- The Failing New York Times purposely wrote a false story stating that I am unhappy with my legal team on the Russia case and am going to add another lawyer to help out. Wrong. I am VERY happy with my lawyers, John Dowd, Ty Cobb and Jay Sekulow. They are doing a great job and..... 
-DP     ANGER -- failing 
-DP     ANTICIPATION -- failing 
-DP     FEAR -- failing 
-DP     SAD -- failing 
-DP     ANGER -- unhappy 
-DP     DISGUST -- unhappy 
-DP     SAD -- unhappy 
-DP     TRUST -- legal 
-
-DP     TRUST -- team 
-
-DP     FEAR -- case 
-DP     SAD -- case 
-DP     ANGER -- lawyer 
-DP     DISGUST -- lawyer 
-DP     FEAR -- lawyer 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP     DISGUST -- john 
-DP -- Epic crowd in Moon Township, Pennsylvania tonight. Thank you! Get out on Tuesday and VOTE for Rick @Saccone4PA18. Together, we are MAKING AMERICA GREAT AGAIN! https://t.co/ckbCOsDQ2l 
-DP     ANGER -- vote 
-DP     ANTICIPATION -- vote 
-DP     JOY -- vote 
-DP     SAD -- vote 
-DP     SURPRISE -- vote 
-DP     TRUST -- vote 
-
-DP -- Join me LIVE in Moon Township, Pennsylvania at 7:00pmE. Great crowd for a #MAGA rally!
-https://t.co/PYJNg0WGDL 
-DP -- The European Union, wonderful countries who treat the U.S. very badly on trade, are complaining about the tariffs on Steel &amp; Aluminum. If they drop their horrific barriers &amp; tariffs on U.S. products going in, we will likewise drop ours. Big Deficit. If not, we Tax Cars etc. FAIR! 
+DP     JOY -- create 
 DP     JOY -- wonderful 
 DP     SURPRISE -- wonderful 
 DP     TRUST -- wonderful 
 
-DP     ANGER -- treat 
-DP     ANTICIPATION -- treat 
-DP     DISGUST -- treat 
-DP     FEAR -- treat 
-DP     JOY -- treat 
-DP     SAD -- treat 
-DP     SURPRISE -- treat 
-DP     TRUST -- treat 
-
-DP     SAD -- badly 
-DP     ANGER -- horrific 
-DP     DISGUST -- horrific 
-DP     FEAR -- horrific 
-DP     SAD -- horrific 
-DP     SAD -- tax 
-DP -- In the first hours after hearing that North Korea’s leader wanted to meet with me to talk denuclearization and that missile launches will end, the press was startled &amp; amazed.They couldn’t believe it. But by the following morning the news became FAKE.They said so what, who cares! 
-DP     FEAR -- hearing 
-DP     TRUST -- leader 
-
-DP     FEAR -- missile 
-DP -- North Korea has not conducted a Missile Test since November 28, 2017 and has promised not to do so through our meetings. I believe they will honor that commitment! 
-DP     FEAR -- missile 
-DP     TRUST -- honor 
-
-DP -- Heading to Moon Township, Pennsylvania, to be with a really good person, State Representative Rick Saccone, who is running for Congress. Big &amp; happy crowd (why not, some of the best economic numbers ever). Rick will help me a lot. Also, tough on crime &amp; border. Loves 2nd A &amp; VETS 
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP     SAD -- tough 
-DP     ANGER -- crime 
-DP -- Spoke to Prime Minister Abe of Japan, who is very enthusiastic about talks with North Korea. Also discussing opening up Japan to much better trade with the U.S. Currently have a massive $100 Billion Trade Deficit. Not fair or sustainable. It will all work out! 
-DP     TRUST -- trade 
-
-DP     TRUST -- trade 
-
-DP -- Chinese President XI JINPING and I spoke at length about the meeting with KIM JONG UN of North Korea. President XI told me he appreciates that the U.S. is working to solve the problem diplomatically rather than going with the ominous alternative. China continues to be helpful! 
-DP     TRUST -- president 
-
-DP     TRUST -- president 
-
-DP     FEAR -- problem 
-DP     SAD -- problem 
-DP     ANTICIPATION -- ominous 
-DP     FEAR -- ominous 
-DP -- Congratulations to Kristian Saucier, a man who has served proudly in the Navy, on your newly found Freedom. Now you can go out and have the life you deserve! 
-DP     JOY -- found 
-DP     TRUST -- found 
-
-DP -- We are deeply saddened by the tragic situation in Yountville and mourn the loss of three incredible women who cared for our Veterans. 
-DP     SAD -- mourn 
-DP     ANGER -- loss 
-DP     FEAR -- loss 
-DP     SAD -- loss 
-DP -- The deal with North Korea is very much in the making and will be, if completed, a very good one for the World. Time and place to be determined. 
-DP     ANTICIPATION -- deal 
-DP     JOY -- deal 
-DP     SURPRISE -- deal 
-DP     TRUST -- deal 
-
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP     ANTICIPATION -- time 
-DP -- Spoke to PM @TurnbullMalcolm of Australia. He is committed to having a very fair and reciprocal military and trade relationship. Working very quickly on a security agreement so we don’t have to impose steel or aluminum tariffs on our ally, the great nation of Australia! 
-DP     TRUST -- committed 
-
-DP     FEAR -- military 
-DP     TRUST -- trade 
-
-DP     TRUST -- agreement 
-
-DP     TRUST -- nation 
-
-DP -- That’s right @RepBost! Thank you for your support in helping put America back to work. It’s about JOBS, JOBS, JOBS for our incredible workers and putting AMERICA FIRST! https://t.co/ChUQEa6rsC 
-DP -- Look forward to being in Pennsylvania tomorrow in support of Rick @Saccone4PA18. Big crowd expected in Moon Township. Vote Rick and see you there! #MAGA 
-DP     ANTICIPATION -- tomorrow 
-DP     ANTICIPATION -- expected 
-DP     ANGER -- vote 
-DP     ANTICIPATION -- vote 
-DP     JOY -- vote 
-DP     SAD -- vote 
-DP     SURPRISE -- vote 
-DP     TRUST -- vote 
-
-DP -- JOBS, JOBS, JOBS! #MAGA https://t.co/YAaqRcA7ZS 
-DP -- Kim Jong Un talked about denuclearization with the South Korean Representatives, not just a freeze. Also, no missile testing by North Korea during this period of time. Great progress being made but sanctions will remain until an agreement is reached. Meeting being planned! 
-DP     FEAR -- missile 
-DP     ANTICIPATION -- progress 
-DP     JOY -- progress 
-DP     TRUST -- agreement 
-
-DP -- “Presidential Proclamation on Adjusting Imports of Aluminum into the United States” 
- 
-Proclamation: https://t.co/aCaMtOUAl0
-Remarks: https://t.co/nypErcqFSU https://t.co/rcrkpvChkz 
-DP     TRUST -- united 
-
-DP -- “Presidential Proclamation on Adjusting Imports of Steel into the United States”
- 
-Proclamation: https://t.co/hxduwSoElz
-Remarks: https://t.co/nypErcqFSU https://t.co/q92FDYZeUl 
-DP     TRUST -- united 
-
-DP -- Great meeting with @Cabinet at the @WhiteHouse today! #MAGA https://t.co/InWj0QTosz 
-DP -- Happy #InternationalWomensDay
-
-“First Lady Melania Trump to Present the 2018 International Women of Courage Award” https://t.co/EwYtFXGvn2 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP     SURPRISE -- trump 
-DP     ANTICIPATION -- present 
-DP     JOY -- present 
-DP     SURPRISE -- present 
-DP     TRUST -- present 
-
-DP -- Looking forward to 3:30 P.M. meeting today at the White House. We have to protect &amp; build our Steel and Aluminum Industries while at the same time showing great flexibility and cooperation toward those that are real friends  and treat us fairly on both trade and the military. 
-DP     ANTICIPATION -- white 
-DP     JOY -- white 
-DP     TRUST -- white 
-
-DP     ANTICIPATION -- time 
-DP     TRUST -- cooperation 
-
-DP     TRUST -- real 
-
-DP     ANGER -- treat 
-DP     ANTICIPATION -- treat 
-DP     DISGUST -- treat 
-DP     FEAR -- treat 
-DP     JOY -- treat 
-DP     SAD -- treat 
-DP     SURPRISE -- treat 
-DP     TRUST -- treat 
-
-DP     TRUST -- fairly 
-
-DP     TRUST -- trade 
-
-DP -- The U.S. is acting swiftly on Intellectual Property theft. We cannot allow this to happen as it has for many years! 
-DP     ANTICIPATION -- happen 
-DP -- China has been asked to develop a plan for the year of a One Billion Dollar reduction in their massive Trade Deficit with the United States. Our relationship with China has been a very good one, and we look forward to seeing what ideas they come back with. We must act soon! 
-DP     ANTICIPATION -- develop 
-DP     ANTICIPATION -- plan 
-DP     TRUST -- trade 
-
-DP     TRUST -- united 
-
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP -- From Bush 1 to present, our Country has lost more than 55,000 factories, 6,000,000 manufacturing jobs and accumulated Trade Deficits of more than 12 Trillion Dollars. Last year we had a Trade Deficit of almost 800 Billion Dollars. Bad Policies &amp; Leadership. Must WIN again!  #MAGA 
-DP     SAD -- lost 
-DP     TRUST -- trade 
-
-DP     TRUST -- trade 
-
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP -- @MarkBurnettTV @RealRomaDowney From Bush 1 to present, our Country has lost more than 55,000 factories, 6,000,000 manufacturing jobs and accumulated Trade Deficits of more than 12 Trillion Dollars. Last year we had a Trade Deficit of almost 800 Billion Dollars. Bad policies &amp; leadership. Must win again!  #MAGA 
-DP     SAD -- lost 
-DP     TRUST -- trade 
-
-DP     TRUST -- trade 
-
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP -- Great couple, great book! https://t.co/cLDI79rin8 
-DP -- Will be making a decision soon on the appointment of new Chief Economic Advisor. Many people wanting the job - will choose wisely! 
-DP     SAD -- wanting 
-DP -- Possible progress being made in talks with North Korea. For the first time in many years, a serious effort is being made by all parties concerned. The World is watching and waiting! May be false hope, but the U.S. is ready to go hard in either direction! 
-DP     ANTICIPATION -- progress 
-DP     JOY -- progress 
-DP     ANTICIPATION -- time 
-DP     ANTICIPATION -- ready 
-DP -- Federal Judge in Maryland has just ruled that “President Trump has the right to end DACA.” President Obama had 8 years to fix this problem, and didn’t. I am waiting for the Dems, they are running for the hills! 
-DP     SURPRISE -- trump 
-DP     TRUST -- president 
-
-DP -- Lowest rated Oscars in HISTORY. Problem is, we don’t have Stars anymore - except your President (just kidding, of course)! 
-DP     SAD -- lowest 
-DP     FEAR -- problem 
-DP     SAD -- problem 
-DP     TRUST -- president 
-
-DP -- RT @EricTrump: Congratulations @FoxNews: Fox has 15 of the top 20 shows with @SeanHannity and @TuckerCarlson leading the pack at 1st and 2n… 
-DP     ANTICIPATION -- top 
-DP     TRUST -- top 
-
-DP     TRUST -- leading 
-
-DP -- We will see what happens! https://t.co/Y1qxoAUfd9 
-DP -- We are getting it done - jobs and security! https://t.co/Ui8bubj7Yr 
-DP -- Total inaction on DACA by Dems. Where are you? A deal can be made! 
-DP     ANTICIPATION -- deal 
-DP     JOY -- deal 
-DP     SURPRISE -- deal 
-DP     TRUST -- deal 
-
-DP -- The new Fake News narrative is that there is CHAOS in the White House. Wrong! People will always come &amp; go, and I want strong dialogue before making a final decision. I still have some people that I want to change (always seeking perfection). There is no Chaos, only great Energy! 
-DP     ANGER -- chaos 
-DP     FEAR -- chaos 
-DP     SAD -- chaos 
-DP     ANTICIPATION -- white 
-DP     JOY -- white 
-DP     TRUST -- white 
-
-DP     FEAR -- change 
-DP -- It’s March 5th and the Democrats are nowhere to be found on DACA. Gave them 6 months, they just don’t care. Where are they? We are ready to make a deal! 
-DP     JOY -- found 
-DP     TRUST -- found 
-
-DP     ANTICIPATION -- ready 
-DP -- Why did the Obama Administration start an investigation into the Trump Campaign (with zero proof of wrongdoing) long before the Election in November? Wanted to discredit so Crooked H would win. Unprecedented. Bigger than Watergate! Plus, Obama did NOTHING about Russian meddling. 
-DP     ANTICIPATION -- start 
-DP     ANTICIPATION -- investigation 
-DP     SURPRISE -- trump 
-DP     TRUST -- proof 
-
-DP     ANTICIPATION -- long 
-DP -- To protect our Country we must protect American Steel! #AMERICA FIRST 
-DP -- ...treat our farmers much better. Highly restrictive. Mexico must do much more on stopping drugs from pouring into the U.S. They have not done what needs to be done. Millions of people addicted and dying. 
-DP -- We have large trade deficits with Mexico and Canada. NAFTA, which is under renegotiation right now, has been a bad deal for U.S.A. Massive relocation of companies &amp; jobs. Tariffs on Steel and Aluminum will only come off if new &amp; fair NAFTA agreement is signed. Also, Canada must.. 
-DP     TRUST -- trade 
-
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP     ANTICIPATION -- deal 
-DP     JOY -- deal 
-DP     SURPRISE -- deal 
-DP     TRUST -- deal 
-
-DP     TRUST -- agreement 
-
-DP -- We are on the losing side of almost all trade deals. Our friends and enemies have taken advantage of the U.S. for many years. Our Steel and Aluminum industries are dead. Sorry, it’s time for a change! MAKE AMERICA GREAT AGAIN! 
-DP     ANGER -- losing 
-DP     SAD -- losing 
-DP     TRUST -- trade 
-
-DP     ANTICIPATION -- time 
-DP -- The Gridiron Dinner last night was great fun. I am accomplishing a lot in Washington and have never had a better time doing something, and especially since this is for the American People! 
-DP     ANTICIPATION -- time 
-DP -- If the E.U. wants to further increase their already massive tariffs and barriers on U.S. companies doing business there, we will simply apply a Tax on their Cars which freely pour into the U.S. They make it impossible for our cars (and more) to sell there. Big trade imbalance! 
-DP     SAD -- tax 
-DP     JOY -- freely 
-DP     TRUST -- freely 
-
-DP     SAD -- impossible 
-DP     TRUST -- trade 
-
-DP -- The United States has an $800 Billion Dollar Yearly Trade Deficit because of our “very stupid” trade deals and policies. Our jobs and wealth are being given to other countries that have taken advantage of us for years. They laugh at what fools our leaders have been. No more! 
-DP     TRUST -- united 
-
-DP     TRUST -- trade 
-
-DP     TRUST -- trade 
-
-DP     JOY -- wealth 
-DP     TRUST -- wealth 
-
-DP     JOY -- laugh 
-DP     SURPRISE -- laugh 
-DP -- Mainstream Media in U.S. is being mocked all over the world. They’ve gone CRAZY! https://t.co/4UGYuJpUA7 
-DP -- Happy National Anthem Day! https://t.co/cf1eugMbKU 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP -- REST IN PEACE BILLY GRAHAM! https://t.co/2qMoUccVC2 
-DP     ANTICIPATION -- peace 
-DP     JOY -- peace 
-DP     TRUST -- peace 
-
-DP -- When a country Taxes our products coming in at, say, 50%, and we Tax the same product coming into our country at ZERO, not fair or smart. We will soon be starting RECIPROCAL TAXES so that we will charge the same thing as they charge us. $800 Billion Trade Deficit-have no choice! 
-DP     ANTICIPATION -- coming 
-DP     SAD -- tax 
-DP     ANTICIPATION -- coming 
-DP     TRUST -- trade 
-
-DP -- We must protect our country and our workers. Our steel industry is in bad shape. IF YOU DON’T HAVE STEEL, YOU DON’T HAVE A COUNTRY! 
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP -- Eric, we are all with you and your family! Look forward to seeing you back on T.V. https://t.co/d6y3Q00BSy 
-DP -- Alec Baldwin, whose dying mediocre career was saved by his terrible impersonation of me on SNL, now says playing me was agony. Alec, it was agony for those who were forced to watch. Bring back Darrell Hammond, funnier and a far greater talent! 
-DP     ANGER -- dying 
-DP     DISGUST -- dying 
-DP     FEAR -- dying 
-DP     SAD -- dying 
-DP     ANTICIPATION -- career 
-DP     ANGER -- terrible 
-DP     DISGUST -- terrible 
-DP     FEAR -- terrible 
-DP     SAD -- terrible 
-DP     ANGER -- agony 
-DP     FEAR -- agony 
-DP     SAD -- agony 
-DP     FEAR -- forced 
-DP -- When a country (USA) is losing many billions of dollars on trade with virtually every country it does business with, trade wars are good, and easy to win. Example, when we are down $100 billion with a certain country and they get cute, don’t trade anymore-we win big. It’s easy! 
-DP     ANGER -- losing 
-DP     SAD -- losing 
-DP     TRUST -- trade 
-
-DP     TRUST -- trade 
-
-DP     TRUST -- trade 
-
-DP -- Good (Great) meeting in the Oval Office tonight with the NRA! 
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP -- RT @IvankaTrump: My OpEd on the importance of #YouthSports participation and how this Administration is seeking to lift barriers so all our… 
-DP     ANTICIPATION -- importance 
-DP -- RT @Scavino45: “Trump Comes Through — Saves $1.4 Billion On New Air Force One” https://t.co/cN3TAQywpR 
-DP     ANGER -- force 
-DP     FEAR -- force 
-DP -- Manufacturing growing at the fastest pace in almost two decades! 
-DP -- Jobless claims at a 49 year low! 
-DP -- Together, we will face this challenge as a national family with conviction, with unity, and with a commitment to love and support our neighbors in times of dire need. Working together, we will defeat this #OpioidEpidemic.
-Full Opioid Summit: https://t.co/qqfeVr4BBf https://t.co/oFvr0DJMEf 
-DP     ANGER -- challenge 
-DP     FEAR -- challenge 
-DP     JOY -- love 
-DP     DISGUST -- dire 
-DP     FEAR -- dire 
-DP     SAD -- dire 
-DP     SURPRISE -- dire 
-DP -- “Consumer Confidence in February Highest Since November 2000” https://t.co/UgAJRawExx 
-DP     FEAR -- confidence 
-DP     JOY -- confidence 
-DP     TRUST -- confidence 
-
-DP     ANTICIPATION -- highest 
-DP     FEAR -- highest 
-DP     JOY -- highest 
-DP     SURPRISE -- highest 
-DP -- “Manufacturing in U.S. Expands at Fastest Pace Since May 2004” https://t.co/XZkwS8tTml 
-DP -- Unemployment filings are at their lowest level in over 48 years. Great news for workers and JOBS, JOBS, JOBS! #MAGA https://t.co/SzHTarzfrW 
-DP     SAD -- lowest 
-DP     TRUST -- level 
-
-DP -- Our Steel and Aluminum industries (and many others) have been decimated by decades of unfair trade and bad policy with countries from around the world. We must not let our country, companies and workers be taken advantage of any longer. We want free, fair and SMART TRADE! 
-DP     ANGER -- unfair 
-DP     DISGUST -- unfair 
-DP     SAD -- unfair 
-DP     TRUST -- trade 
-
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP     TRUST -- policy 
-
-DP -- Many ideas, some good &amp; some not so good, emerged from our bipartisan meeting on school safety yesterday at the White House. Background Checks a big part of conversation. Gun free zones are proven targets of killers. After many years, a Bill should emerge. Respect 2nd Amendment! 
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
 DP     TRUST -- school 
 
-DP     ANTICIPATION -- white 
-DP     JOY -- white 
-DP     TRUST -- white 
+DP     TRUST -- unity 
 
-DP     ANGER -- gun 
-DP     FEAR -- gun 
-DP     TRUST -- proven 
+DP -- Wonderful to meet @KyleKashuv today. His message of unity is one we should all share. Thank you for visiting us at the @WhiteHouse &amp; hope you enjoyed your surprise meeting with @potus! Wishing you much success w @TheReachOutApp. https://t.co/K4aGydo1uX 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
 
-DP     ANTICIPATION -- respect 
-DP     JOY -- respect 
-DP     TRUST -- respect 
+DP     TRUST -- unity 
 
-DP -- It was an honor to welcome bipartisan members of Congress for a discussion on SAFE schools and SAFE communities. As we continue to mourn the loss of so many precious young lives in Parkland, we are determined to turn our grief into action. Full meeting: https://t.co/tbl94sCM01 https://t.co/TmUMusoR9x 
-DP     TRUST -- honor 
-
-DP     DISGUST -- congress 
-DP     TRUST -- congress 
-
-DP     JOY -- safe 
-DP     TRUST -- safe 
-
-DP     JOY -- safe 
-DP     TRUST -- safe 
-
-DP     ANTICIPATION -- continue 
-DP     TRUST -- continue 
-
-DP     SAD -- mourn 
-DP     ANGER -- loss 
-DP     FEAR -- loss 
-DP     SAD -- loss 
-DP     ANTICIPATION -- precious 
-DP     JOY -- precious 
-DP     SURPRISE -- precious 
-DP     ANTICIPATION -- young 
-DP     JOY -- young 
-DP     SURPRISE -- young 
-DP     SAD -- grief 
-DP -- Today we honor Billy Graham as only three private citizens before him have been honored. 
-
-We say a prayer for our country: that all across this land, the Lord will raise up men and women like Billy Graham to spread a message of love and hope to every precious child of God. https://t.co/EM4lZUZpX9 
-DP     TRUST -- honor 
-
-DP     DISGUST -- lord 
-DP     TRUST -- lord 
-
-DP     JOY -- love 
 DP     ANTICIPATION -- hope 
 DP     JOY -- hope 
 DP     SURPRISE -- hope 
 DP     TRUST -- hope 
 
-DP     ANTICIPATION -- precious 
-DP     JOY -- precious 
-DP     SURPRISE -- precious 
-DP     ANTICIPATION -- child 
-DP     JOY -- child 
-DP -- Starting at a small Bible School in Florida, Billy Graham soon led a nationwide revival. From a large tent in Los Angeles, to one hundred thousand people in a single day at Yankee Stadium, to more than two million people at Madison Square Garden over sixteen weeks in 1957... https://t.co/z1vvAemlBP 
-DP     TRUST -- school 
+DP     FEAR -- surprise 
+DP     JOY -- surprise 
+DP     SURPRISE -- surprise 
+DP     ANTICIPATION -- success 
+DP     JOY -- success 
+DP -- Happy #IWD2018.  Today we recognize, celebrate &amp; honor women around the globe.  On March 21, I will be at the @StateDept to present the #WomenOfCourage award to some extraordinary women. 
+DP     JOY -- happy 
+DP     TRUST -- happy 
 
-DP     JOY -- garden 
-DP -- Today, in the center of this great Chamber lies Billy Graham – an Ambassador for Christ who reminded the world of the power of prayer and the gift of God’s grace. https://t.co/5aMh8nFPJW 
-DP     TRUST -- center 
-
-DP     TRUST -- ambassador 
-
-DP     ANTICIPATION -- gift 
-DP     JOY -- gift 
-DP     SURPRISE -- gift 
-DP -- Why is A.G. Jeff Sessions asking the Inspector General to investigate potentially massive FISA abuse. Will take forever, has no prosecutorial power and already late with reports on Comey etc. Isn’t the I.G. an Obama guy? Why not use Justice Department lawyers? DISGRACEFUL! 
-DP     TRUST -- general 
-
-DP     SAD -- late 
-DP     TRUST -- justice 
-
-DP -- 45 year low on illegal border crossings this year. Ice and Border Patrol Agents are doing a great job for our Country. MS-13 thugs being hit hard. 
-DP     ANGER -- illegal 
-DP     DISGUST -- illegal 
-DP     FEAR -- illegal 
-DP     SAD -- illegal 
-DP     TRUST -- patrol 
-
-DP     ANGER -- hit 
-DP -- I have decided that sections of the Wall that California wants built NOW will not be built until the whole Wall is approved. Big victory yesterday with ruling from the courts that allows us to proceed. OUR COUNTRY MUST HAVE BORDER SECURITY! 
-DP     ANTICIPATION -- victory 
-DP     JOY -- victory 
-DP     TRUST -- victory 
-
-DP -- The Heritage Foundation has just stated that 64% of the Trump Agenda is already done, faster than even Ronald Reagan. “We’re blown away,” said Thomas Binion of Heritage, President Trump “is very active, very conservative and very effective. Huge volume &amp; spectrum of issues.” 
-DP     TRUST -- heritage 
-
-DP     SURPRISE -- trump 
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP -- Big legal win today. U.S. judge sided with the Trump Administration and rejected the attempt to stop the government from building a great Border Wall on the Southern Border. Now this important project can go forward! 
-DP     TRUST -- legal 
-
-DP     SURPRISE -- trump 
-DP     ANTICIPATION -- attempt 
-DP     FEAR -- government 
-DP     TRUST -- important 
-
-DP -- Such a beautiful map, thank you! https://t.co/FyQdgKvsRO 
-DP     JOY -- beautiful 
-DP -- .@SenatorWicker of Mississippi has been a great supporter and incredible help in getting our massive Tax Cut Bill done and approved. Also big help on cutting regs. I am with him in his re-election all the way! 
-DP     JOY -- supporter 
-DP     TRUST -- supporter 
-
-DP     SAD -- tax 
-DP     ANGER -- cutting 
-DP     DISGUST -- cutting 
-DP     FEAR -- cutting 
-DP     SAD -- cutting 
-DP -- Texas LC George P. Bush backed me when it wasn’t the politically correct thing to do, and I back him now. Also, AC Sid Miller has been with me from the beginning, he is “Trump’s Man in Texas.” Also support Comptroller Glenn Hegar, and Railroad Commissioner Christi Craddick. 
-DP     TRUST -- comptroller 
-
-DP -- “American consumers are the most confident they've been since 2000....A strong job market is boosting confidence. The unemployment rate has stayed at a 17-year low.” https://t.co/aL7aVoR7XC 
-DP     JOY -- confident 
-DP     TRUST -- confident 
-
-DP -- I want to encourage all of my many Texas friends to vote in the primary for Governor Greg Abbott, Senator Ted Cruz, Lt. Gov. Dan Patrick, and Attorney General Ken Paxton. They are helping me to Make America Great Again! Vote early or on March 6th. 
-DP     JOY -- encourage 
-DP     TRUST -- encourage 
-
-DP     ANGER -- vote 
-DP     ANTICIPATION -- vote 
-DP     JOY -- vote 
-DP     SAD -- vote 
-DP     SURPRISE -- vote 
-DP     TRUST -- vote 
-
-DP     TRUST -- governor 
-
-DP     ANGER -- attorney 
-DP     FEAR -- attorney 
-DP     TRUST -- attorney 
-
-DP     TRUST -- general 
-
-DP     ANGER -- vote 
-DP     ANTICIPATION -- vote 
-DP     JOY -- vote 
-DP     SAD -- vote 
-DP     SURPRISE -- vote 
-DP     TRUST -- vote 
-
-DP -- WITCH HUNT! 
-DP     ANGER -- witch 
-DP     DISGUST -- witch 
-DP     FEAR -- witch 
-DP -- “We’ve seen NO EVIDENCE OF COLLUSION....I have seen nothing, the firing of James Comey and all of the aftermath, that suggests that the President has obstructed justice because he’s exercising his power as the President of the U.S. I just don’t see it.”  Judge Ken Starr 
-DP     TRUST -- president 
-
-DP     TRUST -- justice 
-
-DP     TRUST -- president 
-
-DP -- “I’ve been skeptical about the collusion and obstruction claims for the last year. I just don’t see the evidence....in terms of the collusion, it’s all a bit implausible based on the evidence we have.”  Jonathan Turley on @FoxNews 
-DP     ANGER -- collusion 
-DP     DISGUST -- collusion 
-DP     FEAR -- collusion 
-DP     SAD -- collusion 
-DP -- “He’s got a very good point. Somebody in the Justice Department has a treasure trove of evidence of Mrs. Clinton’s criminality at her own hands, or through others, that ought to be investigated. I fully agree with the President on that.” @judgenapolitano on @marthamaccallum Show 
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP     TRUST -- justice 
-
-DP     ANTICIPATION -- treasure 
-DP     JOY -- treasure 
-DP     TRUST -- treasure 
-
-DP     ANGER -- criminality 
-DP     DISGUST -- criminality 
-DP     FEAR -- criminality 
-DP     TRUST -- fully 
-
-DP     TRUST -- president 
-
-DP     TRUST -- show 
-
-DP -- RT @WhiteHouse: Merit-based immigration reform will benefit American workers and relieve the strain imposed by our current system on Federa… 
-DP     TRUST -- system 
-
-DP -- RT @VollrathTammie: @realDonaldTrump @FoxNews https://t.co/sERi7Vyh5I 
-DP -- RT @FoxNews: President @realDonaldTrump on Dem FISA memo: "A lot of bad things happened on the other side, not on this side, but the other… 
-DP     TRUST -- president 
-
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP -- RT @FoxNews: President @realDonaldTrump on DACA: "I'm the one that's pushing DACA and the Democrats are nowhere to be found." https://t.co/… 
-DP     TRUST -- president 
-
-DP -- I will be interviewed by @JudgeJeanine on @FoxNews at 9:00 P.M. Enjoy! 
-DP -- “Congressman Schiff omitted and distorted key facts” @FoxNews  So, what else is new. He is a total phony! 
-DP     DISGUST -- distorted 
-DP -- “Russians had no compromising information on Donald Trump” @FoxNews  Of course not, because there is none, and never was. This whole Witch Hunt is an illegal disgrace...and Obama did nothing about Russia! 
-DP     ANGER -- witch 
-DP     DISGUST -- witch 
-DP     FEAR -- witch 
-DP     ANGER -- illegal 
-DP     DISGUST -- illegal 
-DP     FEAR -- illegal 
-DP     SAD -- illegal 
-DP -- Dem Memo: FBI did not disclose who the clients were - the Clinton Campaign and the DNC. Wow! 
-DP -- The Democrat memo response on government surveillance abuses is a total political and legal BUST. Just confirms all of the terrible things that were done. SO ILLEGAL! 
-DP     FEAR -- government 
-DP     FEAR -- surveillance 
-DP     TRUST -- legal 
-
-DP     ANGER -- terrible 
-DP     DISGUST -- terrible 
-DP     FEAR -- terrible 
-DP     SAD -- terrible 
-DP -- BIG CPAC STRAW POLL RESULTS: 93% APPROVE OF THE JOB PRESIDENT TRUMP IS DOING (Thank you!). 50% say President Trump should Tweet MORE or SAME (funny!). 79% say Republicans in Congress should do a better job of working with President Trump (starting to happen). 
-DP     TRUST -- poll 
-
-DP     JOY -- approve 
-DP     TRUST -- approve 
-
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP     DISGUST -- congress 
-DP     TRUST -- congress 
-
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP -- Dems are no longer talking DACA! “Out of sight, out of mind,” they say. DACA beneficiaries should not be happy. Nancy Pelosi truly doesn’t care about them. Republicans stand ready to make a deal! 
-DP     ANTICIPATION -- ready 
-DP -- Unemployment claims are at the lowest level since 1973. Much of this has to do with the massive cutting of unnecessary and job killing Regulations! 
-DP     SAD -- lowest 
-DP     TRUST -- level 
-
-DP     ANGER -- cutting 
-DP     DISGUST -- cutting 
-DP     FEAR -- cutting 
-DP     SAD -- cutting 
-DP     ANGER -- killing 
-DP     FEAR -- killing 
-DP     SAD -- killing 
-DP -- Democrat judges have totally redrawn election lines in the great State of Pennsylvania. @FoxNews. This is very unfair to Republicans and to our country as a whole. Must be appealed to the United States Supreme Court ASAP! 
-DP     FEAR -- lines 
-DP     ANGER -- unfair 
-DP     DISGUST -- unfair 
-DP     SAD -- unfair 
-DP     TRUST -- united 
-
-DP     ANGER -- court 
-DP     ANTICIPATION -- court 
-DP     FEAR -- court 
-DP -- Armed Educators (and trusted people who work within a school) love our students and will protect them. Very smart people. Must be firearms adept &amp; have annual training. Should get yearly bonus. Shootings will not happen again - a big &amp; very inexpensive deterrent. Up to States. 
-DP     ANGER -- armed 
-DP     FEAR -- armed 
-DP     JOY -- love 
-DP     ANGER -- firearms 
-DP     FEAR -- firearms 
-DP     ANTICIPATION -- happen 
-DP -- So true Wayne, and Lowest black unemployment in history! https://t.co/gDxxJdZQUm 
-DP     SAD -- lowest 
-DP     SAD -- black 
-DP -- Thank you to the great men and women of the United States @SecretService for a job well done! 
-DP     TRUST -- united 
-
-DP -- Today, @FLOTUS Melania and I were honored to welcome Prime Minister @TurnbullMalcolm and Mrs. Turnbull of Australia to the @WhiteHouse!
-
-🇺🇸🇦🇺Press Conference: https://t.co/rKokJGRsgu https://t.co/PkJUw8x9jb 
-DP -- Our nation’s motto is IN GOD WE TRUST. This week, our nation lost an incredible leader who devoted his life to helping us understand what those words really mean. We will never forget the historic crowds, the voice, the energy, and the profound faith of Billy Graham! #CPAC2018 https://t.co/5GDh7Jonkv 
-DP     ANTICIPATION -- god 
-DP     FEAR -- god 
-DP     JOY -- god 
-DP     TRUST -- god 
-
-DP     TRUST -- nation 
-
-DP     SAD -- lost 
-DP     TRUST -- leader 
-
-DP     ANGER -- words 
-DP     ANTICIPATION -- faith 
-DP     JOY -- faith 
-DP     TRUST -- faith 
-
-DP -- We salute our great American flag, we put our hands on our hearts for the pledge of Allegiance, and we all PROUDLY STAND for the National Anthem. #CPAC2018 https://t.co/qGKW2xGjP0 
-DP     JOY -- salute 
-DP     JOY -- pledge 
-DP     TRUST -- pledge 
-
-DP -- After years of rebuilding OTHER nations, we are finally rebuilding OUR nation - and we are restoring our confidence and our pride! #CPAC2018 https://t.co/rD9oTU8iex 
-DP     ANTICIPATION -- finally 
-DP     DISGUST -- finally 
-DP     JOY -- finally 
-DP     SURPRISE -- finally 
-DP     TRUST -- finally 
-
-DP     TRUST -- nation 
-
-DP     FEAR -- confidence 
-DP     JOY -- confidence 
-DP     TRUST -- confidence 
-
-DP -- For those of you who are still interested, the Democrats have totally forgotten about DACA. Not a lot of interest on this subject from them! 
-DP     FEAR -- forgotten 
-DP     SAD -- forgotten 
-DP -- My daughter, Ivanka, just arrived in South Korea. We cannot have a better, or smarter, person representing our country. 
-DP     ANTICIPATION -- representing 
-DP -- CPAC Today! 
-DP -- MS-13 gang members are being removed by our Great ICE and Border Patrol Agents by the thousands, but these killers come back in from El Salvador, and through Mexico, like water. El Salvador just takes our money, and Mexico must help MORE with this problem. We need The Wall! 
-DP     ANGER -- gang 
-DP     FEAR -- gang 
-DP     TRUST -- patrol 
-
-DP -- “School shooting survivor says he quit @CNN Town Hall after refusing scripted question.” @TuckerCarlson. Just like so much of CNN, Fake News. That’s why their ratings are so bad! MSNBC may be worse. 
-DP     ANGER -- shooting 
-DP     FEAR -- shooting 
-DP -- Today, it was my great honor to host a School Safety Roundtable at the @WhiteHouse with State and local leaders, law enforcement officers, and education officials.
-
-There is nothing more important than protecting our children. They deserve to be safe, and we will deliver! https://t.co/WhC2AxgWXO 
 DP     TRUST -- honor 
 
-DP     TRUST -- school 
-
-DP     TRUST -- law 
-
-DP     TRUST -- important 
-
-DP     TRUST -- protecting 
-
-DP     ANGER -- deserve 
-DP     ANTICIPATION -- deserve 
-DP     TRUST -- deserve 
-
-DP -- On behalf of an entire Nation, CONGRATULATIONS to the U.S. Women's Hockey Team on winning the GOLD! #GoTeamUSA #Olympics https://t.co/3cUZwLVGua 
-DP     TRUST -- team 
-
-DP     ANTICIPATION -- winning 
-DP     DISGUST -- winning 
-DP     JOY -- winning 
-DP     SAD -- winning 
-DP     SURPRISE -- winning 
-DP     TRUST -- winning 
-
-DP -- Will be meeting with Lawmakers today at 11:30 A.M. to discuss School Safety.  Next week it will be with our Nation’s Governors. It’s been many years of all talk, no action. We’ll get it done! 
-DP     TRUST -- school 
-
-DP -- What many people don’t understand, or don’t want to understand, is that Wayne, Chris and the folks who work so hard at the @NRA are Great People and Great American Patriots. They love our Country and will do the right thing.                  MAKE AMERICA GREAT AGAIN! 
-DP     JOY -- love 
-DP -- I will be strongly pushing Comprehensive Background Checks with an emphasis on Mental Health. Raise age to 21 and end sale of Bump Stocks! Congress is in a mood to finally do something on this issue - I hope! 
-DP     DISGUST -- congress 
-DP     TRUST -- congress 
-
-DP     ANTICIPATION -- finally 
-DP     DISGUST -- finally 
-DP     JOY -- finally 
-DP     SURPRISE -- finally 
-DP     TRUST -- finally 
-
-DP -- ....If a potential “sicko shooter” knows that a school has a large number of very weapons talented teachers (and others) who will be instantly shooting, the sicko will NEVER attack that school. Cowards won’t go there...problem solved. Must be offensive, defense alone won’t work! 
-DP     TRUST -- school 
-
-DP     ANGER -- attack 
-DP     FEAR -- attack 
-DP     ANGER -- defense 
-DP     ANTICIPATION -- defense 
-DP     FEAR -- defense 
-DP -- ....History shows that a school shooting lasts, on average, 3 minutes. It takes police &amp; first responders approximately 5 to 8 minutes to get to site of crime. Highly trained, gun adept, teachers/coaches would solve the problem instantly, before police arrive. GREAT DETERRENT! 
-DP     TRUST -- school 
-
-DP     ANGER -- shooting 
-DP     FEAR -- shooting 
-DP     FEAR -- police 
-DP     TRUST -- police 
-
-DP     ANGER -- gun 
-DP     FEAR -- gun 
-DP     FEAR -- problem 
-DP     SAD -- problem 
-DP     FEAR -- police 
-DP     TRUST -- police 
-
-DP -- ....immediately fire back if a savage sicko came to a school with bad intentions. Highly trained teachers would also serve as a deterrent to the cowards that do this. Far more assets at much less cost than guards. A “gun free” school is a magnet for bad people. ATTACKS WOULD END! 
-DP     FEAR -- fire 
-DP     ANGER -- savage 
-DP     FEAR -- savage 
-DP     TRUST -- school 
-
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP     TRUST -- serve 
-
-DP     TRUST -- school 
-
-DP     TRUST -- magnet 
-
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP -- I never said “give teachers guns” like was stated on Fake News @CNN &amp; @NBC. What I said was to look at the possibility of giving “concealed guns to gun adept teachers with military or special training experience - only the best. 20% of teachers, a lot, would now be able to 
-DP     ANTICIPATION -- possibility 
-DP     ANGER -- gun 
-DP     FEAR -- gun 
-DP     FEAR -- military 
-DP     JOY -- special 
-DP -- I will always remember the time I spent today with courageous students, teachers and families. So much love in the midst of so much pain. We must not let them down. We must keep our children safe!!
-
-Full Listening Session: https://t.co/x5VenyQX5p https://t.co/CAPfX5odIp 
-DP     ANTICIPATION -- time 
-DP     FEAR -- courageous 
-DP     JOY -- love 
-DP -- .@FLOTUS Melania and I join millions of people around the world in mourning the passing of Billy Graham. Our prayers are with his children, grandchildren, great-grandchildren and all who worked closely with Reverend Graham in his lifelong ministry. https://t.co/e1697tcyaI 
-DP     SAD -- mourning 
-DP     JOY -- reverend 
-DP -- Yesterday, it was my great honor to recognize extraordinary Law Enforcement Officers and First Responders, and to award them the the highest possible decoration for bravery by public safety officers, the Medal of Valor. #AmericanHeroes https://t.co/em0wBbvy5P 
-DP     TRUST -- honor 
-
-DP     TRUST -- law 
+DP     ANTICIPATION -- present 
+DP     JOY -- present 
+DP     SURPRISE -- present 
+DP     TRUST -- present 
 
 DP     ANTICIPATION -- award 
 DP     JOY -- award 
 DP     SURPRISE -- award 
 DP     TRUST -- award 
 
-DP     ANTICIPATION -- highest 
-DP     FEAR -- highest 
-DP     JOY -- highest 
-DP     SURPRISE -- highest 
+DP -- Great visit with Prime Minister Benjamin &amp; Mrs. Netanyahu!  Enjoyed hosting Sarah Netanyahu for lunch to discuss how we can make a better and safer world for children. https://t.co/gn1MwfdAHT 
+DP -- Thank you to everyone who attended today’s opioids summit @WhiteHouse. A special thanks to Betty Henderson for having the courage in her grief to share her son’s story-we will continue to celebrate Billy’s life as we work to stop the epidemic that has taken hold of our country. https://t.co/yTVJ3zYTJa 
+DP     JOY -- special 
+DP     SAD -- grief 
+DP     ANTICIPATION -- share 
+DP     JOY -- share 
+DP     TRUST -- share 
+
+DP     ANTICIPATION -- continue 
+DP     TRUST -- continue 
+
+DP     ANGER -- epidemic 
+DP     ANTICIPATION -- epidemic 
+DP     DISGUST -- epidemic 
+DP     FEAR -- epidemic 
+DP     SAD -- epidemic 
+DP     SURPRISE -- epidemic 
+DP -- Looking forward to the White House Easter Egg Roll! Learn about the history of this wonderful tradition &amp; see the beautiful 2018 White House Easter Egg collection: &gt;https://t.co/ucriYkQA10&lt; https://t.co/eWQGZ8Ziv3 
+DP     ANTICIPATION -- white 
+DP     JOY -- white 
+DP     TRUST -- white 
+
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     JOY -- beautiful 
+DP     ANTICIPATION -- white 
+DP     JOY -- white 
+DP     TRUST -- white 
+
+DP -- March starts #WomensHistoryMonth, a time to celebrate the ways American women have historically changed &amp; continue to shape our society.  As we also recognize #RedCrossMonth, we see the result of one woman’s call to action through the humanitarian relief efforts of the @Redcross 
+DP     ANTICIPATION -- time 
+DP     ANTICIPATION -- continue 
+DP     TRUST -- continue 
+
+DP     ANTICIPATION -- result 
+DP     ANTICIPATION -- humanitarian 
+DP     JOY -- humanitarian 
+DP     SURPRISE -- humanitarian 
+DP     TRUST -- humanitarian 
+
+DP -- Looking forward to hosting members of the @NatlGovsAssoc &amp; their spouses at the @WhiteHouse this evening. Wonderful opportunity to come together in friendship on behalf of our many communities across the country. 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     ANTICIPATION -- opportunity 
+DP     JOY -- friendship 
+DP     TRUST -- friendship 
+
+DP -- Thank you Prime Minister Turnbull and Mrs. Turnbull for a great visit to the @WhiteHouse today. I enjoyed talking with Mrs. Turnbull about our shared concerns for children and solutions to making the world a better place for them. https://t.co/WEUudE6nOC 
+DP -- Last week, I had the pleasure of meeting with some exceptionally strong children currently patients at @NIH. Thank you @TheChildrensInn for all that your wonderful staff and facility do to help our children. https://t.co/UlLe291J6k 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP -- Saddened by the loss of Evangelist Billy Graham.  He led an impactful life, touching so many people with his spiritual teachings.  He will be deeply missed. 
+DP     ANGER -- loss 
+DP     FEAR -- loss 
+DP     SAD -- loss 
+DP -- I encourage everyone to test the power of kindness on #RandomActsofKindnessDay.  It’s an opportunity to teach our children the importance of taking care of one another. 
+DP     JOY -- encourage 
+DP     TRUST -- encourage 
+
+DP     ANTICIPATION -- opportunity 
+DP     JOY -- teach 
+DP     SURPRISE -- teach 
+DP     TRUST -- teach 
+
+DP     ANTICIPATION -- importance 
+DP -- My heart is heavy over the school shooting in Florida. Keeping all affected in my thoughts &amp; prayers. 
+DP     TRUST -- school 
+
+DP     ANGER -- shooting 
+DP     FEAR -- shooting 
+DP -- Looking forward to a very sweet afternoon visiting @theChildrensInn &amp; celebrating Valentine’s Day with some kids at @NIH! #HappyValentinesDay 
+DP     ANTICIPATION -- sweet 
+DP     JOY -- sweet 
+DP     SURPRISE -- sweet 
+DP     TRUST -- sweet 
+
+DP     ANTICIPATION -- celebrating 
+DP     JOY -- celebrating 
+DP -- It was wonderful to welcome guests to the @WhiteHouse this evening in celebration of National African American History Month.  We look forward to hosting many more events that celebrate our unique and diverse cultures. #BlackHistoryMonth2018 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     ANTICIPATION -- celebration 
+DP     JOY -- celebration 
+DP     SURPRISE -- celebration 
+DP     TRUST -- celebration 
+
+DP     SURPRISE -- unique 
+DP -- Yesterday’s visit to @CincyChildrens was very informative. Learned their latest studies on babies exposed to opioids during pregnancy &amp; the development of NAS. Enjoyed my time with children who are patients there! https://t.co/OMVGNmjQZ6 
+DP     DISGUST -- pregnancy 
+DP     ANTICIPATION -- time 
+DP -- Thank you @CincyChildrens! Your research on the #OpioidEpidemic and understanding its effect on babies helps us grow in our awareness of the devastating effects it has on children. Also enjoyed spending time with some of your most inspiring young patients! https://t.co/fFUIMt2oZE 
+DP     TRUST -- understanding 
+
+DP     ANTICIPATION -- grow 
+DP     JOY -- grow 
+DP     TRUST -- grow 
+
+DP     ANGER -- devastating 
+DP     DISGUST -- devastating 
+DP     FEAR -- devastating 
+DP     SAD -- devastating 
+DP     TRUST -- devastating 
+
+DP     ANTICIPATION -- time 
+DP     ANTICIPATION -- young 
+DP     JOY -- young 
+DP     SURPRISE -- young 
+DP -- Very much looking forward to visit @CincyChildrens today &amp; learn more about their efforts in combatting the effects opioids are having on our children &amp; how we can continue to work towards ending the #OpioidEpidemic. 
+DP     ANTICIPATION -- continue 
+DP     TRUST -- continue 
+
+DP -- February is #AmericanHeartMonth. I encourage parents to take this opportunity to teach children about the importance of a healthy diet &amp; exercise! https://t.co/mgoZYdMGAV 
+DP     JOY -- encourage 
+DP     TRUST -- encourage 
+
+DP     ANTICIPATION -- opportunity 
+DP     JOY -- teach 
+DP     SURPRISE -- teach 
+DP     TRUST -- teach 
+
+DP     ANTICIPATION -- importance 
+DP -- Today marks the start of #BlackHistoryMonth Let this be a time to come together in a celebration of diversity. 
+DP     ANTICIPATION -- start 
+DP     ANTICIPATION -- time 
+DP     ANTICIPATION -- celebration 
+DP     JOY -- celebration 
+DP     SURPRISE -- celebration 
+DP     TRUST -- celebration 
+
+DP -- Last night I was surrounded by a wonderful group of guests for the State of the Union. It was a privilege to meet them and hear their incredible stories. #SOTU https://t.co/9riX7LB6Qg 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP -- I will be joined tonight by an honorable group of Americans. Sitting with me are heroes who have served our nation in times of need, families who have suffered at the hands of evil, and citizens who have embraced the American dream. #SOTU 
+DP     TRUST -- honorable 
+
+DP     TRUST -- nation 
+
+DP -- We recognize International #HolocaustRemembranceDay so that #WeRemember all the innocent men, women, and children lost. May we continue to educate our children on one of history’s most devastating events and always #AskWhy. https://t.co/dzTQqLmlGA 
+DP     TRUST -- innocent 
+
+DP     ANTICIPATION -- continue 
+DP     TRUST -- continue 
+
+DP     ANGER -- devastating 
+DP     DISGUST -- devastating 
+DP     FEAR -- devastating 
+DP     SAD -- devastating 
+DP     TRUST -- devastating 
+
+DP -- Thank you @HolocaustMuseum for a powerful &amp; moving tour that honors the millions of innocent lives lost, and educates us on the tragedies and effects of the holocaust. #WeRemember #AskWhy https://t.co/za8MN6pKRZ 
+DP     ANGER -- powerful 
+DP     ANTICIPATION -- powerful 
+DP     DISGUST -- powerful 
+DP     FEAR -- powerful 
+DP     JOY -- powerful 
+DP     TRUST -- powerful 
+
+DP     TRUST -- innocent 
+
+DP -- This has been a year filled with many wonderful moments. I’ve enjoyed the people I’ve been lucky enough to meet throughout our great country &amp; the world! 🇺🇸 https://t.co/MMRi72ENd0 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     JOY -- lucky 
+DP     SURPRISE -- lucky 
+DP -- Today we honor Dr. Martin Luther King Jr. &amp; his service to this great country.  I am honored to be First Lady of a nation that continually strives for equality &amp; justice for all. #MLKDay 
+DP     TRUST -- honor 
+
+DP     TRUST -- nation 
+
+DP     JOY -- equality 
+DP     TRUST -- equality 
+
+DP     TRUST -- justice 
+
+DP -- It was a productive week with meetings, meetings &amp; more meetings!  Lots of work to be done in 2018 - looking forward to the year ahead as FLOTUS! https://t.co/4e6rQs7541 
+DP -- Thank you to the brave men &amp; women who sacrifice so much to protect &amp; keep us safe. We appreciate all that you &amp; your families do! #LawEnforcementAppreciationDay https://t.co/Zb8IIY19qf 
+DP -- Wishing everyone a Joyous, Healthy and Prosperous #NewYear2018! ✨ 
+DP     JOY -- prosperous 
+DP -- #MerryChristmas 🎄🤶🏻 https://t.co/IahMZhf5gc 
+DP -- @POTUS and I had fun helping  children track #Santa tonight. Wishing everyone a wonderful #ChristmasEve 🎄 https://t.co/vzsRfNlrx3 
+DP     ANTICIPATION -- fun 
+DP     JOY -- fun 
+DP     ANTICIPATION -- track 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP -- Looking forward to helping kids track Santa today with @NoradSanta! Wishing everyone a very Merry #Christmas Eve! 
+DP     ANTICIPATION -- track 
+DP     JOY -- merry 
+DP -- Merry Christmas from President Donald J. Trump and First Lady Melania Trump.
+@POTUS &amp; @FLOTUS  are seen Tuesday, December 5, in their official 2017 Christmas portrait, in the Cross Hall of the White House in Washington, D.C.
+(Official White House Photo by Andrea Hanks) https://t.co/WRvY1sUUuw 
+DP     JOY -- merry 
+DP     TRUST -- president 
+
+DP     SURPRISE -- trump 
+DP     TRUST -- official 
+
+DP     ANGER -- cross 
+DP     FEAR -- cross 
+DP     SAD -- cross 
+DP     ANTICIPATION -- white 
+DP     JOY -- white 
+DP     TRUST -- white 
+
+DP     ANTICIPATION -- white 
+DP     JOY -- white 
+DP     TRUST -- white 
+
+DP -- RT @AP_Politics: Melania Trump says she hopes the giving spirit that Americans displayed during a season of devastating hurricanes will con… 
+DP     SURPRISE -- trump 
+DP     ANGER -- devastating 
+DP     DISGUST -- devastating 
+DP     FEAR -- devastating 
+DP     SAD -- devastating 
+DP     TRUST -- devastating 
+
+DP -- Great day with military families at @JBABdc as we sorted toys for children. Thank you to @ToysForTots_USA for all that you do for kids across the country.  Merry #Christmas! https://t.co/SdZdxGEMu9 
+DP     FEAR -- military 
+DP     JOY -- merry 
+DP -- Looking forward to visiting @JBABdc today to help @ToysForTots_USA sort &amp; pack toys to be shipped to children across the country in time for #Christmas!  Thank you to all who volunteer time for others – esp during the holidays. 
+DP     ANTICIPATION -- time 
+DP     ANTICIPATION -- volunteer 
+DP     FEAR -- volunteer 
+DP     JOY -- volunteer 
+DP     TRUST -- volunteer 
+
+DP     ANTICIPATION -- time 
+DP -- Enjoyed last week’s visit to @childrenshealth in DC. Was wonderful to meet brave patients &amp; their families. Wishing everyone a happy &amp; healthy #Christmas season &amp; #NewYear! https://t.co/eBe5Rs4WA2 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     JOY -- happy 
+DP     TRUST -- happy 
+
+DP -- A special thank you to all the amazing volunteers who made this year's @WhiteHouse #Christmas decorations a success! https://t.co/K4jR5fNx2H 
+DP     JOY -- special 
+DP     TRUST -- volunteers 
+
+DP -- The effects of the hurricane season are still being felt &amp; residents still need our help. As Christmas &amp; the New Year approach, I encourage people to lend time volunteering or providing financial support to those still in need. https://t.co/uUkmVUNH8n 
+DP     FEAR -- hurricane 
+DP     JOY -- encourage 
+DP     TRUST -- encourage 
+
+DP     ANTICIPATION -- time 
+DP     ANTICIPATION -- providing 
+DP     JOY -- providing 
+DP     TRUST -- providing 
+
+DP -- Beautiful morning @WhiteHouse #Christmas. First #snowday2017 https://t.co/m2YGh4e18M 
+DP     JOY -- beautiful 
+DP -- I was so grateful at the opportunity to spend time with the children and their families yesterday, and want to thank the medical staff @Childrenshealth for their lifesaving work. https://t.co/dkQvUM3RMl 
+DP     ANTICIPATION -- opportunity 
+DP     ANTICIPATION -- time 
+DP     ANTICIPATION -- medical 
+DP     FEAR -- medical 
+DP     TRUST -- medical 
+
+DP -- Fun questions from the kids @childrenshealth 😀 https://t.co/T5oIMBoIA6 
+DP     ANTICIPATION -- fun 
+DP     JOY -- fun 
+DP -- On my way to @childrenshealth to read a #Christmas book and visit with some of the brave patients. Please keep all who are struggling with health issues in your thoughts &amp; prayers this holiday season. 
+DP     ANTICIPATION -- holiday 
+DP     JOY -- holiday 
+DP -- Wonderful to spend time with @secondlady Mrs. Pence, @TexasFLCA Mrs. Abbott and @georgepbush Mr. Bush. Thank you for your service to the great state of #Texas. #TexasRebuilds #TexasStrong https://t.co/5WsvLD0AqP 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     ANTICIPATION -- time 
+DP -- Today we honor Pearl Harbor Heroes. 12/7/1941
+Thank you to all military for your courage and sacrifice! https://t.co/fuxvoaXAno 
+DP     TRUST -- honor 
+
+DP     TRUST -- harbor 
+
+DP     FEAR -- military 
+DP -- Thank you #Texas! So enjoyed my visit with everyone today. Special thanks to 1st responders &amp; @CoastalBendFB for all that you do! We are with you Texas. #TexasRebuilds https://t.co/GwPHoUrJVl 
+DP     JOY -- special 
+DP -- Thoughts &amp; prayers to those affected by the wildfires in California. Thank you to all first responders for their heroic efforts. 
+DP     JOY -- heroic 
+DP     SURPRISE -- heroic 
+DP     TRUST -- heroic 
+
+DP -- Headed to #Texas tomorrow with @SecondLady to continue support those affected by #HurricaneHarvey. We are with you every step of the way! 
+DP     ANTICIPATION -- tomorrow 
+DP     ANTICIPATION -- continue 
+DP     TRUST -- continue 
+
+DP -- “Today, on #WorldAIDSDay, we honor those who have lost their lives to AIDS, we celebrate the remarkable progress we have made in combatting this disease, and we reaffirm our ongoing commitment to end AIDS as a public health threat.” Potus https://t.co/tvF53d3ixA 
+DP     TRUST -- honor 
+
+DP     SAD -- lost 
+DP     JOY -- remarkable 
+DP     SURPRISE -- remarkable 
+DP     TRUST -- remarkable 
+
+DP     ANTICIPATION -- progress 
+DP     JOY -- progress 
+DP     ANTICIPATION -- ongoing 
 DP     ANTICIPATION -- public 
-DP     ANTICIPATION -- medal 
-DP     JOY -- medal 
-DP     SURPRISE -- medal 
-DP     TRUST -- medal 
+DP -- RT @ABCWorldNews: MOMENTS AGO: Pres. Trump, first lady Melania Trump participate in National Christmas Tree lighting in Washington D.C. htt… 
+DP     SURPRISE -- trump 
+DP     ANGER -- tree 
+DP     ANTICIPATION -- tree 
+DP     DISGUST -- tree 
+DP     JOY -- tree 
+DP     SURPRISE -- tree 
+DP     TRUST -- tree 
 
-MOST EMOTIONAL top_joy -- Today we honor Billy Graham as only three private citizens before him have been honored. 
+DP -- Thank you to the talented performers from Vivid Ballet Company who helped us unveil this year's decorations at the @whitehouse. https://t.co/qFole9nmzs 
+DP     JOY -- vivid 
+DP -- So important to thank our service members for their service, especially those away from their families during the holidays. https://t.co/QSOM8elUNx 
+DP     TRUST -- important 
 
-We say a prayer for our country: that all across this land, the Lord will raise up men and women like Billy Graham to spread a message of love and hope to every precious child of God. https://t.co/EM4lZUZpX9 
-MOST EMOTIONAL top_sad -- The European Union, wonderful countries who treat the U.S. very badly on trade, are complaining about the tariffs on Steel &amp; Aluminum. If they drop their horrific barriers &amp; tariffs on U.S. products going in, we will likewise drop ours. Big Deficit. If not, we Tax Cars etc. FAIR! 
-MOST EMOTIONAL top_ang -- Our thoughts and prayers are with the victims of the horrible attack in France yesterday, and we grieve the nation’s loss. We also condemn the violent actions of the attacker and anyone who would provide him support. We are with you @EmmanuelMacron! 
-MOST EMOTIONAL top_fear -- California’s sanctuary policies are illegal and unconstitutional and put the safety and security of our entire nation at risk. Thousands of dangerous &amp; violent criminal aliens are released as a result of sanctuary policies, set free to prey on innocent Americans. THIS MUST STOP! 
-MOST EMOTIONAL top_ant -- Yesterday, it was my great honor to recognize extraordinary Law Enforcement Officers and First Responders, and to award them the the highest possible decoration for bravery by public safety officers, the Medal of Valor. #AmericanHeroes https://t.co/em0wBbvy5P 
-MOST EMOTIONAL top_surp -- “President Donald J. Trump Proclaims March 25, 2018, as Greek Independence Day: A National Day of Celebration of Greek and American Democracy” https://t.co/GwSJ2UK2xD https://t.co/GltMwxINA2 
-MOST EMOTIONAL top_disg -- As the House Intelligence Committee has concluded, there was no collusion between Russia and the Trump Campaign. As many are now finding out, however, there was tremendous leaking, lying and corruption at the highest levels of the FBI, Justice &amp; State. #DrainTheSwamp 
-MOST EMOTIONAL top_trust -- All across this nation, we pray for our country and we THANK GOD for our United States Marines! Thank you. God Bless You. And God Bless America! https://t.co/vKXBd0CGH1 
+DP -- Had a wonderful visit from @JBA_NAFW children today at the @whitehouse! #WhiteHouseChristmas https://t.co/Hnw758zHzL 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP -- The decorations are up! @WhiteHouse is ready to celebrate! Wishing you a Merry Christmas &amp; joyous holiday season! https://t.co/d6ZuyeFvrw 
+DP     ANTICIPATION -- ready 
+DP     JOY -- merry 
+DP     JOY -- joyous 
+DP     ANTICIPATION -- holiday 
+DP     JOY -- holiday 
+DP -- Thrilled to spend part of our Thanksgiving w the local Coast Guard station in Florida. Thank you to all members of the military who keep us safe! #HappyThanksgiving2017 https://t.co/WKpDCoi2Rx 
+DP     JOY -- thanksgiving 
+DP     FEAR -- guard 
+DP     TRUST -- guard 
+
+DP     FEAR -- military 
+DP -- Preparations are underway to celebrate the holidays at the @WhiteHouse! https://t.co/N5qZ1NP8ez 
+DP -- Congratulations to Drumstick on the pardon from @Potus ! We loved having you &amp; Wishbone at the @WhiteHouse. https://t.co/4KGKOVZGHq 
+DP -- Thank you Silent Night Evergreens in Wisconsin for our beautiful tree! @POTUS, Barron &amp; I are excited for Christmas in our new home! https://t.co/so6HVG1st8 
+DP     JOY -- beautiful 
+DP     ANTICIPATION -- excited 
+DP     JOY -- excited 
+DP     SURPRISE -- excited 
+DP     TRUST -- excited 
+
+DP -- RT @ABCWorldNews: First lady Melania Trump, son Barron welcomed the White House Christmas tree today, a 19.5 ft Balsam fir grown in Endeavo… 
+DP     JOY -- welcomed 
+DP     ANTICIPATION -- white 
+DP     JOY -- white 
+DP     TRUST -- white 
+
+DP     ANGER -- tree 
+DP     ANTICIPATION -- tree 
+DP     DISGUST -- tree 
+DP     JOY -- tree 
+DP     SURPRISE -- tree 
+DP     TRUST -- tree 
+
+DP -- This year's @WhiteHouse Christmas booklet is in printing!  Excited to receive the beautiful tree Monday! #ChristmasTraditions https://t.co/x1bbnXch0z 
+DP     ANTICIPATION -- excited 
+DP     JOY -- excited 
+DP     SURPRISE -- excited 
+DP     TRUST -- excited 
+
+DP     JOY -- beautiful 
+DP     ANGER -- tree 
+DP     ANTICIPATION -- tree 
+DP     DISGUST -- tree 
+DP     JOY -- tree 
+DP     SURPRISE -- tree 
+DP     TRUST -- tree 
+
+DP -- Thank you #China! 🇨🇳 🇺🇸 https://t.co/dNm9Qts8W2 
+DP -- Thank you Republic of #Korea! 🇰🇷 🇺🇸 https://t.co/Wyxg2np8RQ 
+DP -- Thank you #Japan! 🇯🇵 🇺🇸 https://t.co/EGpGetDCed 
+DP -- Unforgettable memories! The Great Wall of #China #FLOTUSinAsia https://t.co/tEJ10uUOXo 
+DP -- Wonderful to met Gu Gu 🐼 #FLOTUSinAsia https://t.co/ZdWWrj9bV8 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP -- Wonderful to spend time with military families at JBER #Alaska. Thank you for your service! #HappyVeteransDay https://t.co/dIn7RbKdvs 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     ANTICIPATION -- time 
+DP     FEAR -- military 
+DP -- Thank you President Xi &amp; Madame Peng, for your warm hospitality. Enjoyed our time &amp; looking fwd to future visits between our countries. https://t.co/UrX1Y4S9YC 
+DP     TRUST -- president 
+
+DP     ANTICIPATION -- time 
+DP -- Thank you USA troops and families for your sacrifice and your service! #FLOTUSinAsia https://t.co/mEz49Yupf0 
+DP -- Thank you for wonderful welcome President Moon &amp; First Lady Kim and people of Republic of Korea 🇰🇷 https://t.co/37p1WF53Lv 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     TRUST -- president 
+
+DP -- #FLOTUSinAsia                        https://t.co/7qJksffxdH 
+DP -- Our hearts are with #Texas 
+DP -- Wonderful visit w Mrs. Abe today! Enjoyed conversation over tea &amp; the cultural presentation on the history of pearls. #FLOTUSinAsia https://t.co/g7Oax90SbN 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP -- On the way to Asia. I am looking forward to seeing Mrs. Abe 🇯🇵, First Lady Kim 🇰🇷 and Madame Peng 🇨🇳 again! #FLOTUSinAsia 
+DP -- Our visit to the @USSArizona memorial at #PearlHarbor was very moving. May those we lost always Rest In Peace. Thank you to all who serve. https://t.co/11F9ituH8O 
+DP     SAD -- lost 
+DP -- Thank you for a warm welcome Hawaii! Aloha! https://t.co/reAHw9ItNo 
+DP -- Thank u @WhiteHouseHstry for all you do to preserve, collect&amp;exhibit the artifacts of American history&amp;culture in the @WhiteHouse 11/3/1961 
+DP -- My heart breaks for #NYC today. Thoughts &amp; prayers as we monitor the situation. 
+DP -- Fun night handing out treats to kids who visited @POTUS &amp; I at the @WhiteHouse. #TrickOrTreat #HappyHalloween2017 https://t.co/qa4gwHtyOR 
+DP     ANTICIPATION -- fun 
+DP     JOY -- fun 
+DP -- The People’s House @WhiteHouse is ready to celebrate #Halloween2017 https://t.co/35p3AbnM9o 
+DP     ANTICIPATION -- ready 
+DP -- 2/2: Find nearby locations to safely turn in expired, unused, or unwanted prescriptions! https://t.co/hVKAPXC84O 
+DP -- 1/2: Today is Nat’l Prescription Drug Take Back Day. Visit https://t.co/hVKAPXC84O ... 
+DP -- Enjoyed spending time with the students of Orchard Lake Middle School in Michigan on Monday. Thank you for leading by example! https://t.co/zldcxTmUv6 
+DP     ANTICIPATION -- time 
+DP     TRUST -- school 
+
+DP     TRUST -- leading 
+
+DP -- RT @FoxNews: WATCH: Full @FLOTUS speech on battling the opioid epidemic in the United States . https://t.co/6kCWvMCYuQ 
+DP     ANGER -- epidemic 
+DP     ANTICIPATION -- epidemic 
+DP     DISGUST -- epidemic 
+DP     FEAR -- epidemic 
+DP     SAD -- epidemic 
+DP     SURPRISE -- epidemic 
+DP     TRUST -- united 
+
+DP -- Proud to support @potus today as he declared our nation's opioid crisis a public health emergency. https://t.co/CZETljrq5N 
+DP     ANTICIPATION -- proud 
+DP     JOY -- proud 
+DP     TRUST -- proud 
+
+DP     ANTICIPATION -- public 
+DP -- Thank you for all you do! @MichStatePolice @oaklandsheriff @WestBlmfldPD W Bloomfield Fire Dept &amp; Waterford Police Dept https://t.co/4tyOF9wmLG 
+DP     FEAR -- fire 
+DP     FEAR -- police 
+DP     TRUST -- police 
+
+DP -- Wonderful to see kind children at Orchard Lake Middle School in Michigan! Thank you for having me! #nooneeatsalone https://t.co/0m1k2OwTXZ 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     JOY -- kind 
+DP     TRUST -- kind 
+
+DP     TRUST -- school 
+
+DP -- Honored today to donate my inaugural couture piece to the @amhistorymuseum! https://t.co/ENU1BeJA02 
+DP     ANTICIPATION -- inaugural 
+DP -- 2/2: My goal as FLOTUS is to positively impact the lives of children &amp; effect change within our next generation. 
+DP     FEAR -- change 
+DP -- 1/2: Thank you to Kuwait-America Foundation for this year's Humanitarian Award! 
+DP     ANTICIPATION -- humanitarian 
+DP     JOY -- humanitarian 
+DP     SURPRISE -- humanitarian 
+DP     TRUST -- humanitarian 
+
+DP -- My determination on behalf of those affected by recent hurricanes remains steadfast. Please help if you can. https://t.co/I0RbP7bBTL https://t.co/9N7pDzPi90 
+DP     TRUST -- determination 
+
+DP     DISGUST -- remains 
+DP     FEAR -- remains 
+DP     TRUST -- remains 
+
+DP -- Welcomed PM @JustinTrudeau &amp; Mrs. Trudeau to @WhiteHouse yesterday! Productive mtgs between Canada 🇨🇦 &amp; USA 🇺🇸 https://t.co/Kd1IOv3xFr 
+DP     JOY -- welcomed 
+DP -- Enjoyed hosting Sophie Trudeau at the @WhiteHouse today.  Thank you neighbors to our north, for the visit. https://t.co/ZPUxtISRE7 
+DP -- Today's visit to @LilysPlaceWV was incredibly special. Let us all find ways to help children grow into happy, healthy adults. https://t.co/YUv7WJdPk4 
+DP     ANTICIPATION -- grow 
+DP     JOY -- grow 
+DP     TRUST -- grow 
+
+DP -- Tmw I travel to WV on behalf of kids. Babies born addicted to opioids often end up in foster system-we must help parents overcome addiction. 
+DP -- Wonderful celebration of Hispanic Heritage Month @WhiteHouse this afternoon! https://t.co/lGxbglXp3l 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     ANTICIPATION -- celebration 
+DP     JOY -- celebration 
+DP     SURPRISE -- celebration 
+DP     TRUST -- celebration 
+
+DP     TRUST -- heritage 
+
+DP -- Welcomed spouses of Senior Military Leaders to the @Whitehouse last night. 
+Thank you for your service! https://t.co/R1oagHCsgo 
+DP     JOY -- welcomed 
+DP     FEAR -- military 
+DP -- Yesterday’s visit to Las Vegas was both somber &amp; uplifting. Those lost will never be forgotten. #VegasStrong https://t.co/onFHVos8Cy 
+DP     SAD -- somber 
+DP     SAD -- lost 
+DP -- After speaking w/people affected by #HurricaneMaria yesterday we are reminded of the fighting spirit of Americans. @POTUS and I are w/you! https://t.co/DTGXG2ivBk 
+DP     ANGER -- fighting 
+DP -- My heart and prayers goes out to victims, families &amp; loved ones! 
+#PrayForLasVegas 
+DP -- In honor of National Breast Cancer Awareness Month we lit the @WhiteHouse pink! https://t.co/w3M3XlpXos 
+DP     TRUST -- honor 
+
+DP     ANGER -- cancer 
+DP     DISGUST -- cancer 
+DP     FEAR -- cancer 
+DP     SAD -- cancer 
+DP -- Congratulations to all the competitors at this year's Invictus Games! You've served your country proudly at home &amp; @InvictusToronto https://t.co/nRhoyCNx75 
+DP -- Oct is Natl Breast Cancer Awareness Month.  Please talk to your doctor about early detection &amp; reducing your risk. #BreastCancerAwareness 
+DP     ANGER -- cancer 
+DP     DISGUST -- cancer 
+DP     FEAR -- cancer 
+DP     SAD -- cancer 
+DP     TRUST -- doctor 
+
+DP -- Thank you to all who participated in today's discussion on opioid abuse. By talking about it, we can start to make a real difference. https://t.co/e9KJU6zWPn 
+DP     ANTICIPATION -- start 
+DP     TRUST -- real 
+
+DP -- Today we celebrated advances in pediatric health care! Thank you Barbara &amp; @NCHCF for all you do on behalf of children. #HealingGarden https://t.co/bt7wA8aSQ0 
+DP     ANTICIPATION -- celebrated 
+DP     JOY -- celebrated 
+DP -- Wishing all competitors at @InvictusToronto the best of luck this week! Thank you to all who serve. Go Team USA 🇺🇸!!! https://t.co/nIBOZIDWjI 
+DP     ANTICIPATION -- luck 
+DP     JOY -- luck 
+DP     SURPRISE -- luck 
+DP     TRUST -- team 
+
+DP -- Wonderful spirit &amp; determination of ALL the competitors @ opening ceremony @InvictusToronto! Honored to lead the U.S. delegation! Go team 🇺🇸 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     TRUST -- determination 
+
+DP     JOY -- ceremony 
+DP     SURPRISE -- ceremony 
+DP     TRUST -- team 
+
+DP -- Productive &amp; fun day @WhiteHouse Kitchen Garden today! Thank you @BGCGW for all of your help! #HealthyEating #HealthyLiving https://t.co/lecdgqQnyu 
+DP     ANTICIPATION -- fun 
+DP     JOY -- fun 
+DP     JOY -- garden 
+DP -- Thank you @BGCGW Boys &amp; Girls Club Washington for helping us plant &amp; harvest @WhiteHouse Kitchen Garden today! #HealthyEating #HealthyLiving https://t.co/1FdVHuvCYM 
+DP     ANTICIPATION -- harvest 
+DP     JOY -- harvest 
+DP     JOY -- garden 
+DP -- "No child should ever feel hungry, stalked, frightened, terrorized, bullied or afraid with nowhere to turn." https://t.co/Z7F6JsSvGF 
+DP     ANTICIPATION -- child 
+DP     JOY -- child 
+DP     FEAR -- afraid 
+DP -- So enjoyed hosting yesterday's #UNGA luncheon.  Thank you all who attended &amp; will help support my efforts on behalf of children. https://t.co/8Z2URyvQfd 
+DP -- Sending strength to our friends in Puerto Rico. #HurricaneMaria 
+DP     TRUST -- strength 
+
+DP -- Thinking of those in #Mexico affected by today's #earthquake. 
+DP -- Happy Birthday @USAirForce! Thank you to the heroes who protect us &amp; the families who love them! https://t.co/K88ik9be02 
+DP     JOY -- happy 
+DP     TRUST -- happy 
+
+DP     ANTICIPATION -- birthday 
+DP     JOY -- birthday 
+DP     SURPRISE -- birthday 
+DP     JOY -- love 
+DP -- It was an honor to host dinner for @whitehousehstry https://t.co/nSGPxYuGfA 
+DP     TRUST -- honor 
+
+DP -- Thank you @JBA_NAFW for allowing me to spend time w the kids at your youth center! Fun &amp; smart kids w very good questions. https://t.co/tcyWbAPinE 
+DP     ANTICIPATION -- time 
+DP     ANGER -- youth 
+DP     ANTICIPATION -- youth 
+DP     FEAR -- youth 
+DP     JOY -- youth 
+DP     SURPRISE -- youth 
+DP     ANTICIPATION -- fun 
+DP     JOY -- fun 
+DP     ANTICIPATION -- good 
+DP     JOY -- good 
+DP     SURPRISE -- good 
+DP     TRUST -- good 
+
+DP -- We are with you #Florida! https://t.co/S8ugpOjq6f 
+DP -- Thank you @WhiteHouseHstry for all you do to help preserve the people's house. @potus &amp; I are honored to call @whitehouse home. 
+DP -- Before touching down in Naples, air tour of hurricane damage. There is much work to be done, but America is with you Florida! https://t.co/eWdJHmuQUK 
+DP     FEAR -- hurricane 
+DP -- Taking off to #Florida w/ @Potus to meet with @FEMA and people affected by #HurricaneIrma. https://t.co/qvdm4jIRSC 
+DP -- My concern continues for all impacted by the hurricanes.Will fly to #Florida on Thursday w @potus to survey the damages from #HurricaneIrma. 
+DP     SAD -- damages 
+DP -- Remembering September 11, 2001 #NeverForget https://t.co/5mrRa23054 
+DP -- Today's video conference #HurricaneIrma briefing by @Fema at Camp David.  
+Thank you to 1st responders! Stay safe! https://t.co/jLF6vSvgDO 
+DP -- Look fwd to hosting members of the cabinet &amp; their spouses at #CampDavid this weekend. Much work to be done as we monitor #Hurricane Irma. 
+DP     TRUST -- cabinet 
+
+DP -- If you are in or near projected path of #HurricaneIrma please listen to local law enforcement in the area. Stay safe!!! 
+DP     TRUST -- law 
+
+DP -- #ReadABookDay https://t.co/wBAzbEcUDb 
+DP -- On National #ReadABookDay I encourage everyone to read a book. Let every page educate you &amp; take you on an exciting journey! 
+DP     JOY -- encourage 
+DP     TRUST -- encourage 
+
+DP     ANTICIPATION -- exciting 
+DP     JOY -- exciting 
+DP     SURPRISE -- exciting 
+DP -- On this #LaborDay2017 we honor American workers for their many contributions to the prosperity of these United States. 🇺🇸 
+DP     TRUST -- honor 
+
+DP     TRUST -- united 
+
+DP -- Beautiful service today at St. John's. @potus and I wishing you many blessings on this National Day of Prayer. 
+DP     JOY -- beautiful 
+DP     ANTICIPATION -- blessings 
+DP     JOY -- blessings 
+DP     SURPRISE -- blessings 
+DP     TRUST -- blessings 
+
+DP -- Spent today with the wonderful families helping each other after #HurricaneHarvey #Texas https://t.co/ia9696reLd 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP -- I met w @RedCross @SalvationArmyUS &amp; Southern BaptistDisasterRelief to thank them for efforts during #HurricaneHarvey &amp; receive update. https://t.co/DMxM2sZ8Ms 
+DP -- Sept. is Nat'l Alcohol&amp;Drug Addiction Recovery Month. Together we can strengthen families&amp;communities &amp; beat addiction. Call: 800-662-HELP 
+DP -- Recovery efforts in #Texas will be long term. If you were affected by #Harvey, apply for help &amp; resources at   https://t.co/V6WEmbQ356 
+DP     ANTICIPATION -- long 
+DP     JOY -- resources 
+DP     TRUST -- resources 
+
+DP -- Thank you @RedCross, @FEMA, 1st responders &amp; private citizens for helping people on the ground after devastation left by #HurricaneHarvey 
+DP     TRUST -- ground 
+
+DP     ANGER -- devastation 
+DP     FEAR -- devastation 
+DP     SAD -- devastation 
+DP     SURPRISE -- devastation 
+DP -- Thank you @GovAbbott @fema @uscoastguard @RedCross &amp; local officials for the briefing today on #HurricaneHarvey. We are with you #Texas! https://t.co/vX8sLhwrh1 
+DP -- I will travel with @POTUS tomorrow to lend my support to the people of #Texas. We are with you! 
+DP     ANTICIPATION -- tomorrow 
+DP -- RT @RedCross: #RedCross is providing shelter, meals &amp; comfort to people impacted by #Harvey. To find a location: https://t.co/sizEp51qtg or… 
+DP     ANTICIPATION -- providing 
+DP     JOY -- providing 
+DP     TRUST -- providing 
+
+DP     ANTICIPATION -- comfort 
+DP     JOY -- comfort 
+DP     TRUST -- comfort 
+
+DP -- For those living near the path of #HurricaneHarvey stay safe! Thoughts &amp; prayers of an entire country are with you. 
+DP -- Thank you @ChelseaClinton - so  important to support all of our children in being themselves! 
+#StopChildhoodBullying https://t.co/UCUpFc5ZjR 
+DP     TRUST -- important 
+
+DP -- Exciting to watch the total eclipse with @potus today! #Eclipse2017 😎 https://t.co/85Y8R4yJU7 
+DP     ANTICIPATION -- exciting 
+DP     JOY -- exciting 
+DP     SURPRISE -- exciting 
+DP     ANTICIPATION -- watch 
+DP     FEAR -- watch 
+DP -- Thoughts and prayers to #Barcelona 
+DP -- Our country encourages freedom of speech, but let's communicate w/o hate in our hearts. No good comes from violence. #Charlottesville 
+DP     JOY -- freedom 
+DP     TRUST -- freedom 
+
+DP     TRUST -- communicate 
+
+DP     ANGER -- hate 
+DP     DISGUST -- hate 
+DP     SAD -- hate 
+DP     ANTICIPATION -- good 
+DP     JOY -- good 
+DP     SURPRISE -- good 
+DP     TRUST -- good 
+
+DP -- Opioids are destroying our youth/people. Mtg w @Potus &amp; @SecPriceMD today to give my support to #STOPDRUGADDICTION https://t.co/aAjNNnu98n 
+DP     ANGER -- destroying 
+DP     FEAR -- destroying 
+DP     SAD -- destroying 
+DP -- Thank you to all of our East wing interns for their dedication! The future is bright with these hard workers! https://t.co/teScGK8xUe 
+DP -- Honored to lead US delegation to this year's 2017 Invictus Games in #Toronto #Canada @WeAreInvictus https://t.co/6y4j2CvVVS 
+DP -- Thank you #Ohio! Great mtg American heroes at AMVETS Post 44 event &amp; thanks to all who came out to support @POTUS at rally! #MAGA 🇺🇸 https://t.co/MGNoFqKaqJ 
+DP -- Thank you @EmmanuelMacron &amp; people of Paris for your kind hospitality - @potus &amp; I enjoyed our visit. #BastilleDay2017 #Paris #France https://t.co/1btuyihfEA 
+DP     JOY -- kind 
+DP     TRUST -- kind 
+
+DP -- Enjoyed my tour of #Paris on the Seine this afternoon. Thank you to Mrs. Macron for being such a gracious hostess. https://t.co/uzbR2dREww 
+DP -- What a beautiful &amp; special visit to Notre-Dame Cathedral with First Lady Brigitte Macron. Blessings to all. https://t.co/Wa8YGxQecm 
+DP     JOY -- beautiful 
+DP     JOY -- special 
+DP     JOY -- cathedral 
+DP     TRUST -- cathedral 
+
+DP     ANTICIPATION -- blessings 
+DP     JOY -- blessings 
+DP     SURPRISE -- blessings 
+DP     TRUST -- blessings 
+
+DP -- Thank U @hospital_necker for allowing me to visit your wonderful patients &amp; inspirational staff. Continued prayers for good health for all. https://t.co/3keri8EUC4 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     ANTICIPATION -- good 
+DP     JOY -- good 
+DP     SURPRISE -- good 
+DP     TRUST -- good 
+
+DP -- My deepest sympathy to all of the military families who lost their loved ones in the Mississippi plane crash. Thoughts &amp; prayers for all. 
+DP     SAD -- sympathy 
+DP     FEAR -- military 
+DP     SAD -- lost 
+DP -- .@potus &amp; I enjoyed our visits to #Warsaw &amp; #Hamburg. A lot of work was accomplished, friendships made. Headed home! 🇺🇸 https://t.co/wJOCMMPdD0 
+DP -- My husband @potus &amp; I enjoyed a lovely evening w many great leaders. When countries work together, everyone prospers. #G20Summit #Hamburg https://t.co/gelBvOutbd 
+DP     ANTICIPATION -- lovely 
+DP     JOY -- lovely 
+DP     SAD -- lovely 
+DP     SURPRISE -- lovely 
+DP     TRUST -- lovely 
+
+DP -- Thinking of those hurt in #Hamburg protests. Hope everyone stay safe! #G20 
+DP     ANGER -- hurt 
+DP     FEAR -- hurt 
+DP     SAD -- hurt 
+DP     ANTICIPATION -- hope 
+DP     JOY -- hope 
+DP     SURPRISE -- hope 
+DP     TRUST -- hope 
+
+DP -- Thank you for a warm welcome President Duda &amp; Mrs.Duda. Poland is a wonderful country with great spirit &amp; people! #Warsaw https://t.co/h5bRopgNOE 
+DP     TRUST -- president 
+
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP -- Thank you Copernicus Science Center for the lovely tour. The children were brilliant &amp; kind! I enjoyed it very much. #Warsaw #Poland https://t.co/ah6P4l7cnO 
+DP     TRUST -- center 
+
+DP     ANTICIPATION -- lovely 
+DP     JOY -- lovely 
+DP     SAD -- lovely 
+DP     SURPRISE -- lovely 
+DP     TRUST -- lovely 
+
+DP     ANTICIPATION -- brilliant 
+DP     JOY -- brilliant 
+DP     TRUST -- brilliant 
+
+DP -- Thank you to the @USNavy Country Current &amp; @USArmy Down Range bands for performing at tonight's picnic to honor the military. #Happy4th https://t.co/hUjAlPUPrG 
+DP     ANTICIPATION -- picnic 
+DP     JOY -- picnic 
+DP     SURPRISE -- picnic 
+DP     TRUST -- picnic 
+
+DP     TRUST -- honor 
+
+DP -- .@POTUS &amp; I were honored to host members of military &amp; families for a picnic at the @whitehouse this evening.  #HappyIndependenceDay https://t.co/40XI2iuFzM 
+DP     FEAR -- military 
+DP     ANTICIPATION -- picnic 
+DP     JOY -- picnic 
+DP     SURPRISE -- picnic 
+DP     TRUST -- picnic 
+
+DP -- #HappyIndependenceDay 🇺🇸
+We are the land of the free because of the brave. Thank you to the heroes who serve! 
+DP -- .@potus &amp; I had lovely evening hosting President Moon, his wife &amp; delegation for working dinner @WhiteHouse https://t.co/NmFJagVfxq 
+DP     ANTICIPATION -- lovely 
+DP     JOY -- lovely 
+DP     SAD -- lovely 
+DP     SURPRISE -- lovely 
+DP     TRUST -- lovely 
+
+DP     TRUST -- president 
+
+DP -- Happy belated 3rd bday (yesterday) sweet Monty!  Thank you for visiting us at @WhiteHouse today! https://t.co/ZnENYjB7zE 
+DP     JOY -- happy 
+DP     TRUST -- happy 
+
+DP     ANTICIPATION -- sweet 
+DP     JOY -- sweet 
+DP     SURPRISE -- sweet 
+DP     TRUST -- sweet 
+
+DP -- Welcome to the @WhiteHouse Prime Minister Modi! https://t.co/JEAgtlUQcw 
+DP -- Looking forward to this evening's Congressional "Picnic in the Park" @Whitehouse ! https://t.co/7gpFxT1Oj8 
+DP -- Congrats @usedgov 2017 Presidential Scholars Program students!!  An honor to speak w some of our nation's most distinguished graduates. https://t.co/XeLw1I1C9v 
+DP     TRUST -- honor 
+
+DP -- Enjoyed hosting Mrs. Varela of Panama @WhiteHouse for lunch today. I look forward to working alongside her in the future! https://t.co/lTxH2YpuR7 
+DP -- #HappyFathersDay @POTUS ❤️ 
+DP -- Barron, @Potus and I enjoying beautiful Camp David! #family #sport #weekend https://t.co/K20G8YpkKm 
+DP     ANTICIPATION -- enjoying 
+DP     JOY -- enjoying 
+DP     TRUST -- enjoying 
+
+DP     JOY -- beautiful 
+DP -- Congratulations to Justice Neil Gorsuch on today's official investiture ceremony! It was an honor to witness unforgettable moment! 
+DP     TRUST -- justice 
+
+DP     TRUST -- official 
+
+DP     TRUST -- honor 
+
+DP     TRUST -- witness 
+
+DP -- ❤️❤️❤️🇺🇸 https://t.co/TKGtMA4YnN 
+DP -- Thank you to the first responders who rushed in to help protect those who were hurt in Alexandria, VA. My thoughts &amp; prayers to everyone! 
+DP     ANGER -- hurt 
+DP     FEAR -- hurt 
+DP     SAD -- hurt 
+DP -- Looking forward to the memories we'll make in our new home! #Movingday https://t.co/R5DtdV1Hnv 
+DP -- .Potus &amp; I paid personal tribute to #GoldStarFamilies tonight @WhiteHouse. Thank U to all the brave men&amp;women who have fought 4 our freedom! 
+DP     TRUST -- personal 
+
+DP -- Thank you to everyone at @fordstheatre for tonight's performances!  @POTUS and I enjoyed the evening very much. 
+DP -- .@POTUS &amp; I enjoyed hosting pre-gala reception at @WhiteHouse in honor of @Fordstheatre. 
+DP     TRUST -- honor 
+
+DP -- My thoughts &amp; prayers go out to the people in #Manila, #Philippines 
+DP -- Today let's take time to remember those who have died so we may be free, and thank the brave men &amp; women who serve our country. #MemorialDay 
+DP     ANTICIPATION -- time 
+DP     TRUST -- serve 
+
+DP -- .@Potus &amp; I are heading home after a very successful first International trip. Thank you to all of the host nations for your hospitality! https://t.co/uWTgNgnA6O 
+DP     ANTICIPATION -- successful 
+DP     JOY -- successful 
+DP     TRUST -- successful 
+
+DP -- It has been an incredible trip, and great strides have been made. #G7Taormina #Italy https://t.co/9V6nkdtVF2 
+DP -- Gorgeous evening #G7Taormina #Italy #Potus&amp;Flotus https://t.co/vpDLHFFPB8 
+DP     JOY -- gorgeous 
+DP -- Thank you to the @usarmy 1-214th Aviation Regiment for getting me &amp; my staff to our mtgs safely! #G7 #Catania #Italy https://t.co/UtfjAKFBtC 
+DP     FEAR -- regiment 
+DP -- Thank you Mrs. Gentiloni &amp; Mayor Bianco for hosting me at Chierici Palace today. #Catania #G7 #Italy 
+DP -- On my way to a lunch &amp; mtgs as part of #G7. Taormina ➡️ Catania #Italy https://t.co/xMJAcsZXgx 
+DP -- .@POTUS &amp; I were happy to greet the families of those who work at the #American embassy in #Brussels. Thank u for your work on behalf USA! 
+DP     JOY -- happy 
+DP     TRUST -- happy 
+
+DP -- Wonderful tour of the @museummagrutte @fineartsbelgium as part of the official @NATO spouses program! #Brussels #Belgium 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP     TRUST -- official 
+
+DP -- Thank you @ChildFocusNL &amp; Queen Mathilde for the presentation yesterday. Let's all work together to combat child exploitation! #Belgium 
+DP     ANGER -- combat 
+DP     FEAR -- combat 
+DP     ANTICIPATION -- child 
+DP     JOY -- child 
+DP -- Thank u to Queen Fabiola University Hospital! Enjoyed creating paper flowers with amazing patients &amp; getting a tour. #Brussels #Belgium https://t.co/igeOaVSyf0 
+DP     ANTICIPATION -- university 
+DP -- A little boy who I visited today &amp; had been waiting for a heart transplant will be receiving one! #Blessings #Faith https://t.co/DZU3ojxXVC 
+DP     DISGUST -- boy 
+DP     ANTICIPATION -- receiving 
+DP     JOY -- receiving 
+DP     SURPRISE -- receiving 
+DP -- Wonderful news after I visited @bambinogesu in Rome! ... 
+DP     JOY -- wonderful 
+DP     SURPRISE -- wonderful 
+DP     TRUST -- wonderful 
+
+DP -- Thank you @bambinogesu for the heroic work you do. I ask that everyone keep these amazing children in your thoughts &amp; prayers. https://t.co/UfVAc9lXv2 
+DP     JOY -- heroic 
+DP     SURPRISE -- heroic 
+DP     TRUST -- heroic 
+
+DP -- Today's visit with His Holiness Pope Francis @Pontifex is one I'll never forget. I was humbled by the honor. Blessings to all. https://t.co/NiomkFQqJb 
+DP     ANTICIPATION -- holiness 
+DP     FEAR -- holiness 
+DP     JOY -- holiness 
+DP     SURPRISE -- holiness 
+DP     TRUST -- holiness 
+
+DP     SAD -- humbled 
+DP     ANTICIPATION -- blessings 
+DP     JOY -- blessings 
+DP     SURPRISE -- blessings 
+DP     TRUST -- blessings 
+
+DP -- The @Potus &amp; I are looking forward to our visit w His Holiness Pope Francis @Pontifex. This promises to be a personal &amp; very special visit. 
+DP     ANTICIPATION -- holiness 
+DP     FEAR -- holiness 
+DP     JOY -- holiness 
+DP     SURPRISE -- holiness 
+DP     TRUST -- holiness 
+
+DP     TRUST -- personal 
+
+DP     JOY -- special 
+MOST EMOTIONAL top_joy -- Wonderful to meet @KyleKashuv today. His message of unity is one we should all share. Thank you for visiting us at the @WhiteHouse &amp; hope you enjoyed your surprise meeting with @potus! Wishing you much success w @TheReachOutApp. https://t.co/K4aGydo1uX 
+MOST EMOTIONAL top_ant -- March starts #WomensHistoryMonth, a time to celebrate the ways American women have historically changed &amp; continue to shape our society.  As we also recognize #RedCrossMonth, we see the result of one woman’s call to action through the humanitarian relief efforts of the @Redcross 
+MOST EMOTIONAL top_surp -- It was wonderful to welcome guests to the @WhiteHouse this evening in celebration of National African American History Month.  We look forward to hosting many more events that celebrate our unique and diverse cultures. #BlackHistoryMonth2018 
+MOST EMOTIONAL top_trust -- Happy #IWD2018.  Today we recognize, celebrate &amp; honor women around the globe.  On March 21, I will be at the @StateDept to present the #WomenOfCourage award to some extraordinary women. 

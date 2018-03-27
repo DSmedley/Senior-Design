@@ -27,7 +27,16 @@ class CompareController extends Controller
         $analyze = new AnalysesController();
         
         $analysis1 = $analyze->getData($request->get('name1'));
+        
+        if(isset($analysis1['errors'])){
+            return redirect()->route('compare')->with('twitterError', $analysis1['errors']['0']['message']);
+        }
+        
         $analysis2 = $analyze->getData($request->get('name2'));
+        
+        if(isset($analysis2['errors'])){
+            return redirect()->route('compare')->with('twitterError', $analysis2['errors']['0']['message']);
+        }
         
         $data = array(
             'first' => $analysis1->id,
@@ -36,11 +45,21 @@ class CompareController extends Controller
         
         if(!empty($request->get('name3'))){
             $analysis3 = $analyze->getData($request->get('name3'));
+            
+            if(isset($analysis3['errors'])){
+                return redirect()->route('compare')->with('twitterError', $analysis3['errors']['0']['message']);
+            }
+            
             $data['third'] = $analysis3->id;
         }
         
         if(!empty($request->get('name4'))){
             $analysis4 = $analyze->getData($request->get('name4'));
+            
+            if(isset($analysis4['errors'])){
+                return redirect()->route('compare')->with('twitterError', $analysis4['errors']['0']['message']);
+            }
+            
             $data['fourth'] = $analysis4->id;
         }
         

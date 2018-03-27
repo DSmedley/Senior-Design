@@ -51,13 +51,8 @@ class AnalysesController extends Controller
         $this->validate($request, [
             'name' => 'required',
         ]);
-
-        $amount = 200;
-        if(!empty($request->get('amount'))){
-            $amount =$request->get('amount');
-        }
         
-        $analysis = $this->getData($request->get('name'), $amount);
+        $analysis = $this->getData($request->get('name'));
 
         if(isset($analysis['errors'])){
             return redirect()->route('analyze')->with('twitterError', $analysis['errors']['0']['message']);
@@ -84,7 +79,7 @@ class AnalysesController extends Controller
         $link->save();
     }
     
-    public function getData($screen_name = null, $amount = 100){
+    public function getData($screen_name = null){
         /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
         $settings = array(
             'oauth_access_token' => "419236098-ybBLRsLig8sSd5LttZ6voxm9Gv3I8yul3JlvzGuD",
@@ -117,7 +112,7 @@ class AnalysesController extends Controller
             
             /**GET USER TWEETS**/
             $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-            $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count='.$amount;
+            $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=200';
             $requestMethod = 'GET';
             $twitter = new TwitterController($settings);
             $tweetResults = $twitter->setGetfield($getfield)
