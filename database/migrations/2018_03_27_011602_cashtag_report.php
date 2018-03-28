@@ -29,6 +29,14 @@ class CashtagReport extends Migration
             $table->integer('surprise');
             $table->integer('trust');
             $table->integer('none');
+            $table->string('top_joy')->nullable();
+            $table->string('top_sad')->nullable();
+            $table->string('top_ang')->nullable();
+            $table->string('top_fear')->nullable();
+            $table->string('top_ant')->nullable();
+            $table->string('top_surp')->nullable();
+            $table->string('top_disg')->nullable();
+            $table->string('top_trust')->nullable();
             $table->timestamps();
         });
     }

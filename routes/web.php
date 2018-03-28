@@ -27,9 +27,9 @@ Route::post('/cashtag/{cashtag}', 'CashtagController@analyze')->name('cashtag.na
 Route::get('/cashtag/{id}/{cashtag}', 'CashtagController@getCashtag')->name('cashtag.view');
 
 Route::get('/hashtag', 'HashtagController@index')->name('hashtag');
-Route::post('/hashtag', 'HashtagController@index')->name('hashtag');
-/*Route::post('/hashtag/{hashtag}', 'HashtagController@analyze')->name('hashtag.name');
-Route::get('/hashtag/{id}/{hashtag}', 'HashtagController@getHashtag')->name('hashtag.view');*/
+Route::post('/hashtag', 'HashtagController@analyze')->name('hashtag');
+Route::post('/hashtag/{hashtag}', 'HashtagController@analyze')->name('hashtag.name');
+Route::get('/hashtag/{id}/{hashtag}', 'HashtagController@getHashtag')->name('hashtag.view');
 
 Route::get('/compare', 'CompareController@index')->name('compare');
 Route::post('/compare', 'CompareController@compare')->name('compare');

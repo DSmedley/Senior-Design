@@ -124,6 +124,14 @@ class CashtagController extends Controller
         $analysis->surprise = $emotions->surprise;
         $analysis->trust = $emotions->trust;
         $analysis->none = $emotions->nada;
+        $analysis->top_joy = $emotions->top_joy;
+        $analysis->top_sad = $emotions->top_sad;
+        $analysis->top_ang = $emotions->top_ang;
+        $analysis->top_fear = $emotions->top_fear;
+        $analysis->top_ant = $emotions->top_ant;
+        $analysis->top_surp = $emotions->top_surp;
+        $analysis->top_disg = $emotions->top_disg;
+        $analysis->top_trust = $emotions->top_trust;
 
         //Save the analysis into the database
         $analysis->save();

@@ -66,10 +66,10 @@
                         Unknown
                     @endif
                 </li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $analysis->tweets }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $analysis->following }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $analysis->followers }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $analysis->likes }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ number_format($analysis->tweets) }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ number_format($analysis->following) }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ number_format($analysis->followers) }}</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ number_format($analysis->likes) }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
                     @php $d = new DateTime($analysis->joined);
                         echo $d->format('D M j Y'); 
@@ -114,7 +114,16 @@
                             <canvas id="positivity" width="50" height="50"></canvas>
                         </div>
                         <div class="col-md-8" off>
-                            <canvas id="emotions" width="50" height="50"></canvas>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <canvas id="emotions" width="50" height="50"></canvas>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-md-offset-8">
+                                    <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Most Emotional</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     @php
@@ -151,7 +160,7 @@
                             <div class="percentage" class="retweeted" id="retweeted" data-toggle="tooltip" title="Percent of tweets retweeted by others out of {{ $analysis->total }} with {{ number_format($analysis->retweet_total) }} total retweets."></div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="percentage" id="favorited" data-toggle="tooltip" title="Percent of tweets favorited by others out of {{ $analysis->total }} with {{ number_format($analysis->favorite_total) }} total favorites."></div>
+                            <div class="percentage" id="favorited" data-toggle="tooltip" title="Percent of tweets favorited by others out of {{ $analysis->total-$analysis->retweets }} with {{ number_format($analysis->favorite_total) }} total favorites."></div>
                         </div>
                     </div>
                 </div>
@@ -159,25 +168,45 @@
             <div class="panel panel-default">
                 <div class="panel-heading">URLs Linked</div>
                 <div class="panel-body">
-                    @if(isset($urls))
-                        @foreach($urls as $url)
-                            <a href="{{$url->url}}" target="_blank" data-toggle="tooltip" title="Used {{$url->occurs}} times">{{ ' '.$url->url.' ' }}</a> &bull;
-                        @endforeach
-                    @else
-                        {{ $analysis->name }} did not link any URLs!
-                    @endif
+                    <div class="container-fluid">
+                        <div class="row">
+                            @if(isset($urls))
+                                @foreach($urls as $url)
+                                    <div class="col-sm-3">
+                                        <a href="{{$url->url}}" target="_blank" data-toggle="tooltip" title="Used {{$url->occurs}} times">{{ ' '.$url->url.' ' }}</a>
+                                    </div>
+                                @endforeach
+                            @else
+                                {{ $analysis->name }} did not link any URLs!
+                            @endif
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">Most used Hashtags</div>
                 <div class="panel-body">
-                    @if(isset($hashtags))
-                        @foreach($hashtags as $hashtag)
-                            <a href="http://twitter.com/#!/search/%23{{$hashtag->hashtag}}" target="_blank" data-toggle="tooltip" title="Used {{$hashtag->occurs}} times">{{ '#'.$hashtag->hashtag.' ' }}</a> &bull;
-                        @endforeach
-                    @else
-                        {{ $analysis->name }} did not use any hashtags!
-                    @endif
+                    <div class="container-fluid">
+                        <div class="row">
+                            @if(isset($hashtags))
+                                @foreach($hashtags as $hashtag)
+                                    <div class="col-sm-2">
+                                        <a href="{{ route('hashtag.name', array('hashtag' => $hashtag->hashtag)) }}"
+                                                        onclick="event.preventDefault();
+                                                                 document.getElementById('hashtag-form-{{ $hashtag->hashtag }}').submit();" class="portfolio-box" data-toggle="tooltip" title="Used {{$hashtag->occurs}} times">
+                                            {{ '#'.$hashtag->hashtag.' ' }}
+                                        </a>
+                                        <form id="hashtag-form-{{ $hashtag->hashtag }}" action="{{ route('hashtag') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                            <input id="hashtag" name="hashtag" type="text" value="{{ $hashtag->hashtag }}">
+                                        </form>
+                                    </div>
+                                @endforeach
+                            @else
+                                {{ $analysis->name }} did not use any hashtags!
+                            @endif
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="panel panel-default">
@@ -239,6 +268,86 @@
         </div>
     </div>  
 </div>
+
+<div id="myModal" data-keyboard="true" class="modal fade" role="dialog" tabindex='-1'>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Most Emotional Tweets</h4>
+            </div>
+            <div class="modal-body">
+                @if($analysis->top_ang != null)
+                    <h2>Anger</h2>
+                    <blockquote class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr">
+                        {{$analysis->top_ang}}
+                        </p>&mdash; {{$analysis->name}} {{ ' (@'.$analysis->screen_name.')' }}
+                    </blockquote>
+                @endif
+                @if($analysis->top_ant != null)
+                    <h2>Anticipation</h2>
+                    <blockquote class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr">
+                        {{$analysis->top_ant}}
+                        </p>&mdash; {{$analysis->name}} {{ ' (@'.$analysis->screen_name.')' }}
+                    </blockquote>
+                @endif
+                @if($analysis->top_disg != null)
+                    <h2>Disgust</h2>
+                    <blockquote class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr">
+                        {{$analysis->top_disg}}
+                        </p>&mdash; {{$analysis->name}} {{ ' (@'.$analysis->screen_name.')' }}
+                    </blockquote>
+                @endif
+                @if($analysis->top_fear != null)
+                    <h2>Fear</h2>
+                    <blockquote class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr">
+                        {{$analysis->top_fear}}
+                        </p>&mdash; {{$analysis->name}} {{ ' (@'.$analysis->screen_name.')' }}
+                    </blockquote>
+                @endif
+                @if($analysis->top_joy != null)
+                    <h2>Joy</h2>
+                    <blockquote class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr">
+                        {{$analysis->top_joy}}
+                        </p>&mdash; {{$analysis->name}} {{ ' (@'.$analysis->screen_name.')' }}
+                    </blockquote>
+                @endif
+                @if($analysis->top_sad != null)
+                    <h2>Sadness</h2>
+                    <blockquote class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr">
+                        {{$analysis->top_sad}}
+                        </p>&mdash; {{$analysis->name}} {{ ' (@'.$analysis->screen_name.')' }}
+                    </blockquote>
+                @endif
+                @if($analysis->top_surp != null)
+                    <h2>Surprise</h2>
+                    <blockquote class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr">
+                        {{$analysis->top_surp}}
+                        </p>&mdash; {{$analysis->name}} {{ ' (@'.$analysis->screen_name.')' }}
+                    </blockquote>
+                @endif
+                @if($analysis->top_trust != null)
+                    <h2>Trust</h2>
+                    <blockquote class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr">
+                        {{$analysis->top_trust}}
+                        </p>&mdash; {{$analysis->name}} {{ ' (@'.$analysis->screen_name.')' }}
+                    </blockquote>
+                @endif
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 @endif
 @endsection
 @section('javascript')
@@ -261,7 +370,7 @@
             var links = {{ ($analysis->links/$analysis->total)*100 }}
             var media = {{ ($analysis->media/$analysis->total)*100 }}
             var retweeted = {{ ($analysis->retweet_count/$analysis->total)*100 }}
-            var favorited = {{ ($analysis->favorite_count/$analysis->total)*100 }}
+            var favorited = {{ ($analysis->favorite_count/($analysis->total-$analysis->retweets))*100 }}
             
             chart("positivity", positivity);
             bar("emotions", emotions);

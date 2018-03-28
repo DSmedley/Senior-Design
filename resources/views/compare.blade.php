@@ -89,10 +89,10 @@
                             Unknown
                         @endif
                     </li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $first['analysis']->tweets }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $first['analysis']->following }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $first['analysis']->followers }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $first['analysis']->likes }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ number_format($first['analysis']->tweets) }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ number_format($first['analysis']->following) }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ number_format($first['analysis']->followers) }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ number_format($first['analysis']->likes) }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
                         @php $d = new DateTime($first['analysis']->joined);
                             echo $d->format('D M j Y'); 
@@ -118,10 +118,10 @@
                             Unknown
                         @endif
                     </li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $second['analysis']->tweets }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $second['analysis']->following }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $second['analysis']->followers }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $second['analysis']->likes }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ number_format($second['analysis']->tweets) }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ number_format($second['analysis']->following) }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ number_format($second['analysis']->followers) }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ number_format($second['analysis']->likes) }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
                         @php $d = new DateTime($second['analysis']->joined);
                             echo $d->format('D M j Y'); 
@@ -148,10 +148,10 @@
                                 Unknown
                             @endif
                         </li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $third['analysis']->tweets }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $third['analysis']->following }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $third['analysis']->followers }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $third['analysis']->likes }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ number_format($third['analysis']->tweets) }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ number_format($third['analysis']->following) }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ number_format($third['analysis']->followers) }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ number_format($third['analysis']->likes) }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
                             @php $d = new DateTime($third['analysis']->joined);
                                 echo $d->format('D M j Y'); 
@@ -179,10 +179,10 @@
                                 Unknown
                             @endif
                         </li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ $fourth['analysis']->tweets }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ $fourth['analysis']->following }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ $fourth['analysis']->followers }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ $fourth['analysis']->likes }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tweets</strong></span> {{ number_format($fourth['analysis']->tweets) }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ number_format($fourth['analysis']->following) }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ number_format($fourth['analysis']->followers) }}</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ number_format($fourth['analysis']->likes) }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
                             @php $d = new DateTime($fourth['analysis']->joined);
                                 echo $d->format('D M j Y'); 
@@ -246,7 +246,7 @@
                         $links = array(($first['analysis']->links/$first['analysis']->total)*100, ($second['analysis']->links/$second['analysis']->total)*100);
                         $media = array(($first['analysis']->media/$first['analysis']->total)*100, ($second['analysis']->media/$second['analysis']->total)*100);
                         $retweeted = array(($first['analysis']->retweet_count/$first['analysis']->total)*100, ($second['analysis']->retweet_count/$second['analysis']->total)*100);
-                        $favorited = array(($first['analysis']->favorite_count/$first['analysis']->total)*100, ($second['analysis']->favorite_count/$second['analysis']->total)*100);
+                        $favorited = array(($first['analysis']->favorite_count/($first['analysis']->total-$first['analysis']->retweets))*100, ($second['analysis']->favorite_count/($second['analysis']->total-$second['analysis']->retweets))*100);
                         if(isset($third)){
                             array_push($positivity, $third['analysis']->neutral, $third['analysis']->positive, $third['analysis']->negative);
                             array_push($compareNames, $third['analysis']->name);
@@ -261,7 +261,7 @@
                             array_push($links, ($third['analysis']->links/$third['analysis']->total)*100);
                             array_push($media, ($third['analysis']->media/$third['analysis']->total)*100);
                             array_push($retweeted, ($third['analysis']->retweet_count/$third['analysis']->total)*100);
-                            array_push($favorited, ($third['analysis']->favorite_count/$third['analysis']->total)*100);
+                            array_push($favorited, ($third['analysis']->favorite_count/($third['analysis']->total-$third['analysis']->retweets))*100);
                         }
                         if(isset($fourth)){
                             array_push($positivity, $fourth['analysis']->neutral, $fourth['analysis']->positive, $fourth['analysis']->negative);
@@ -277,7 +277,7 @@
                             array_push($links, ($fourth['analysis']->links/$fourth['analysis']->total)*100);
                             array_push($media, ($fourth['analysis']->media/$fourth['analysis']->total)*100);
                             array_push($retweeted, ($fourth['analysis']->retweet_count/$fourth['analysis']->total)*100);
-                            array_push($favorited, ($fourth['analysis']->favorite_count/$fourth['analysis']->total)*100);
+                            array_push($favorited, ($fourth['analysis']->favorite_count/($fourth['analysis']->total-$fourth['analysis']->retweets))*100);
                         }
                     @endphp
                 </div> 

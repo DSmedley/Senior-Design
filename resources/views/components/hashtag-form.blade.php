@@ -23,15 +23,15 @@
                     {{ csrf_field() }}
                     
                     <div class="col-sm-4" style="margin-right:15px;">
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('hashtag') ? ' has-error' : '' }}">
                             <div class="input-group">
                                 <span class="input-group-addon" id="sizing-addon2">#</span>
-                                <input id="name" name="name" type="text" class="form-control" placeholder="Enter Twitter Screen Name" aria-describedby="sizing-addon2">
+                                <input id="hashtag" name="hashtag" type="text" class="form-control" placeholder="Enter Hashtag" aria-describedby="sizing-addon2">
                             </div>
 
-                            @if ($errors->has('name'))
+                            @if ($errors->has('hashtag'))
                                 <span class="help-block">
-                                    <strong>{{ $errors->first('name') }}</strong>
+                                    <strong>{{ $errors->first('hashtag') }}</strong>
                                 </span>
                             @endif
                         </div>
