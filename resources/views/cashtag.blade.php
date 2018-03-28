@@ -65,7 +65,7 @@
                 </div> 
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">Twitter User Mentions</div>
+                <div class="panel-heading">Top Contributors</div>
                 <div class="panel-body">
                     <div class="container-fluid">
                         <div class="row no-gutter popup-gallery">
