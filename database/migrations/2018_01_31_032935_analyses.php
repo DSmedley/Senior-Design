@@ -52,14 +52,14 @@ class Analyses extends Migration
             $table->integer('surprise');
             $table->integer('trust');
             $table->integer('none');
-            $table->string('top_joy')->nullable();
-            $table->string('top_sad')->nullable();
-            $table->string('top_ang')->nullable();
-            $table->string('top_fear')->nullable();
-            $table->string('top_ant')->nullable();
-            $table->string('top_surp')->nullable();
-            $table->string('top_disg')->nullable();
-            $table->string('top_trust')->nullable();
+            $table->text('top_joy')->nullable();
+            $table->text('top_sad')->nullable();
+            $table->text('top_ang')->nullable();
+            $table->text('top_fear')->nullable();
+            $table->text('top_ant')->nullable();
+            $table->text('top_surp')->nullable();
+            $table->text('top_disg')->nullable();
+            $table->text('top_trust')->nullable();
             $table->timestamps();
         });
     }

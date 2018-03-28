@@ -1,1036 +1,581 @@
-RUNNING NEW SCANDP -- RT @realDonaldTrump: I am very pleased to welcome the opioid memorial to the President's Park in April. I encourage all to visit and rememb… 
-DP     JOY -- pleased 
-DP     JOY -- encourage 
-DP     TRUST -- encourage 
-
-DP -- RT @realDonaldTrump: Great news! #MAGA https://t.co/mRQGRJkozC 
-DP -- RT @realDonaldTrump: “President Donald J. Trump Proclaims March 25, 2018, as Greek Independence Day: A National Day of Celebration of Greek… 
-DP     SURPRISE -- trump 
-DP     ANTICIPATION -- independence 
-DP     JOY -- independence 
-DP     SURPRISE -- independence 
-DP     TRUST -- independence 
-
-DP     ANTICIPATION -- celebration 
-DP     JOY -- celebration 
-DP     SURPRISE -- celebration 
-DP     TRUST -- celebration 
-
-DP -- RT @realDonaldTrump: Happy National #MedalOfHonorDay to our HEROES. We love you! https://t.co/6euI31R4Gz 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP     JOY -- love 
-DP -- RT @realDonaldTrump: Our thoughts and prayers are with the victims of the horrible attack in France yesterday, and we grieve the nation’s l… 
-DP     ANGER -- horrible 
-DP     DISGUST -- horrible 
-DP     FEAR -- horrible 
-DP     ANGER -- attack 
-DP     FEAR -- attack 
-DP     FEAR -- grieve 
-DP     SAD -- grieve 
-DP -- RT @Scavino45: March 23, 2018 #TeamTrumpBTS
-🔟📸 https://t.co/5YiDnLpe3x https://t.co/npFo2W5i8w 
-DP -- RT @realDonaldTrump: As a matter of National Security I've signed the Omnibus Spending Bill. I say to Congress: I will NEVER sign another b… 
-DP -- RT @realDonaldTrump: Obama Administration legalized bump stocks. BAD IDEA. As I promised, today the Department of Justice will issue the ru… 
-DP     ANGER -- legalized 
-DP     FEAR -- legalized 
-DP     JOY -- legalized 
-DP     TRUST -- legalized 
-
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP     TRUST -- justice 
-
-DP -- RT @realDonaldTrump: News conference at the White House concerning the Omnibus Spending Bill.  1:00 P.M. 
-DP     ANTICIPATION -- white 
-DP     JOY -- white 
-DP     TRUST -- white 
-
-DP -- RT @realDonaldTrump: I am considering a VETO of the Omnibus Spending Bill based on the fact that the 800,000 plus DACA recipients have been… 
-DP     ANGER -- veto 
-DP     TRUST -- fact 
-
-DP -- RT @realDonaldTrump: DACA was abandoned by the Democrats. Very unfair to them! Would have been tied to desperately needed Wall. 
-DP     ANGER -- abandoned 
-DP     FEAR -- abandoned 
-DP     SAD -- abandoned 
-DP     ANGER -- unfair 
-DP     DISGUST -- unfair 
-DP     SAD -- unfair 
-DP -- RT @realDonaldTrump: I am pleased to announce that, effective 4/9/18, @AmbJohnBolton will be my new National Security Advisor. I am very th… 
-DP     JOY -- pleased 
-DP     TRUST -- effective 
-
-DP -- RT @realDonaldTrump: My honor Charlie - thank you! #MAGA https://t.co/ZbXFxNVMLP 
-DP     TRUST -- honor 
-
-DP -- RT @FLOTUS: Greetings from @WhiteHouse https://t.co/mjuHFqglYz 
-DP -- RT @realDonaldTrump: As a candidate, I pledged that if elected I would use every lawful tool to combat unfair trade, protect American worke… 
-DP     TRUST -- lawful 
-
-DP     ANGER -- combat 
-DP     FEAR -- combat 
-DP     ANGER -- unfair 
-DP     DISGUST -- unfair 
-DP     SAD -- unfair 
-DP -- RT @WhiteHouse: Opioid addiction has devastated the lives of too many American families. Help end the stigma. Share your story: https://t.c… 
-DP     ANTICIPATION -- share 
-DP     JOY -- share 
-DP     TRUST -- share 
-
-DP -- RT @WhiteHouse: "Together, we will end the scourge of drug addiction in America once and for all. We will win. We will beat it."
-
-From grie… 
-DP     ANGER -- scourge 
-DP     FEAR -- scourge 
-DP     SAD -- scourge 
-DP -- RT @StateDept: Illicit opioids – including #fentanyl – have flooded into our country through ports, shipments, and border crossings. The @P… 
-DP     ANGER -- illicit 
-DP     DISGUST -- illicit 
-DP     FEAR -- illicit 
-DP -- RT @WhiteHouse: Sanctuary cities are undermining law enforcement by obstructing Federal immigration enforcement efforts and putting law enf… 
-DP     ANTICIPATION -- sanctuary 
-DP     JOY -- sanctuary 
-DP     TRUST -- sanctuary 
-
-DP     TRUST -- law 
-
-DP     TRUST -- law 
-
-DP -- RT @VP: Honored to celebrate #NationalAgDay earlier at @USDA. Our Admin has been working tirelessly to stand w/ our Nation’s farmers &amp; ag c… 
-DP -- RT @IAGovernor: Proud of Iowa's innovation in education! #WorkforceDevelopment is my #1 priority &amp; we showcased it at @WaukeeAPEX during @I… 
-DP     ANTICIPATION -- proud 
-DP     JOY -- proud 
-DP     TRUST -- proud 
-
-DP -- RT @RepRichHudson: The opioid crisis continues to devastate families. In NC, we have 4 of the top 25 worst cities for abuse. It’s going to… 
-DP     ANGER -- devastate 
-DP     FEAR -- devastate 
-DP     SAD -- devastate 
-DP     ANTICIPATION -- top 
-DP     TRUST -- top 
-
-DP -- RT @HouseCommerce: @repgregwalden We share @POTUS and his Administration's commitment to ending the #CrisisNextDoor https://t.co/pjHnPuiQJe 
-DP     ANTICIPATION -- share 
-DP     JOY -- share 
-DP     TRUST -- share 
-
-DP -- RT @RepMcKinley: Good to see @POTUS announcing that his administration will be taking this step. Educating children, and the public at larg… 
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP     ANTICIPATION -- public 
-DP -- RT @PatrickMcHenry: In the past year alone 11.8 million Americans have misused prescription opioids or heroin. Click on the link below for… 
-DP -- RT @SenCapito: The plan @POTUS announced today to combat the #opioidepidemic proves he truly understands it's going to take a comprehensive… 
-DP     ANTICIPATION -- plan 
-DP     ANGER -- combat 
-DP     FEAR -- combat 
-DP -- RT @GOPLeader: .@POTUS' proposals to combat opioid addiction demonstrate that there is ample opportunity to reach a bipartisan consensus. W… 
-DP     ANGER -- combat 
-DP     FEAR -- combat 
-DP     ANTICIPATION -- opportunity 
-DP -- RT @RepDavidKustoff: I applaud @POTUS @realDonaldTrump for laying out a three-pronged approach to combat the #OpioidEpidemic. In order to e… 
-DP     ANGER -- combat 
-DP     FEAR -- combat 
-DP -- RT @WhiteHouse: The opioid crisis has created stories of despair of shock, but also stories of recovery &amp; hope. President Trump is asking e… 
-DP     ANGER -- despair 
-DP     DISGUST -- despair 
-DP     FEAR -- despair 
-DP     SAD -- despair 
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP -- RT @realDonaldTrump: Happy #StPatricksDay https://t.co/4vVsW2smhB 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP -- RT @realDonaldTrump: “U.S. Consumer Confidence Hits 14-Year High” https://t.co/tXJsSRoM64 
-DP     FEAR -- confidence 
-DP     JOY -- confidence 
-DP     TRUST -- confidence 
-
-DP -- RT @realDonaldTrump: Our thoughts and prayers go out to the families and loved ones of the brave troops lost in the helicopter crash on the… 
-DP     SAD -- lost 
-DP     FEAR -- crash 
-DP     SAD -- crash 
-DP     SURPRISE -- crash 
-DP -- RT @realDonaldTrump: Continuing to monitor the heartbreaking bridge collapse at FIU - so tragic. Many brave First Responders rushed in to s… 
-DP     DISGUST -- collapse 
-DP     FEAR -- collapse 
-DP     SAD -- collapse 
-DP -- RT @realDonaldTrump: It was my honor to welcome Prime Minister Leo Varadkar of Ireland to the @WhiteHouse! https://t.co/ZT3WnIZR2L 
-DP     TRUST -- honor 
-
-DP -- RT @WhiteHouse: Yesterday, five @Cabinet Secretaries testified on the Hill on the need to rebuild our Nation's crumbling infrastructure. Pr… 
-DP     SAD -- crumbling 
-DP -- RT @realDonaldTrump: Larry Kudlow will be my Chief Economic Advisor as Director of the National Economic Council. Our Country will have man… 
-DP     TRUST -- director 
-
-DP -- RT @realDonaldTrump: Please join me with your thoughts and prayers for both aviators, their families and our incredible @USNavy. https://t.… 
-DP -- RT @realDonaldTrump: It was wonderful to be back in Missouri where our push for historic TAX CUTS all began. Six months ago I promised that… 
-DP     JOY -- wonderful 
-DP     SURPRISE -- wonderful 
-DP     TRUST -- wonderful 
-
-DP     SAD -- tax 
-DP -- RT @realDonaldTrump: Together, we are MAKING AMERICA GREAT AGAIN! https://t.co/CUutL5SZxQ 
-DP -- RT @realDonaldTrump: Today the House took major steps toward securing our schools by passing the STOP School Violence Act. We must put the… 
-DP     TRUST -- school 
-
-DP     ANGER -- violence 
-DP     FEAR -- violence 
-DP     SAD -- violence 
-DP -- RT @realDonaldTrump: Thank you for hosting! #MAGA https://t.co/9pHH60DVlX 
-DP -- RT @realDonaldTrump: Five of our incredible @Cabinet Secretaries are testifying on the Hill this morning on the need to rebuild our Nation’… 
-DP -- RT @realDonaldTrump: Perhaps at no time in history have the business fundamentals of U.S. companies been better than they are today! 
-DP     ANTICIPATION -- time 
-DP -- RT @realDonaldTrump: Hundreds of good people, including very important Ambassadors and Judges, are being blocked and/or slow walked by the… 
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP     TRUST -- important 
-
-DP -- RT @realDonaldTrump: All across this nation, we pray for our country and we THANK GOD for our United States Marines! Thank you. God Bless Y… 
-DP     ANTICIPATION -- pray 
-DP     FEAR -- pray 
-DP     JOY -- pray 
-DP     SURPRISE -- pray 
-DP     TRUST -- pray 
-
-DP     ANTICIPATION -- god 
-DP     FEAR -- god 
-DP     JOY -- god 
-DP     TRUST -- god 
-
-DP     TRUST -- united 
-
-DP     ANTICIPATION -- god 
-DP     FEAR -- god 
-DP     JOY -- god 
-DP     TRUST -- god 
-
-DP     ANTICIPATION -- bless 
-DP     JOY -- bless 
-DP     TRUST -- bless 
-
-DP -- RT @realDonaldTrump: It was my great honor to deliver a message at the Marine Corps Air Station Miramar to our GREAT U.S. Military, straigh… 
-DP     TRUST -- honor 
-
-DP     TRUST -- marine 
-
-DP -- RT @realDonaldTrump: If we don’t have a wall system, we’re not going to have a country. Congress must fund the BORDER WALL &amp; prohibit grant… 
-DP     DISGUST -- congress 
-DP     TRUST -- congress 
-
-DP -- RT @realDonaldTrump: California’s sanctuary policies are illegal and unconstitutional and put the safety and security of our entire nation… 
-DP     ANTICIPATION -- sanctuary 
-DP     JOY -- sanctuary 
-DP     TRUST -- sanctuary 
-
-DP     ANGER -- illegal 
-DP     DISGUST -- illegal 
-DP     FEAR -- illegal 
-DP     SAD -- illegal 
-DP -- RT @realDonaldTrump: Heading to see the BORDER WALL prototypes in California! https://t.co/fU6Ukc271l 
-DP -- RT @realDonaldTrump: Mike Pompeo, Director of the CIA, will become our new Secretary of State. He will do a fantastic job! Thank you to Rex… 
-DP     TRUST -- director 
-
-DP -- RT @GOPLeader: .@JerryBrownGov, no amount of political theater can hide the enormous flaws that plague #CAHSR. It’s time to scrap this trai… 
-DP     FEAR -- hide 
-DP     DISGUST -- plague 
-DP     FEAR -- plague 
-DP     SAD -- plague 
-DP     ANTICIPATION -- time 
-DP -- RT @realDonaldTrump: THE HOUSE INTELLIGENCE COMMITTEE HAS, AFTER A 14 MONTH LONG IN-DEPTH INVESTIGATION, FOUND NO EVIDENCE OF COLLUSION OR… 
-DP     FEAR -- intelligence 
-DP     JOY -- intelligence 
-DP     TRUST -- intelligence 
-
-DP     TRUST -- committee 
-
-DP     ANTICIPATION -- long 
-DP     JOY -- found 
-DP     TRUST -- found 
-
-DP     ANGER -- collusion 
-DP     DISGUST -- collusion 
-DP     FEAR -- collusion 
-DP     SAD -- collusion 
-DP -- RT @RepMarkMeadows: Why should Congress continue pouring taxpayer dollars into cities that defy federal immigration law? That shouldn't hap… 
-DP     DISGUST -- congress 
-DP     TRUST -- congress 
-
-DP     ANTICIPATION -- continue 
-DP     TRUST -- continue 
-
-DP     ANGER -- defy 
-DP     FEAR -- defy 
-DP     SAD -- defy 
-DP     SURPRISE -- defy 
-DP -- RT @realDonaldTrump: It was my great honor to welcome the 2017 World Series Champion Houston @Astros to the @WhiteHouse! #HoustonStrong htt… 
-DP     TRUST -- honor 
-
-DP     TRUST -- series 
-
-DP     ANTICIPATION -- champion 
-DP     JOY -- champion 
-DP     TRUST -- champion 
-
-DP -- RT @VP: Our veterans are heroes &amp; those who care for them deserve our thanks &amp; praise. Karen &amp; I are praying for comfort and healing for th… 
-DP     ANGER -- deserve 
-DP     ANTICIPATION -- deserve 
-DP     TRUST -- deserve 
-
-DP     ANTICIPATION -- comfort 
-DP     JOY -- comfort 
-DP     TRUST -- comfort 
-
-DP     ANTICIPATION -- healing 
-DP     JOY -- healing 
-DP     TRUST -- healing 
-
-DP -- RT @WhiteHouse: "It is time to end the bloodshed brought upon by reckless sanctuary policies. And it's time to save American lives and Amer… 
-DP     ANTICIPATION -- time 
-DP     ANGER -- bloodshed 
-DP     DISGUST -- bloodshed 
-DP     FEAR -- bloodshed 
-DP     SAD -- bloodshed 
-DP     SURPRISE -- bloodshed 
-DP     ANGER -- reckless 
-DP     FEAR -- reckless 
-DP     ANTICIPATION -- sanctuary 
-DP     JOY -- sanctuary 
-DP     TRUST -- sanctuary 
-
-DP     ANTICIPATION -- time 
-DP     JOY -- save 
-DP     TRUST -- save 
-
-DP -- RT @realDonaldTrump: Chinese President XI JINPING and I spoke at length about the meeting with KIM JONG UN of North Korea. President XI tol… 
-DP     TRUST -- president 
-
-DP     TRUST -- president 
-
-DP -- RT @realDonaldTrump: We are deeply saddened by the tragic situation in Yountville and mourn the loss of three incredible women who cared fo… 
-DP     SAD -- mourn 
-DP     ANGER -- loss 
-DP     FEAR -- loss 
-DP     SAD -- loss 
-DP -- RT @realDonaldTrump: The deal with North Korea is very much in the making and will be, if completed, a very good one for the World. Time an… 
-DP     ANTICIPATION -- deal 
-DP     JOY -- deal 
-DP     SURPRISE -- deal 
-DP     TRUST -- deal 
-
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP     ANTICIPATION -- time 
-DP -- RT @realDonaldTrump: Spoke to PM @TurnbullMalcolm of Australia. He is committed to having a very fair and reciprocal military and trade rel… 
-DP     TRUST -- committed 
-
-DP     FEAR -- military 
-DP     TRUST -- trade 
-
-DP -- RT @realDonaldTrump: That’s right @RepBost! Thank you for your support in helping put America back to work. It’s about JOBS, JOBS, JOBS for… 
-DP -- RT @VP: With big increases in manufacturing and construction jobs, I’m traveling to Ohio this afternoon to highlight how the TRUMP TAX CUTS… 
-DP     SURPRISE -- trump 
-DP     SAD -- tax 
-DP -- RT @realDonaldTrump: JOBS, JOBS, JOBS! #MAGA https://t.co/YAaqRcA7ZS 
-DP -- RT @IvankaTrump: This Administration is working hard to bridge the digital gender divide in this country and around the globe! #WomenConnec… 
-DP -- RT @realDonaldTrump: Kim Jong Un talked about denuclearization with the South Korean Representatives, not just a freeze. Also, no missile t… 
-DP     FEAR -- missile 
-DP -- RT @realDonaldTrump: “Presidential Proclamation on Adjusting Imports of Aluminum into the United States” 
- 
-Proclamation: https://t.co/aCaM… 
-DP     TRUST -- united 
-
-DP -- RT @realDonaldTrump: “Presidential Proclamation on Adjusting Imports of Steel into the United States”
- 
-Proclamation: https://t.co/hxduwSoE… 
-DP     TRUST -- united 
-
-DP -- RT @realDonaldTrump: Great meeting with @Cabinet at the @WhiteHouse today! #MAGA https://t.co/InWj0QTosz 
-DP -- RT @realDonaldTrump: Happy #InternationalWomensDay
-
-“First Lady Melania Trump to Present the 2018 International Women of Courage Award” htt… 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP     SURPRISE -- trump 
-DP     ANTICIPATION -- present 
-DP     JOY -- present 
-DP     SURPRISE -- present 
-DP     TRUST -- present 
-
-DP -- RT @FLOTUS: Happy #IWD2018.  Today we recognize, celebrate &amp; honor women around the globe.  On March 21, I will be at the @StateDept to pre… 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP     TRUST -- honor 
-
-DP -- RT @IvankaTrump: Today we come together in recognition of women at home &amp; around the globe. We celebrate women’s achievements, past &amp; prese… 
-DP -- RT @GOPLeader: #TaxReform 
-✅Jobless Claims at 49-Year Low
-✅Disposable Income ↑
-✅Consumer Confidence at 18-Year High
-✅Small Business Confide… 
-DP     ANTICIPATION -- income 
-DP     JOY -- income 
-DP     SAD -- income 
-DP     TRUST -- income 
-
-DP     FEAR -- confidence 
-DP     JOY -- confidence 
-DP     TRUST -- confidence 
-
-DP -- RT @WhiteHouse: At a bipartisan meeting earlier this week, President Trump detailed four points to ensure school safety. https://t.co/vp6Pe… 
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP     TRUST -- school 
-
-DP -- RT @realDonaldTrump: Happy National Anthem Day! https://t.co/cf1eugMbKU 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP -- RT @realDonaldTrump: REST IN PEACE BILLY GRAHAM! https://t.co/2qMoUccVC2 
-DP     ANTICIPATION -- peace 
-DP     JOY -- peace 
-DP     TRUST -- peace 
-
-DP -- RT @realDonaldTrump: Good (Great) meeting in the Oval Office tonight with the NRA! 
-DP     ANTICIPATION -- good 
-DP     JOY -- good 
-DP     SURPRISE -- good 
-DP     TRUST -- good 
-
-DP -- RT @IvankaTrump: My OpEd on the importance of #YouthSports participation and how this Administration is seeking to lift barriers so all our… 
-DP     ANTICIPATION -- importance 
-DP -- RT @Scavino45: “Trump Comes Through — Saves $1.4 Billion On New Air Force One” https://t.co/cN3TAQywpR 
-DP     ANGER -- force 
-DP     FEAR -- force 
-DP -- RT @realDonaldTrump: “Consumer Confidence in February Highest Since November 2000” https://t.co/UgAJRawExx 
-DP     FEAR -- confidence 
-DP     JOY -- confidence 
-DP     TRUST -- confidence 
-
-DP     ANTICIPATION -- highest 
-DP     FEAR -- highest 
-DP     JOY -- highest 
-DP     SURPRISE -- highest 
-DP -- RT @realDonaldTrump: “Manufacturing in U.S. Expands at Fastest Pace Since May 2004” https://t.co/XZkwS8tTml 
-DP -- RT @realDonaldTrump: Unemployment filings are at their lowest level in over 48 years. Great news for workers and JOBS, JOBS, JOBS! #MAGA ht… 
-DP     SAD -- lowest 
-DP     TRUST -- level 
-
-DP -- RT @realDonaldTrump: Starting at a small Bible School in Florida, Billy Graham soon led a nationwide revival. From a large tent in Los Ange… 
-DP     TRUST -- school 
-
-DP -- RT @ICEgov: WATCH: Acting ICE Director Tom Homan discusses California enforcement activities on @foxandfriends on @FoxNews
-https://t.co/Ihu… 
-DP     TRUST -- director 
-
-DP -- RT @Scavino45: “Being a law enforcement officer is already dangerous enough, but to give the criminals a heads up that we're coming in the… 
-DP     TRUST -- law 
-
-DP     TRUST -- officer 
-
-DP     FEAR -- dangerous 
-DP     ANTICIPATION -- coming 
-DP -- RT @realDonaldTrump: Today, in the center of this great Chamber lies Billy Graham – an Ambassador for Christ who reminded the world of the… 
-DP     TRUST -- center 
-
-DP     TRUST -- ambassador 
-
-DP -- RT @WhiteHouse: President Trump and the First Lady attend the arrival ceremony in honor of the Reverend Billy Graham: https://t.co/60IGJfrP… 
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP     ANTICIPATION -- arrival 
-DP     JOY -- ceremony 
-DP     SURPRISE -- ceremony 
-DP     TRUST -- honor 
-
-DP     JOY -- reverend 
-DP -- RT @VP: Thank you @NRBAssociation for all you have done for faith &amp; freedom over the years. Through broadcasts &amp; programs, you have the pow… 
-DP     ANTICIPATION -- faith 
-DP     JOY -- faith 
-DP     TRUST -- faith 
-
-DP     JOY -- freedom 
-DP     TRUST -- freedom 
-
-DP -- RT @realDonaldTrump: 45 year low on illegal border crossings this year. Ice and Border Patrol Agents are doing a great job for our Country.… 
-DP     ANGER -- illegal 
-DP     DISGUST -- illegal 
-DP     FEAR -- illegal 
-DP     SAD -- illegal 
-DP     TRUST -- patrol 
-
-DP -- RT @realDonaldTrump: I have decided that sections of the Wall that California wants built NOW will not be built until the whole Wall is app… 
-DP -- RT @realDonaldTrump: The Heritage Foundation has just stated that 64% of the Trump Agenda is already done, faster than even Ronald Reagan.… 
-DP     TRUST -- heritage 
-
-DP     SURPRISE -- trump 
-DP -- RT @realDonaldTrump: “American consumers are the most confident they've been since 2000....A strong job market is boosting confidence. The… 
-DP     JOY -- confident 
-DP     TRUST -- confident 
-
-DP -- RT @WhiteHouse: Merit-based immigration reform will benefit American workers and relieve the strain imposed by our current system on Federa… 
-DP     TRUST -- system 
-
-DP -- RT @FoxNews: President @realDonaldTrump on Dem FISA memo: "A lot of bad things happened on the other side, not on this side, but the other… 
-DP     TRUST -- president 
-
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP -- RT @FoxNews: President @realDonaldTrump on DACA: "I'm the one that's pushing DACA and the Democrats are nowhere to be found." https://t.co/… 
-DP     TRUST -- president 
-
-DP -- RT @CPAC: #ICYMI: @realDonaldTrump addressed the #CPAC2018 conference this morning.  https://t.co/PKsgErPzLY 
-DP -- RT @realDonaldTrump: Dems are no longer talking DACA! “Out of sight, out of mind,” they say. DACA beneficiaries should not be happy. Nancy… 
-DP -- RT @realDonaldTrump: Unemployment claims are at the lowest level since 1973. Much of this has to do with the massive cutting of unnecessary… 
-DP     SAD -- lowest 
-DP     TRUST -- level 
-
-DP     ANGER -- cutting 
-DP     DISGUST -- cutting 
-DP     FEAR -- cutting 
-DP     SAD -- cutting 
-DP -- RT @VP: Honored to meet Victor Quinonez, an inspiring young man who plans to someday serve in the Marine Corps like his father before him.… 
-DP     JOY -- victor 
-DP     ANTICIPATION -- young 
-DP     JOY -- young 
-DP     SURPRISE -- young 
-DP     TRUST -- serve 
-
-DP     TRUST -- marine 
-
-DP     TRUST -- father 
-
-DP -- RT @realDonaldTrump: So true Wayne, and Lowest black unemployment in history! https://t.co/gDxxJdZQUm 
-DP     SAD -- lowest 
-DP     SAD -- black 
-DP -- RT @realDonaldTrump: Armed Educators (and trusted people who work within a school) love our students and will protect them. Very smart peop… 
-DP     ANGER -- armed 
-DP     FEAR -- armed 
-DP     JOY -- love 
-DP -- RT @IvankaTrump: Congratulations to my new buddy Luke’s dad and #TeamUSA on winning Olympic gold! #Curling https://t.co/dPQyHVWlcV 
+RUNNING NEW SCANDP -- .@SaraCarterDC will join me on TV with the latest update on this developing story https://t.co/bl3JX7tugp 
+DP -- Debating #ImmigrationReform w buddy @dbongino on @seanhannity - #AGSessions Out of Line requiring census takers to ascertain legal status of people counted-It's bad policy that'll result in severe undercount &amp;violates #14thamendment that requires count of "persons" not "citizens" 
 DP     ANTICIPATION -- buddy 
 DP     JOY -- buddy 
 DP     TRUST -- buddy 
 
-DP     ANTICIPATION -- winning 
-DP     DISGUST -- winning 
-DP     JOY -- winning 
-DP     SAD -- winning 
-DP     SURPRISE -- winning 
-DP     TRUST -- winning 
+DP     TRUST -- legal 
 
-DP -- RT @PressSec: Members of the Presidential Delegation, led by @IvankaTrump, cheer on the US Men’s Curling team. #TeamUSA #MiraCurl https://t… 
-DP     ANTICIPATION -- cheer 
-DP     JOY -- cheer 
-DP     SURPRISE -- cheer 
-DP     TRUST -- cheer 
+DP     ANGER -- bad 
+DP     DISGUST -- bad 
+DP     FEAR -- bad 
+DP     SAD -- bad 
+DP     TRUST -- policy 
 
-DP -- RT @realDonaldTrump: Thank you to the great men and women of the United States @SecretService for a job well done! 
-DP     TRUST -- united 
+DP     ANTICIPATION -- result 
+DP     TRUST -- count 
 
-DP -- RT @realDonaldTrump: Today, @FLOTUS Melania and I were honored to welcome Prime Minister @TurnbullMalcolm and Mrs. Turnbull of Australia to… 
-DP -- RT @realDonaldTrump: Our nation’s motto is IN GOD WE TRUST. This week, our nation lost an incredible leader who devoted his life to helping… 
-DP     ANTICIPATION -- god 
-DP     FEAR -- god 
-DP     JOY -- god 
-DP     TRUST -- god 
+DP -- I’ll be a guest on the @seanhannity show tonight on Fox. Don’t miss the show. 
+DP     TRUST -- show 
 
-DP     TRUST -- nation 
+DP -- Tonight on #Hannity I’m joined by @LevinTV, @TomiLahren, @SaraCarterDC and much more. Tune in at 9:00 PM! 
+DP -- Boom 💥! Even Comey and Strzok did NOT think @GenFlynn lied. #WithdrawThePlea  https://t.co/bl3JX7L5EZ 
+DP -- See you LIVE from Orange County tonight @seanhannity @FoxNews https://t.co/zl08RwFhsc 
+DP     TRUST -- county 
 
-DP     SAD -- lost 
-DP     TRUST -- leader 
+DP -- Roseanne explains "how and why" Americans voted for Trump... https://t.co/gVUa7Tq3vK 
+DP -- Unconstitutional?  Come on Nancy... https://t.co/fT7pvHmZJE 
+DP -- seriously? https://t.co/CrGNiz6uSF 
+DP -- Find out if Facebook thinks you're "very conservative" or "very liberal." https://t.co/kcvLEj2xPW 
+DP -- A MUST read https://t.co/6x8Iku44bG 
+DP -- https://t.co/AXRB9aHN1y 
+DP -- https://t.co/O3txYLRppy 
+DP -- Up next I’m joined by Juanita Broaddrick &amp; Paula Jones: two women who accused Bill Clinton of sexual misconduct and were widely ignored by the mainstream media. They will share their stories right here on #Hannity 
+DP     ANGER -- accused 
+DP     FEAR -- accused 
+DP     DISGUST -- misconduct 
+DP     ANTICIPATION -- share 
+DP     JOY -- share 
+DP     TRUST -- share 
 
-DP -- RT @realDonaldTrump: We salute our great American flag, we put our hands on our hearts for the pledge of Allegiance, and we all PROUDLY STA… 
-DP     JOY -- salute 
-DP     JOY -- pledge 
-DP     TRUST -- pledge 
+DP -- https://t.co/iJtAeGcisR 
+DP -- Journalism is dead in this country. Tonight in my opening monologue I’ll explain the media’s blatant hypocrisy in their coverage of President Trump. @MonicaCrowley &amp; @MichelleMalkin will be here at the top of the hour to weigh in on #Hannity 
+DP     TRUST -- journalism 
 
-DP -- RT @realDonaldTrump: After years of rebuilding OTHER nations, we are finally rebuilding OUR nation - and we are restoring our confidence an… 
+DP     TRUST -- explain 
+
+DP     ANGER -- blatant 
+DP     DISGUST -- blatant 
+DP     TRUST -- president 
+
+DP     ANTICIPATION -- top 
+DP     TRUST -- top 
+
+DP     ANTICIPATION -- weigh 
+DP     TRUST -- weigh 
+
+DP -- Tonight I expose just how corrupt the media is. Hannity 9pm est. Fox News. REAL news. You may want to roll tape!! 
+DP     ANTICIPATION -- expose 
+DP     FEAR -- expose 
+DP     TRUST -- real 
+
+DP -- My good friend @GeraldoRivera
+on radio with me in 5 minutes, talking about his new book and the weekend Stormy interview https://t.co/SuQ0e7qCKq https://t.co/oPMfBqZfnM 
+DP     ANTICIPATION -- good 
+DP     JOY -- good 
+DP     SURPRISE -- good 
+DP     TRUST -- good 
+
+DP     JOY -- friend 
+DP     TRUST -- friend 
+
+DP     FEAR -- stormy 
+DP -- Schumer's nightmare https://t.co/4KgsOwjneO 
+DP     FEAR -- nightmare 
+DP -- Juanita Broaddrick on radio with me now discussing her explosive new book: https://t.co/f9pLAWuvL4 
+DP     ANGER -- explosive 
+DP     ANTICIPATION -- explosive 
+DP     FEAR -- explosive 
+DP     SURPRISE -- explosive 
+DP -- https://t.co/esQ1y0aILS 
+DP -- https://t.co/Dz0StfNJfu 
+DP -- This is not complicated to figure out. It’s not hard; it’s very basic, it’s very simple, it’s very fundamental and it’s been something I’ve been telling you about for a long time: The Republican Party is dead.  Do you agree? https://t.co/Dz0StfNJfu 
+DP     TRUST -- fundamental 
+
+DP     ANTICIPATION -- long 
+DP -- https://t.co/BmA5Uqiyc1 
+DP -- the chaos continues in CA... https://t.co/esQ1y0aILS 
+DP     ANGER -- chaos 
+DP     FEAR -- chaos 
+DP     SAD -- chaos 
+DP -- no thanks https://t.co/vljEHQl4KO 
+DP -- .@realDonaldTrump strikes back... https://t.co/RBzbLphYA7 
+DP -- “What is telling here is the accusation that Brennan has a penchant for lying came from Democrats – not Republicans…”
+https://t.co/H8X0PGh5IH 
+DP     ANGER -- accusation 
+DP     DISGUST -- accusation 
+DP     ANGER -- lying 
+DP     DISGUST -- lying 
+DP -- https://t.co/iE4fKHyZem 
+DP -- https://t.co/WSPJNSmPCo 
+DP -- https://t.co/PRvSTAWDd0 
+DP -- We’ll never be like the fake-news media! Don’t forget to follow me on Instagram @seanhannity 
+DP -- You won’t believe how the media is trying to smear John Bolton. That’s next on #Hannity 
+DP     DISGUST -- john 
+DP -- Coming up, the FBI informant of the Uranium One scandal reveals what the Russians though of President Obama. That and more on this special edition of #Hannity 
+DP     ANTICIPATION -- coming 
+DP     FEAR -- scandal 
+DP     TRUST -- president 
+
+DP     JOY -- special 
+DP     ANTICIPATION -- edition 
+DP -- Next on #Hannity the media’s Russian collusion is out of control. @GreggJarrett and @ByronYork join me to weigh in 
+DP     ANGER -- collusion 
+DP     DISGUST -- collusion 
+DP     FEAR -- collusion 
+DP     SAD -- collusion 
+DP     ANTICIPATION -- weigh 
+DP     TRUST -- weigh 
+
+DP -- https://t.co/D88eSkCbFi 
+DP -- Coming up on #Hannity I’m joined by @seanspicer, @JoeConchaTV, @newsgirlalison, @mschlapp and much more 
+DP     ANTICIPATION -- coming 
+DP -- https://t.co/6fWrfJn9ND 
+DP -- Tonight on #Hannity we have a special on the Crisis in America with the Media at 9 PM EST 
+DP     JOY -- special 
+DP -- https://t.co/zZBJoVgG0x 
+DP -- #CNNSucks https://t.co/r0sifESZNS 
+DP -- DNC Chaos https://t.co/hNbYFrqWsi 
+DP     ANGER -- chaos 
+DP     FEAR -- chaos 
+DP     SAD -- chaos 
+DP -- REALLY?! https://t.co/bjv4c0Ab5k 
+DP -- https://t.co/PNvBhqWuXx 
+DP -- Next on #Hannity we’ll show you one of the most disturbing videos we've seen in a while. 
+DP     TRUST -- show 
+
+DP -- Coming up: the Uranium One FBI informant is making bombshell claims about the Clintons and President Obama in his first on camera interview 
+DP     ANTICIPATION -- coming 
+DP     TRUST -- president 
+
+DP -- @dbongino and @jasoninthehouse join me for more reaction next on #Hannity stay with us! 
+DP -- https://t.co/f91NoDgHGx 
+DP -- https://t.co/ZnDZnpFPhk 
+DP -- There's a reason crowds chant "CNN SUCKS" #CNNSucks https://t.co/agYLgaNtCS 
+DP     ANGER -- chant 
+DP     ANTICIPATION -- chant 
+DP     JOY -- chant 
+DP     SURPRISE -- chant 
+DP -- We interrupt our 24-7 Stormy Daniels hate Trump coverage........  CNN Fake News. Jeff, there is a reason crowds chant “CNN Sucks”. https://t.co/tAviIbczai 
+DP     ANGER -- interrupt 
+DP     SURPRISE -- interrupt 
+DP     FEAR -- stormy 
+DP     ANGER -- hate 
+DP     DISGUST -- hate 
+DP     SAD -- hate 
+DP     SURPRISE -- trump 
+DP     ANGER -- chant 
+DP     ANTICIPATION -- chant 
+DP     JOY -- chant 
+DP     SURPRISE -- chant 
+DP -- https://t.co/Uatv7lg8ql 
+DP -- NO COLLUSION https://t.co/iE4fKHyZem 
+DP     ANGER -- collusion 
+DP     DISGUST -- collusion 
+DP     FEAR -- collusion 
+DP     SAD -- collusion 
+DP -- promise kept https://t.co/BFUwoN9tUX 
+DP     JOY -- promise 
+DP     TRUST -- promise 
+
+DP -- Nancy's nightmare continues... https://t.co/St8iZo9zsR 
+DP     FEAR -- nightmare 
+DP -- .@SaraCarterDC will join me today on radio at 4pm EST to discuss this and the connection between Mueller, Weissman and the corruption that ties them together https://hann.ity/2pyzEIf https://t.co/iK88AegD1V 
+DP     DISGUST -- corruption 
+DP -- https://t.co/FBfWMK2VGj 
+DP -- https://t.co/CUSy4yAMAT 
+DP -- Crazy Uncle Joe back after threatening to "beat the hell" out of @realDonaldTrump in a recent speech...  https://t.co/eJfK2gJJ3M 
+DP     ANGER -- crazy 
+DP     FEAR -- crazy 
+DP     SAD -- crazy 
+DP     ANGER -- threatening 
+DP     DISGUST -- threatening 
+DP     FEAR -- threatening 
+DP -- https://t.co/7gJse4V6GW 
+DP -- Latest from @SaraCarterDC https://t.co/B7s2IDRdzV 
+DP -- The #HannityHotline is next! Leave me a message at (877) 225-8587. Mean or nice, I want to hear it all! 
+DP     SAD -- leave 
+DP     SURPRISE -- leave 
+DP -- Next on #hannity @GeraldoRivera joins us with the Police Chief of Austin to give us all the details on the Austin,TX serial bomber 
+DP     FEAR -- police 
+DP     TRUST -- police 
+
+DP     ANTICIPATION -- serial 
+DP     FEAR -- bomber 
+DP     SAD -- bomber 
+DP -- Coming up I have a mini monologue on James Comey's upcoming media tour @SebGorka &amp; @LarryElder are here to weigh in. Stay with us. 
+DP     ANTICIPATION -- coming 
+DP     ANTICIPATION -- weigh 
+DP     TRUST -- weigh 
+
+DP -- Tonight on #hannity I’m joined by @GeraldoRivera, @AlanDersh, @SebGorka, @SaraCarterDC, @LarryElder and much more. Tune in at 9:00 PM! 
+DP -- 6:30pm PT on @seanhannity: @larryelder and @SebGorka discuss Hollywood's coming embrace of James Comey and his book. A movie is inevitable. 
+DP     ANTICIPATION -- coming 
+DP     ANTICIPATION -- embrace 
+DP     JOY -- embrace 
+DP     SURPRISE -- embrace 
+DP     TRUST -- embrace 
+
+DP -- https://t.co/Q212I5Md1v 
+DP -- Boom 💥 @danabrams 1 @nytimes 0 https://t.co/GKjbnBpQz7 
+DP -- https://t.co/p3KRxZPpTw 
+DP -- https://t.co/b55i3DtsJI 
+DP -- https://t.co/iUlydPaDpi 
+DP -- what we know so far... https://t.co/qQX92OLAQw 
+DP -- .@SaraCarterDC will join me on radio with David Schoen at 4pm EST today to discuss this story https://t.co/gr69TcXBgA 
+DP -- McCabe was fired 'By the book' https://t.co/WroYYzt2kZ 
+DP -- https://t.co/QI1yxQQPX0 
+DP -- https://t.co/N2gwtGnkH2 
+DP -- https://t.co/IBNTfb67tX 
+DP -- Fire and Fizzle... https://t.co/IrmXazUQHS 
+DP     FEAR -- fire 
+DP -- https://t.co/dbdhnOL21m 
+DP -- .@SaraCarterDC and attorney David Schoen join me on radio at 4:05pm EST to discuss Sara's latest article on Mueller's questionable past https://t.co/nltz1TfARF 
+DP     ANGER -- attorney 
+DP     FEAR -- attorney 
+DP     TRUST -- attorney 
+
+DP     DISGUST -- questionable 
+DP -- Obama campaign official ADMITS 'Facebook was on our side' https://t.co/m5PCVKE4O6 
+DP     TRUST -- official 
+
+DP -- Hero https://t.co/D3K71P2SWk 
+DP     ANTICIPATION -- hero 
+DP     JOY -- hero 
+DP     SURPRISE -- hero 
+DP     TRUST -- hero 
+
+DP -- MUST WATCH: Trump Derangement Syndrome on FULL DISPLAY https://t.co/k11Y5gaxQn 
+DP     SURPRISE -- trump 
+DP -- Armed guard 'engaged' school shooter within minutes https://t.co/sn5Ew6zrhq 
+DP     ANGER -- armed 
+DP     FEAR -- armed 
+DP     FEAR -- guard 
+DP     TRUST -- guard 
+
+DP     TRUST -- school 
+
+DP     FEAR -- shooter 
+DP -- A revealing look at the cost of the special counsel by Bil Lako at @HensslerGroup https://t.co/TBMfigfsdO 
+DP     JOY -- special 
+DP     TRUST -- counsel 
+
+DP -- https://t.co/oJosK2iatJ 
+DP -- developing https://t.co/3u5lU7GhYT 
+DP -- FINALLY!! https://t.co/wE5sXHk0li 
+DP -- Sheryl Sandberg, Facebook COO to Clinton campaign chief John Podesta, June 6, 2015
+
+1: https://t.co/qUo2pXTyB7
+2: https://t.co/o6pXZFXVyy https://t.co/Jcwn0gIgOF 
+DP     DISGUST -- john 
+DP -- Facebook CEO Zuckerberg wanted to meet with Clinton campaign to "help his understanding" of "political operations" https://t.co/5JIKkqLNFj 
+DP -- Facebook scandal widens: Obama campaign's Carol Davidsen admits Democrats sucked out "the entire social network of the US", kept the data and still have it.
+https://t.co/3GpaCdY0y3 
+DP     FEAR -- scandal 
+DP     JOY -- carol 
+DP     TRUST -- carol 
+
+DP     ANTICIPATION -- network 
+DP -- Up next on #hannity @caseystegall joins us live from Austin TX to give us the latest news on the recent bomb attacks 
+DP     ANGER -- bomb 
+DP     FEAR -- bomb 
+DP     SAD -- bomb 
+DP     SURPRISE -- bomb 
+DP -- Coming up  we'll talk to @peterschweizer about his new book that exposes just how bad corruption was in the Obama era. 
+DP     ANTICIPATION -- coming 
+DP     ANGER -- bad 
+DP     DISGUST -- bad 
+DP     FEAR -- bad 
+DP     SAD -- bad 
+DP     DISGUST -- corruption 
+DP -- Next I’m joined by the “The Great One” @LevinTV. Stay with us! 
+DP -- Will be on @seanhannity tv momentarily talking about my new book, Secret Empires: How the American Political Class Hides Corruption and Enriches Family and Friends 
+DP     TRUST -- secret 
+
+DP     DISGUST -- corruption 
+DP -- McCabe is just one player. 
+
+With @seanhannity now. 
+924pmET
+@FoxNews 
+@FoxNewsInsider 
+@foxnewsvideo https://t.co/UbrPOuSy7A 
+DP -- Tonight I’m joined by @LevinTV, @DevinNunes, @SaraCarterDC, @SebGorka, @michellemalkin, @greggjarrett, and much more. Tune in for a busy breaking news night on #Hannity 
+DP -- .@SaraCarterDC joins me at 9pm EST on Hannity with a bombshell report on Mueller's questionable past while in Boston https://t.co/nltz1TfARF 
+DP     DISGUST -- questionable 
+DP -- On Radio Now - @peterschweizer, the author who exposed the Clintons, has a new book out - "Secret Empires" which exposes other politicians who are bilking the system https://t.co/I1U5s02WmS 
+DP     TRUST -- author 
+
+DP     TRUST -- system 
+
+DP -- https://t.co/WSPJNSmPCo 
+DP -- https://t.co/BDtRnN9mzO 
+DP -- Nice try https://t.co/3MhYYPd2Sc 
+DP -- Pelosi panics https://t.co/o0Tp5C24gG 
+DP -- https://t.co/2GTlCOqXMK 
+DP -- Developing https://t.co/0NEK015JM5 
+DP -- Lol wow... https://t.co/VZk3c3YcAO 
+DP -- Hmmmmm https://t.co/JqfAZhf96K 
+DP -- Happy St Patrick’s Day!! https://t.co/08BJMi5UG5 
+DP     JOY -- happy 
+DP     TRUST -- happy 
+
+DP -- https://t.co/VXWklWiM8C 
+DP -- https://t.co/FmjEugGKmQ 
+DP -- https://t.co/whoNxRmpCO 
+DP -- https://t.co/U2oMXCRfuy 
+DP -- Mr Comey would you care to comment?? https://t.co/U2oMXCRfuy https://t.co/SYKWDC7RUU 
+DP -- Mr Comey, I know you are scheduled to be on GMA with Clinton BFF @GStephanopoulos. I know you are scheduled to be on @colbertlateshow and also be on @TheView I would like to invite you on Hannity on FNC for a full hour, and The Sean Hannity Show for 3 full hours. Will you accept? https://t.co/SYKWDC7RUU 
+DP     ANTICIPATION -- invite 
+DP     JOY -- invite 
+DP     SURPRISE -- invite 
+DP     TRUST -- invite 
+
+DP     TRUST -- show 
+
+DP -- Mr Comey is it illegal to destroy top secret, classified, special access programs information? Did HRC destroy such information?  Are you aware Christian Saucier was sentenced to 1 year in prison for 6 photos (classified) that were on his cell phone from a US Submarine? https://t.co/SYKWDC7RUU 
+DP     ANGER -- illegal 
+DP     DISGUST -- illegal 
+DP     FEAR -- illegal 
+DP     SAD -- illegal 
+DP     ANTICIPATION -- top 
+DP     TRUST -- top 
+
+DP     JOY -- special 
+DP     ANGER -- prison 
+DP     FEAR -- prison 
+DP     SAD -- prison 
+DP -- Mr Comey is it a crime to delete e mails that have been subpoenaed?  When HRC deleted 33,000 subpoenaed emails was that obstruction of justice? What about when HRC acid washed her hard drive with “bleach bit”. What about destroying blackberries and other devices with a hammer? https://t.co/SYKWDC7RUU 
+DP     ANGER -- crime 
+DP     ANGER -- destroying 
+DP     FEAR -- destroying 
+DP     SAD -- destroying 
+DP -- Did HRC mishandle such information by placing such information on the server of a mom and pop shop, stored in a bathroom closet? How many foreign intelligence agencies do you believe hacked HRC said server? What countries? Did Russia China, Iran, North Korea hack into HRC server? https://t.co/SYKWDC7RUU 
+DP     SURPRISE -- pop 
+DP     FEAR -- intelligence 
+DP     JOY -- intelligence 
+DP     TRUST -- intelligence 
+
+DP -- Mr Comey, Why were you writing HRC’s exoneration in May 2016, long before she was interviewed in July 2016? 18 USC 793. Is it illegal to mishandle Classified, top secret, special access programs and information?  Was such information mishandled by HRC? https://t.co/SYKWDC7RUU 
+DP     ANTICIPATION -- long 
+DP     ANGER -- illegal 
+DP     DISGUST -- illegal 
+DP     FEAR -- illegal 
+DP     SAD -- illegal 
+DP     ANTICIPATION -- top 
+DP     TRUST -- top 
+
+DP     JOY -- special 
+DP -- Did you ask Fusion GPS owners if they corroborated the “Russian” dossier? Why did HRC’s campaign and the DNC funnel Fusion GPS’s payment (Steele Payments) through a law firm? What did you know about efforts to pass on the unverified salacious dossier to American media companies? https://t.co/SYKWDC7RUU 
+DP     TRUST -- law 
+
+DP     ANTICIPATION -- unverified 
+DP -- Mr Comey, did you know HRC paid for the Lies in the “Russian” dossier?Did you or anyone at the FBI pay Christopher Steele? Did you ask Steele about the  “Russian” sources he used in the dossier? Did the FBI make any attempt to interview the “Russian sources”? https://t.co/SYKWDC7RUU 
+DP     ANTICIPATION -- pay 
+DP     JOY -- pay 
+DP     TRUST -- pay 
+
+DP     ANTICIPATION -- attempt 
+DP -- Mr Comey what did you know about McCabe’s leaks/Conduct? Why was the unverified and salacious dossier (January 2017) used as “the bulk” of the FISC application (October 2016)? Why didn’t the FBI verify and corroborate the Dossier? Did you know the Dossier used “Russian” sources? https://t.co/SYKWDC7RUU 
+DP     ANTICIPATION -- unverified 
+DP     TRUST -- corroborate 
+
+DP -- Wow https://t.co/TZt12KLYzr 
+DP -- McCabe Fired, just a start. Hannity REAL NEWS. We have been talking about MCCabe for MONTHS! More coming....Tick Tock.... 
+DP     TRUST -- real 
+
+DP -- Coming up: The illegal immigrant who got away with killing Kate Steinle is claiming that the Federal case against him is "vindictive" and he wants it thrown out. @PaulBabeuAZ and @LeslieMarshall are here to debate. 
+DP     ANTICIPATION -- coming 
+DP     ANGER -- illegal 
+DP     DISGUST -- illegal 
+DP     FEAR -- illegal 
+DP     SAD -- illegal 
+DP     FEAR -- immigrant 
+DP     ANGER -- killing 
+DP     FEAR -- killing 
+DP     SAD -- killing 
+DP     FEAR -- case 
+DP     SAD -- case 
+DP -- Up next...@SebGorka and @SeanSpicer on how the media is completely smearing President Trump's pick to the lead CIA 
+DP     TRUST -- president 
+
+DP -- NEXT Rep. @Jim_Jordan, @TomFitton, and @RepDeSantis all join me for more reaction. Stay with us on #hannity 
+DP -- @saracarterdc has a huge story she’ll be breaking on #hannity tonight about the Trump-hating FBI agent Peter Strzok. Tune in at 9:00 PM. You don’t want to miss it. 
+DP -- https://t.co/VCsUgtomuE 
+DP -- https://t.co/Rj3StAfeCb 
+DP -- Cold War II https://t.co/yAJxqlio6T 
+DP     FEAR -- war 
+DP -- While Shep is a friend with political views I do not share, and great at breaking news, he is clueless about what we do every day. Hannity breaks news daily-Warrant on a Trump assoc, the unmasking scandal, leaking intel, Fisa abuse, HRC lawbreaking, dossier and more REAL NEWS! 9p https://t.co/zJpnnyFTtP 
+DP     JOY -- friend 
+DP     TRUST -- friend 
+
+DP     SURPRISE -- trump 
+DP     TRUST -- real 
+
+DP -- https://t.co/iOFDFNFisw 
+DP -- LATEST https://t.co/sTT3BtP62C 
+DP -- https://t.co/Yko1Qaxqkn 
+DP -- https://t.co/puFjrh4Eaa 
+DP -- Follow me on Instagram @seanhannity for a closer look at #hannity behind the scenes! 
+DP -- @KellyannePolls joins me next to discuss Hillary Clinton’s recent anti-women remarks. 
+DP -- Up next: More on the surveillance video that was released today of the Parkland shooting. @GeraldoRivera &amp; @dbongino are here to debate the issue on #hannity 
+DP     FEAR -- surveillance 
+DP -- https://t.co/K1JE7NSDoo 
+DP -- There are growing calls for a second special counsel. I’ll be covering that story and much more at 9:00 PM. @SaraCarterDC, @GreggJarrett, @jsolomonReports, and @jasoninthehouse are all here to weigh in. Don’t miss it! 
+DP     ANTICIPATION -- calls 
+DP     TRUST -- calls 
+
+DP     JOY -- special 
+DP     ANTICIPATION -- weigh 
+DP     TRUST -- weigh 
+
+DP -- LATEST https://t.co/GTa1Zz694N 
+DP -- https://t.co/UfdKMDp8fG 
+DP -- developing https://t.co/hBztTLKERb 
+DP -- The witch hunt widens https://t.co/XzjhIRSNDq 
+DP     ANGER -- witch 
+DP     DISGUST -- witch 
+DP     FEAR -- witch 
+DP -- .@realDonaldTrump strikes back https://t.co/FLJWMFOdkW 
+DP -- https://t.co/SGDzFN5YZX 
+DP -- https://t.co/cyBhsdiH7y 
+DP -- An excellent choice! https://t.co/fu29GbOTKV via @HensslerGroup #MAGA 
+DP     JOY -- excellent 
+DP     TRUST -- excellent 
+
+DP -- Are the Democrats finally over Hillary Clinton? @JesseBWatters and @JessicaTarlov weigh in next #Hannity 
 DP     ANTICIPATION -- finally 
 DP     DISGUST -- finally 
 DP     JOY -- finally 
 DP     SURPRISE -- finally 
 DP     TRUST -- finally 
 
+DP     ANTICIPATION -- weigh 
+DP     TRUST -- weigh 
+
+DP -- Adam Schiff is still trying desperately to prove Trump-Russia collusion… The Great One @LevinTV reacts next #Hannity 
+DP -- https://t.co/L0DjwOYdVy 
+DP -- Why is the Left already up in arms that @realDonaldTrump is making a woman the head of the CIA?
+
+Talking Fake Feminism and National Security with @seanhannity next. 
+920pmET
+@FoxNews 
+@FoxNewsInsider 
+@foxnewsvideo https://t.co/hhIcUhsR0n 
+DP -- Tonight I’m joined by @LevinTV, @GreggJarrett, @SaraCarterDC, @JesseBWatters, and much more. Don’t forget to follow me on Instagram @seanhannity! 
+DP -- LATEST: Europe must agree to Trump's Iran strategy or face signing "deal’s death warrant"
+
+ https://t.co/QpIdLq3NVm 
+DP     ANGER -- death 
+DP     ANTICIPATION -- death 
+DP     DISGUST -- death 
+DP     FEAR -- death 
+DP     SAD -- death 
+DP     SURPRISE -- death 
+DP -- Not surprising... https://t.co/5gRmfPt2dY 
+DP -- https://t.co/qkj6KSZ4uU 
+DP -- Tonight… The Great One @LevinTV joins me on #Hannity to weigh in on Adam Schiff's history of lies 
+DP     ANTICIPATION -- weigh 
+DP     TRUST -- weigh 
+
+DP -- https://t.co/PDtOcEKP0R 
+DP -- Blue state blues... https://t.co/3kwacTXPWw 
+DP     SAD -- blue 
+DP -- https://t.co/8OOS4IVGQy 
+DP -- Even Dems have had enough... https://t.co/Dt5m6WsIBS 
+DP -- https://t.co/5yLXl9XG1o 
+DP -- The mainstream media continues to prove they are partisan hacks… We have the latest and @JoeConchaTV will weigh in #Hannity 
+DP     ANTICIPATION -- weigh 
+DP     TRUST -- weigh 
+
+DP -- Louis Farrakhan continues to be a thorn in the side of Democrats… The House of Representatives may take up a joint resolution to condemn the Nation of Islam leader… @TomiLahren and @AreuCathy react next #Hannity 
+DP     ANGER -- condemn 
 DP     TRUST -- nation 
 
-DP     FEAR -- confidence 
-DP     JOY -- confidence 
-DP     TRUST -- confidence 
+DP     ANGER -- react 
+DP     FEAR -- react 
+DP -- Tonight on #Hannity I’ll be joined by @dbongino, @GeraldoRivera, @edhenry, @SebGorka, @TomiLahren, @AreuCathy, @JoeConchaTV and more 
+DP -- President Trump was in California today where he viewed prototypes of the border wall and we will break down how the Left has pushed a Russian lie for over a year... Tonight on #Hannity at 9pm 
+DP     TRUST -- president 
 
-DP -- RT @realDonaldTrump: For those of you who are still interested, the Democrats have totally forgotten about DACA. Not a lot of interest on t… 
-DP     FEAR -- forgotten 
-DP     SAD -- forgotten 
-DP -- RT @realDonaldTrump: My daughter, Ivanka, just arrived in South Korea. We cannot have a better, or smarter, person representing our country. 
-DP     ANTICIPATION -- representing 
-DP -- RT @GOPLeader: #CheckYourCheck → taxes are going ⬇️ paychecks are going ⬆️ #MAGA 🇺🇸 https://t.co/uJ3QE5Ivf4 
-DP -- RT @VP: We are — as @POTUS Trump says — “a nation of pioneers.” And I know America will once again astonish the world with the heights we r… 
 DP     SURPRISE -- trump 
-DP     TRUST -- nation 
+DP     SURPRISE -- break 
+DP     ANGER -- lie 
+DP     DISGUST -- lie 
+DP     SAD -- lie 
+DP -- Quite a day, first Schumer, now View? https://t.co/rN9vqOO40Q 
+DP -- https://t.co/6N30YYA5Xh 
+DP -- https://t.co/9xmDoPXKrA 
+DP -- NEW REPORT: Obama had ties to group behind 'Trump Dossier' back in 2012... https://t.co/8vjfyCfAhq 
+DP -- https://t.co/PyJGuJE014 
+DP -- NO COLLUSION https://t.co/q6yEgThnjZ 
+DP     ANGER -- collusion 
+DP     DISGUST -- collusion 
+DP     FEAR -- collusion 
+DP     SAD -- collusion 
+DP -- #NationalK9VeteransDay honoring our heroic war dogs https://t.co/mSS1nHv5cK 
+DP     JOY -- heroic 
+DP     SURPRISE -- heroic 
+DP     TRUST -- heroic 
 
-DP -- RT @realDonaldTrump: Today, it was my great honor to host a School Safety Roundtable at the @WhiteHouse with State and local leaders, law e… 
-DP     TRUST -- honor 
-
-DP     TRUST -- school 
-
-DP     TRUST -- law 
-
-DP -- RT @realDonaldTrump: I will always remember the time I spent today with courageous students, teachers and families. So much love in the mid… 
-DP     ANTICIPATION -- time 
-DP     FEAR -- courageous 
-DP     JOY -- love 
-DP -- RT @realDonaldTrump: .@FLOTUS Melania and I join millions of people around the world in mourning the passing of Billy Graham. Our prayers a… 
-DP     SAD -- mourning 
-DP -- RT @realDonaldTrump: Yesterday, it was my great honor to recognize extraordinary Law Enforcement Officers and First Responders, and to awar… 
-DP     TRUST -- honor 
-
-DP     TRUST -- law 
-
-DP -- RT @realDonaldTrump: The GREAT Billy Graham is dead. There was nobody like him! He will be missed by Christians and all religions. A very s… 
-DP -- RT @realDonaldTrump: Main Street is BOOMING thanks to our incredible TAX CUT and Reform law. "This shows small-business owners are more tha… 
-DP     SAD -- tax 
-DP -- RT @realDonaldTrump: Melania and I met such incredible people last night in Broward County, Florida. Will never forget them, or the evening! 
-DP -- RT @marcorubio: Honored to meet special young man injured in #ParklandShooting &amp; to thank incredible first responders https://t.co/PGA8mCEg… 
-DP     JOY -- special 
-DP     ANTICIPATION -- young 
-DP     JOY -- young 
-DP     SURPRISE -- young 
-DP     FEAR -- injured 
-DP     SAD -- injured 
-DP -- RT @browardsheriff: What a pleasant surprise this morning! A young person taped this message to our Mobile Command Center. All we can say i… 
-DP     ANTICIPATION -- pleasant 
-DP     JOY -- pleasant 
-DP     SURPRISE -- pleasant 
-DP     TRUST -- pleasant 
-
-DP     FEAR -- surprise 
-DP     JOY -- surprise 
-DP     SURPRISE -- surprise 
-DP     ANTICIPATION -- young 
-DP     JOY -- young 
-DP     SURPRISE -- young 
-DP     ANTICIPATION -- mobile 
-DP -- RT @ATFMiami: SAC Forcelli praises the partnerships of Broward County Public Safety personnel in his briefing with the President.  @broward… 
-DP     TRUST -- county 
-
-DP     ANTICIPATION -- public 
-DP -- RT @realDonaldTrump: Our entire Nation, w/one heavy heart, continues to pray for the victims &amp; their families in Parkland, FL. To teachers,… 
-DP     ANTICIPATION -- pray 
-DP     FEAR -- pray 
-DP     JOY -- pray 
-DP     SURPRISE -- pray 
-DP     TRUST -- pray 
-
-DP -- RT @realDonaldTrump: Cannot believe how BADLY DACA recipients have been treated by the Democrats...totally abandoned! Republicans are still… 
-DP     SAD -- badly 
-DP -- RT @realDonaldTrump: I will be leaving for Florida today to meet with some of the bravest people on earth - but people whose lives have bee… 
-DP -- RT @realDonaldTrump: Presidential Proclamation Honoring the Victims of the Tragedy in Parkland, Florida: https://t.co/RTQWAKiSnR https://t.… 
-DP     FEAR -- tragedy 
-DP     SAD -- tragedy 
-DP -- RT @realDonaldTrump: ...lottery, continues deadly catch-and-release, and bars enforcement even for FUTURE illegal immigrants. Voting for th… 
-DP     ANGER -- deadly 
-DP     DISGUST -- deadly 
-DP     FEAR -- deadly 
-DP     SAD -- deadly 
-DP     ANGER -- illegal 
-DP     DISGUST -- illegal 
-DP     FEAR -- illegal 
-DP     SAD -- illegal 
-DP -- RT @realDonaldTrump: The Schumer-Rounds-Collins immigration bill would be a total catastrophe. @DHSgov says it would be “the end of immigra… 
-DP -- RT @realDonaldTrump: In times of tragedy, the bonds that sustain us are those of family, faith, community, and country. These bonds are str… 
-DP -- RT @realDonaldTrump: So many signs that the Florida shooter was mentally disturbed, even expelled from school for bad and erratic behavior.… 
-DP     FEAR -- shooter 
-DP     TRUST -- school 
-
-DP     ANGER -- bad 
-DP     DISGUST -- bad 
-DP     FEAR -- bad 
-DP     SAD -- bad 
-DP     SURPRISE -- erratic 
-DP -- RT @FLOTUS: My heart is heavy over the school shooting in Florida. Keeping all affected in my thoughts &amp; prayers. 
-DP     TRUST -- school 
-
-DP     ANGER -- shooting 
-DP     FEAR -- shooting 
-DP -- RT @realDonaldTrump: Just spoke to Governor Rick Scott. We are working closely with law enforcement on the terrible Florida school shooting. 
-DP     TRUST -- governor 
-
-DP     TRUST -- law 
-
-DP     ANGER -- terrible 
-DP     DISGUST -- terrible 
-DP     FEAR -- terrible 
-DP     SAD -- terrible 
-DP     TRUST -- school 
-
-DP -- RT @realDonaldTrump: My prayers and condolences to the families of the victims of the terrible Florida shooting. No child, teacher or anyon… 
-DP     ANGER -- terrible 
-DP     DISGUST -- terrible 
-DP     FEAR -- terrible 
-DP     SAD -- terrible 
-DP     TRUST -- teacher 
-
-DP -- RT @realDonaldTrump: Today, I was honored to be joined by Republicans and Democrats from both the House and Senate, as well as members of m… 
-DP -- RT @realDonaldTrump: As we come together to celebrate the extraordinary contributions of African-Americans to our nation, our thoughts turn… 
-DP -- RT @WhiteHouse: Today we celebrate the 209th birthday of President Abraham Lincoln and honor the patriotism, leadership, and legacy of our… 
-DP     ANTICIPATION -- birthday 
-DP     JOY -- birthday 
-DP     SURPRISE -- birthday 
-DP     TRUST -- president 
-
-DP     TRUST -- honor 
-
-DP -- RT @realDonaldTrump: Just spoke to @JohnKasich to express condolences and prayers to all for the horrible shooting of two great police offi… 
-DP     ANGER -- horrible 
-DP     DISGUST -- horrible 
-DP     FEAR -- horrible 
-DP     ANGER -- shooting 
-DP     FEAR -- shooting 
-DP     FEAR -- police 
-DP     TRUST -- police 
-
-DP -- RT @realDonaldTrump: 4.2 million hard working Americans have already received a large Bonus and/or Pay Increase because of our recently Pas… 
-DP     ANTICIPATION -- bonus 
-DP     JOY -- bonus 
-DP     SURPRISE -- bonus 
-DP     ANTICIPATION -- pay 
-DP     JOY -- pay 
-DP     TRUST -- pay 
-
-DP -- RT @realDonaldTrump: My Administration has identified three major priorities for creating a safe, modern and lawful immigration system: ful… 
-DP     TRUST -- lawful 
-
-DP -- RT @realDonaldTrump: My thoughts and prayers are with the two police officers, their families, and everybody at the @WestervillePD. https:/… 
-DP     FEAR -- police 
-DP     TRUST -- police 
-
-DP -- RT @VP: Well said, @AmbJohnBolton. The U.S will not allow the propaganda charade by the North Korean regime to go unchallenged on the world… 
-DP -- RT @realDonaldTrump: Just signed Bill. Our Military will now be stronger than ever before. We love and need our Military and gave them ever… 
-DP     FEAR -- military 
-DP     JOY -- love 
-DP     FEAR -- military 
-DP -- RT @VP: Together with our allies and partners, we will continue to strive to peacefully dismantle North Korea’s nuclear program and allevia… 
-DP     ANTICIPATION -- continue 
-DP     TRUST -- continue 
-
-DP     ANTICIPATION -- strive 
-DP -- RT @VP: Karen &amp; I landed in Seoul for important conversations with South Korean President Moon. The U.S &amp; our global allies will continue t… 
-DP     TRUST -- important 
-
-DP     TRUST -- president 
-
-DP     ANTICIPATION -- continue 
-DP     TRUST -- continue 
-
-DP -- RT @realDonaldTrump: Time to end the visa lottery. Congress must secure the immigration system and protect Americans. https://t.co/yukxm48x… 
-DP     ANTICIPATION -- time 
-DP     DISGUST -- congress 
-DP     TRUST -- congress 
-
-DP     TRUST -- system 
-
-DP -- RT @realDonaldTrump: I will be meeting with Henry Kissinger at 1:45pm. Will be discussing North Korea, China and the Middle East. 
-DP -- RT @realDonaldTrump: Our founders invoked our Creator four times in the Declaration of Independence. Our currency declares “IN GOD WE TRUST… 
-DP     ANTICIPATION -- god 
-DP     FEAR -- god 
-DP     JOY -- god 
-DP     TRUST -- god 
-
-DP -- RT @VP: North Korea’s tyrants have never been content to merely subjugate their own people. They still harbor the dream of conquering their… 
-DP     JOY -- content 
-DP     TRUST -- content 
-
-DP     TRUST -- harbor 
-
-DP -- RT @VP: To any who would threaten our people or our allies, know this: Under this Commander-in-Chief, and the greatest fighting force in th… 
-DP     ANGER -- threaten 
-DP     ANTICIPATION -- threaten 
-DP     FEAR -- threaten 
-DP     ANGER -- fighting 
-DP     ANGER -- force 
-DP     FEAR -- force 
-DP -- RT @realDonaldTrump: The Budget Agreement today is so important for our great Military. It ends the dangerous sequester and gives Secretary… 
-DP     TRUST -- budget 
-
-DP     TRUST -- agreement 
-
-DP     TRUST -- important 
-
+DP     FEAR -- war 
+DP -- LATEST: FBI Continues to Skirt Court Order to Turn Over McCabe Communications via @SaraCarterDC https://t.co/pv3j3prLY6 
+DP     ANGER -- court 
+DP     ANTICIPATION -- court 
+DP     FEAR -- court 
+DP -- Breaking... https://t.co/8ooqLpE8UW 
+DP -- The #HannityHotline has been ringing off the hook… Be sure to leave your message at (877) 225-8587 #Hannity 
+DP     SAD -- leave 
+DP     SURPRISE -- leave 
+DP -- Next I will sit down one-on-one with @VP Mike Pence #Hannity 
+DP -- Next we have breaking new information on a dangerous situation in Austin, TX involving three separate bomb attacks... Plus @SaraCarterDC is here with a new report and @GreggJarrett reacts #Hannity 
 DP     FEAR -- dangerous 
-DP -- RT @realDonaldTrump: Congratulations to the Republic of Korea on what will be a MAGNIFICENT Winter Olympics! What the South Korean people h… 
-DP     ANTICIPATION -- magnificent 
-DP     JOY -- magnificent 
-DP     SURPRISE -- magnificent 
-DP     TRUST -- magnificent 
+DP     ANGER -- bomb 
+DP     FEAR -- bomb 
+DP     SAD -- bomb 
+DP     SURPRISE -- bomb 
+DP -- Tonight on #Hannity I’ll be joined by @VP Mike Pence along with @RepChrisStewart, @jasoninthehouse, @SaraCarterDC, @GreggJarrett, @michellemalkin, @SebGorka and more 
+DP -- We have the latest on the House Intelligence Committee completing its investigation into Russian meddling in the election… Plus I’ll sit down with @VP Mike Pence tonight on #Hannity at 9pm 
+DP     FEAR -- intelligence 
+DP     JOY -- intelligence 
+DP     TRUST -- intelligence 
 
-DP -- RT @realDonaldTrump: Best wishes to the Republic of Korea on hosting the @Olympics! What a wonderful opportunity to show everyone that you… 
-DP     JOY -- wonderful 
-DP     SURPRISE -- wonderful 
-DP     TRUST -- wonderful 
+DP     TRUST -- committee 
 
-DP     ANTICIPATION -- opportunity 
+DP     ANTICIPATION -- completing 
+DP     JOY -- completing 
+DP     ANTICIPATION -- investigation 
+DP -- via @SaraCarterDC https://t.co/YYNV4dN8Lw 
+DP -- Nikki Haley calls-out Russia during FIERY UN Speech... https://t.co/fwmPGhjy5p 
+DP -- Tick Tock...... 9 PM Hannity Fox News!!! 
+DP -- a new low https://t.co/j2xOmP4ASf 
+DP -- TUNE IN: @VP Mike Pence sits down for an interview with @SeanHannity TONIGHT at 9p ET on Fox News Channel. https://t.co/6ZTXfrt9wq 
+DP -- https://t.co/ploNHj1lnt 
+DP -- a new low... https://t.co/sOR3NZD2EO 
+DP -- https://t.co/xirjbUJu7U 
+DP -- https://t.co/LqTmkEIfkU 
+DP -- https://t.co/mUDClT9NOl 
+DP -- https://t.co/WnOstiQ8vl 
+DP -- https://t.co/KRYiLkbODx 
+DP -- For over a year on this show we've been breaking story after story while members of the mainstream media turned a blind eye… @JoeConchaTV and @RealDrGina weigh in next #Hannity 
 DP     TRUST -- show 
 
-DP -- RT @realDonaldTrump: Congratulations @ElonMusk and @SpaceX on the successful #FalconHeavy launch. This achievement, along with @NASA’s comm… 
-DP     ANTICIPATION -- successful 
-DP     JOY -- successful 
-DP     TRUST -- successful 
+DP     ANTICIPATION -- weigh 
+DP     TRUST -- weigh 
 
-DP -- RT @realDonaldTrump: HAPPY BIRTHDAY to our 40th President of the United States of America, Ronald Reagan! https://t.co/JtEglBhm4c 
-DP     JOY -- happy 
-DP     TRUST -- happy 
-
-DP     ANTICIPATION -- birthday 
-DP     JOY -- birthday 
-DP     SURPRISE -- birthday 
+DP -- Coming up we'll expose the left's ties to one of the most racist and anti-Semitic people in America... And get reaction from @THEHermanCain #Hannity 
+DP     ANTICIPATION -- coming 
+DP     ANTICIPATION -- expose 
+DP     FEAR -- expose 
+DP -- Up next Victoria Toensing and @SaraCarterDC join me with the latest on the Uranium One scandal #Hannity 
+DP     FEAR -- scandal 
+DP -- Tonight on #Hannity I’ll be joined by @seanspicer, @SebGorka, Victoria Toensing, @SaraCarterDC, @THEHermanCain, @JoeConchaTV, @RealDrGina and more 
+DP -- House Republicans are expanding their investigation into Obama officials and there are reports that the President Trump’s legal team is negotiating with Special Counsel Mueller… More on those stories on a special #Hannity at 9pm 
+DP     ANTICIPATION -- investigation 
 DP     TRUST -- president 
 
-DP     TRUST -- united 
+DP     TRUST -- legal 
 
-DP -- RT @realDonaldTrump: Today, we heard the experiences of law enforcement professionals and community leaders working to combat the threat of… 
-DP     TRUST -- law 
+DP     TRUST -- team 
 
-DP     ANGER -- combat 
-DP     FEAR -- combat 
-DP     ANGER -- threat 
-DP     FEAR -- threat 
-DP -- RT @realDonaldTrump: We need a 21st century MERIT-BASED immigration system.  Chain migration and the visa lottery are outdated programs tha… 
-DP     ANTICIPATION -- lottery 
-DP -- RT @realDonaldTrump: Polling shows nearly 7 in 10 Americans support an immigration reform package that includes DACA, fully secures the bor… 
-DP     TRUST -- fully 
-
-DP -- RT @realDonaldTrump: My prayers and best wishes are with the family of Edwin Jackson, a wonderful young man whose life was so senselessly t… 
-DP     JOY -- wonderful 
-DP     SURPRISE -- wonderful 
-DP     TRUST -- wonderful 
-
-DP     ANTICIPATION -- young 
-DP     JOY -- young 
-DP     SURPRISE -- young 
-DP -- RT @realDonaldTrump: So disgraceful that a person illegally in our country killed @Colts linebacker Edwin Jackson. This is just one of many… 
-DP     ANGER -- disgraceful 
-DP     DISGUST -- disgraceful 
-DP -- RT @realDonaldTrump: Thanks to the historic TAX CUTS that I signed into law, your paychecks are going way UP, your taxes are going way DOWN… 
-DP     SAD -- tax 
-DP -- RT @realDonaldTrump: Congratulations to the Philadelphia Eagles on a great Super Bowl victory! 
-DP -- RT @realDonaldTrump: My thoughts and prayers are with all of the victims involved in this mornings train collision in South Carolina. Thank… 
-DP     ANGER -- collision 
-DP -- RT @realDonaldTrump: Today, it was my honor to join the great men and women of @DHSgov, @CustomsBorder, @ICEgov and @USCIS at the U.S. Cust… 
-DP     TRUST -- honor 
-
-DP -- RT @realDonaldTrump: “Trump the orator outlines the greatness of America to Democrats’ disgust” https://t.co/XpirrtTY6V 
-DP     JOY -- greatness 
-DP     SURPRISE -- greatness 
-DP     TRUST -- greatness 
-
-DP -- RT @realDonaldTrump: With 3.5 million Americans receiving bonuses or other benefits from their employers as a result of TAX CUTS, 2018 is o… 
-DP     ANTICIPATION -- receiving 
-DP     JOY -- receiving 
-DP     SURPRISE -- receiving 
-DP     ANTICIPATION -- result 
-DP     SAD -- tax 
-DP -- RT @EPAScottPruitt: President Trump has empowered us at @EPA to roll back burdensome regulations that have hampered American growth. Togeth… 
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP     FEAR -- burdensome 
-DP     SAD -- burdensome 
-DP -- RT @SBALinda: The speech last night, was an optimistic speech. @POTUS really spoke to both sides of the aisle. #SOTU https://t.co/eqYr6WR3fi 
-DP -- RT @SecretaryCarson: My statement on @POTUS's #SOTU https://t.co/UIWweKZW1G 
-DP     TRUST -- statement 
-
-DP -- RT @SecretaryPerry: Americans heard an optimistic &amp; unifying speech from @realDonaldTrump. There is much to be optimistic about..for the fi… 
-DP -- RT @SecShulkin: Last night at the #SOTU, @POTUS @realDonaldTrump recognized young Preston Sharp for his dedication and leadership in planti… 
-DP     ANTICIPATION -- young 
-DP     JOY -- young 
-DP     SURPRISE -- young 
-DP -- RT @VP: Karen and I just arrived in WV with  @sencapito &amp; @secretaryross. Hardworking West Virginians are excited about the Trump economic… 
-DP     ANTICIPATION -- excited 
-DP     JOY -- excited 
-DP     SURPRISE -- excited 
-DP     TRUST -- excited 
-
-DP     SURPRISE -- trump 
-DP -- RT @FLOTUS: Last night I was surrounded by a wonderful group of guests for the State of the Union. It was a privilege to meet them and hear… 
-DP     JOY -- wonderful 
-DP     SURPRISE -- wonderful 
-DP     TRUST -- wonderful 
-
-DP -- RT @WhiteHouse: Tonight, President Trump delivered his first #SOTU address. He outlined the record-setting accomplishments of his first yea… 
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP -- RT @RepJasonSmith: President Trump has spent the past year putting America first and ensuring American families are better off than they we… 
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP -- RT @sendavidperdue: 3) @POTUS made a career of finishing projects on time &amp; under budget. He’s going to bring the same track record of succ… 
-DP     ANTICIPATION -- career 
-DP     ANTICIPATION -- time 
-DP     ANTICIPATION -- track 
-DP -- RT @SenToomey: Tonight, President Trump used his #SOTU address to spotlight the important progress that has been made during the first year… 
-DP     TRUST -- president 
-
-DP     SURPRISE -- trump 
-DP     TRUST -- important 
-
-DP     ANTICIPATION -- progress 
-DP     JOY -- progress 
-DP -- RT @RepDougCollins: .@POTUS’s #SOTU address is right on #PrisonReform: "As America regains its strength, this opportunity must be extended… 
-DP     ANTICIPATION -- opportunity 
-DP -- RT @SenJohnKennedy: Thank you @POTUS for addressing the war on terrorism and a special thanks to our armed services for their hard work com… 
-DP     FEAR -- war 
-DP     ANGER -- terrorism 
-DP     DISGUST -- terrorism 
-DP     FEAR -- terrorism 
-DP     SAD -- terrorism 
 DP     JOY -- special 
-DP     ANGER -- armed 
-DP     FEAR -- armed 
-DP -- RT @RepWalorski: @POTUS The president spoke with a message of unity and a vision for a brighter future, and I’m excited to keep working tog… 
-DP     TRUST -- president 
+DP     TRUST -- counsel 
 
-DP     TRUST -- unity 
-
-DP     ANTICIPATION -- vision 
-DP     ANTICIPATION -- excited 
-DP     JOY -- excited 
-DP     SURPRISE -- excited 
-DP     TRUST -- excited 
-
-DP -- RT @KenCalvert: I commend the @POTUS for reinvesting in our military, resetting the force and continuing President Reagan’s mantra of ‘peac… 
-DP     ANGER -- force 
-DP     FEAR -- force 
-DP     TRUST -- president 
-
-DP -- RT @DrNealDunnFL2: Fact —&gt; @POTUS @realDonaldTrump “Our massive tax cuts provide tremendous relief for the Middle Class and small businesse… 
-DP     TRUST -- fact 
-
-DP     SAD -- tax 
-DP     TRUST -- provide 
-
-DP -- RT @RepArrington: .@POTUS’s #SOTU was focused on the American dream, the American spirit, and, above all, the American people! https://t.co… 
-DP -- RT @SteveScalise: The “legend from Louisiana” – that’s a new one. Thank you Mr. President! https://t.co/YVp7dcsPlD 
-DP -- RT @CongressmanHice: Under the Trump Administration, we're working to restore our Nation's military readiness and warfighting capabilities.… 
-DP     SURPRISE -- trump 
-DP     FEAR -- military 
-DP     ANTICIPATION -- readiness 
-DP     JOY -- readiness 
-DP     TRUST -- readiness 
-
-DP -- RT @RepMcCaul: Tonight, we saw a president who spoke from his heart. I hope his message resonates with all Americans and unites us through… 
-DP     TRUST -- president 
-
-DP     ANTICIPATION -- hope 
-DP     JOY -- hope 
-DP     SURPRISE -- hope 
-DP     TRUST -- hope 
-
-DP -- RT @JimInhofe: I am especially pleased that tonight @realDonaldTrump announced he will keep Guantanamo Bay open--something I have fought fo… 
-DP     JOY -- pleased 
-DP -- RT @SecretarySonny: The 1st year of the Trump Administration saw great accomplishments for all Americans, including those in agriculture &amp;… 
-DP     SURPRISE -- trump 
-DP -- RT @DHSgov: .@SecNielsen's statement on @POTUS #SOTU ⬇️ https://t.co/EBULPVVX0r 
-DP     TRUST -- statement 
-
-DP -- RT @EPA: We are excited to work with @POTUS, Congress and the American people to rebuild our country's infrastructure. #SOTU 
-DP     ANTICIPATION -- excited 
-DP     JOY -- excited 
-DP     SURPRISE -- excited 
-DP     TRUST -- excited 
-
-DP     DISGUST -- congress 
-DP     TRUST -- congress 
-
-DP -- THANK YOU @SteveScalise!
-#SOTU #TeamScalise https://t.co/KkW01XxKn4 
-DP -- RT @StateDept: "We will continue our fight until ISIS is defeated." Read President Trump's full #SOTU Address: https://t.co/D1hWedXca7 | Mo… 
-DP     ANTICIPATION -- continue 
-DP     TRUST -- continue 
-
-DP     ANGER -- fight 
-DP     FEAR -- fight 
-DP     TRUST -- president 
-
-DP -- RT @RepMarkMeadows: The powerful image of a young man, lifting his crutches in defiance of a North Korean regime that once tortured him. I… 
-DP     ANGER -- powerful 
-DP     ANTICIPATION -- powerful 
-DP     DISGUST -- powerful 
-DP     FEAR -- powerful 
-DP     JOY -- powerful 
-DP     TRUST -- powerful 
-
-DP     ANTICIPATION -- young 
-DP     JOY -- young 
-DP     SURPRISE -- young 
-DP     ANGER -- defiance 
-DP     DISGUST -- defiance 
-DP     FEAR -- defiance 
-DP -- RT @VPPressSec: Moving &amp; powerful speech tonight by @POTUS. Tomorrow @VP will hit the road to West Virginia carrying the President’s messag… 
-DP     ANGER -- powerful 
-DP     ANTICIPATION -- powerful 
-DP     DISGUST -- powerful 
-DP     FEAR -- powerful 
-DP     JOY -- powerful 
-DP     TRUST -- powerful 
-
-DP     ANTICIPATION -- tomorrow 
-DP     ANGER -- hit 
-DP -- RT @VP: Inspiring &amp; powerful #SOTU. @POTUS made clear the state of our Union is STRONG. In just 1 year @POTUS has cut taxes, grown our econ… 
-DP     ANGER -- powerful 
-DP     ANTICIPATION -- powerful 
-DP     DISGUST -- powerful 
-DP     FEAR -- powerful 
-DP     JOY -- powerful 
-DP     TRUST -- powerful 
-
-DP -- RT @TwitterGov: This was the most Retweeted Tweet sent during the #SOTU address ⤵️https://t.co/ESsVhJi35q 
-DP -- RT @TwitterGov: With 4.5M Tweets, @POTUS' speech tonight was the most Tweeted #SOTU or #JointSession address, surpassing the previous recor… 
-DP -- RT @Scavino45: "So let us begin tonight by recognizing that the STATE OF OUR UNION is STRONG because our people are strong." #SOTU
-@POTUS @… 
-DP -- RT @LouisianaGov: Look forward to seeing two Louisiana heroes during tonight’s #SOTU as guests of @POTUS - Jon Bridgers of the #CajunNavy a… 
-DP -- RT @GovChrisSununu: The President is right. #TaxReform has provided tremendous relief for the middle class and small businesses. Here in Ne… 
-DP     TRUST -- president 
-
-DP -- RT @ScottWalker: What a heartwarming story about the police officer and his wife who adopted the baby of the woman who was addicted to drug… 
-DP     FEAR -- police 
-DP     TRUST -- police 
-
-DP     TRUST -- officer 
-
-DP     JOY -- baby 
-DP -- RT @GovHolcomb: Indiana has a long term road funding plan. Glad to see infrastructure is a top priority for the President as well. #SOTU 
-DP     ANTICIPATION -- long 
-DP     ANTICIPATION -- glad 
-DP     JOY -- glad 
-DP     ANTICIPATION -- top 
-DP     TRUST -- top 
-
-DP     TRUST -- president 
-
-MOST EMOTIONAL top_joy -- RT @browardsheriff: What a pleasant surprise this morning! A young person taped this message to our Mobile Command Center. All we can say i… 
-MOST EMOTIONAL top_ang -- RT @VP: To any who would threaten our people or our allies, know this: Under this Commander-in-Chief, and the greatest fighting force in th… 
-MOST EMOTIONAL top_fear -- RT @realDonaldTrump: Our thoughts and prayers are with the victims of the horrible attack in France yesterday, and we grieve the nation’s l… 
-MOST EMOTIONAL top_ant -- RT @WhiteHouse: "It is time to end the bloodshed brought upon by reckless sanctuary policies. And it's time to save American lives and Amer… 
-MOST EMOTIONAL top_surp -- RT @realDonaldTrump: “President Donald J. Trump Proclaims March 25, 2018, as Greek Independence Day: A National Day of Celebration of Greek… 
-MOST EMOTIONAL top_trust -- RT @realDonaldTrump: All across this nation, we pray for our country and we THANK GOD for our United States Marines! Thank you. God Bless Y… 
+DP     JOY -- special 
+DP -- https://t.co/wFZWmRU9u5 
+DP -- LATEST: FBI Interviewed Uranium One Informant in Clinton Foundation Investigation via @SaraCarterDC https://t.co/BZO44IruPC 
+DP     ANTICIPATION -- investigation 
+DP -- https://t.co/nDjQA0fDVr 
+MOST EMOTIONAL top_ang -- We interrupt our 24-7 Stormy Daniels hate Trump coverage........  CNN Fake News. Jeff, there is a reason crowds chant “CNN Sucks”. https://t.co/tAviIbczai 
+MOST EMOTIONAL top_fear -- Coming up: The illegal immigrant who got away with killing Kate Steinle is claiming that the Federal case against him is "vindictive" and he wants it thrown out. @PaulBabeuAZ and @LeslieMarshall are here to debate. 
+MOST EMOTIONAL top_trust -- Journalism is dead in this country. Tonight in my opening monologue I’ll explain the media’s blatant hypocrisy in their coverage of President Trump. @MonicaCrowley &amp; @MichelleMalkin will be here at the top of the hour to weigh in on #Hannity 

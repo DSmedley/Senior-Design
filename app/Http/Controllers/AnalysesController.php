@@ -138,7 +138,11 @@ class AnalysesController extends Controller
             $retweet_total = 0;
 
             for($x=0; $x<sizeof($tweetResults); $x++) {
-                $tweet = $tweetResults[$x]['full_text'];
+                if(isset($tweetResults[$x]['retweeted_status'])){
+                    $tweet = $tweetResults[$x]['retweeted_status']['full_text'];
+                }else{
+                    $tweet = $tweetResults[$x]['full_text'];
+                }
                 //$tweet = preg_replace("/[^ \w]+/",'',$tweet);
                 $tweetsArray[$x]['text'] = $tweet;
                 

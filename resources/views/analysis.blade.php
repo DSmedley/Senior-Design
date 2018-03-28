@@ -190,7 +190,7 @@
                         <div class="row">
                             @if(isset($hashtags))
                                 @foreach($hashtags as $hashtag)
-                                    <div class="col-sm-2">
+                                    <div class="hashtags">
                                         <a href="{{ route('hashtag.name', array('hashtag' => $hashtag->hashtag)) }}"
                                                         onclick="event.preventDefault();
                                                                  document.getElementById('hashtag-form-{{ $hashtag->hashtag }}').submit();" class="portfolio-box" data-toggle="tooltip" title="Used {{$hashtag->occurs}} times">
