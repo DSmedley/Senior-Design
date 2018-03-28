@@ -214,8 +214,8 @@ class AnalysesController extends Controller
 
             
             $tweets = new SentimentController();
-            $testing = new DEBUGSentContr();
-            $testing2 = json_decode($testing->getEmotions(json_encode($tweetsArray)));
+            /*$testing = new DEBUGSentContr();
+            $testing2 = json_decode($testing->getEmotions(json_encode($tweetsArray)));*/
             $emotions = json_decode($tweets->getEmotions(json_encode($tweetsArray)));
 
             //create a new analysis
