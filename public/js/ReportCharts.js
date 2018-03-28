@@ -96,7 +96,7 @@ function bar(name, data) {
             },
             title: {
                 display: true,
-                text: 'Twitter Users Emotions'
+                text: 'Individual Emotions'
             },
             legend: {
                 display: false
