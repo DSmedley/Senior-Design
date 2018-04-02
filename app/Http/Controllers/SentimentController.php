@@ -45,22 +45,6 @@ class SentimentController extends Controller
 		$SAMPLE_TWEETS = $input_tweets;
 
 
-		//OKAY IS THIS EVEN THE RIGHT WAY TO DO IT?? LETS GIVE IT A TRY
-		/*
-		$array = [
-			"foo" => "bar",
-			"bar" => "foo",
-			"hig" => "bury",
-		];
-		foreach ($array as $color) {
-			echo "Do you like $color?\n";
-		}
-
-		var_dump($array);
-		*/
-
-
-
 
 		// $dataset = array_map('str_getcsv', file($WORDLIST_CSV));
 		// var_dump($dataset);
@@ -83,14 +67,7 @@ class SentimentController extends Controller
 
 		$sl_total_wordlist = [];  //THIS ONE JUST HOLDS ALL WORDS ASSOCIATED WITH ANY OF THE ABOVE TABLES. 
 
-
-
-		//STEP 1 
-		// $dataset = new CsvDataset('datasets/clean_tweets.csv',1);
-		// $dataset = new CsvDataset($WORDLIST_CSV,10);  //OH. CHANGE THE INPUT NUMBER TO DETERMINE HOW MANY COLLUMNS THERE ARE TO LISTEN FOR. NOT BAD
 		$dataset = array_map('str_getcsv', file($WORDLIST_CSV));  //OKAY THIS IS MUCH SIMPLER AND ALSO ACTUALLY WORKS, UNLIKE THE VERSION ABOVE
-
-		// var_dump($dataset->getSamples());
 
 		$rowtick = 0;
 		$samples = [];
@@ -178,18 +155,6 @@ class SentimentController extends Controller
 		$most_emot_tweet_dict_score = ["nada" => 0, "anger" => 0, "anticipation" => 0, "disgust" => 0, "fear" => 0, "joy" => 0, "sadness" => 0, "surprise" => 0, "trust" => 0]; 
 		$most_emot_tweet_dict_tweet = ["nada" => 0, "anger" => 0, "anticipation" => 0, "disgust" => 0, "fear" => 0, "joy" => 0, "sadness" => 0, "surprise" => 0, "trust" => 0]; 
 
-		//MAYBE SOMEDAY WE MAY TRY FOR A 3 DIMENTIONAL ARRAY. BUT TODAY IS NOT THAT DAY
-		// $most_emot_tweet_dict_score = ["nada" => 0, 
-			// "anger" => 0 => "empt", 
-			// "anticipation" => 0 => "empt", 
-			// "disgust" => 0 => "empt", 
-			// "fear" => 0 => "empt", 
-			// "joy" => 0 => "empt", 
-			// "sadness" => 0 => "empt", 
-			// "surprise" => 0 => "empt", 
-			// "trust" => 0 => "empt"
-		// ]; 
-
 		# --DECLARE SOME IMPORTANT VARIABLES BEFORE WE START
 		$highest_emot = 0;  #THIS VARIABLE WILL KEEP TRACK OF THE HIGHEST EMOTIONAL VALUE WE HAVE ENCOUNTERED IN A TWEET
 		$most_emot_tweet = "nothing yet"; #THIS VARIABLE WILL CONTAIN SAID TWEET MENTIONED ABOVE
@@ -198,6 +163,17 @@ class SentimentController extends Controller
 		# --A LITTLE MORE ADVANCED. EXPLAINED FURTHER BELOW
 		$tie_count_modifier = 0;
 		$sent_tie_count = 0;
+		
+		
+		//3-20 AND NOW A LIST OF THE MOST EMOTIONAL OF EACH TWEET
+		$top_ang = [];
+		$top_ant = []; 
+		$top_disg = []; 
+		$top_fear = []; 
+		$top_joy = []; 
+		$top_sad = []; 
+		$top_surp = []; 
+		$top_trust = []; 
 
 
        // error_log(var_dump($SAMPLE_TWEETS));
@@ -207,21 +183,17 @@ class SentimentController extends Controller
 
 		//$SAMPLE_TWEETS = array_map('str_getcsv', file($SAMPLE_TWEETS));
 		foreach ($SAMPLE_TWEETS as $item) {
-			#THE METHODS OF PULLING THE DATA FROM THE TABLES IS A LOT DIFFERENT. THIS MIGHT NEED TO BE CHANGED LATER
-			#print(item)
+
 			/*if ($DEBUG == true){
 				$tweet = $item[0];
 			} else {
 				$tweet = $item["text"];
 			}*/
             
-            //error_log(var_dump($item));
-            
             $tweet = $item["text"];
 			$tweet_dict[$tweet] = "hi";
 			$tweet_pv_values[$tweet] = 0;
-		#     $temp_sentiments = {"fear": 0, "anger": 0, "anticipation": 0, "trust": 0, "surprise": 0, "sadness": 0, "disgust": 0, "joy": 0} 
-			#OKAY, I AM REARANGING PRIORITY INTO SOMETHING THAT MAKES MORE SENSE
+			#TEMP_SENTIMENTS EARLIER IN THE TABLE GET HIGHER PRIORITY OVER MOST EMOTIONAL TWEET SCORE TIE-BREAKERS
 			$temp_sentiments = ["joy" => 0, "sadness" => 0, "anger" => 0, "fear" => 0, "anticipation" => 0, "surprise" => 0, "disgust" => 0, "trust" => 0];
 			$temp_pv = 0;
 			$highest_sent = "nada";
@@ -233,8 +205,7 @@ class SentimentController extends Controller
 			foreach (explode(" ", $tweet) as $word) {
 				$word = strtolower($word);
 				if (in_array($word, $sl_total_wordlist)){
-					// $temp_tweet_words.append($word)
-					$temp_tweet_words[] = $word;  //THIS IS HOW YOU APPEND, APPARENTLY
+					$temp_tweet_words[] = $word;
 				}
 			}
 
@@ -242,7 +213,6 @@ class SentimentController extends Controller
 			foreach ($temp_tweet_words as $i) {
 				$word = strtolower($i);
 				
-				// if ($word in $sl_ang){
 				if (in_array($word, $sl_ang)){
 					$temp_sentiments["anger"] += 1;  #2.0 - LEAVING THESE IN IN CASE "MOST EMOTIONAL TWEET" IS USED
 					$total_beefoo_results["anger"] += 1;  #2.0 - ADDING INSERTS INTO TOTAL RESULTS FOR EVERY WORD
@@ -285,7 +255,7 @@ class SentimentController extends Controller
 			}    
 			
 			
-			#THIS, WE'LL LEAVE IN. I THINK
+			#POSITIVITY VALUES ARE CALCULATED DIFFERENTLY THAN THE OTHER 8 SENTIMENTS
 			if ($temp_pv > 0){
 				$tweet_pv_values[$tweet] = "positive";
 				$total_pv_results["positive"] += 1;
@@ -301,11 +271,10 @@ class SentimentController extends Controller
 			
 			
 			
-			#EVERYTHING AFTER THIS POINT IS A WIP AND WILL NOT BE USED IN THE NEXT DEMO. I AM SETTING IT TO $DEBUG MODE ONLY
+			
 			if ($DEBUG == false){  //3-21-18 --SWITCHING TO NONDEBUG FOR LIVE USE
 			
-				#EACH SENTIMENT HAS IT'S OWN "MOST EMOTIONAL TWEET" 
-				// for key, val in $temp_sentiments.items():
+				#EACH SENTIMENT HAS IT'S OWN "MOST EMOTIONAL TWEET" AWARD AT THE END
 				foreach ($temp_sentiments as $key => $val) {
 					#3-11-18 THIS WILL COUNT THE NUMBER OF SENTIMENTS TIED IN SCORE, FAVORING SENTIMENTS THAT ARE FURTHER AHEAD THAN THE REST OF THE PACK
 					if ($val > $highest_sent_value){   #IF THE SCORE IS HIGHER, JUST REPLACE IT AND RESET ALL COUNTERS
@@ -317,10 +286,20 @@ class SentimentController extends Controller
 						#THIS NUMBER IS TO HELP WEIGH "MOST EMOT" TWEET SCORES HIGHER, THE LESS NUMBER OF SENTS THEY ARE TIED WITH
 					}
 				}
+				
+				
+				// 3-24 -NOW ONLY SENTIMENTS THAT ARE TIED FOR FIRST MAY QUALIFY FOR THE SPOT, EVEN IF THEY STILL OVERTAKE THE PREVIOUS SENT SCORE
+				$contenders = [];
+				
+				foreach ($temp_sentiments as $key => $val) {  
+					if ($val == $highest_sent_value and $val > 2.3){
+						$contenders[] = $key; //IF THEY ENDED UP WITH A SCORE EQUAL TO THE HIGHEST SCORE, ADD THAT SENTIMENT TO THE CONTENDER LIST
+					}
+				}
+				
 
 				# --THE LESS COMPETITION THE SENTIMENT HAS FOR THE #1 SPOT, THE MORE LIKELY IT IS TO BE TRUE.
 				$tie_count_modifier = (4 - $sent_tie_count) / 10;
-			#     tie_count_modifier = 0 #REVERTING THIS TO 0 FOR TESTING BECAUSE APPARENTLY THE NUMBER "0.1" IS FUCKED UP IN PYTHON
 				# --THIS WILL HELP INCREASE SENTIMENT PRIORITY WHEN TIED WITH ANOTHER TWEET WITH SENTIMENT SCORES ALL OVER THE PLACE
 				# --IN THIS CASE, TWEETS WITH SCORES TIED IN 4 OR MORE SENTIMENTS WILL ACTUALLY RANK DOWN LOWER THAN NORMAL ONES.
 				# --THIS MODIFIER IS ONLY USED IN RANKING "MOST EMOTIONAL TWEETS" AND NOT USED IN THE FINAL PERCENTAGE OUTCOMES FOR EACH SENTIMENT
@@ -331,9 +310,15 @@ class SentimentController extends Controller
 				$largest_emo_diff = 0;  #TO HELP DECIDE WHICH SENTIMENT WILL RECEIVE THE NEW HIGHEST EMOT_TWEET WHEN ONE IS FOUND (SO IT WONT GO TO MORE THAN 1)
 				$largest_emo_diff_sent = "none"; 
 				$largest_emo_diff_bankscore = 0;  #3-12 THE PRIZE POT OF WHAT THE "REAL" FINAL SCORE OF WHICHEVER SENTIMENT WON THE CONTEST
+				//3-20 / !!UNUSED!! DISCONTINUING THE USE OF "LARGEST_EMO_DIF" NOW THAT EACH EMO KEEPS TRACK OF ITS OWN RECORD
 				
 
-				foreach ($temp_sentiments as $key => $val) {
+				// foreach ($temp_sentiments as $key => $val) {
+				foreach ($contenders as $k) {
+			
+					//(DONE!) SWITCH THIS OUT TO CYCLE THROUGH CONTENDERS INSTEAD, AND RE-DECLARE $KEY AND $VAL TO VALUES CONTAINED IN $CONTENDER
+					$key = $k;  //SINCE THIS IS JUST A STRING, I GUESS IT DOESN'T MATTER IF IT'S CONNECTED TO THE KEY OR NOT
+					$val = $temp_sentiments[$k];
 
 
 					#3-11 -COMPARE THE VALUE TO THE CURRENT HIGHEST VALUE IN THE "MOST EMOTIONAL TWEET" TABLES
@@ -345,24 +330,51 @@ class SentimentController extends Controller
 			#             print("HIGH EMOTIONAL TWEET: ", most_emot_tweet_dict_tweet[key], " --SENTIMENT:", key, most_emot_tweet_dict_score[key])
 			#             print("MODIFIER USED", tie_count_modifier)
 
-						#AH-AH- BEFORE WE MAKE OUR CHANGE, LETS FIRST CHECK ALL THE EMOT_TWEETS TO SEE WHICH VALUE HAS THE LARGEST SCORE DIFFERENCE
-						if (round(($emo_value - $most_emot_tweet_dict_score[$key]), 2) > $largest_emo_diff){
-							// echo ("----OLD HIGH SCORE: $most_emot_tweet_dict_score[$key] $key ");
-							$largest_emo_diff = round(($emo_value - $most_emot_tweet_dict_score[$key]), 2);  #THE NEW LARGEST DIFFERENCE
-							$largest_emo_diff_sent = $key;
-							$largest_emo_diff_bankscore = $emo_value;
-							// echo ("NEW HIGHEST_SENT_DIFF FOUND. Difference: round(($emo_value - $most_emot_tweet_dict_score[$key]), 2) $key");
+						#V 2.0- BEFORE WE MAKE OUR CHANGE, LETS FIRST CHECK ALL THE EMOT_TWEETS TO SEE WHICH VALUE HAS THE LARGEST SCORE DIFFERENCE
+						// if (round(($emo_value - $most_emot_tweet_dict_score[$key]), 2) > $largest_emo_diff){
+							// // echo ("----OLD HIGH SCORE: $most_emot_tweet_dict_score[$key] $key ");
+							// $largest_emo_diff = round(($emo_value - $most_emot_tweet_dict_score[$key]), 2);  #THE NEW LARGEST DIFFERENCE
+							// $largest_emo_diff_sent = $key;
+							// $largest_emo_diff_bankscore = $emo_value;
+							// // echo ("NEW HIGHEST_SENT_DIFF FOUND. Difference: round(($emo_value - $most_emot_tweet_dict_score[$key]), 2) $key");
+						// }
+						
+						
+						//V 3.0. TRYING YET ANOTHER VERSION THAT ONLY KEEPS IN MIND THAT SENTIMENT'S HIGHEST VALUE - AS WE ARE NOW IGNORING LARGEST EMO DIFFERENCE
+						if (($emo_value) > $most_emot_tweet_dict_score[$key]){
+							$most_emot_tweet_dict_score[$key] = $emo_value; //REPLACE THE OLD ONE WITH THE NEW HIGH SCORE
+							
+							if ($key == "joy") {
+								$top_joy[] = $tweet; //ALRIGHT, FINE, YOU WIN. SINGLE-D TABLES IT IS
+								// echo "NEW TOP JOY $emo_value $tweet \n";
+							} elseif ($key == "sadness") {
+								$top_sad[] = $tweet;
+							} elseif ($key == "anger") {
+								$top_ang[] = $tweet;
+							} elseif ($key == "fear") {
+								$top_fear[] = $tweet;
+							} elseif ($key == "anticipation") {
+								$top_ant[] = $tweet;
+							} elseif ($key == "surprise") {
+								$top_surp[] = $tweet;
+							} elseif ($key == "disgust") {
+								$top_disg[] = $tweet;
+							} elseif ($key == "trust") {
+								$top_trust[] = $tweet;
+							}
+							
 						}
 					}
 				}
 
-
+				
+				//3-24 OKAY NNOW FORGET ABOUT THIS. EACH SENTIMENT FOR THEIR OWN
 				#NOW, !AFTER! WE HAVE DECIDED WHICH SENTIMENT NEEDS THIS NEW HIGHEST_EMO_TWEET THE MOST, WE WILL APPLY IT TO ONLY THAT SENTIMENT    
-				if ($largest_emo_diff != 0){     #IF SCORES ARE EXACTLY THE SAME, SENTIMENT WITH HIGHEST PORT PRIORITY WILL RECEIVE IT. SUCKS TO BE 'TRUST'
-					$most_emot_tweet_dict_score[$largest_emo_diff_sent] = $largest_emo_diff_bankscore;  #largest_emo_diff
-					$most_emot_tweet_dict_tweet[$largest_emo_diff_sent] = $tweet;
-					// echo ("THE WINNER OF THE HIGHEST DIFF IS:  $largest_emo_diff_sent $most_emot_tweet_dict_score[$largest_emo_diff_sent] \n $tweet \n");
-				}
+				// if ($largest_emo_diff != 0){     #IF SCORES ARE EXACTLY THE SAME, SENTIMENT WITH HIGHEST PORT PRIORITY WILL RECEIVE IT. SUCKS TO BE 'TRUST'
+					// $most_emot_tweet_dict_score[$largest_emo_diff_sent] = $largest_emo_diff_bankscore;  #largest_emo_diff
+					// $most_emot_tweet_dict_tweet[$largest_emo_diff_sent] = $tweet;
+					// // echo ("THE WINNER OF THE HIGHEST DIFF IS:  $largest_emo_diff_sent $most_emot_tweet_dict_score[$largest_emo_diff_sent] \n $tweet \n");
+				// }
 			}
 		}
 
@@ -405,6 +417,7 @@ class SentimentController extends Controller
 			// var_dump($total_beefoo_results);
 			// var_dump($total_pv_results);
 			
+			
 			# BEFORE WE FINISH, ADD THE PV RESULTS ONTO THE SENTIMENT RESULTS SO WE CAN RETURN BOTH SETS OF RESULTS IN ONE STRING
 			foreach ($total_pv_results as $key => $value) {
 				$total_beefoo_results[$key] = $value;
@@ -412,6 +425,9 @@ class SentimentController extends Controller
 			
 			
 			//3-21-18 ADDING MOST EMOTIONAL TWEETS TO THE RETURN JSON
+			
+			//THE OLD VERSION, WHICH I WILL KEEP COMMENTED FOR NOW IN CASE WE NEED TO DO ANY EMERGENCY SWITCHAROOS'
+			/*
 			//--DECLARE EACH AS NADA FOR NOW  --ACTUALLY, THE CURRENT METHOD DOESN'T EVEN REQUIRE THESE YET. BUT THIS IS MINIMAL, AND WONT SLOW ANYTHING DOWN
 			$top_ang = "nada"; 
 			$top_ant = "nada"; 
@@ -451,6 +467,36 @@ class SentimentController extends Controller
 					$total_beefoo_results["top_trust"] = $value;
 				}
 			}
+			*/
+			
+			
+			//AND NOW ONTO THE "MOST EMOTIONAL TWEETS" AWARDS
+			$emo_used_list = []; //KEEP A LIST OF TWEETS THAT HAVE ALREADY WON A CATEGORY SO THEY DONT WIN MORE THAN ONE
+			
+			//AH HA! LETS MAKE IT AN ASSOCIATIVE ARRAY, WITH THE RETURN KEYS AS THEIR VALUES. THEN WE DONT NEED 8 SEPERATE LOOPS, JESUS
+			$all_tops = [			//CAN WE MIX ASSOCIATIVE ARRAYS WITH MULTIDIMINT ARRAYS AS VALUES?? -- WOW WE SURE CAN. WORKS FOR ME
+				"top_joy" => $top_joy,
+				"top_sad" => $top_sad,		
+				"top_ang" => $top_ang,
+				"top_fear" => $top_fear,
+				"top_ant" => $top_ant,
+				"top_surp" => $top_surp, 
+				"top_disg" => $top_disg, 
+				"top_trust" => $top_trust,
+			];
+			
+			//$KEY = THE CATEGORY NAME STRING    $CATEGORY = THE ACTUAL TABLE REF
+			foreach ($all_tops as $key => $category) {
+				foreach (array_reverse($category, true) as $toptweet) {  		//CYCLE THROUGH THE LIST OF MOST EMOTIONAL TWEETS, GREATEST TO SMALLEST
+					if ((in_array($toptweet, $emo_used_list)) == false) { 		//IF THIS TWEET HASN'T WON A CATEGORY YET -
+						$emo_used_list[] = $toptweet; 							//ADD IT TO THE USED_LIST SO IT CANT BE USED A SECOND TIME 
+						$total_beefoo_results[$key] = $toptweet; 				//ADD IT TO THE OUTPUT RESULTS
+						break; 													//AND MOVE ON TO THE NEXT CATEGORY. DONT BOTHER WITH THE REST OF THE CONTESTANTS
+					} //IF A ROLL ISN'T FILLED BY THE TIME THE END OF THE ARRAY IS REACHED, A WINNER FOR THE CATEGORY SIMPLY WON'T BE RETURNED AT ALL.
+				}
+			}
+			
+			
 					
 			//OKAY. NOW RETURN THE RESULTS IN A JSON FILE
 			json_encode($total_beefoo_results);
