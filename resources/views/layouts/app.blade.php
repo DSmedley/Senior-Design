@@ -33,8 +33,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ route('welcome') }}">
-                        <span><img title="{{ config('app.name', 'Laravel') }}" style="width:32px; height:32px;" src='/scanner.gif'></span>
-                        {{ config('app.name', 'Laravel') }}
+                        <span><img title="{{ config('app.name', 'Laravel') }}" style="width:200px; height:50px;" src='/chirpreport.svg'></span>
                     </a>
                 </div>
 
@@ -126,7 +125,7 @@
                                 <a href="{{ route('admin.login') }}">Admin</a>
                             </li>
                         </ul>
-                        <p class="copyright text-muted small">Copyright &copy; Personality Scanner 2018. All Rights Reserved</p>
+                        <p class="copyright text-muted small">Copyright &copy; {{ config('app.name', 'Laravel') }} 2018. All Rights Reserved</p>
                     </div>
                 </div>
             </div>
