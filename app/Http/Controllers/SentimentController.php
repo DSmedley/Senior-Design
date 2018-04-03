@@ -487,6 +487,7 @@ class SentimentController extends Controller
 			
 			//$KEY = THE CATEGORY NAME STRING    $CATEGORY = THE ACTUAL TABLE REF
 			foreach ($all_tops as $key => $category) {
+                $total_beefoo_results[$key] = NULL; 
 				foreach (array_reverse($category, true) as $toptweet) {  		//CYCLE THROUGH THE LIST OF MOST EMOTIONAL TWEETS, GREATEST TO SMALLEST
 					if ((in_array($toptweet, $emo_used_list)) == false) { 		//IF THIS TWEET HASN'T WON A CATEGORY YET -
 						$emo_used_list[] = $toptweet; 							//ADD IT TO THE USED_LIST SO IT CANT BE USED A SECOND TIME 

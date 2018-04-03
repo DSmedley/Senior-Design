@@ -211,7 +211,6 @@ class AnalysesController extends Controller
             arsort($linkResult);
             
             $timeResult = array_count_values($timeCount);
-
             
             $tweets = new SentimentController();
             /*$testing = new DEBUGSentContr();
