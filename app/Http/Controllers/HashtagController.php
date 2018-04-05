@@ -49,7 +49,7 @@ class HashtagController extends Controller
         $analysis = $this->getData($hashtag);
 
         if(isset($analysis['errors'])){
-            return redirect()->route('analyze')->with('twitterError', $analysis['errors']['0']['message']);
+            return redirect()->route('hashtag')->with('twitterError', $analysis['errors']['0']['message']);
         }
 
         $data = array(
@@ -79,7 +79,7 @@ class HashtagController extends Controller
                      ->performRequest();
 
         $tweetResults = json_decode($tweetResults, true);
-
+        
         $peopleCount = array();
         $timeCount = array();
 
@@ -97,85 +97,90 @@ class HashtagController extends Controller
             $time = DateTime::createFromFormat($format, $tweetResults['statuses'][$x]['created_at']);
             array_push($timeCount, $time->format('H'));
         }
+        
+        if(!empty($tweetsArray)){
 
-        $peopleAmount = sizeof($peopleCount);
-        $peopleResult = array_count_values($peopleCount);
-        arsort($peopleResult);
+            $peopleAmount = sizeof($peopleCount);
+            $peopleResult = array_count_values($peopleCount);
+            arsort($peopleResult);
 
-        $timeResult = array_count_values($timeCount);
+            $timeResult = array_count_values($timeCount);
 
 
-        $tweets = new SentimentController();
-        $emotions = json_decode($tweets->getEmotions(json_encode($tweetsArray)));
+            $tweets = new SentimentController();
+            $emotions = json_decode($tweets->getEmotions(json_encode($tweetsArray)));
 
-        //create a new analysis
-        $analysis = new Hashtag_Report;
-        $analysis->hashtag = strtoupper($hashtag);
-        $analysis->people = $peopleAmount;
-        $analysis->positive = $emotions->positive;
-        $analysis->negative = $emotions->negative;
-        $analysis->neutral = $emotions->neutral;
-        $analysis->anger = $emotions->anger;
-        $analysis->anticipation = $emotions->anticipation;
-        $analysis->disgust = $emotions->disgust;
-        $analysis->fear = $emotions->fear;
-        $analysis->joy = $emotions->joy;
-        $analysis->sadness = $emotions->sadness;
-        $analysis->surprise = $emotions->surprise;
-        $analysis->trust = $emotions->trust;
-        $analysis->none = $emotions->nada;
-        $analysis->top_joy = $emotions->top_joy;
-        $analysis->top_sad = $emotions->top_sad;
-        $analysis->top_ang = $emotions->top_ang;
-        $analysis->top_fear = $emotions->top_fear;
-        $analysis->top_ant = $emotions->top_ant;
-        $analysis->top_surp = $emotions->top_surp;
-        $analysis->top_disg = $emotions->top_disg;
-        $analysis->top_trust = $emotions->top_trust;
+            //create a new analysis
+            $analysis = new Hashtag_Report;
+            $analysis->hashtag = strtoupper($hashtag);
+            $analysis->people = $peopleAmount;
+            $analysis->positive = $emotions->positive;
+            $analysis->negative = $emotions->negative;
+            $analysis->neutral = $emotions->neutral;
+            $analysis->anger = $emotions->anger;
+            $analysis->anticipation = $emotions->anticipation;
+            $analysis->disgust = $emotions->disgust;
+            $analysis->fear = $emotions->fear;
+            $analysis->joy = $emotions->joy;
+            $analysis->sadness = $emotions->sadness;
+            $analysis->surprise = $emotions->surprise;
+            $analysis->trust = $emotions->trust;
+            $analysis->none = $emotions->nada;
+            $analysis->top_joy = $emotions->top_joy;
+            $analysis->top_sad = $emotions->top_sad;
+            $analysis->top_ang = $emotions->top_ang;
+            $analysis->top_fear = $emotions->top_fear;
+            $analysis->top_ant = $emotions->top_ant;
+            $analysis->top_surp = $emotions->top_surp;
+            $analysis->top_disg = $emotions->top_disg;
+            $analysis->top_trust = $emotions->top_trust;
 
-        //Save the analysis into the database
-        $analysis->save();
+            //Save the analysis into the database
+            $analysis->save();
 
-        $limit = 1;
-        foreach($peopleResult as $word => $count){
-            $url = 'https://api.twitter.com/1.1/users/lookup.json';
-            $getfield = '?screen_name='.$word;
-            $requestMethod = 'GET';
-            $twitter = new TwitterController($settings);
-            $peopleImage = $twitter->setGetfield($getfield)
-                         ->buildOauth($url, $requestMethod)
-                         ->performRequest(); 
-            $peopleImage = json_decode($peopleImage, true);
-            if(!isset($peopleImage['errors'])){
-                $profile_image = str_replace("/", "", $peopleImage['0']['profile_image_url']);
-                $profile_image = str_replace("normal", "400x400", $peopleImage['0']['profile_image_url']);
+            $limit = 1;
+            foreach($peopleResult as $word => $count){
+                $url = 'https://api.twitter.com/1.1/users/lookup.json';
+                $getfield = '?screen_name='.$word;
+                $requestMethod = 'GET';
+                $twitter = new TwitterController($settings);
+                $peopleImage = $twitter->setGetfield($getfield)
+                             ->buildOauth($url, $requestMethod)
+                             ->performRequest(); 
+                $peopleImage = json_decode($peopleImage, true);
+                if(!isset($peopleImage['errors'])){
+                    $profile_image = str_replace("/", "", $peopleImage['0']['profile_image_url']);
+                    $profile_image = str_replace("normal", "400x400", $peopleImage['0']['profile_image_url']);
 
-                //create a new hashtag people
-                $peopleTable = new Hashtag_People;
-                $peopleTable->hashtag_id = $analysis->id;
-                $peopleTable->screen_name = $word;
-                $peopleTable->occurs = $count;
-                $peopleTable->profile_image = $profile_image;
+                    //create a new hashtag people
+                    $peopleTable = new Hashtag_People;
+                    $peopleTable->hashtag_id = $analysis->id;
+                    $peopleTable->screen_name = $word;
+                    $peopleTable->occurs = $count;
+                    $peopleTable->profile_image = $profile_image;
 
-                //Save the hashtag people into the database
-                $peopleTable->save();
-                if ($limit++ == 6) break;
+                    //Save the hashtag people into the database
+                    $peopleTable->save();
+                    if ($limit++ == 6) break;
+                }
             }
+
+            foreach($timeResult as $number => $count){
+                //create a new hashtag
+                $timeTable = new Hashtag_Hours;
+                $timeTable->hashtag_id = $analysis->id;
+                $timeTable->hour = $number;
+                $timeTable->occurs = $count;
+
+                //Save the hashtag into the database
+                $timeTable->save();
+            }
+
+            //return twitter user details
+            $result = Hashtag_Report::where('id', '=', $analysis->id)->first();
+        }else{
+            $result['errors']['0']['message'] = "This hashtag does not have any tweets to analyze!";
         }
-
-        foreach($timeResult as $number => $count){
-            //create a new hashtag
-            $timeTable = new Hashtag_Hours;
-            $timeTable->hashtag_id = $analysis->id;
-            $timeTable->hour = $number;
-            $timeTable->occurs = $count;
-
-            //Save the hashtag into the database
-            $timeTable->save();
-        }
-
-        //return twitter user details
-        $result = Hashtag_Report::where('id', '=', $analysis->id)->first();
         
         return $result;
     }

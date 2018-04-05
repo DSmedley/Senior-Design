@@ -363,14 +363,14 @@
             var emotions = {{ json_encode($emotions) }}
             var time = {{ json_encode($time) }}
             var occurs = {{ json_encode($occurs) }}
-            var replies = {{ ($analysis->replies/$analysis->total)*100 }}
-            var mentions = {{ ($analysis->mentions/$analysis->total)*100 }}
-            var hashtags = {{ ($analysis->hashtags/$analysis->total)*100 }}
-            var retweets = {{ ($analysis->retweets/$analysis->total)*100 }}
-            var links = {{ ($analysis->links/$analysis->total)*100 }}
-            var media = {{ ($analysis->media/$analysis->total)*100 }}
-            var retweeted = {{ ($analysis->retweet_count/$analysis->total)*100 }}
-            var favorited = {{ ($analysis->favorite_count/($analysis->total-$analysis->retweets))*100 }}
+            var replies = {{ ($analysis->total) > 0 ? ($analysis->replies/$analysis->total)*100 : 0 }}
+            var mentions = {{ ($analysis->total) > 0 ? ($analysis->mentions/$analysis->total)*100 : 0 }}
+            var hashtags = {{ ($analysis->total) > 0 ? ($analysis->hashtags/$analysis->total)*100 : 0 }}
+            var retweets = {{ ($analysis->total) > 0 ? ($analysis->retweets/$analysis->total)*100 : 0 }}
+            var links = {{ ($analysis->total) > 0 ? ($analysis->links/$analysis->total)*100 : 0 }}
+            var media = {{ ($analysis->total) > 0 ? ($analysis->media/$analysis->total)*100 : 0 }}
+            var retweeted = {{ ($analysis->total) > 0 ? ($analysis->retweet_count/$analysis->total)*100 : 0 }}
+            var favorited = {{ ($analysis->total-$analysis->retweets) > 0 ? ($analysis->favorite_count/($analysis->total-$analysis->retweets))*100 : 0}}
             
             chart("positivity", positivity);
             bar("emotions", emotions);
