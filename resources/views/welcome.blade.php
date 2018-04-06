@@ -59,19 +59,19 @@
                     <div class="service-box">
                         <i class="fas fa-info fa-4x text-primary sr-icons"></i>
                         <h3>User Details</h3>
-                        <p class="text-muted">The user details section include general information about the user being analyized like tweets, location and join date.</p>
+                        <p class="text-muted">The user details section includes general information about the user being analyzed like tweets, location and join date.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fas fa-chart-bar fa-4x text-primary sr-icons"></i>
                         <h3>Sentiment</h3>
-                        <p class="text-muted">The sentiment section displays the users overall positivty as well as a more indepth analysis of eight emotions and how many times the user displays those emotions.</p>
+                        <p class="text-muted">The sentiment section displays the users overall positivity as well as a more in-depth analysis of eight emotions and how many times the user displays those emotions.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fas fa-chart-pie fa-4x text-primary sr-icons"></i>
+                        <i class="fas fa-level-down-alt fa-4x text-primary sr-icons"></i>
                         <h3>Inside Their Tweets</h3>
                         <p class="text-muted">This section displays statistics about how the user tweets and interacts with their followers and the people that they follow such as retweets, mentions and hashtags.</p>
                     </div>
