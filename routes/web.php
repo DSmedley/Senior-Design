@@ -19,7 +19,7 @@ Route::get('/analyze', 'AnalysesController@index')->name('analyze');
 Route::post('/analyze', 'AnalysesController@analyze')->name('analysis');
 Route::post('/analyze/{name}', 'AnalysesController@analyze')->name('analysis.name');
 Route::get('/analysis/{id}/{name}', 'AnalysesController@getAnalysis')->name('analysis.view');
-Route::get('/analysis/save/{id}', 'UserController@linkAnalysis')->name('analysis.save');
+Route::get('/save/{id}', 'UserController@linkAnalysis')->name('analysis.save');
 
 Route::get('/cashtag', 'CashtagController@index')->name('cashtag');
 Route::post('/cashtag', 'CashtagController@analyze')->name('cashtag');

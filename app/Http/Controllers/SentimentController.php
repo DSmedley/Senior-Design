@@ -41,7 +41,7 @@ class SentimentController extends Controller
 		// }
 
 		//FOR NOW, MANUALLY PUT THE JSON INPUT WE WILL BE USING
-		$WORDLIST_CSV = 'py/NRC-Emotion-Lexicon-v0.92-ck.csv';
+		$WORDLIST_CSV = 'py/NRC-Emotion-Lexicon-v0.92-ck-lesstrust.csv';
 		$SAMPLE_TWEETS = $input_tweets;
 
 

@@ -89,6 +89,11 @@ class AnalysesController extends Controller
         );
         
         
+        if (strpos($screen_name, 'porn') !== false) {
+            $result['errors']['0']['message'] = "Fuck you";
+            return $result;
+        }
+        
         /**GET USER DETAILS**/
         $url = 'https://api.twitter.com/1.1/users/lookup.json';
         $getfield = '?screen_name='.$screen_name;

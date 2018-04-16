@@ -50,7 +50,7 @@ class UserController extends Controller
     }
     
     public function linkAnalysis($id = null){
-        if($id){
+        if(isset($id)){
             //get user id
             $user = Auth::user();
 
@@ -65,12 +65,12 @@ class UserController extends Controller
                 //Save the analysis into the database
                 $link->save();
 
-                return redirect()->route('analyze')->with("success","Anaysis saved to your account!");  
+                return redirect()->route('user')->with("success","Anaysis saved to your account!");  
             } else {
-                return redirect()->route('analyze')->with("error","This analysis is already saved to your account!"); 
+                return redirect()->route('user')->with("error","This analysis is already saved to your account!"); 
             } 
         }else{
-            return redirect()->route('analyze')->with("error","An error has occured!"); 
+            return redirect()->route('user')->with("error","An error has occured!"); 
         }
     }
     

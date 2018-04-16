@@ -1,4 +1,14 @@
 <div class="row">
+    @if (session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
+    @if (session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
     <div class="col-sm-10">
         <h1 class="">{{ Auth::user()->name }} </h1>
         @if(\Request::is('user'))
