@@ -42,8 +42,8 @@
         </div>
     </div>
 </div>
-    
-<div class="container"> 
+
+<div class="container">
     <section id="services">
         <div class="container">
             <div class="row">
@@ -86,7 +86,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="no-padding" id="portfolio">
         <div class="container">
             <div class="row">
@@ -102,7 +102,7 @@
                     @foreach($recents as $recent)
                         <div class="col-sm-4 col-md-2">
                             <a href="{{ route('analysis.view', array('id' => $recent->id, 'name' => $recent->screen_name)) }}" class="portfolio-box">
-                                <img src="{{ $recent->profile_image }}" class="img-responsive" alt="{{'@'.$recent->screen_name}}">
+                                <img src="https://avatars.io/twitter/{{ $recent->screen_name }}" class="img-responsive" alt="{{'@'.$recent->screen_name}}">
                                 <div class="portfolio-box-caption">
                                     <div class="portfolio-box-caption-content">
                                         <div class="project-category text-faded">
