@@ -74,7 +74,9 @@ hr.light {
 .portfolio-box {
     position: relative;
     display: block;
-    max-width: 200px;
+    max-width: 185px;
+	max-height: 185px;
+	overflow: hidden;
     margin: 0 auto;
 }
 
