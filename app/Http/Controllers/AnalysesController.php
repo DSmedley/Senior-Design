@@ -17,7 +17,7 @@ class AnalysesController extends Controller
     public function index(){
         return view('analysis');
     }
-    
+
     public function getAnalysis($id = null, $name = null)
     {
         //Get data from specified analysis
@@ -25,9 +25,9 @@ class AnalysesController extends Controller
         if ($id){
             $analysis = Analyses::where('id', $id)->first();
         }
-        
+
         $data = null;
-        
+
         if(isset($analysis->id)){
             $mentions = Mention::where('analysis_id', $analysis->id)->get();
             $hashtags = Hashtag::where('analysis_id', $analysis->id)->get();
@@ -46,12 +46,12 @@ class AnalysesController extends Controller
         //Return to analysis page
         return view('analysis')->with($data);
     }
-    
+
     public function analyze(Request $request){
         $this->validate($request, [
             'name' => 'required',
         ]);
-        
+
         $analysis = $this->getData($request->get('name'));
 
         if(isset($analysis['errors'])){
@@ -67,9 +67,9 @@ class AnalysesController extends Controller
             'name' => $analysis->screen_name,
         );
 
-        return redirect()->route('analysis.view', $data); 
+        return redirect()->route('analysis.view', $data);
     }
-    
+
     public function linkAnalysis($userID = null, $analysisID = null){
         //link analysis to account
         $link = new Link;
@@ -78,22 +78,22 @@ class AnalysesController extends Controller
         //save link
         $link->save();
     }
-    
+
     public function getData($screen_name = null){
         /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
         $settings = array(
-            'oauth_access_token' => "419236098-ybBLRsLig8sSd5LttZ6voxm9Gv3I8yul3JlvzGuD",
-            'oauth_access_token_secret' => "7ADQVV1qNy8cLQ7WO64F5FlF4UieOJh8WcevN8swx1Thd",
-            'consumer_key' => "4OvrblQjDT4rHklRfrDJURQsH",
-            'consumer_secret' => "XtGT33U06TvJ4l4VdHYRb4BINo9P3ebc6XsJsgcxNJWEZtCFJk"
+            'oauth_access_token' => env('OAUTH_ACCESS_TOKEN'),
+            'oauth_access_token_secret' => env('OAUTH_ACCESS_TOKEN_SECRET'),
+            'consumer_key' => env('CONSUMER_KEY'),
+            'consumer_secret' => env('CONSUMER_SECRET')
         );
-        
-        
+
+
         if (strpos($screen_name, 'porn') !== false) {
             $result['errors']['0']['message'] = "Fuck you";
             return $result;
         }
-        
+
         /**GET USER DETAILS**/
         $url = 'https://api.twitter.com/1.1/users/lookup.json';
         $getfield = '?screen_name='.$screen_name;
@@ -101,20 +101,20 @@ class AnalysesController extends Controller
         $twitter = new TwitterController($settings);
         $results = $twitter->setGetfield($getfield)
                      ->buildOauth($url, $requestMethod)
-                     ->performRequest(); 
-        
+                     ->performRequest();
+
         $results = json_decode($results, true);
-        
+
         if(isset($results['errors'])){
             return $results;
         }
-        
+
         /**CHECK IF USER ACCOUNT IS PRIVATE**/
         if(!$results['0']['protected']){
 
             $profile_image = str_replace("/", "", $results['0']['profile_image_url']);
             $profile_image = str_replace("normal", "400x400", $results['0']['profile_image_url']);
-            
+
             /**GET USER TWEETS**/
             $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
             $getfield = '?screen_name='.$screen_name.'&truncated=false&tweet_mode=extended&count=200';
@@ -125,7 +125,7 @@ class AnalysesController extends Controller
                          ->performRequest();
 
             $tweetResults = json_decode($tweetResults, true);
-            
+
             if(!empty($tweetResults)){
 
                 $mentionCount = array();
@@ -239,7 +239,7 @@ class AnalysesController extends Controller
                 $analysis->tweets = $results['0']['statuses_count'];
                 $analysis->following = $results['0']['friends_count'];
                 $analysis->followers = $results['0']['followers_count'];
-                $analysis->likes = $results['0']['favourites_count'];           
+                $analysis->likes = $results['0']['favourites_count'];
                 $analysis->total = sizeof($tweetResults);
                 $analysis->replies = $replyAmount;
                 $analysis->mentions = $mentionAmount;
@@ -283,7 +283,7 @@ class AnalysesController extends Controller
                     $twitter = new TwitterController($settings);
                     $mentionsImage = $twitter->setGetfield($getfield)
                                  ->buildOauth($url, $requestMethod)
-                                 ->performRequest(); 
+                                 ->performRequest();
                     $mentionsImage = json_decode($mentionsImage, true);
                     if(!isset($mentionsImage['errors'])){
                         $profile_image = str_replace("/", "", $mentionsImage['0']['profile_image_url']);
@@ -347,8 +347,8 @@ class AnalysesController extends Controller
         }else{
             $result['errors']['0']['message'] = "This user account is private!";
         }
-        
+
         return $result;
     }
-    
+
 }
