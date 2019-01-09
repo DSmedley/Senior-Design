@@ -1,9 +1,9 @@
 var colors = ['rgba(4, 40, 239, 0.6)', 'rgba(33, 224, 52, 0.6)', 'rgba(204, 0, 0, 0.6)', 'rgba(163, 0, 204, 0.6)'];
 var borders = ['rgba(4, 40, 239, 1)', 'rgba(33, 224, 52, 1)', 'rgba(204, 0, 0, 1)', 'rgba(163, 0, 204, 1)'];
 
-function positive(name, names, data) { 
+function positive(name, names, data) {
     var dataset = [];
-    for (i = 0, j = 0; i < data.length; i+=3, j++) { 
+    for (i = 0, j = 0; i < data.length; i+=3, j++) {
         dataset.push({
             label: names[j],
             backgroundColor: colors[j],
@@ -29,9 +29,9 @@ function positive(name, names, data) {
     return myChart;
 }
 
-function compare(name, names, labels, data) {       
+function compare(name, names, labels, data) {
     var dataset = [];
-    for (i = 0, j = 0; i < data.length; i+=2, j++) { 
+    for (i = 0, j = 0; i < data.length; i+=2, j++) {
         dataset.push({
             label: names[j],
             backgroundColor: colors[j],
@@ -64,14 +64,14 @@ function compare(name, names, labels, data) {
     return myChart;
 }
 
-function percentage(name, names, text, percent, sign) { 
+function percentage(name, names, text, percent, sign) {
     var chart = document.getElementById(name);
     var dataset = [];
     for (k = 0; k < names.length; k++) {
         dataset.push({
-            'percent': Math.round(percent[k]), 
-            'color': colors[k], 
-            'title': names[k] 
+            'percent': Math.round(percent[k]),
+            'color': colors[k],
+            'title': names[k]
         });
     }
 
@@ -93,7 +93,7 @@ function activeHours(name, names, times, occurs) {
 
     for (k = 0; k < times.length; k++) {
         data[k] = new Array();
-        for (i = 0, j = 0; i < times[k].length; i++, j++) { 
+        for (i = 0, j = 0; i < times[k].length; i++, j++) {
             if(times[k][i] == j){
                 data[k].push(occurs[k][i]);
             }else{
@@ -131,7 +131,7 @@ function activeHours(name, names, times, occurs) {
             maintainAspectRatio: false,
             title: {
                 display: true,
-                text: 'Tweets Per Hour (UTC Military Time)'
+                text: 'Tweets Per Hour (UTC)'
             },
             legend: {
                 display: true

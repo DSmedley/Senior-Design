@@ -1,4 +1,4 @@
-function chart(name, data) {            
+function chart(name, data) {
         var myChart = new Chart(document.getElementById(name), {
         type: 'doughnut',
         data: {
@@ -45,7 +45,7 @@ function chart(name, data) {
     return myChart;
 }
 
-function bar(name, data) {            
+function bar(name, data) {
         var myChart = new Chart(document.getElementById(name), {
         type: 'bar',
         data: {
@@ -86,7 +86,7 @@ function bar(name, data) {
                     label: function(tooltipItem, data) {
                         var dataset = data['datasets'][0];
                         var total = 0;
-                        for (i = 0; i < dataset['data'].length; i++) { 
+                        for (i = 0; i < dataset['data'].length; i++) {
                             total += dataset['data'][i]
                         }
                         var percent = Math.round(dataset['data'][tooltipItem['index']]/total * 100);
@@ -109,7 +109,7 @@ function bar(name, data) {
 
 function activeHours(name, times, occurs) {
     var data = [];
-    for (i = 0, j = 0; i < times.length; i++) { 
+    for (i = 0, j = 0; i < times.length; i++) {
         if(times[i] == j){
             data.push(occurs[i]);
             j++
@@ -118,7 +118,7 @@ function activeHours(name, times, occurs) {
             j++;
             i--;
         }
-        
+
     }
     var myChart = new Chart(document.getElementById(name), {
         type: 'bar',
@@ -144,7 +144,7 @@ function activeHours(name, times, occurs) {
                     afterLabel: function(tooltipItem, data) {
                         var dataset = data['datasets'][0];
                         var total = 0;
-                        for (i = 0; i < dataset['data'].length; i++) { 
+                        for (i = 0; i < dataset['data'].length; i++) {
                             total += dataset['data'][i]
                         }
                         var percent = Math.round(dataset['data'][tooltipItem['index']]/total * 100);
@@ -154,7 +154,7 @@ function activeHours(name, times, occurs) {
             },
             title: {
                 display: true,
-                text: 'Tweets Per Hour (UTC Military Time)'
+                text: 'Tweets Per Hour (UTC)'
             },
             legend: {
                 display: false
@@ -172,10 +172,10 @@ function activeHours(name, times, occurs) {
     return myChart;
 }
 
-function percentage(name, text, percent, sign) { 
-    
+function percentage(name, text, percent, sign) {
+
     var chart = document.getElementById(name);
-    
+
 	$(chart).circliful({
         animationStep: 15,
         foregroundBorderWidth: 5,
@@ -186,4 +186,3 @@ function percentage(name, text, percent, sign) {
         noPercentageSign: sign
     });
 }
-
