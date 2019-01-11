@@ -14,7 +14,7 @@ class CashtagController extends Controller
     public function index(){
         return view('cashtag');
     }
-    
+
     public function getCashtag($id = null, $name = null)
     {
         //Get data from specified analysis
@@ -22,9 +22,9 @@ class CashtagController extends Controller
         if ($id){
             $analysis = Cashtag_Report::where('id', $id)->first();
         }
-        
+
         $data = null;
-        
+
         if(isset($analysis->id)){
             $people = Cashtag_people::where('cashtag_id', $analysis->id)->get();
             $hours = Cashtag_Hours::select('hour', 'occurs')->where('cashtag_id', $analysis->id)->orderBy('hour')->get();
@@ -39,13 +39,13 @@ class CashtagController extends Controller
         //Return to analysis page
         return view('cashtag')->with($data);
     }
-    
+
     public function analyze(Request $request){
         $this->validate($request, [
             'cashtag' => 'required',
         ]);
         $cashtag = $request->get('cashtag');
-        
+
         $analysis = $this->getData($cashtag);
 
         if(isset($analysis['errors'])){
@@ -57,18 +57,18 @@ class CashtagController extends Controller
             'cashtag' => $cashtag,
         );
 
-        return redirect()->route('cashtag.view', $data); 
+        return redirect()->route('cashtag.view', $data);
     }
-    
+
     public function getData($cashtag = null){
         /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
         $settings = array(
-            'oauth_access_token' => "419236098-ybBLRsLig8sSd5LttZ6voxm9Gv3I8yul3JlvzGuD",
-            'oauth_access_token_secret' => "7ADQVV1qNy8cLQ7WO64F5FlF4UieOJh8WcevN8swx1Thd",
-            'consumer_key' => "4OvrblQjDT4rHklRfrDJURQsH",
-            'consumer_secret' => "XtGT33U06TvJ4l4VdHYRb4BINo9P3ebc6XsJsgcxNJWEZtCFJk"
+			'oauth_access_token' => env('OAUTH_ACCESS_TOKEN'),
+            'oauth_access_token_secret' => env('OAUTH_ACCESS_TOKEN_SECRET'),
+            'consumer_key' => env('CONSUMER_KEY'),
+            'consumer_secret' => env('CONSUMER_SECRET')
         );
-            
+
         /**GET USER TWEETS**/
         $url = 'https://api.twitter.com/1.1/search/tweets.json';
         $getfield = '?q=%24'.$cashtag.'&tweet_mode=extended&count=200&include_entities=true';
@@ -79,7 +79,7 @@ class CashtagController extends Controller
                      ->performRequest();
 
         $tweetResults = json_decode($tweetResults, true);
-        
+
         $peopleCount = array();
         $timeCount = array();
 
@@ -87,7 +87,7 @@ class CashtagController extends Controller
             if(isset($tweetResults['statuses'][$x]['retweeted_status']['full_text'])){
                 $tweetsArray[$x]['text'] = $tweetResults['statuses'][$x]['retweeted_status']['full_text'];
             }else{
-                $tweetsArray[$x]['text'] = $tweetResults['statuses'][$x]['full_text'];    
+                $tweetsArray[$x]['text'] = $tweetResults['statuses'][$x]['full_text'];
             }
 
             $people = $tweetResults['statuses'][$x]['user']['screen_name'];
@@ -99,7 +99,7 @@ class CashtagController extends Controller
         }
 
         if(!empty($tweetsArray)){
-            
+
             $peopleAmount = sizeof($peopleCount);
             $peopleResult = array_count_values($peopleCount);
             arsort($peopleResult);
@@ -146,7 +146,7 @@ class CashtagController extends Controller
                 $twitter = new TwitterController($settings);
                 $peopleImage = $twitter->setGetfield($getfield)
                              ->buildOauth($url, $requestMethod)
-                             ->performRequest(); 
+                             ->performRequest();
                 $peopleImage = json_decode($peopleImage, true);
                 if(!isset($peopleImage['errors'])){
                     $profile_image = str_replace("/", "", $peopleImage['0']['profile_image_url']);
@@ -181,8 +181,8 @@ class CashtagController extends Controller
         }else{
             $result['errors']['0']['message'] = "This cashtag does not have any tweets to analyze!";
         }
-        
+
         return $result;
     }
-    
+
 }
