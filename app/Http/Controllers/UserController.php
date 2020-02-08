@@ -31,24 +31,24 @@ class UserController extends Controller
     public function index()
     {
         $user = Auth::user();
-        
+
         $analyses = Link::join('analyses', 'analyses.id', '=', 'links.analysis_id')
                     ->where('links.user_id', $user->id)
                     ->select('analyses.id', 'analyses.name', 'analyses.created_at', 'analyses.neutral', 'analyses.positive', 'analyses.negative', 'analyses.screen_name', 'analyses.profile_image')
                     ->orderBy('links.id', 'desc')
                     ->paginate(9);
-        
+
         return view('user')->with('analyses', $analyses);
     }
-    
+
     public function edit(){
         return view('user.edit');
     }
-    
+
     public function inbox(){
         return view('user.inbox');
     }
-    
+
     public function linkAnalysis($id = null){
         if(isset($id)){
             //get user id
@@ -65,18 +65,18 @@ class UserController extends Controller
                 //Save the analysis into the database
                 $link->save();
 
-                return redirect()->route('user')->with("success","Anaysis saved to your account!");  
+                return redirect()->route('user')->with("success","Anaysis saved to your account!");
             } else {
-                return redirect()->route('user')->with("error","This analysis is already saved to your account!"); 
-            } 
+                return redirect()->route('user')->with("error","This analysis is already saved to your account!");
+            }
         }else{
-            return redirect()->route('user')->with("error","An error has occured!"); 
+            return redirect()->route('user')->with("error","An error has occured!");
         }
     }
-    
+
     public function updateProfile(Request $request){
         //Handle the user profile edits
-            
+
         if($request->has('new-password')){
             //Handle user passwword change
             if (!(Hash::check($request->get('current-password'), Auth::user()->password))) {
@@ -91,18 +91,18 @@ class UserController extends Controller
 
             $validatedData = $request->validate([
                 'current-password' => 'required',
-                'new-password' => 'required|string|min:6|confirmed',
+                'new-password' => 'required|string|min:8|confirmed',
             ]);
 
             //Change Password
             $user = Auth::user();
             $user->password = bcrypt($request->get('new-password'));
             $user->save();
-                  
+
             return redirect()->route('user.edit')->with("passwordSuccess","Password changed successfully!");
-            
+
         }
-            
+
         if($request->has('email')){
             //Handle user email change
             $validatedData = $request->validate([
@@ -113,10 +113,10 @@ class UserController extends Controller
             $user = Auth::user();
             $user->email = $request->get('email');
             $user->save();
-            
+
             return redirect()->route('user.edit')->with("emailSuccess","Email changed successfully!");
         }
-            
+
         if($request->has('changeAvatar')){
             //Handle user avatar update
             if($request->hasFile('avatar')){
@@ -132,17 +132,17 @@ class UserController extends Controller
                     $user->avatar = $filename;
                     $user->save();
 
-                    return redirect()->route('user.edit')->with("avatarSuccess","Avatar changed successfully!"); 
+                    return redirect()->route('user.edit')->with("avatarSuccess","Avatar changed successfully!");
                 }else{
                     return redirect()->route('user.edit')->with("avatarError","Unsupported file type!");
                 }
-                
+
             }else{
                 return redirect()->route('user.edit')->with("avatarError","You must select an avatar file!");
             }
-            
+
         }
-            
+
         if($request->has('changeBio')){
             //handle user bio change
             $validatedData = $request->validate([
@@ -153,11 +153,11 @@ class UserController extends Controller
             $user = Auth::user();
             $user->bio = $request->get('bio');
             $user->save();
-            
+
             return redirect()->route('user.edit')->with("bioSuccess","Bio changed successfully!");
         }
-        
-            
+
+
         if($request->has('changeName')){
             //handle username change
             $validatedData = $request->validate([
@@ -168,12 +168,9 @@ class UserController extends Controller
             $user = Auth::user();
             $user->name = $request->get('name');
             $user->save();
-            
+
             return redirect()->route('user.edit')->with("nameSuccess","Name changed successfully!");
         }
-        
+
     }
 }
-
-
-
