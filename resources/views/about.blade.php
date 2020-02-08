@@ -25,10 +25,10 @@
                     This project is a analytics tool that uses a person’s twitter account to analyze their personality based on what they tweet.
                     It will return information about their personality and whether they are a positive or negative person as well as traits like happy, sad, mad, etc.
                     It also returns analytical data about the twitter user and how they tweet, when they tweet and how they interact with other on twitter.
-                    This tool can be extremely useful in many different scenarios, it can be used by employers to understand what type of person their potential candidate is before they make their final decision on whether to hire the person or not. It can also be used by advertisers to see if the user is a good candidate to have advertise for their product. 
-                    
+                    This tool can be extremely useful in many different scenarios, it can be used by employers to understand what type of person their potential candidate is before they make their final decision on whether to hire the person or not. It can also be used by advertisers to see if the user is a good candidate to have advertise for their product.
+
                     <br/>
-                    
+
                     **As a bonus feature, you can also analyze cashtags and hashtags and see how people feel about certain topics and companies.
 
                     <h1>Technologies Used</h1>
@@ -43,11 +43,6 @@
                     4. Bootstrap - A CSS library used for the front end development to give it a more professional look and feel. Found <a href="https://getbootstrap.com/">here</a>.
                     <br/>
                     5. Font Awesome - An icon library used throughout the site to give it a more professional look and feel. Found <a href="https://fontawesome.com">here</a>.
-                    <br/>
-                    6. MPAndroidChart - A charts plugin used to display the statistics on the android app. Found <a href="https://github.com/PhilJay/MPAndroidChart">here</a>.
-
-                    <h1>Contributors</h1>
-                    Natalie Jones, Connor Kurschat, Dimas Moosa, Michael Polec, Colin Schroeder, Dillon Smedley
                 </div>
             </div>
         </div>

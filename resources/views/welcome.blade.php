@@ -129,14 +129,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Contribute to {{ config('app.name', 'Laravel') }}</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://github.com/DSmedley/Senior-Design" class="btn btn-default btn-lg"><i class="fab fa-github-square"></i> <span class="network-name">Github</span></a>
-                        </li>
-                    </ul>
+                    <h2>{{ config('app.name', 'Laravel') }}</h2>
                 </div>
             </div>
         </div>
