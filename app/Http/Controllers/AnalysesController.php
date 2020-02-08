@@ -112,8 +112,7 @@ class AnalysesController extends Controller
         /**CHECK IF USER ACCOUNT IS PRIVATE**/
         if(!$results['0']['protected']){
 
-            $profile_image = str_replace("/", "", $results['0']['profile_image_url']);
-            $profile_image = str_replace("normal", "400x400", $results['0']['profile_image_url']);
+            $profile_image = 'https://avatars.io/twitter/'.$screen_name;
 
             /**GET USER TWEETS**/
             $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
@@ -277,29 +276,18 @@ class AnalysesController extends Controller
 
                 $limit = 1;
                 foreach($mentionResult as $word => $count){
-                    $url = 'https://api.twitter.com/1.1/users/lookup.json';
-                    $getfield = '?screen_name='.$word;
-                    $requestMethod = 'GET';
-                    $twitter = new TwitterController($settings);
-                    $mentionsImage = $twitter->setGetfield($getfield)
-                                 ->buildOauth($url, $requestMethod)
-                                 ->performRequest();
-                    $mentionsImage = json_decode($mentionsImage, true);
-                    if(!isset($mentionsImage['errors'])){
-                        $profile_image = str_replace("/", "", $mentionsImage['0']['profile_image_url']);
-                        $profile_image = str_replace("normal", "400x400", $mentionsImage['0']['profile_image_url']);
+					$profile_image = 'https://avatars.io/twitter/'.$word;
 
-                        //create a new mention
-                        $mentionTable = new Mention;
-                        $mentionTable->analysis_id = $analysis->id;
-                        $mentionTable->screen_name = $word;
-                        $mentionTable->occurs = $count;
-                        $mentionTable->profile_image = $profile_image;
+                    //create a new mention
+                    $mentionTable = new Mention;
+                    $mentionTable->analysis_id = $analysis->id;
+                    $mentionTable->screen_name = $word;
+                    $mentionTable->occurs = $count;
+                    $mentionTable->profile_image = $profile_image;
 
-                        //Save the mention into the database
-                        $mentionTable->save();
-                        if ($limit++ == 6) break;
-                    }
+                    //Save the mention into the database
+                    $mentionTable->save();
+                    if ($limit++ == 6) break;
                 }
 
                 $limit = 1;

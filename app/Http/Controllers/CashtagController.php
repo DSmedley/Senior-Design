@@ -140,29 +140,18 @@ class CashtagController extends Controller
 
             $limit = 1;
             foreach($peopleResult as $word => $count){
-                $url = 'https://api.twitter.com/1.1/users/lookup.json';
-                $getfield = '?screen_name='.$word;
-                $requestMethod = 'GET';
-                $twitter = new TwitterController($settings);
-                $peopleImage = $twitter->setGetfield($getfield)
-                             ->buildOauth($url, $requestMethod)
-                             ->performRequest();
-                $peopleImage = json_decode($peopleImage, true);
-                if(!isset($peopleImage['errors'])){
-                    $profile_image = str_replace("/", "", $peopleImage['0']['profile_image_url']);
-                    $profile_image = str_replace("normal", "400x400", $peopleImage['0']['profile_image_url']);
+                $profile_image = 'https://avatars.io/twitter/'.$word;
 
-                    //create a new cashtag people
-                    $peopleTable = new Cashtag_People;
-                    $peopleTable->cashtag_id = $analysis->id;
-                    $peopleTable->screen_name = $word;
-                    $peopleTable->occurs = $count;
-                    $peopleTable->profile_image = $profile_image;
+                //create a new cashtag people
+                $peopleTable = new Cashtag_People;
+                $peopleTable->cashtag_id = $analysis->id;
+                $peopleTable->screen_name = $word;
+                $peopleTable->occurs = $count;
+                $peopleTable->profile_image = $profile_image;
 
-                    //Save the cashtag people into the database
-                    $peopleTable->save();
-                    if ($limit++ == 6) break;
-                }
+                //Save the cashtag people into the database
+                $peopleTable->save();
+                if ($limit++ == 6) break;
             }
 
             foreach($timeResult as $number => $count){
