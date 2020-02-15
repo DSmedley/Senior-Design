@@ -1,6 +1,6 @@
 node {
 	stage("Setup") {
-		scm checkout
+		checkout scm
 	}
 
     stage("Composer Install") {
