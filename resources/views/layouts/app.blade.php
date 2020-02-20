@@ -14,8 +14,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/creative.css') }}" rel="stylesheet">
     <link href="{{ asset('css/fontawesome-all.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/jquery.circliful.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/bootstrap-slider.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/vendor/jquery.circliful.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/vendor/bootstrap-slider.css') }}" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="app">
