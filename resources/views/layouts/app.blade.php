@@ -46,28 +46,28 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
-                        <li class="{{Request::is('/') ? 'active' : ''}}"><a href="{{ route('welcome') }}"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="{{Request::is('/') ? 'active' : ''}}"><a href="{{ route('welcome') }}"><span class="fas fa-home"></span> Home</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><i class="fas fa-chart-pie"></i> Analyze <span class="caret"></span>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><span class="fas fa-chart-pie"></span> Analyze <span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="{{ route('analyze') }}"><i class="fas fa-user-circle"> Twitter User </i></a>
+                                    <a href="{{ route('analyze') }}"><span class="fas fa-user-circle"> Twitter User </span></a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('hashtag') }}"><i class="fas fa-hashtag"> Hashtag </i></a>
+                                    <a href="{{ route('hashtag') }}"><span class="fas fa-hashtag"> Hashtag </span></a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('cashtag') }}"><i class="fas fa-dollar-sign"> Cashtag </i></a>
+                                    <a href="{{ route('cashtag') }}"><span class="fas fa-dollar-sign"> Cashtag </span></a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="{{Request::is('compare') ? 'active' : ''}}"><a href="{{ route('compare') }}"><i class="fas fa-users"></i> Compare</a></li>
-                        <li class="{{Request::is('about') ? 'active' : ''}}"><a href="{{ route('about') }}"><i class="fas fa-info"></i> About</a></li>
+                        <li class="{{Request::is('compare') ? 'active' : ''}}"><a href="{{ route('compare') }}"><span class="fas fa-users"></span> Compare</a></li>
+                        <li class="{{Request::is('about') ? 'active' : ''}}"><a href="{{ route('about') }}"><span class="fas fa-info"></span> About</a></li>
                         @guest
-                            <li><a href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-                            <li><a href="{{ route('register') }}"><i class="fas fa-user-plus"></i> Register</a></li>
+                            <li><a href="{{ route('login') }}"><span class="fas fa-sign-in-alt"></span> Login</a></li>
+                            <li><a href="{{ route('register') }}"><span class="fas fa-user-plus"></span> Register</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
@@ -78,19 +78,19 @@
                                 <ul class="dropdown-menu">
                                     @auth
                                     <li>
-                                        <a href="{{ route('user') }}"><i class="fas fa-user"> Profile </i></a>
+                                        <a href="{{ route('user') }}"><span class="fas fa-user"> Profile </span></a>
                                     </li>
                                     @endauth
                                     @auth('admin')
                                     <li>
-                                        <a href="{{ route('admin.dashboard') }}"><i class="fas fa-user"> Admin </i></a>
+                                        <a href="{{ route('admin.dashboard') }}"><span class="fas fa-user"> Admin </span></a>
                                     </li>
                                     @endauth
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            <i class="fas fa-sign-out-alt"> Logout</i>
+                                            <span class="fas fa-sign-out-alt"> Logout</span>
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -106,7 +106,7 @@
         </nav>
 
         @yield('content')
-        
+
         <!-- Footer -->
         <footer>
             <div class="container">

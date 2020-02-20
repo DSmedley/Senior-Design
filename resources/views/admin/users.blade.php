@@ -3,9 +3,9 @@
 @section('content')
 <div class="row">
     <div class="col-lg-12">
-        <h2>MANAGE USERS</h2>   
+        <h2>MANAGE USERS</h2>
     </div>
-</div>              
+</div>
 <!-- /. ROW  -->
 <hr />
 <div class="row">
@@ -33,11 +33,11 @@
                             <td>{{$user->created_at}}</td>
                             <td>{{$user->updated_at}}</td>
                             <td>
-                                <a href="{{ route('admin.user.edit', array('id' => $user->id)) }}"> <button type="button" class="btn btn-danger"><i class="fas fa-pencil-alt"></i> Edit</button></a>
+                                <a href="{{ route('admin.user.edit', array('id' => $user->id)) }}"> <button type="button" class="btn btn-danger"><span class="fas fa-pencil-alt"></span> Edit</button></a>
                                 @if($user->blocked)
-                                    <a href="{{ route('admin.user.unban', array('id' => $user->id)) }}"> <button type="button" id="unbanUserButton" class="btn btn-success"><i class="fas fa-unlock"></i> Unban</button></a>
+                                    <a href="{{ route('admin.user.unban', array('id' => $user->id)) }}"> <button type="button" id="unbanUserButton" class="btn btn-success"><span class="fas fa-unlock"></span> Unban</button></a>
                                 @else
-                                    <a href="{{ route('admin.user.ban', array('id' => $user->id)) }}"> <button type="button" id="banUserButton" class="btn btn-danger"><i class="fas fa-lock"></i> Ban</button></a>
+                                    <a href="{{ route('admin.user.ban', array('id' => $user->id)) }}"> <button type="button" id="banUserButton" class="btn btn-danger"><span class="fas fa-lock"></span> Ban</button></a>
                                 @endif
                             </td>
                         </tr>

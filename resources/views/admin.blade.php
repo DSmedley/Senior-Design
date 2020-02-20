@@ -3,9 +3,9 @@
 @section('content')
 <div class="row">
     <div class="col-lg-12">
-        <h2>ADMIN DASHBOARD</h2>   
+        <h2>ADMIN DASHBOARD</h2>
     </div>
-</div>              
+</div>
 <!-- /. ROW  -->
 <hr />
 <div class="row">
@@ -15,20 +15,20 @@
         </div>
     </div>
 </div>
-<!-- /. ROW  --> 
+<!-- /. ROW  -->
 <div class="row text-center pad-top">
     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
         <div class="div-square">
             <a href="{{ route('admin.settings') }}" >
-                <i class="fas fa-cog fa-5x"></i>
+                <span class="fas fa-cog fa-5x"></span>
                 <h4>Site Settings</h4>
             </a>
         </div>
-    </div> 
+    </div>
     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
         <div class="div-square">
             <a href="{{ route('admin.users') }}" >
-                <i class="fas fa-users fa-5x"></i>
+                <span class="fas fa-users fa-5x"></span>
                 <h4>Manage Users</h4>
             </a>
         </div>

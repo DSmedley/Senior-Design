@@ -12,9 +12,9 @@
     <div class="col-sm-10">
         <h1 class="">{{ Auth::user()->name }} </h1>
         @if(\Request::is('user'))
-            <a href="{{ route('user.edit') }}"><button type="button" class="btn btn-info"><i class="fas fa-cog"> Edit Profile</i></button></a>
+            <a href="{{ route('user.edit') }}"><button type="button" class="btn btn-info"><span class="fas fa-cog"> Edit Profile</span></button></a>
         @else
-            <a href="{{ route('user') }}"><button type="button" class="btn btn-info"><i class="fas fa-tasks"> View Profile</i></button></a>
+            <a href="{{ route('user') }}"><button type="button" class="btn btn-info"><span class="fas fa-tasks"> View Profile</span></button></a>
         @endif
         <br>
     </div>

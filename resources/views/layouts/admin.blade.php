@@ -26,7 +26,7 @@
                     </a>
                 </div>
                 <span class="logout-spn" >
-                    <a href="{{ route('admin.logout') }}" style="color:#fff;">LOGOUT</a>  
+                    <a href="{{ route('admin.logout') }}" style="color:#fff;">LOGOUT</a>
                 </span>
             </div>
         </div>
@@ -34,16 +34,16 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li class="{{Request::is('admin') ? 'active-link' : ''}}">
-                        <a href="{{ route('admin.dashboard') }}" ><i class="fa fa-desktop"></i>Dashboard</a>
+                        <a href="{{ route('admin.dashboard') }}" ><span class="fa fa-desktop"></span>Dashboard</a>
                     </li>
                     <li class="{{Request::is('admin/settings') ? 'active-link' : ''}}">
-                        <a href="{{ route('admin.settings') }}"><i class="fas fa-cog"></i>Site Settings</a>
+                        <a href="{{ route('admin.settings') }}"><span class="fas fa-cog"></span>Site Settings</a>
                     </li>
                     <li class="{{Request::is('admin/users') ? 'active-link' : ''}}">
-                        <a href="{{ route('admin.users') }}"><i class="fas fa-users"></i>Manage Users</a>
+                        <a href="{{ route('admin.users') }}"><span class="fas fa-users"></span>Manage Users</a>
                     </li>
                     <li>
-                        <a href="{{ route('welcome') }}"><i class="fab fa-cloudscale"></i>{{ config('app.name', 'Laravel') }}</a>
+                        <a href="{{ route('welcome') }}"><span class="fab fa-cloudscale"></span>{{ config('app.name', 'Laravel') }}</a>
                     </li>
                 </ul>
             </div>

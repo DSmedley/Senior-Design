@@ -42,7 +42,7 @@
             <h1>
                 {{ $analysis->name }}
                 @if($analysis->verified)
-                    <i class="fas fa-check-circle verified"></i>
+                    <span class="fas fa-check-circle verified"></span>
                 @endif
             </h1>
             <h3>{{ "@".$analysis->screen_name }}</h3>
@@ -59,7 +59,7 @@
             <ul class="list-group">
                 <li class="list-group-item text-muted" contenteditable="false">Details</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $analysis->twitter_id }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span>
                     @if($analysis->location != null)
                         {{$analysis->location}}
                     @else
@@ -70,9 +70,9 @@
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ number_format($analysis->following) }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ number_format($analysis->followers) }}</li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ number_format($analysis->likes) }}</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span>
                     @php $d = new DateTime($analysis->joined);
-                        echo $d->format('D M j Y'); 
+                        echo $d->format('D M j Y');
                     @endphp
                 </li>
                 <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span>
@@ -91,7 +91,7 @@
                 </li>
             </ul>
             @guest
-                <a href="{{ route('analysis.save', array('id' => $analysis->id)) }}"><button type="button" class="btn btn-success"><i class="fas fa-save"> Login to save</i></button></a>
+                <a href="{{ route('analysis.save', array('id' => $analysis->id)) }}"><button type="button" class="btn btn-success"><span class="fas fa-save"> Login to save</span></button></a>
             @endguest
         </div>
         <!--/col-3-->
@@ -130,7 +130,7 @@
                         $positivity = array($analysis->neutral, $analysis->positive, $analysis->negative);
                         $emotions = array($analysis->anger, $analysis->anticipation, $analysis->disgust, $analysis->fear, $analysis->joy, $analysis->sadness, $analysis->surprise, $analysis->trust);
                     @endphp
-                </div> 
+                </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">Inside Their Tweets</div>
@@ -221,7 +221,7 @@
                                             onclick="event.preventDefault();
                                                      document.getElementById('analysis-form-{{ $mention->screen_name }}').submit();" class="portfolio-box">
 
-                                        
+
                                             <img src="{{ $mention->profile_image }}" class="img-responsive" alt="">
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
@@ -266,7 +266,7 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
 </div>
 
 <div id="myModal" data-keyboard="true" class="modal fade" role="dialog" tabindex='-1'>
@@ -351,7 +351,7 @@
 @endif
 @endsection
 @section('javascript')
-    <script type="text/javascript">    
+    <script type="text/javascript">
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
         });
@@ -371,7 +371,7 @@
             var media = {{ ($analysis->total) > 0 ? ($analysis->media/$analysis->total)*100 : 0 }}
             var retweeted = {{ ($analysis->total) > 0 ? ($analysis->retweet_count/$analysis->total)*100 : 0 }}
             var favorited = {{ ($analysis->total-$analysis->retweets) > 0 ? ($analysis->favorite_count/($analysis->total-$analysis->retweets))*100 : 0}}
-            
+
             chart("positivity", positivity);
             bar("emotions", emotions);
             activeHours("active", time, occurs);
