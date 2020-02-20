@@ -142,10 +142,10 @@
       gtag('config', 'UA-69914420-2');
     </script>
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/jquery.circliful.js') }}"></script>
-    <script src="{{ asset('js/Chart.js') }}"></script>
-    <script src="{{ asset('js/sweetalert.js') }}"></script>
-    <script src="{{ asset('js/bootstrap-slider.js') }}"></script>
+    <script src="{{ asset('js/vendor/jquery.circliful.js') }}"></script>
+    <script src="{{ asset('js/vendor/Chart.js') }}"></script>
+    <script src="{{ asset('js/vendor/sweetalert.js') }}"></script>
+    <script src="{{ asset('js/vendor/bootstrap-slider.js') }}"></script>
     <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ab19ecbb338830013655046&product=inline-share-buttons' async='async'></script>
     <script src="{{ asset('js/loading.js') }}"></script>
     @yield('javascript')
