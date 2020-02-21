@@ -4,7 +4,7 @@
     <div class="panel-body">
         <div class="row">
             <div class="col-md-12">
-                Enter a hashtag about a topic of interest. We will gather the given hashtag details and the tweets related to it, analyze them and put the results into simple and easy to read charts. 
+                Enter a hashtag about a topic of interest. We will gather the given hashtag details and the tweets related to it, analyze them and put the results into simple and easy to read charts.
             </div>
         </div>
         <div class="row">
@@ -21,7 +21,7 @@
                 @endif
                 <form class="form-horizontal" method="POST" action="{{ route('hashtag') }}">
                     {{ csrf_field() }}
-                    
+
                     <div class="col-sm-4" style="margin-right:15px;">
                         <div class="form-group{{ $errors->has('hashtag') ? ' has-error' : '' }}">
                             <div class="input-group">
@@ -36,7 +36,7 @@
                             @endif
                         </div>
                     </div>
-                    
+
                     <div class="col-md-4">
                         <div class="form-group">
                             <button type="submit" id="analyzeButton" data-loading-text="Loading..." name="analyze" class="btn btn-primary">
@@ -49,7 +49,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <b>Note:</b> This may take up to a minute to complete the analysis.
+                <strong>Note:</strong> This may take up to a minute to complete the analysis.
             </div>
         </div>
     </div>

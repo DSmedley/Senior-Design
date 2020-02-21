@@ -33,7 +33,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ route('welcome') }}">
-                        <span><img title="{{ config('app.name', 'Laravel') }}" style="width:200px; height:50px;" src='/chirpreport.svg'></span>
+                        <span><img title="{{ config('app.name', 'Laravel') }}" style="width:200px; height:50px;" src='/chirpreport.svg' alt="{{ config('app.name', 'Laravel') }}"></span>
                     </a>
                 </div>
 
@@ -71,7 +71,7 @@
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                                    <img title="profile image" class="img-circle" style="width:20px; height:20px;" src='/uploads/avatars/{{ Auth::user()->avatar }}'>
+                                    <img title="{{ Auth::user()->name }}" class="img-circle" style="width:20px; height:20px;" src='/uploads/avatars/{{ Auth::user()->avatar }}' alt="{{ Auth::user()->name }}">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 

@@ -21,7 +21,7 @@
             <div class="adjust-nav">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="{{ route('admin.dashboard') }}">
-                        <span><img src="/chirpreport.svg" / style="width:200px; height:50px;"></span>
+                        <span><img src="/chirpreport.svg" style="width:200px; height:50px;" alt="{{ config('app.name', 'Laravel') }}"></span>
                     </a>
                 </div>
                 <span class="logout-spn" >

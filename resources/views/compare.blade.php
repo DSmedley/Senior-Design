@@ -51,25 +51,25 @@
     <div class="row">
         <div class="col-md-2">
             <a href="{{ route('analysis.view', array('id' => $first['analysis']->id, 'name' => $first['analysis']->screen_name)) }}" target="_blank">
-                <img title="{{ $first['analysis']->name }}" class="img-circle img-responsive" src="{{ $first['analysis']->profile_image }}"> 
+                <img title="{{ $first['analysis']->name }}" class="img-circle img-responsive" src="{{ $first['analysis']->profile_image }}" alt="{{ $first['analysis']->name }}">
             </a>
         </div>
         <div class="col-md-2">
             <a href="{{ route('analysis.view', array('id' => $second['analysis']->id, 'name' => $second['analysis']->screen_name)) }}" target="_blank">
-                <img title="{{ $second['analysis']->name }}" class="img-circle img-responsive" src="{{ $second['analysis']->profile_image }}">
+                <img title="{{ $second['analysis']->name }}" class="img-circle img-responsive" src="{{ $second['analysis']->profile_image }}" alt="{{ $second['analysis']->name }}">
             </a>
         </div>
         @if(isset($third))
             <div class="col-md-2">
                 <a href="{{ route('analysis.view', array('id' => $third['analysis']->id, 'name' => $third['analysis']->screen_name)) }}" target="_blank">
-                    <img title="{{ $third['analysis']->name }}" class="img-circle img-responsive" src="{{ $third['analysis']->profile_image }}">
+                    <img title="{{ $third['analysis']->name }}" class="img-circle img-responsive" src="{{ $third['analysis']->profile_image }}" alt="{{ $third['analysis']->name }}">
                 </a>
             </div>
         @endif
         @if(isset($fourth))
             <div class="col-md-2">
                 <a href="{{ route('analysis.view', array('id' => $fourth['analysis']->id, 'name' => $fourth['analysis']->screen_name)) }}" target="_blank">
-                    <img title="{{ $fourth['analysis']->name }}" class="img-circle img-responsive" src="{{ $fourth['analysis']->profile_image }}">
+                    <img title="{{ $fourth['analysis']->name }}" class="img-circle img-responsive" src="{{ $fourth['analysis']->profile_image }}" alt="{{ $fourth['analysis']->name }}">
                 </a>
             </div>
         @endif
@@ -78,11 +78,11 @@
     <div class="row">
         <div class="col-sm-3">
             <!--left col-->
-            <div class="row">  
+            <div class="row">
                 <ul class="list-group">
                     <li class="list-group-item text-muted" contenteditable="false">{{ $first['analysis']->name }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $first['analysis']->twitter_id }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span>
                         @if($first['analysis']->location != null)
                             {{$first['analysis']->location}}
                         @else
@@ -93,9 +93,9 @@
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ number_format($first['analysis']->following) }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ number_format($first['analysis']->followers) }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ number_format($first['analysis']->likes) }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span>
                         @php $d = new DateTime($first['analysis']->joined);
-                            echo $d->format('D M j Y'); 
+                            echo $d->format('D M j Y');
                         @endphp
                     </li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span>
@@ -107,11 +107,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="row">  
+            <div class="row">
                 <ul class="list-group">
                     <li class="list-group-item text-muted" contenteditable="false">{{ $second['analysis']->name }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $second['analysis']->twitter_id }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span>
                         @if($second['analysis']->location != null)
                             {{$second['analysis']->location}}
                         @else
@@ -122,9 +122,9 @@
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ number_format($second['analysis']->following) }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ number_format($second['analysis']->followers) }}</li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ number_format($second['analysis']->likes) }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
+                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span>
                         @php $d = new DateTime($second['analysis']->joined);
-                            echo $d->format('D M j Y'); 
+                            echo $d->format('D M j Y');
                         @endphp
                     </li>
                     <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span>
@@ -137,11 +137,11 @@
                 </ul>
             </div>
             @if(isset($third))
-                <div class="row">  
+                <div class="row">
                     <ul class="list-group">
                         <li class="list-group-item text-muted" contenteditable="false">{{ $third['analysis']->name }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $third['analysis']->twitter_id }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span>
                             @if($third['analysis']->location != null)
                                 {{$third['analysis']->location}}
                             @else
@@ -152,9 +152,9 @@
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ number_format($third['analysis']->following) }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ number_format($third['analysis']->followers) }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ number_format($third['analysis']->likes) }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span>
                             @php $d = new DateTime($third['analysis']->joined);
-                                echo $d->format('D M j Y'); 
+                                echo $d->format('D M j Y');
                             @endphp
                         </li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span>
@@ -168,11 +168,11 @@
                 </div>
             @endif
             @if(isset($fourth))
-                <div class="row">  
+                <div class="row">
                     <ul class="list-group">
                         <li class="list-group-item text-muted" contenteditable="false">{{ $fourth['analysis']->name }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Twitter ID</strong></span> {{ $fourth['analysis']->twitter_id }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span> 
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location</strong></span>
                             @if($fourth['analysis']->location != null)
                                 {{$fourth['analysis']->location}}
                             @else
@@ -183,9 +183,9 @@
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Following</strong></span> {{ number_format($fourth['analysis']->following) }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> {{ number_format($fourth['analysis']->followers) }}</li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> {{ number_format($fourth['analysis']->likes) }}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span> 
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Join Date</strong></span>
                             @php $d = new DateTime($fourth['analysis']->joined);
-                                echo $d->format('D M j Y'); 
+                                echo $d->format('D M j Y');
                             @endphp
                         </li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Time Zone</strong></span>
@@ -280,7 +280,7 @@
                             array_push($favorited, ($fourth['analysis']->favorite_count/($fourth['analysis']->total-$fourth['analysis']->retweets))*100);
                         }
                     @endphp
-                </div> 
+                </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">Inside Their Tweets</div>
@@ -391,7 +391,7 @@
 @endif
 @endsection
 @section('javascript')
-    <script type="text/javascript">    
+    <script type="text/javascript">
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
         });
@@ -415,7 +415,7 @@
             var favorited = {{ json_encode($favorited) }}
             var time = {{ json_encode($time) }}
             var occurs = {{ json_encode($occurs) }}
-            
+
             positive("positivity", comNames, positivity);
             compare("compare1", comNames, ['Anger', 'Anticiaption'], com1);
             compare("compare2", comNames, ['Disgust', 'Fear'], com2);

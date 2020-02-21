@@ -36,11 +36,11 @@
                         @endif
                     <form class="form-horizontal" method="POST" action="{{ route('user.edit') }}" id="changePassword">
                         {{ csrf_field() }}
- 
+
                         <div class="form-group{{ $errors->has('current-password') ? ' has-error' : '' }}">
                             <div class="col-lg-12">
                                 <input id="current-password" type="password" class="form-control" name="current-password" placeholder="Current Password" required>
- 
+
                                 @if ($errors->has('current-password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('current-password') }}</strong>
@@ -48,11 +48,11 @@
                                 @endif
                             </div>
                         </div>
- 
+
                         <div class="form-group{{ $errors->has('new-password') ? ' has-error' : '' }}">
                             <div class="col-lg-12">
                                 <input id="new-password" type="password" class="form-control" name="new-password" placeholder="New Password" required>
- 
+
                                 @if ($errors->has('new-password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('new-password') }}</strong>
@@ -60,13 +60,13 @@
                                 @endif
                             </div>
                         </div>
- 
+
                         <div class="form-group">
                             <div class="col-lg-12">
                                 <input id="new-password-confirm" type="password" class="form-control" name="new-password_confirmation" placeholder="Confirm Password" required>
                             </div>
                         </div>
- 
+
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-3">
                                 <button type="button" id="changePasswordButton" class="btn btn-primary">
@@ -94,11 +94,11 @@
                     @endif
                     <form class="form-horizontal" method="POST" action="{{ route('user.edit') }}">
                         {{ csrf_field() }}
- 
+
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <div class="col-lg-12">
                                 <input id="name" type="text" class="form-control" name="name" placeholder="Enter New Name" required>
- 
+
                                 @if ($errors->has('name'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
@@ -106,7 +106,7 @@
                                 @endif
                             </div>
                         </div>
- 
+
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-3">
                                 <button type="submit" name="changeName" class="btn btn-primary">
@@ -124,7 +124,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Change Email</div>
                 <div class="panel-body">
-                    <p><b>Current Email:</b> {{ Auth::user()->email }}</p>
+                    <p><strong>Current Email:</strong> {{ Auth::user()->email }}</p>
                     @if (session('emailError'))
                         <div class="alert alert-danger">
                             {{ session('emailError') }}
@@ -137,11 +137,11 @@
                     @endif
                     <form class="form-horizontal" method="POST" action="{{ route('user.edit') }}" id="changeEmail">
                         {{ csrf_field() }}
- 
+
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <div class="col-lg-12">
                                 <input id="email" type="email" class="form-control" name="email" placeholder="New Email" required>
- 
+
                                 @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -149,13 +149,13 @@
                                 @endif
                             </div>
                         </div>
- 
+
                         <div class="form-group">
                             <div class="col-lg-12">
                                 <input id="email-confirm" type="email" class="form-control" name="email_confirmation" placeholder="Confirm Email" required>
                             </div>
                         </div>
- 
+
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-3">
                                 <button type="button" id="changeEmailButton" class="btn btn-primary">
@@ -183,12 +183,12 @@
                     @endif
                     <form class="form-horizontal" method="POST" action="{{ route('user.edit') }}">
                         {{ csrf_field() }}
- 
+
                         <div class="form-group{{ $errors->has('bio') ? ' has-error' : '' }}">
                             <div class="col-lg-12">
                                 <textarea id="bio" class="form-control" name="bio" placeholder="Enter Bio" required>
                                 </textarea>
- 
+
                                 @if ($errors->has('bio'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('bio') }}</strong>
@@ -196,7 +196,7 @@
                                 @endif
                             </div>
                         </div>
- 
+
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-3">
                                 <button type="submit" name="changeBio" class="btn btn-primary">
@@ -229,7 +229,7 @@
                         <div class="form-group">
                             <input type="file" name="avatar" class="btn btn-default">
                         </div>
-                        
+
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-3">
                                 <button type="submit" name="changeAvatar" class="btn btn-primary">

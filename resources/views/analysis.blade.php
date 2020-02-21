@@ -49,7 +49,7 @@
             <br>
         </div>
         <div class="col-sm-2">
-            <img title="Profile Image" class="img-circle img-responsive" src='{{ $analysis->profile_image }}'>
+            <img title="{{ $analysis->name }}" class="img-circle img-responsive" src='{{ $analysis->profile_image }}' alt='{{ $analysis->name }}'>
         </div>
     </div>
     <br>
