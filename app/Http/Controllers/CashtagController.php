@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
-use App\Cashtag_Report;
-use App\Cashtag_People;
-use App\Cashtag_Hours;
+use App\CashtagReport;
+use App\CashtagPeople;
+use App\CashtagHours;
 use DateTime;
 
 class CashtagController extends Controller
@@ -20,14 +20,14 @@ class CashtagController extends Controller
         //Get data from specified analysis
         //Else return error
         if ($id){
-            $analysis = Cashtag_Report::where('id', $id)->first();
+            $analysis = CashtagReport::where('id', $id)->first();
         }
 
         $data = null;
 
         if(isset($analysis->id)){
-            $people = Cashtag_people::where('cashtag_id', $analysis->id)->get();
-            $hours = Cashtag_Hours::select('hour', 'occurs')->where('cashtag_id', $analysis->id)->orderBy('hour')->get();
+            $people = Cashtagpeople::where('cashtag_id', $analysis->id)->get();
+            $hours = CashtagHours::select('hour', 'occurs')->where('cashtag_id', $analysis->id)->orderBy('hour')->get();
 
             $data = array(
                'analysis'   => $analysis,
@@ -111,7 +111,7 @@ class CashtagController extends Controller
             $emotions = json_decode($tweets->getEmotions(json_encode($tweetsArray)));
 
             //create a new analysis
-            $analysis = new Cashtag_Report;
+            $analysis = new CashtagReport;
             $analysis->cashtag = strtoupper($cashtag);
             $analysis->people = $peopleAmount;
             $analysis->positive = $emotions->positive;
@@ -143,7 +143,7 @@ class CashtagController extends Controller
                 $profile_image = 'https://avatars.io/twitter/'.$word;
 
                 //create a new cashtag people
-                $peopleTable = new Cashtag_People;
+                $peopleTable = new CashtagPeople;
                 $peopleTable->cashtag_id = $analysis->id;
                 $peopleTable->screen_name = $word;
                 $peopleTable->occurs = $count;
@@ -156,7 +156,7 @@ class CashtagController extends Controller
 
             foreach($timeResult as $number => $count){
                 //create a new hashtag
-                $timeTable = new Cashtag_Hours;
+                $timeTable = new CashtagHours;
                 $timeTable->cashtag_id = $analysis->id;
                 $timeTable->hour = $number;
                 $timeTable->occurs = $count;
@@ -166,7 +166,7 @@ class CashtagController extends Controller
             }
 
             //return twitter user details
-            $result = Cashtag_Report::where('id', '=', $analysis->id)->first();
+            $result = CashtagReport::where('id', '=', $analysis->id)->first();
         }else{
             $result['errors']['0']['message'] = "This cashtag does not have any tweets to analyze!";
         }

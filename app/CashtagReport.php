@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Cashtag_Report extends Model
+class CashtagReport extends Model
 {
     public $table = "cashtag_reports";
 }

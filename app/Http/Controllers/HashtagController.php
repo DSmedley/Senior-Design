@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
-use App\Hashtag_Report;
-use App\Hashtag_People;
-use App\Hashtag_Hours;
+use App\HashtagReport;
+use App\HashtagPeople;
+use App\HashtagHours;
 use DateTime;
 
 class HashtagController extends Controller
@@ -20,14 +20,14 @@ class HashtagController extends Controller
         //Get data from specified analysis
         //Else return error
         if ($id){
-            $analysis = Hashtag_Report::where('id', $id)->first();
+            $analysis = HashtagReport::where('id', $id)->first();
         }
 
         $data = null;
 
         if(isset($analysis->id)){
-            $people = Hashtag_people::where('hashtag_id', $analysis->id)->get();
-            $hours = Hashtag_Hours::select('hour', 'occurs')->where('hashtag_id', $analysis->id)->orderBy('hour')->get();
+            $people = HashtagPeople::where('hashtag_id', $analysis->id)->get();
+            $hours = HashtagHours::select('hour', 'occurs')->where('hashtag_id', $analysis->id)->orderBy('hour')->get();
 
             $data = array(
                'analysis'   => $analysis,
@@ -111,7 +111,7 @@ class HashtagController extends Controller
             $emotions = json_decode($tweets->getEmotions(json_encode($tweetsArray)));
 
             //create a new analysis
-            $analysis = new Hashtag_Report;
+            $analysis = new HashtagReport;
             $analysis->hashtag = strtoupper($hashtag);
             $analysis->people = $peopleAmount;
             $analysis->positive = $emotions->positive;
@@ -143,7 +143,7 @@ class HashtagController extends Controller
 				$profile_image = 'https://avatars.io/twitter/'.$word;
 
                 //create a new hashtag people
-                $peopleTable = new Hashtag_People;
+                $peopleTable = new HashtagPeople;
                 $peopleTable->hashtag_id = $analysis->id;
                 $peopleTable->screen_name = $word;
                 $peopleTable->occurs = $count;
@@ -156,7 +156,7 @@ class HashtagController extends Controller
 
             foreach($timeResult as $number => $count){
                 //create a new hashtag
-                $timeTable = new Hashtag_Hours;
+                $timeTable = new HashtagHours;
                 $timeTable->hashtag_id = $analysis->id;
                 $timeTable->hour = $number;
                 $timeTable->occurs = $count;
@@ -166,7 +166,7 @@ class HashtagController extends Controller
             }
 
             //return twitter user details
-            $result = Hashtag_Report::where('id', '=', $analysis->id)->first();
+            $result = HashtagReport::where('id', '=', $analysis->id)->first();
         }else{
             $result['errors']['0']['message'] = "This hashtag does not have any tweets to analyze!";
         }

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Hashtag_Hours extends Model
+class HashtagHours extends Model
 {
     public $table = "hashtag_hours";
 }
