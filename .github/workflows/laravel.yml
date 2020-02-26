@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
-    - name: Copy .env
-      run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Install Dependencies
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
     - name: Directory Permissions
@@ -23,11 +21,13 @@ jobs:
         username: ${{ secrets.REMOTE_USER }}
         key: ${{ secrets.SERVER_SSH_KEY }}
         source: "*"
-        target: ${{ secrets.REMOTE_TARGET }}
+        target: ${{ secrets.REMOTE_TARGET_NEW }}
     - name: ssh proxy command
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.REMOTE_HOST }}
         username: ${{ secrets.REMOTE_USER }}
         key: ${{ secrets.SERVER_SSH_KEY }}
-        script: whoami
+        script: |
+          cp ${{ secrets.REMOTE_TARGET_CURRENT }}/.env ${{ secrets.REMOTE_TARGET_NEW }}
+          cp -R ${{ secrets.REMOTE_TARGET_CURRENT }}/public/uploads ${{ secrets.REMOTE_TARGET_NEW }}/public/uploads
