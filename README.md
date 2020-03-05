@@ -18,6 +18,7 @@ When analyzing either cash tags or hash tags, it will give very similar statisti
 the statical information is based around how other users feel about that specific hash tag or cash tag. 
 
 #Technologies Used
+
 This project is created with the Laravel framework as a core but it uses many other technologies on top of it. Such as:
 
 1. Sentiment and Emotion Lexicons - A list of over 14,000 lexicons with a sentiment and emotion attached to them provided by Saif M. Mohammad. Found <a href="http://saifmohammad.com/WebPages/lexicons.html">here</a>.
