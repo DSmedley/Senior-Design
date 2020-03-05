@@ -17,7 +17,7 @@ Finally, it will show you who they @mention the most and what times of the day t
 When analyzing either cash tags or hash tags, it will give very similar statistical information as analyzing a specific user. For these cases, however,
 the statical information is based around how other users feel about that specific hash tag or cash tag. 
 
-#Technologies Used
+# Technologies Used
 
 This project is created with the Laravel framework as a core but it uses many other technologies on top of it. Such as:
 
