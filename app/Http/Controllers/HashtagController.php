@@ -140,7 +140,7 @@ class HashtagController extends Controller
 
             $limit = 1;
             foreach($peopleResult as $word => $count){
-				$profile_image = 'https://avatars.io/twitter/'.$word;
+				$profile_image = 'hhttp://twivatar.glitch.me/'.$word;
 
                 //create a new hashtag people
                 $peopleTable = new HashtagPeople;

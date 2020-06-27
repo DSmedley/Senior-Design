@@ -102,7 +102,7 @@
                     @foreach($recents as $recent)
                         <div class="col-sm-4 col-md-2">
                             <a href="{{ route('analysis.view', array('id' => $recent->id, 'name' => $recent->screen_name)) }}" class="portfolio-box">
-                                <img src="https://avatars.io/twitter/{{ $recent->screen_name }}" class="img-responsive" alt="{{'@'.$recent->screen_name}}">
+                                <img src="http://twivatar.glitch.me/{{ $recent->screen_name }}" class="img-responsive" alt="{{'@'.$recent->screen_name}}">
                                 <div class="portfolio-box-caption">
                                     <div class="portfolio-box-caption-content">
                                         <div class="project-category text-faded">

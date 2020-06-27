@@ -112,7 +112,7 @@ class AnalysesController extends Controller
         /**CHECK IF USER ACCOUNT IS PRIVATE**/
         if(!$results['0']['protected']){
 
-            $profile_image = 'https://avatars.io/twitter/'.$screen_name;
+            $profile_image = 'http://twivatar.glitch.me/'.$screen_name;
 
             /**GET USER TWEETS**/
             $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
@@ -276,7 +276,7 @@ class AnalysesController extends Controller
 
                 $limit = 1;
                 foreach($mentionResult as $word => $count){
-					$profile_image = 'https://avatars.io/twitter/'.$word;
+					$profile_image = 'http://twivatar.glitch.me/'.$word;
 
                     //create a new mention
                     $mentionTable = new Mention;

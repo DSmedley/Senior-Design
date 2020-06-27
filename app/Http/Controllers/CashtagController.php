@@ -140,7 +140,7 @@ class CashtagController extends Controller
 
             $limit = 1;
             foreach($peopleResult as $word => $count){
-                $profile_image = 'https://avatars.io/twitter/'.$word;
+                $profile_image = 'http://twivatar.glitch.me/'.$word;
 
                 //create a new cashtag people
                 $peopleTable = new CashtagPeople;
