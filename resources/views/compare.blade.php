@@ -51,25 +51,25 @@
     <div class="row">
         <div class="col-md-2">
             <a href="{{ route('analysis.view', array('id' => $first['analysis']->id, 'name' => $first['analysis']->screen_name)) }}" target="_blank">
-                <img title="{{ $first['analysis']->name }}" class="img-circle img-responsive" src="{{ $first['analysis']->profile_image }}" alt="{{ $first['analysis']->name }}">
+                <img title="{{ $first['analysis']->name }}" class="img-circle img-responsive" src="http://twivatar.glitch.me/{{ $first['analysis']->screen_name }}" alt="{{ $first['analysis']->name }}">
             </a>
         </div>
         <div class="col-md-2">
             <a href="{{ route('analysis.view', array('id' => $second['analysis']->id, 'name' => $second['analysis']->screen_name)) }}" target="_blank">
-                <img title="{{ $second['analysis']->name }}" class="img-circle img-responsive" src="{{ $second['analysis']->profile_image }}" alt="{{ $second['analysis']->name }}">
+                <img title="{{ $second['analysis']->name }}" class="img-circle img-responsive" src="http://twivatar.glitch.me/{{ $second['analysis']->screen_name }}" alt="{{ $second['analysis']->name }}">
             </a>
         </div>
         @if(isset($third))
             <div class="col-md-2">
                 <a href="{{ route('analysis.view', array('id' => $third['analysis']->id, 'name' => $third['analysis']->screen_name)) }}" target="_blank">
-                    <img title="{{ $third['analysis']->name }}" class="img-circle img-responsive" src="{{ $third['analysis']->profile_image }}" alt="{{ $third['analysis']->name }}">
+                    <img title="{{ $third['analysis']->name }}" class="img-circle img-responsive" src="http://twivatar.glitch.me/{{ $third['analysis']->screen_name }}" alt="{{ $third['analysis']->name }}">
                 </a>
             </div>
         @endif
         @if(isset($fourth))
             <div class="col-md-2">
                 <a href="{{ route('analysis.view', array('id' => $fourth['analysis']->id, 'name' => $fourth['analysis']->screen_name)) }}" target="_blank">
-                    <img title="{{ $fourth['analysis']->name }}" class="img-circle img-responsive" src="{{ $fourth['analysis']->profile_image }}" alt="{{ $fourth['analysis']->name }}">
+                    <img title="{{ $fourth['analysis']->name }}" class="img-circle img-responsive" src="http://twivatar.glitch.me/{{ $fourth['analysis']->screen_name }}" alt="{{ $fourth['analysis']->name }}">
                 </a>
             </div>
         @endif
