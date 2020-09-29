@@ -49,7 +49,7 @@
             <br>
         </div>
         <div class="col-sm-2">
-            <img title="{{ $analysis->name }}" class="img-circle img-responsive" src='{{ $analysis->profile_image }}' alt='{{ $analysis->name }}'>
+            <img title="{{ $analysis->name }}" class="img-circle img-responsive" src='http://twivatar.glitch.me/{{ $analysis->screen_name }}' alt='{{ $analysis->name }}'>
         </div>
     </div>
     <br>
@@ -222,7 +222,7 @@
                                                      document.getElementById('analysis-form-{{ $mention->screen_name }}').submit();" class="portfolio-box">
 
 
-                                            <img src="{{ $mention->profile_image }}" class="img-responsive" alt="">
+                                            <img src="http://twivatar.glitch.me/{{ $mention->screen_name }}" class="img-responsive" alt="">
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
                                                     <div class="project-category text-faded">

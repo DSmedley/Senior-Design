@@ -77,7 +77,7 @@
                                                      document.getElementById('analysis-form-{{ $person->screen_name }}').submit();" class="portfolio-box">
 
                                         
-                                            <img src="{{ $person->profile_image }}" class="img-responsive" alt="">
+                                            <img src="http://twivatar.glitch.me/{{ $person->screen_name }}" class="img-responsive" alt="">
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
                                                     <div class="project-category text-faded">
